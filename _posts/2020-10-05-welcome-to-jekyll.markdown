@@ -1,29 +1,242 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Git Cheat Sheet"
 date:   2020-10-05 18:38:25 +0300
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# Mastering Git
 
-Jekyll requires blog post files to be named according to the following format:
+**Git** is a free open source distributed version control tool that tracks changes in your file. 
+As a developer believe me you need it more than anything else ('*Just kidding* 😛'). But its important.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+## Git Terminal commands
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+*Here is a cheat sheet of commands you might find useful and come to love:*
 
-Jekyll also offers powerful support for code snippets:
+```git
+    git config --global user.name "exampleuser"
+```
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+-sets a name identifiable for credit when reviewing version history
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+```git
+    git config --global user.email "exampleuser@email.com"
+```
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+-set an email address associated with the version history
+
+```git
+    git config --global color.ui auto
+```
+
+-set automatic coloring of git in the command line
+
+```git
+    git init
+```
+
+-initialize a local directory on you computer as a git repository
+
+```git
+    git clone
+```
+
+-retrieve a repository from a central remote hosting
+
+```git
+    git status
+```
+
+-show modifications on the working tree
+
+```git
+    git add <fileName>
+```
+
+-add the named file to the staging area
+
+```git
+    git add .
+```
+
+-adds all tracked files to the staging area
+
+```git
+    git reset
+```
+
+-unstage a file but retains changes in the working directory
+
+```git
+    git diff
+```
+
+-shows changes between commits,commit and working tree
+
+```git
+    git diff --staged
+```
+
+-show changes made to a file in the staging area
+
+```git
+    git commit -m "commit message"
+```
+
+-commits your staged content as a new commit snapshot
+
+```git
+    git branch <branchName>
+```
+
+-creates a new branch
+
+* Branches enables you to isolate your changes and context and integrate them together when you're ready*
+
+```git
+    git branch -a
+```
+
+-lists all your branches
+
+```git
+    git checkout <branchName>
+```
+
+-switches to the named branch
+
+```git
+    git merge <branchName>
+```
+
+-merge the specified branch with the current one
+
+```git
+    git log
+```
+
+-shows all commits in the current branch
+
+```git
+    git log branchB..branchA
+```
+
+-shows commits on branchA that are not on branchB
+
+```git
+    git log --follow <fileName>
+```
+
+-shows commits that changed a file,even if it was renamed
+
+```git
+    git diff branchB...branchA
+```
+
+-shows changes that are in branchA and not in branchB
+
+```git
+    git show <SHA>
+```
+
+-shows any object in git in human-readble format
+
+```git
+    git rm <fileName>
+```
+
+-removes the file from the project and stage the change
+
+```git
+    git mv <currentPath> <newPath>
+```
+
+-changes an existing path and stage the move
+
+```git
+    git log --stat -M
+```
+
+-shows all commits log and paths changed
+
+```git
+    git remote add <alias> <url>
+```
+
+-add a remote git url to your local repository
+
+```git
+    git fetch <alias>
+```
+
+-fetch all the branches from a central remote repositoy
+
+```git
+    git merge <alias>/<branch>
+```
+
+-merge a remote branch into your current one locally
+
+```git
+    git push <alias> branch
+```
+
+-transmit local branch to the remote repository branch
+
+```git
+    git push -u <alias> branch    OR
+    
+    git push --set-upstream <alias> <branchName>
+```
+
+-push the current branch and set the remote as upstream
+
+
+```git
+    git pull
+```
+
+-fetch and merge any commits from the remote tracking branch
+
+```git
+    git rebase <branch>
+```
+
+-apply any commits on current branch ahead of specified one
+
+```git
+    git reset --hard <commit>
+```
+
+-clear staging area,rewrite working tree from specified commit
+
+```git
+    git stash
+```
+
+-save modified and staged changes
+
+```git
+    git stash list
+```
+
+-list stack order of stashed file changes
+
+```git
+    git stash pop
+```
+
+-write working from top of stash stack
+
+```git
+    git stash drop
+```
+
+-discard changes from top of stash stack
+
+```git
+    git restore --staged <fileName>
+```
+
+-revert non committed changes from the staging area
+
