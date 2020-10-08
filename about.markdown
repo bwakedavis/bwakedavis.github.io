@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Howdy, Davis Here, stick around for more blogs
+Howdy, Davis Here, stick around for more writeups

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learn Asynchronous JavaScript and XML(AJAX)"
-date:   2020-10-08 14:38:25 +0300
+date:   2020-10-08 14:57:25 +0300
 categories: jekyll update
 ---
 # Performing GET Requests with AJAX
