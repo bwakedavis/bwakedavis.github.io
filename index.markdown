@@ -7,4 +7,8 @@ permalink: /
 ---
 {% include adsense.html %} 
 
+![]()
+<img src="./assets/myimage.jpg" alt="Davis Bwake png"
+	title="Davis Bwake Image" style = "border-radius:50%"/>
+
 Hello am Davis Bwake
