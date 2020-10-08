@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Cheat Sheet"
-date:   2020-10-05 18:38:25 +0300
+date:   2020-10-08 14:38:25 +0300
 categories: jekyll update
 ---
 # Mastering Git
