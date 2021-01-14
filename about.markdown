@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Projects
+permalink: /projects/
 ---
 
-Hello, Davis Here, stick around for more writeups
+Below is a list of my Recent Projects

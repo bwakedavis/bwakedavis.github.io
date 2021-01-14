@@ -21,8 +21,7 @@
 title: Davis Bwake 
 email: bwakedavis@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Howdy, this is my portfolio site where I showcase my projects
-  and write blog posts on my journey as developer
+  Howdy,Am Davis this is where I showcase my projects,write about tech and my myself.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bwakedavis
