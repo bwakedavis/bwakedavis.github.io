@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Git Cheat Sheet"
-date:   2020-10-08 14:38:25 +0300
-categories: jekyll update
+title: Git Cheat Sheet
+date: "2015-05-01T22:12:03.284Z"
+description: "Git is a free open source distributed version control tool that tracks changes in your file. 
+As a developer believe me you need it more than anything else ('Just kidding 😛'). But its important."
 ---
 # Mastering Git
 

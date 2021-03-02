@@ -1,9 +1,10 @@
 ---
-layout: post
-title:  "JavaScript High Order Array Methods"
-date:   2020-10-05 18:38:25 +0300
-categories: jekyll update
+title: JavaScript High Order Array Methods
+date: "2015-05-06T23:46:37.121Z"
+description: "The es6+ array methods are now a way to go when working with arrays and objects in an array.They can save you a lot of pain and even make you say bye to loops 😁😁😁 .
+Lets have a look at the most used ones:"
 ---
+
 
 # Understanding JavaScript High Order Array Methods
 
@@ -215,3 +216,4 @@ Checks if every item in an array meets a condition specified and returns a Boole
 ```
 
 Cheers if you reached here.I bet you enjoyed and you're considering using loops ever again 😂😂
+
