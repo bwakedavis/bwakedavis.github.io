@@ -1,8 +1,6 @@
 ---
-layout: post
-title:  "Git Cheat Sheet"
-date:   "2019-02-21T22:12:03.284Z"
-categories: software Development
+title: Git Cheat Sheet
+date: "2019-02-21T22:12:03.284Z"
 description: "Git is a free open source distributed version control tool that tracks changes in your file. 
 As a developer believe me you need it more than anything else ('Just kidding ðŸ˜›'). But its important."
 ---
@@ -241,3 +239,4 @@ As a developer believe me you need it more than anything else ('*Just kidding* ð
 ```
 
 -revert non committed changes from the staging area
+

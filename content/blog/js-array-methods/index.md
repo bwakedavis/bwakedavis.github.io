@@ -216,3 +216,4 @@ Checks if every item in an array meets a condition specified and returns a Boole
 ```
 
 Cheers if you reached here.I bet you enjoyed and you're considering using loops ever again 😂😂
+
