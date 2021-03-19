@@ -4,7 +4,7 @@ date: "2018-12-27T22:12:03.284Z"
 description: "JavaScript is a scripting language developed to add functionality in the browser. It's use nowdays extends building mobile apps, creating servers, building desktop apps etc"
 ---
 
-## Linking JavaScript to your HTML
+### Linking JavaScript to your HTML
 
 #### Method 1
 

@@ -5,4 +5,4 @@ description: "Data Structures and Algorithms are important concepts in Computer 
 ---
 
 
-**Data Structure** is a a way of organizing data so that it can be used effectively.
+**Data Structure** is a way of organizing data so that it can be used effectively.
