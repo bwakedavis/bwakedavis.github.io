@@ -1,5 +1,106 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Mar 2021 10:54:17 GMT</lastBuildDate><item><title><![CDATA[Learn Asynchronous JavaScript and XML(AJAX)]]></title><description><![CDATA[Performing GET Requests with AJAX Asynchronous JavaScript and XML enables you to: Read data from a web server  after the page has loaded…]]></description><link>https://bwakedavis.github.io/learn-ajax/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-ajax/</guid><pubDate>Sun, 17 Nov 2019 22:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;Performing GET Requests with AJAX&lt;/h1&gt;
-&lt;p&gt;Asynchronous JavaScript and XML enables you to:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Mar 2021 11:23:22 GMT</lastBuildDate><item><title><![CDATA[Learn TypeScript]]></title><description><![CDATA[TypeScript is a superset of JavaScript that extends JavaScript by adding types.
+It saves you time by catching the errors before you run the…]]></description><link>https://bwakedavis.github.io/learn-typescript/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-typescript/</guid><pubDate>Sun, 03 Jan 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;TypeScript&lt;/strong&gt; is a superset of JavaScript that extends JavaScript by adding types.
+It saves you time by catching the errors before you run the code.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Structures and Algorithms in JavaScript]]></title><description><![CDATA[Data Structure is a a way of organizing data so that it can be used effectively.]]></description><link>https://bwakedavis.github.io/data-structures-in-js/</link><guid isPermaLink="false">https://bwakedavis.github.io/data-structures-in-js/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Data Structure&lt;/strong&gt; is a a way of organizing data so that it can be used effectively.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Solidity - Smart Contract Oriented Language]]></title><description><![CDATA[Solidity is a smart contract development language.
+It is statically typed,supports inheritance, libraries etc.]]></description><link>https://bwakedavis.github.io/learn-solidity/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-solidity/</guid><pubDate>Tue, 03 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Solidity&lt;/strong&gt; is a smart contract development language.
+It is statically typed,supports inheritance, libraries etc.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Understand Ethereum and it's Wide Ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/learn-about-ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-about-ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
+&lt;h2&gt;Features of Ethereum&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Supports smart contracts&lt;/li&gt;
+&lt;li&gt;Has a Crptocurrency called &lt;em&gt;ether&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Has Smart Property&lt;/li&gt;
+&lt;li&gt;Supports  DEcentralized Autonomous Organizations (DAO)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Pillars of Ethereum&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ethereum Virtual Machine&lt;/strong&gt; - serves as the heart of ethereu, architecture and provides computer power.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inter-Planetary-File-System&lt;/strong&gt; - &lt;em&gt;IPFS&lt;/em&gt; serves as a distributed storage unit  for large files being stored on the ethereum network.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wallets/Browsers&lt;/strong&gt; - serves as a wallet for storing ether. used to deploy contracts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ether&lt;/strong&gt; is the value token of ethereum(ETH).
+It’s used to pay for transaction fees and computational services on ethereum network.
+Every time a contract is executed, Ethereum consumes token which is termed as ‘gas’ to run the computations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gas&lt;/strong&gt; is the unit for the amount of computional work done by the computer for one cycle of the contract.
+A transaction fee is charged as some amount of ether and is taken from the account balance where the transaction originate.
+The more the fee, the higher the chances that the transaction will be picked up faster by the miners for inclusion in the block.
+Providing too little gas leads to failed transactions.
+&lt;strong&gt;Gas limit&lt;/strong&gt; is the maximum amount of gas the contract can use for it’s computation.&lt;/p&gt;
+&lt;h3&gt;Smart Contracts&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;Smart Contract&lt;/strong&gt; is a software program on the distributed ledger, allowing an immutable, verifiable and secure record all contract and transactions.&lt;/p&gt;
+&lt;h4&gt;Properties of Smart Contracts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Autonomous&lt;/em&gt; - the creator doesn’t have to participate in the process after deployig the contract.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Auto-sufficient&lt;/em&gt; - contracts are able to collect money, realize transactions, distribute resources, issue and spend funds to allow a large capacity of storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Advantages of Smart Contracts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Faster, simpler and hassle free processes.&lt;/li&gt;
+&lt;li&gt;Secure - data in decentralized registry cannot be easily lost or cyber attacked&lt;/li&gt;
+&lt;li&gt;Pecision - Mistakes are not easily made due to absence of physical forms&lt;/li&gt;
+&lt;li&gt;Reduces settlement time.&lt;/li&gt;
+&lt;li&gt;Low operational overheads and costs.&lt;/li&gt;
+&lt;li&gt;Reduced administration and services cost owing .to automation and ease of compliance and reports.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Disadvantages of Smart Contracts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Hard to maintain - contracts deployed are immutable so changes in bussiness logic and general bug fixes  become tough.&lt;/li&gt;
+&lt;li&gt;Small community because it’s a new field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Decentralized Autonomous Organization(DAO)&lt;/strong&gt; are organizations that exist entirely on the blockchain and are governed by the protocols.
+They’re designed to hold onto assets and use a kind of voting to manage their distribution(use peer decision making).
+DAO’s comprise of a global network of nodes and members that all work together and create a unison to manage the distribution.&lt;/p&gt;
+&lt;h4&gt;Types of Ethereum Accounts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;External Owned Accounts&lt;/em&gt; - These are owned by people or organizations and controlled by private Keys.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Contract Accounts&lt;/em&gt; - These are autonomous accounts controlled by code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ethereum Virtual Machine&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;EVM&lt;/strong&gt; is a blockchain-based software platform. It allows developers to create decentralized applications (Dapps).&lt;/p&gt;
+&lt;p&gt;Contracts written in a smart contract specific language are compiled into &lt;em&gt;bytecode&lt;/em&gt; which the &lt;strong&gt;evm&lt;/strong&gt; can read and execute.&lt;/p&gt;
+&lt;h2&gt;Decentralized Applications(DApps)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;DApps&lt;/strong&gt; are digital applications or programs that exist and run on a blockchain or peer to peer network of computers instead of a single computer, and are not controllled by a single authority.&lt;/p&gt;
+&lt;h4&gt;Features of DApps&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Open Sourced.The code is made open source and operates autonomously without any person or group controlling the majority of the tokens&lt;/li&gt;
+&lt;li&gt;Decentralized&lt;/li&gt;
+&lt;li&gt;Use Consensus Mechanism&lt;/li&gt;
+&lt;li&gt;Generates tokens to provide value to their contributing nodes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Adavantages of DApps&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;*Autonomy * - you make the agreement yourself.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Trust&lt;/em&gt; - yourrecords are encrypted on a shared ledger.&lt;/li&gt;
+&lt;li&gt;Backup - your document are duplicated many times over.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Accuracy&lt;/em&gt; - they’re sometime kinda slower and expensive but avoid errors that arise from tedious computional work.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learn all things Bitcoin]]></title><description><![CDATA[Bitcoin is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments. It follows the ideas set out…]]></description><link>https://bwakedavis.github.io/learn-about-bitcoin/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-about-bitcoin/</guid><pubDate>Mon, 13 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Bitcoin&lt;/strong&gt; is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments.&lt;/p&gt;
+&lt;p&gt;It follows the ideas set out in the Bitcoin White authored by &lt;em&gt;Satoshi Nakamoto&lt;/em&gt; whose identity is not yet known, Get the pdf here &lt;a href=&quot;https://bitcoin.org/bitcoin.pdf&quot;&gt;Bitcoin White Paper&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Understand Blockchain Technology]]></title><description><![CDATA[A Blockchain is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an…]]></description><link>https://bwakedavis.github.io/undestand-blockchain-technology/</link><guid isPermaLink="false">https://bwakedavis.github.io/undestand-blockchain-technology/</guid><pubDate>Sun, 12 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;A &lt;strong&gt;Blockchain&lt;/strong&gt; is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an unchangeable record of transactions, each time-stamped and linked to the previous one.
+Each digital record or transaction in the electronic ledger is called a &lt;em&gt;block&lt;/em&gt;.
+Transactions are protected by strong cryptographic algorithms.
+Every new record is validated across the distributed network before it’s stored in a block.
+To access the data of the &lt;em&gt;genesis&lt;/em&gt; block you have to traverse to the first block.&lt;/p&gt;
+&lt;h3&gt;Types of Blockchains&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Public&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Private&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Consortium&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Properties of a Blockchain&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Distributed&lt;/em&gt; - all participants in the network have a copy of the ledger.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Secure&lt;/em&gt; -  All records are individually recorded.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Anonymous&lt;/em&gt; - An identity of the participants is either anonymous or pseudonymous.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Timestamped&lt;/em&gt; - when a transaction occurs it’s timestamp is recorded on the block.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Immutable&lt;/em&gt; - all validated transaction records are irreversible and cannot be changed.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Programmable&lt;/em&gt; - a blockchain is programmable eg. using smart contracts.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Unanimous&lt;/em&gt; - all network partcipants agree to the validity of each record.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Benefits of Blockchain&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Realtime settlement.&lt;/li&gt;
+&lt;li&gt;A lot of money is saved as intermediaries are removed.&lt;/li&gt;
+&lt;li&gt;Good security and reliance.&lt;/li&gt;
+&lt;li&gt;Immutability&lt;/li&gt;
+&lt;li&gt;Anonymity&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learn Asynchronous JavaScript and XML(AJAX)]]></title><description><![CDATA[Asynchronous JavaScript and XML enables you to: Read data from a web server  after the page has loaded Update a web page without reloading…]]></description><link>https://bwakedavis.github.io/learn-ajax/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-ajax/</guid><pubDate>Sun, 17 Nov 2019 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Asynchronous JavaScript and XML enables you to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read data from a web server  after the page has loaded&lt;/li&gt;
 &lt;li&gt;Update a web page without reloading the page&lt;/li&gt;
@@ -219,8 +320,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
         xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Cheers go enjoy AJAX 🥳 🥳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScript High Order Array Methods]]></title><description><![CDATA[Understanding JavaScript High Order Array Methods The es6+ array methods are now a way to go when working with arrays and objects in an…]]></description><link>https://bwakedavis.github.io/js-array-methods/</link><guid isPermaLink="false">https://bwakedavis.github.io/js-array-methods/</guid><pubDate>Mon, 06 May 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h1&gt;Understanding JavaScript High Order Array Methods&lt;/h1&gt;
-&lt;p&gt;The es6+ array methods are now a way to go when working with arrays and objects in an array.They can save you a lot of pain and even make you say &lt;strong&gt;bye&lt;/strong&gt; to loops 😁😁😁&lt;/p&gt;
+&lt;p&gt;Cheers go enjoy AJAX 🥳 🥳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScript High Order Array Methods]]></title><description><![CDATA[The es6+ array methods are now a way to go when working with arrays and objects in an array.They can save you a lot of pain and even make…]]></description><link>https://bwakedavis.github.io/js-array-methods/</link><guid isPermaLink="false">https://bwakedavis.github.io/js-array-methods/</guid><pubDate>Mon, 06 May 2019 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;The es6+ array methods are now a way to go when working with arrays and objects in an array.They can save you a lot of pain and even make you say &lt;strong&gt;bye&lt;/strong&gt; to loops 😁😁😁&lt;/p&gt;
 &lt;p&gt;Lets have a look at the most used ones:&lt;/p&gt;
 &lt;p&gt;So we will be working with a simple array containing numbers and another one containing a few objects.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;index.js&lt;/strong&gt;&lt;/p&gt;
@@ -375,9 +475,8 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hasEmail&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
     &lt;span class=&quot;token comment&quot;&gt;//Returns true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Cheers if you reached here.I bet you enjoyed and you’re considering using loops ever again 😂😂&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git Cheat Sheet]]></title><description><![CDATA[Mastering Git Git is a free open source distributed version control tool that tracks changes in your file. 
-As a developer believe me you…]]></description><link>https://bwakedavis.github.io/git-cheat-sheet/</link><guid isPermaLink="false">https://bwakedavis.github.io/git-cheat-sheet/</guid><pubDate>Thu, 21 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;h1&gt;Mastering Git&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; is a free open source distributed version control tool that tracks changes in your file.
+&lt;p&gt;Cheers if you reached here.I bet you enjoyed and you’re considering using loops ever again 😂😂&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git Cheat Sheet]]></title><description><![CDATA[Git is a free open source distributed version control tool that tracks changes in your file. 
+As a developer believe me you need it more…]]></description><link>https://bwakedavis.github.io/git-cheat-sheet/</link><guid isPermaLink="false">https://bwakedavis.github.io/git-cheat-sheet/</guid><pubDate>Thu, 21 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; is a free open source distributed version control tool that tracks changes in your file.
 As a developer believe me you need it more than anything else (’&lt;em&gt;Just kidding&lt;/em&gt; 😛’). But its important.&lt;/p&gt;
 &lt;h2&gt;Git Terminal commands&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Here is a cheat sheet of commands you might find useful and come to love:&lt;/em&gt;&lt;/p&gt;
@@ -459,4 +558,105 @@ As a developer believe me you need it more than anything else (’&lt;em&gt;Just
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git stash drop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-discard changes from top of stash stack&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git restore --staged &amp;lt;fileName&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;-revert non committed changes from the staging area&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;-revert non committed changes from the staging area&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn JavaScript]]></title><description><![CDATA[Linking JavaScript to your HTML Method 1 Adding scripts tag to your HTML at the end of the body tag Method 2 Linking an external javaScript…]]></description><link>https://bwakedavis.github.io/learn-javascript/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-javascript/</guid><pubDate>Thu, 27 Dec 2018 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;Linking JavaScript to your HTML&lt;/h2&gt;
+&lt;h4&gt;Method 1&lt;/h4&gt;
+&lt;p&gt;Adding scripts tag to your HTML at the end of the body tag&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;span class=&quot;token language-javascript&quot;&gt;
+      JavaScript code goes here
+    &lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Method 2&lt;/h4&gt;
+&lt;p&gt;Linking an external javaScript file to your HTML&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;./path/index.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;JavaScript Datatypes&lt;/h2&gt;
+&lt;h3&gt;Primitive Datatypes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;String&lt;/li&gt;
+&lt;li&gt;Number&lt;/li&gt;
+&lt;li&gt;Boolean&lt;/li&gt;
+&lt;li&gt;Null&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Reference types&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Array&lt;/li&gt;
+&lt;li&gt;Object&lt;/li&gt;
+&lt;li&gt;Function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Variables&lt;/h3&gt;
+&lt;p&gt;Variables are containers that store data values&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Davis&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//String&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;25467&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Number&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; isCool &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Boolean&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; stranger &lt;span class=&quot;token comment&quot;&gt;//undefined value&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;variables declared with var and let can be re-assigned&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;bwake&quot;&lt;/span&gt;
+    id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;74621&lt;/span&gt;
+    isCool &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+    stranger &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//nothing&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also concatenate strings with with variables&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; complement &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;is cool&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Lets log the above variables on the console, you can use browsers console or run the file on the terminal with node&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;isCool&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;stranger&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; complement&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Math Operations&lt;/h3&gt;
+&lt;p&gt;JavaScript supports many many operations, here are the basic ones in their shortest form&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    id &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    id &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    id &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    id &lt;span class=&quot;token operator&quot;&gt;/=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    id  &lt;span class=&quot;token operator&quot;&gt;%=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Arrays&lt;/h3&gt;
+&lt;p&gt;Arrays are used to store multiple values in a single variable&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; myList &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Dodge&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Duck&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Dive&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Done&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//a numbered list of items&lt;/span&gt;
+    myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Davis&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Add array to top of the stack&lt;/span&gt;
+    myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Remove the item on top of the stack&lt;/span&gt;
+    myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unshift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Dan&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Add item to the bottom of the stack&lt;/span&gt;
+    myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Remove item from the bottom of the list&lt;/span&gt;
+    myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Donstesh&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Replace items in the array&lt;/span&gt;
+    myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myList&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; myList&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; myList&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Duck&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; myList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;lastIndexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Duck&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;//indexOf Return index of the item else returns -1 counting from the start&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//lastIndexOf Return index of the item else returns -1 counting from the end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Objects&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; myObject&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Davis&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    age&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    isCool&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    myObject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;34875&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    myObject&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;lastName&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;bwake&apos;&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Functions&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Hello &apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Davis&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;if … if else statements&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;age &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;You are twenty years old&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;age&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;youre 19 years old or younger&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;youre above 20 years old&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;age&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; age&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;youre between 11 and 30 age bracket&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;age&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; name&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;bwake&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; youre &apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; age &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos; years old&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//Ternary operator&lt;/span&gt;
+    name &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;bwake&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;I dont know you &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//Falsey(values that evaluate to false) =&gt; false, null,undefined, 0, &quot;&quot;,&apos;&apos;, NaN&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;//Comparison operators =&gt; &amp;lt;, &amp;lt;=, &gt;, &gt;=, ==, !=, !==&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;//Binary logical operators =&gt; &amp;amp;&amp;amp;, ||&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
