@@ -56,6 +56,7 @@ const Bio = () => {
     </div>
     <div>
       <p>My tech stack is HTML, CSS,JavaScript, ReactJS, NodeJS, Solidity</p>
+      <p>Am currently open to remote job oppurtunities.</p>
       <p>Checkout my <Link to="/projects">projects</Link></p>
     </div>
     </div>
