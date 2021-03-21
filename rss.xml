@@ -1,8 +1,221 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Mar 2021 12:54:57 GMT</lastBuildDate><item><title><![CDATA[Learn TypeScript]]></title><description><![CDATA[TypeScript is a superset of JavaScript that extends JavaScript by adding types.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 12:26:00 GMT</lastBuildDate><item><title><![CDATA[Learn TypeScript]]></title><description><![CDATA[TypeScript is a superset of JavaScript that extends JavaScript by adding types.
 It saves you time by catching the errors before you run the…]]></description><link>https://bwakedavis.github.io/learn-typescript/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-typescript/</guid><pubDate>Sun, 03 Jan 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;TypeScript&lt;/strong&gt; is a superset of JavaScript that extends JavaScript by adding types.
 It saves you time by catching the errors before you run the code.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Structures and Algorithms in JavaScript]]></title><description><![CDATA[Data Structure is a way of organizing data so that it can be used effectively.]]></description><link>https://bwakedavis.github.io/data-structures-in-js/</link><guid isPermaLink="false">https://bwakedavis.github.io/data-structures-in-js/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Data Structure&lt;/strong&gt; is a way of organizing data so that it can be used effectively.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Solidity - Smart Contract Oriented Language]]></title><description><![CDATA[Solidity is a smart contract development language.
-It is statically typed,supports inheritance, libraries etc.]]></description><link>https://bwakedavis.github.io/learn-solidity/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-solidity/</guid><pubDate>Tue, 03 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Solidity&lt;/strong&gt; is a smart contract development language.
-It is statically typed,supports inheritance, libraries etc.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Understand Ethereum and it's Wide Ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/learn-about-ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-about-ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
+It is statically typed,supports inheritance, libraries etc. Solidity code is written in…]]></description><link>https://bwakedavis.github.io/learn-solidity/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-solidity/</guid><pubDate>Tue, 03 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Solidity&lt;/strong&gt; is a smart contract development language.
+It is statically typed,supports inheritance, libraries etc.&lt;/p&gt;
+&lt;p&gt;Solidity code is written in files with &lt;strong&gt;.sol&lt;/strong&gt; extension. You can use remix browser editor here &lt;a href=&quot;http://remix.ethereum.org&quot;&gt;Remix&lt;/a&gt; .It allows you to compile and deploy your contracts on the go.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pragma&lt;/strong&gt; declares the version of solidity compiler to use.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;.3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;contracts&lt;/strong&gt; are the building blocks of smart contracts.
+lets write our first contract&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Variables in solidity&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;state variables&lt;/strong&gt;  are written in the blockchain.They’re permanently stored in contract storage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;local variables(memory)&lt;/strong&gt; − are variables whose values are present till function is executing.
+&lt;strong&gt;Calldata&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//state variable&lt;/span&gt;
+    &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; num1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mynumber&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt; _num2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//local variable&lt;/span&gt;
+        &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt; num2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _num2&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Strings&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; greetings &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I’ts expensive to use the ethereum blockchain as a data storage hence using strings in your contracts is discouraged.
+You can store large amount of data records on &lt;strong&gt;IPFS&lt;/strong&gt;. It’s cheaper and public.&lt;/p&gt;
+&lt;h4&gt;Functions&lt;/h4&gt;
+&lt;p&gt;Function are categorized according to &lt;strong&gt;visibility&lt;/strong&gt; i.e &lt;em&gt;public, private, internal and external&lt;/em&gt; and &lt;strong&gt;behaviour&lt;/strong&gt; i.e &lt;em&gt;payable&lt;/em&gt;,&lt;em&gt;view&lt;/em&gt; and &lt;em&gt;pure&lt;/em&gt;.
+There are functions that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Create transactions on the blockchain&lt;/em&gt;. They cost gas to call them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Statements that change the state of the blockchain:&lt;/li&gt;
+&lt;li&gt;Writing to state variables.&lt;/li&gt;
+&lt;li&gt;Emitting events&lt;/li&gt;
+&lt;li&gt;Creating other contracts&lt;/li&gt;
+&lt;li&gt;Using selfdestruct&lt;/li&gt;
+&lt;li&gt;Sending Ether via calls&lt;/li&gt;
+&lt;li&gt;Calling any function bot marked as &lt;strong&gt;view&lt;/strong&gt; or &lt;strong&gt;pure&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Using low-level calls&lt;/li&gt;
+&lt;li&gt;Using inline assembly that contains certain opcodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Functions that don’t create transactions on the blockchain&lt;/em&gt;.  This can be called for free.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;View&lt;/strong&gt; functions doesn’t change the state of the blockchain&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pure&lt;/strong&gt; functions does not change state nor read state variables in the blockchain.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Statement considered reading from the state.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading from state variables.&lt;/li&gt;
+&lt;li&gt;Accessing &lt;em&gt;address(this).balance&lt;/em&gt; or &lt;em&gt;&amp;#x3C; address &gt;.balance&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Accessing any member of &lt;em&gt;block, tx, msg&lt;/em&gt; except &lt;em&gt;msg.sig and msg.data&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Calling any function not marked pure.&lt;/li&gt;
+&lt;li&gt;Using inline assembly that contains certain opcodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+         
+  &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt; _name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;//View Functions&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;returns&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; add &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;returns&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;//Pure Functions&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; addNum &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;pure&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;returns&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;returns&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;solidity functions can return multiple values&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;returnMultipleValuesA&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;pure&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;returns&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;returnMultipleValuesB&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;pure&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;returns&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;//Destructing Assignments&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;destructuredAssignments&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;pure&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;returns&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;bool&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;returnMultipleValuesA&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//lEaving values cout&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In &lt;strong&gt;public functions&lt;/strong&gt; you cannot input:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;maps&lt;/li&gt;
+&lt;li&gt;multi-dimensional arrays(unfixed size).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Function Modifiers&lt;/h4&gt;
+&lt;p&gt;Functions modifiers are reusable code that can be attached to a function either before or after the function is executed.
+They can be used to restrict write access, validate input and prevent reentrancy hack&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token version number&quot;&gt;0.5.3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token builtin&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; owner&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     owner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; msg&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sender&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;modifier&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;onlyOwner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;msg&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sender &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; owner&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Not Owner&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;modifier&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;validAddress&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;address&lt;/span&gt; _addr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_addr &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Not valid address&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;changeOwner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;address&lt;/span&gt; _newOwner&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; onlyOwner &lt;span class=&quot;token function&quot;&gt;validAddress&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_newOwner&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     
+     owner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _newOwner&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+ &lt;span class=&quot;token comment&quot;&gt;//No reentrency&lt;/span&gt;
+ &lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token builtin&quot;&gt;bool&lt;/span&gt; locked&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;modifier&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;noReentrancy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;locked&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Locked&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     
+     locked &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     locked &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;decrement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; noReentrancy &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     x &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     
+     &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;token function&quot;&gt;decrement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Ether&lt;/em&gt; is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.
+&lt;em&gt;Wei&lt;/em&gt; one ether equals to 10 ^ 18 wei.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Gas&lt;/em&gt; - total amount of computation used to proecess each transaction on the blockchain is measured in gas.
+The purpose of gas is to limit the amount of computations that a transction can do. eg. an eternal loop.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Gas limit&lt;/em&gt; is the maximum amount of gas you’re willing to use.Set by you.
+&lt;em&gt;Block gas limit&lt;/em&gt; is the maximum amount alowed in the blockchain set by the network.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Gas price&lt;/em&gt; - Is the amount of ether you’re willing for one gas.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Ether = Gas limit * Gas Price&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When your transaction runs out of gas it’s aborted but you still pay for the gas already used.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Deveops]]></title><description><![CDATA[Docker is replacing virtual machines
+Docker can be used with VM’s on large projects Hypervisores eg. vmware ESX1 How docker works
+Hardware…]]></description><link>https://bwakedavis.github.io/learn-devops/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-devops/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Docker is replacing virtual machines
+Docker can be used with VM’s on large projects&lt;/p&gt;
+&lt;p&gt;Hypervisores eg. vmware ESX1&lt;/p&gt;
+&lt;p&gt;How docker works
+Hardware - One Os(eg Ubuntu) - Docker - Other Os to create containers&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Containers&lt;/em&gt; - are fast virtual lightweight isolated micro-computers environments. They run instances of images.
+&lt;em&gt;Docker image&lt;/em&gt; is a package or a template.&lt;/p&gt;
+&lt;p&gt;How to use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install docker&lt;/li&gt;
+&lt;li&gt;Pull an image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    $ docker pull centos
+    $ docker pull centos/version:number //get specific version of an image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Run a Container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    $ docker run -d -t --name containername centos
+    $ docker run -d -t -p &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;:80 -name containername centos/version:number //run docker image on your website&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Check your your running containers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    $ docker &lt;span class=&quot;token function&quot;&gt;ps&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Connect to your docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    $ docker &lt;span class=&quot;token builtin class-name&quot;&gt;exec&lt;/span&gt; -it containername &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Stop reunning docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    $ docker stop containername&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Start reunning docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    $ docker start containername&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Check resources being used&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    $ docker stats&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Why docker is cool:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You only need one kernel&lt;/li&gt;
+&lt;li&gt;They are lightweight&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Understand Ethereum and it's Wide Ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/learn-about-ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-about-ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
 &lt;h2&gt;Features of Ethereum&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Supports smart contracts&lt;/li&gt;
