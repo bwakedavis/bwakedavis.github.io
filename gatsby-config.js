@@ -50,6 +50,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-4586398942478434`
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // {
