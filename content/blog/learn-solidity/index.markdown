@@ -187,6 +187,90 @@ modifier validAddress(address _addr) {
     
 }
 ```
+
+### Inheritance
+
+You can inherit contracts in solidity.
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+function greet() public pure returns (string memory) {
+    return "hello";
+}
+    
+}
+
+contract HelloWorld2 is HelloWorld{
+    
+}
+```
+
+You can override a function from the parrent function.
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+function greet() public pure returns (string memory) {
+    return "hello";
+}
+    
+}
+
+contract HelloWorld2 is HelloWorld{
+    function greet() public pure returns (string memory) {
+    return "hello world";
+}
+}
+```
+
+When you deploy contract ```Helloworld2``` you'll see it has the ```greet()``` method
+
+You can inherit constructor paramaters
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+string public origin;
+constructor(string memory _origin) public {
+    origin = _origin;
+}
+}
+
+contract HelloWorld2 is HelloWorld {
+  constructor(string memory _origin) HelloWorld(_origin) public {
+      
+  }  
+}
+```
+
+You can inherit from multiple contracts
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+
+function hi() public pure returns (string memory) {
+    return "Hi";
+}
+}
+
+contract HelloWorld2 is HelloWorld {
+function habari() public pure returns (string memory) {
+    return "Habari";
+}
+}
+
+contract HelloWorld3 is HelloWorld,HelloWorld2 {
+
+}
+```
+
+
   
 *Ether* is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.
 *Wei* one ether equals to 10 ^ 18 wei.

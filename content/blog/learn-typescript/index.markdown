@@ -41,3 +41,56 @@ You can use ```-w``` flag to watch the file during development so that you don't
 tsc main.js -w
 ```
 
+### Types in Typescript
+
+Once you declare a variable type you cannot re-assign it with a different type eg sub a string with an integer.
+
+You can't add additional properties to an object that wasn't defined.You can re-assign an object but it should have the same structure as defined before.
+An array only accepts the types of data defined with initially. ie you can't push a number in an array of strings.
+
+```typescript
+let name = "Bwake";
+//Explicit type
+let name2: string = "Davis";
+
+let num = 20;
+let num2: string = 21;
+
+let isHot = true;
+let isCold: boolean = false;
+
+//more than one possible type variable
+let id: string|number;
+
+//Arrays
+let names = ["Davis", "Austine", "Williams" ];
+let names2: string = ["Davis", "Austine", "Williams" ];
+//mixed arrays
+let mixed = ["Reactjs", 2021, true, 420];
+let mixed2: (string| number| boolean)[] = ['hey', 420, true];
+
+//Objects
+let myObject = {
+    language: "Swahili",
+    age: 21,
+    likesCoffe: true
+
+}
+
+let myObject2: object = {
+    language: "English",
+    age: 8,
+    likesCoffe: false
+}
+
+let myObject3 = {
+    language: string,
+    age: number,
+    likesCoffe: boolean
+}
+myObject3 = {
+    language: "English",
+    age: 10,
+    likesCoffe: true
+}
+```
