@@ -1,6 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 15:15:05 GMT</lastBuildDate><item><title><![CDATA[Learn TypeScript]]></title><description><![CDATA[TypeScript is a superset of JavaScript that extends JavaScript by adding types.
-It saves you time by catching the errors before you run the…]]></description><link>https://bwakedavis.github.io/learn-typescript/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-typescript/</guid><pubDate>Sun, 03 Jan 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;TypeScript&lt;/strong&gt; is a superset of JavaScript that extends JavaScript by adding types.
-It saves you time by catching the errors before you run the code.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Structures and Algorithms in JavaScript]]></title><description><![CDATA[Data Structure is a way of organizing data so that it can be used effectively.]]></description><link>https://bwakedavis.github.io/data-structures-in-js/</link><guid isPermaLink="false">https://bwakedavis.github.io/data-structures-in-js/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Data Structure&lt;/strong&gt; is a way of organizing data so that it can be used effectively.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Solidity - Smart Contract Oriented Language]]></title><description><![CDATA[Solidity is a smart contract development language.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 23 Mar 2021 11:20:25 GMT</lastBuildDate><item><title><![CDATA[Learn TypeScript]]></title><description><![CDATA[TypeScript is a superset of JavaScript that extends JavaScript by adding types.
+It supports es6+ features, contains static typing and other…]]></description><link>https://bwakedavis.github.io/learn-typescript/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-typescript/</guid><pubDate>Sun, 03 Jan 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;TypeScript&lt;/strong&gt; is a superset of JavaScript that extends JavaScript by adding types.
+It supports es6+ features, contains static typing and other features.
+It saves you time by catching the errors before you run the code.
+It was released in 2012 by Microsoft.&lt;/p&gt;
+&lt;p&gt;Typescript compiles down to JavaScript.
+Install typescript compiler globally from npm.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -g typescript&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Create a .ts file and open it in your favourite code editoreg. &lt;code class=&quot;language-text&quot;&gt;main.ts&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;typescript&quot;&gt;&lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; greetings &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Compile the typescript code down by opening the terminal then run&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;tsc &lt;span class=&quot;token string&quot;&gt;&quot;your filename&quot;&lt;/span&gt;
+//example
+tsc main.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This creates a &lt;code class=&quot;language-text&quot;&gt;.js&lt;/code&gt; file in the same directory with the same name and writes the javascript code from our typescript file.&lt;/p&gt;
+&lt;p&gt;You can use &lt;code class=&quot;language-text&quot;&gt;-w&lt;/code&gt; flag to watch the file during development so that you don’t have to recompile the code everytime you save your code&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;tsc main.js -w&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Data Structures and Algorithms in JavaScript]]></title><description><![CDATA[Data Structure is a way of organizing data so that it can be used effectively. Importance Code performance Trade offs among different…]]></description><link>https://bwakedavis.github.io/data-structures-in-js/</link><guid isPermaLink="false">https://bwakedavis.github.io/data-structures-in-js/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Data Structure&lt;/strong&gt; is a way of organizing data so that it can be used effectively.&lt;/p&gt;
+&lt;h4&gt;Importance&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Code performance&lt;/li&gt;
+&lt;li&gt;Trade offs among different approaches&lt;/li&gt;
+&lt;li&gt;Identifying inefficiencies&lt;/li&gt;
+&lt;li&gt;Interviews&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Factors to consider when designing a data structure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Speed - how fast&lt;/li&gt;
+&lt;li&gt;Memory - less memory intensive&lt;/li&gt;
+&lt;li&gt;Readability - more readble code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The problem with &lt;em&gt;time&lt;/em&gt; facto is that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;different or same machine record different time&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;speed might not be precise&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Big O Notation&lt;/h2&gt;
+&lt;p&gt;It allows us to talk formally how the runtime of an input grows as the input grows.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Arithmetic operations are constant&lt;/li&gt;
+&lt;li&gt;Variable assignment is constant&lt;/li&gt;
+&lt;li&gt;Acessing elements in an array(by index) or object (by key) is constant.&lt;/li&gt;
+&lt;li&gt;In a loop, the time complexity is the length of the loop times the complexity or whatever happens inside the loop.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Space Complexity&lt;/strong&gt; - refers to how much additional memory is needed to be allocated in order to run the code in our algorithm.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Time Complexity&lt;/strong&gt; - Analyze runtime as the size of the input increases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Auxiliary Space&lt;/strong&gt; - space required by the algorithm, not including space taken by the input&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Solidity - Smart Contract Oriented Language]]></title><description><![CDATA[Solidity is a smart contract development language.
 It is statically typed,supports inheritance, libraries etc. Solidity code is written in…]]></description><link>https://bwakedavis.github.io/learn-solidity/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-solidity/</guid><pubDate>Tue, 03 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Solidity&lt;/strong&gt; is a smart contract development language.
 It is statically typed,supports inheritance, libraries etc.&lt;/p&gt;
 &lt;p&gt;Solidity code is written in files with &lt;strong&gt;.sol&lt;/strong&gt; extension. You can use remix browser editor here &lt;a href=&quot;http://remix.ethereum.org&quot;&gt;Remix&lt;/a&gt; .It allows you to compile and deploy your contracts on the go.&lt;/p&gt;
@@ -170,7 +213,16 @@ The purpose of gas is to limit the amount of computations that a transction can 
 &lt;em&gt;Block gas limit&lt;/em&gt; is the maximum amount alowed in the blockchain set by the network.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Gas price&lt;/em&gt; - Is the amount of ether you’re willing for one gas.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Ether = Gas limit * Gas Price&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;When your transaction runs out of gas it’s aborted but you still pay for the gas already used.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Deveops]]></title><description><![CDATA[Docker is replacing virtual machines
+&lt;p&gt;When your transaction runs out of gas it’s aborted but you still pay for the gas already used.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to install Mariadb on linux debian]]></title><description><![CDATA[Update your package index Install Mariadb Server Log in into the Mariadb shell Suppose you run into this error while running  Run]]></description><link>https://bwakedavis.github.io/install-mariadb-debian/</link><guid isPermaLink="false">https://bwakedavis.github.io/install-mariadb-debian/</guid><pubDate>Fri, 12 Jun 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Update your package index&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt&lt;/span&gt; update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Install Mariadb Server&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; mariadb-server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Log in into the Mariadb shell&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; mysql&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Suppose you run into this error while running &lt;code class=&quot;language-text&quot;&gt;mysql&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;ERROR &lt;span class=&quot;token number&quot;&gt;2002&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;HY000&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;: Cant connect to &lt;span class=&quot;token builtin class-name&quot;&gt;local&lt;/span&gt; MySQL server through socket /var/run/mysqld/mysqld.sock &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Run&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;service&lt;/span&gt; mysqld start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Learn Deveops]]></title><description><![CDATA[Docker is replacing virtual machines
 Docker can be used with VM’s on large projects Hypervisores eg. vmware ESX1 How docker works
 Hardware…]]></description><link>https://bwakedavis.github.io/learn-devops/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-devops/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Docker is replacing virtual machines
 Docker can be used with VM’s on large projects&lt;/p&gt;
@@ -280,10 +332,40 @@ DAO’s comprise of a global network of nodes and members that all work together
 &lt;/ul&gt;
 &lt;h4&gt;Adavantages of DApps&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;*Autonomy * - you make the agreement yourself.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Autonomy&lt;/em&gt; - you make the agreement yourself.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Trust&lt;/em&gt; - yourrecords are encrypted on a shared ledger.&lt;/li&gt;
 &lt;li&gt;Backup - your document are duplicated many times over.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Accuracy&lt;/em&gt; - they’re sometime kinda slower and expensive but avoid errors that arise from tedious computional work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Yield Farming&lt;/strong&gt; - Earning money on deposit to be given to other people as loans and they payback with interest&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Liquidity mining&lt;/strong&gt; - distributing tokens to users of a protocol for doing some tasks&lt;/p&gt;
+&lt;h3&gt;Decentralized Finance (DeFi)&lt;/h3&gt;
+&lt;p&gt;Applications on the blockchain decentralizing finance, lending and interest earnings&lt;/p&gt;
+&lt;h4&gt;Advantages of DeFi&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Transparency&lt;/li&gt;
+&lt;li&gt;Decentralized&lt;/li&gt;
+&lt;li&gt;Flexibility&lt;/li&gt;
+&lt;li&gt;Free for all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Disadvantages of DeFi&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Still in infancy stage&lt;/li&gt;
+&lt;li&gt;Sometime partially centralized&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Non-Fungible Tokens&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;NFTs&lt;/em&gt;  are digital assets that represent a wide range of unique tangible and intangible items. eg songs, tweets&lt;/p&gt;
+&lt;p&gt;Non-fungible tokens are indivisible  and can’t be swapped with the other one.&lt;/p&gt;
+&lt;p&gt;Fungible tokens can be swapped with others of the same kind&lt;/p&gt;
+&lt;h3&gt;characteristics of NFTs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Indivisible&lt;/li&gt;
+&lt;li&gt;Verifiable&lt;/li&gt;
+&lt;li&gt;Indestructible&lt;/li&gt;
+&lt;li&gt;Unique&lt;/li&gt;
+&lt;li&gt;Provably scarce&lt;/li&gt;
+&lt;li&gt;Transferable easily&lt;/li&gt;
+&lt;li&gt;Guarantee ownership&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learn all things Bitcoin]]></title><description><![CDATA[Bitcoin is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments. It follows the ideas set out…]]></description><link>https://bwakedavis.github.io/learn-about-bitcoin/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-about-bitcoin/</guid><pubDate>Mon, 13 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Bitcoin&lt;/strong&gt; is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments.&lt;/p&gt;
 &lt;p&gt;It follows the ideas set out in the Bitcoin White authored by &lt;em&gt;Satoshi Nakamoto&lt;/em&gt; whose identity is not yet known, Get the pdf here &lt;a href=&quot;https://bitcoin.org/bitcoin.pdf&quot;&gt;Bitcoin White Paper&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Understand Blockchain Technology]]></title><description><![CDATA[A Blockchain is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an…]]></description><link>https://bwakedavis.github.io/undestand-blockchain-technology/</link><guid isPermaLink="false">https://bwakedavis.github.io/undestand-blockchain-technology/</guid><pubDate>Sun, 12 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;A &lt;strong&gt;Blockchain&lt;/strong&gt; is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an unchangeable record of transactions, each time-stamped and linked to the previous one.
 Each digital record or transaction in the electronic ledger is called a &lt;em&gt;block&lt;/em&gt;.
@@ -313,6 +395,13 @@ To access the data of the &lt;em&gt;genesis&lt;/em&gt; block you have to travers
 &lt;li&gt;Good security and reliance.&lt;/li&gt;
 &lt;li&gt;Immutability&lt;/li&gt;
 &lt;li&gt;Anonymity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Blockchain Bullshit&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Blockchain is free&lt;/li&gt;
+&lt;li&gt;Blockchain is great for storing data&lt;/li&gt;
+&lt;li&gt;Blockchain can be used for everything&lt;/li&gt;
+&lt;li&gt;Blockchain is only for cryptocurrencies&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learn Asynchronous JavaScript and XML(AJAX)]]></title><description><![CDATA[Asynchronous JavaScript and XML enables you to: Read data from a web server  after the page has loaded Update a web page without reloading…]]></description><link>https://bwakedavis.github.io/learn-ajax/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-ajax/</guid><pubDate>Sun, 17 Nov 2019 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Asynchronous JavaScript and XML enables you to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read data from a web server  after the page has loaded&lt;/li&gt;
@@ -688,7 +777,16 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hasEmail&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
     &lt;span class=&quot;token comment&quot;&gt;//Returns true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Cheers if you reached here.I bet you enjoyed and you’re considering using loops ever again 😂😂&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git Cheat Sheet]]></title><description><![CDATA[Git is a free open source distributed version control tool that tracks changes in your file. 
+&lt;p&gt;Cheers if you reached here.I bet you enjoyed and you’re considering using loops ever again 😂😂&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to update nodejs linux debian]]></title><description><![CDATA[Get the latest stable version Or you can get the latest and not stable version using This changes your current the path of your nodejs and…]]></description><link>https://bwakedavis.github.io/update-nodejs-linux/</link><guid isPermaLink="false">https://bwakedavis.github.io/update-nodejs-linux/</guid><pubDate>Sat, 16 Mar 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Get the latest stable version&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; cache clean -f
+&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -g n
+&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; n stable&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or you can get the latest and not stable version using&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; n latest&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This changes your current the path of your nodejs and if you’re using the same shell run update the path with&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;&lt;span class=&quot;token environment constant&quot;&gt;PATH&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token environment constant&quot;&gt;$PATH&lt;/span&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or Fix path ny running&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --reinstall nodejs-legacy     &lt;span class=&quot;token comment&quot;&gt;# fix /usr/bin/node&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Git Cheat Sheet]]></title><description><![CDATA[Git is a free open source distributed version control tool that tracks changes in your file. 
 As a developer believe me you need it more…]]></description><link>https://bwakedavis.github.io/git-cheat-sheet/</link><guid isPermaLink="false">https://bwakedavis.github.io/git-cheat-sheet/</guid><pubDate>Thu, 21 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; is a free open source distributed version control tool that tracks changes in your file.
 As a developer believe me you need it more than anything else (’&lt;em&gt;Just kidding&lt;/em&gt; 😛’). But its important.&lt;/p&gt;
 &lt;h2&gt;Git Terminal commands&lt;/h2&gt;
