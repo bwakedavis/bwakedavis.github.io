@@ -34,3 +34,9 @@ To access the data of the *genesis* block you have to traverse to the first bloc
 + Immutability
 + Anonymity
   
+### Blockchain Bullshit
+
++ Blockchain is free
++ Blockchain is great for storing data
++ Blockchain can be used for everything
++ Blockchain is only for cryptocurrencies

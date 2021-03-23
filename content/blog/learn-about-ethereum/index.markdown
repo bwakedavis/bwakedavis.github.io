@@ -83,9 +83,45 @@ Contracts written in a smart contract specific language are compiled into *bytec
 
 #### Adavantages of DApps
 
-+ *Autonomy * - you make the agreement yourself.
++ *Autonomy* - you make the agreement yourself.
 + *Trust* - yourrecords are encrypted on a shared ledger.
 + Backup - your document are duplicated many times over.
 + *Accuracy* - they're sometime kinda slower and expensive but avoid errors that arise from tedious computional work.
   
+**Yield Farming** - Earning money on deposit to be given to other people as loans and they payback with interest
+
+**Liquidity mining** - distributing tokens to users of a protocol for doing some tasks
+
+### Decentralized Finance (DeFi)
+
+Applications on the blockchain decentralizing finance, lending and interest earnings
+
+#### Advantages of DeFi
+
++ Transparency
++ Decentralized
++ Flexibility
++ Free for all
   
+#### Disadvantages of DeFi
+
++ Still in infancy stage
++ Sometime partially centralized
+
+## Non-Fungible Tokens
+
+*NFTs*  are digital assets that represent a wide range of unique tangible and intangible items. eg songs, tweets
+
+Non-fungible tokens are indivisible  and can't be swapped with the other one.
+
+Fungible tokens can be swapped with others of the same kind
+
+### characteristics of NFTs
+
++ Indivisible
++ Verifiable
++ Indestructible
++ Unique
++ Provably scarce
++ Transferable easily
++ Guarantee ownership
