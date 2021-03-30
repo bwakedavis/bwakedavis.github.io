@@ -270,8 +270,146 @@ contract HelloWorld3 is HelloWorld,HelloWorld2 {
 }
 ```
 
+Contracts are inherited from the most base like to the most derived.
+You can call contracts ```explicitly``` or using ```super``` to get the parent method.
 
-  
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+event Log(string message);
+
+function hi() public {
+    emit Log("A greetings function was called from contract 1");
+}
+function habari() public {
+    emit Log("habari yako kutoka kwa kandarasi ya  ya pili");
+}
+}
+
+contract HelloWorld2 is HelloWorld {
+function hi() public {
+        emit Log("A greetings function was called from contract 2");
+        HelloWorld.hi();
+        super.habari();
+}
+}
+
+contract HelloWorld3 is HelloWorld,HelloWorld2 {
+function hi() public {
+        emit Log("A greetings function was called from contract 3");
+        HelloWorld.hi();
+}
+}
+
+contract HelloWorld4 is HelloWorld,HelloWorld2, HelloWorld3 {
+
+}
+```
+
+You can inherit and call the contructor function in three ways:
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+string public name;
+
+constructor(string memory _name) public {
+    name = _name;
+}
+
+}
+
+contract Greeting {
+    string public text;
+    constructor(string memory _text) public {
+        text = _text;
+    }
+}
+
+contract HelloWorld2 is HelloWorld("A fixed name input"), Greeting("Another fixed text Input") {
+
+}
+
+contract HelloWorld3 is HelloWorld, Greeting {
+constructor() HelloWorld("Hard code new input") Greeting("Hard code new greeting") public {
+    
+}
+}
+
+contract HelloWorld4 is HelloWorld, Greeting {
+constructor(string memory _name) HelloWorld(_name) Greeting(_name) public {
+    
+}
+}
+```
+
+The order in which the contracts are called is determined by the inheritance.
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+event Log(string message);
+string public name;
+
+constructor(string memory _name) public {
+    name = _name;
+    
+    emit Log(_name);
+}
+
+}
+
+contract Greeting {
+     event Log(string message);
+    string public text;
+    constructor(string memory _text) public {
+        text = _text;
+        
+        emit Log(_text);
+    }
+}
+
+
+contract HelloWorld3 is HelloWorld, Greeting {
+constructor() HelloWorld("HelloWorld contract called") Greeting("Greetings contract called") public {
+    
+}
+}
+
+contract HelloWorld5 is HelloWorld, Greeting {
+constructor() Greeting("Greetings contract called") HelloWorld("HelloWorld contract called") public {
+    
+}
+}
+```
+
+You can override an inherited state variable in a contructor and not by re-assigning it outside the constructor.
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+
+string public name = "Davis";
+
+}
+
+contract Greeting is HelloWorld {
+    constructor() public {
+        name = "Bwake";
+    }
+}
+```
+
+**Private** state variables and functions are only accessible to the contract that defines it.
+**Internal** state variables and functions are  accessible to the contract that defines it and the child contract.
+**External** state variables and functions are  accessible to the other contracts and accounts.
+**External** state variables and functions are  accessible to any contracts and accounts.
+
+
 *Ether* is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.
 *Wei* one ether equals to 10 ^ 18 wei.
 
