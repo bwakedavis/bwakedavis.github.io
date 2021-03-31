@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 23 Mar 2021 13:36:18 GMT</lastBuildDate><item><title><![CDATA[Learn TypeScript]]></title><description><![CDATA[TypeScript is a superset of JavaScript that extends JavaScript by adding types.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 31 Mar 2021 08:35:11 GMT</lastBuildDate><item><title><![CDATA[Learn TypeScript]]></title><description><![CDATA[TypeScript is a superset of JavaScript that extends JavaScript by adding types.
 It supports es6+ features, contains static typing and other…]]></description><link>https://bwakedavis.github.io/learn-typescript/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-typescript/</guid><pubDate>Sun, 03 Jan 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;TypeScript&lt;/strong&gt; is a superset of JavaScript that extends JavaScript by adding types.
 It supports es6+ features, contains static typing and other features.
 It saves you time by catching the errors before you run the code.
@@ -62,7 +62,11 @@ myObject3 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span c
     language&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;English&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     age&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     likesCoffe&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Data Structures and Algorithms in JavaScript]]></title><description><![CDATA[Data Structure is a way of organizing data so that it can be used effectively. Importance Code performance Trade offs among different…]]></description><link>https://bwakedavis.github.io/data-structures-in-js/</link><guid isPermaLink="false">https://bwakedavis.github.io/data-structures-in-js/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Data Structure&lt;/strong&gt; is a way of organizing data so that it can be used effectively.&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Data Structures and Algorithms in JavaScript]]></title><description><![CDATA[Data Structure is a way of organizing data so that it can be used effectively. An algorithm is a sequence of instructions to solve a clearly…]]></description><link>https://bwakedavis.github.io/data-structures-in-js/</link><guid isPermaLink="false">https://bwakedavis.github.io/data-structures-in-js/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Data Structure&lt;/strong&gt; is a way of organizing data so that it can be used effectively.&lt;/p&gt;
+&lt;p&gt;An &lt;strong&gt;algorithm&lt;/strong&gt; is a sequence of instructions to solve a clearly defined problem.
+The best algorithm is the one which has the best performance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Abstract data types&lt;/strong&gt; are abstraction of data which provides only the interface to which a data structure must adhere to.
+The interface does not give any specific details about how something should be done.&lt;/p&gt;
 &lt;h4&gt;Importance&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Code performance&lt;/li&gt;
@@ -79,10 +83,30 @@ myObject3 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span c
 &lt;p&gt;The problem with &lt;em&gt;time&lt;/em&gt; facto is that:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;different or same machine record different time&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;using browser console to test time
+Here when the number of input(n) increases it increases the number of iterations consequently increasing the time in a linear way.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sumUp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;sumUp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+end &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;em&gt;speed might not be precise&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Big O Notation&lt;/h2&gt;
-&lt;p&gt;It allows us to talk formally how the runtime of an input grows as the input grows.&lt;/p&gt;
+&lt;p&gt;It allows us to talk formally how the runtime of an input grows as the input grows.
+It gives you an upper bound on the complexity in the worst case, helping to quantify performance as input size becomes arbitrary large&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Arithmetic operations are constant&lt;/li&gt;
 &lt;li&gt;Variable assignment is constant&lt;/li&gt;
@@ -91,7 +115,52 @@ myObject3 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span c
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Space Complexity&lt;/strong&gt; - refers to how much additional memory is needed to be allocated in order to run the code in our algorithm.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Time Complexity&lt;/strong&gt; - Analyze runtime as the size of the input increases.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Auxiliary Space&lt;/strong&gt; - space required by the algorithm, not including space taken by the input&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Solidity - Smart Contract Oriented Language]]></title><description><![CDATA[Solidity is a smart contract development language.
+&lt;p&gt;&lt;strong&gt;Auxiliary Space&lt;/strong&gt; - space required by the algorithm, not including space taken by the input&lt;/p&gt;
+&lt;h3&gt;Asymptomatic Analysis&lt;/h3&gt;
+&lt;p&gt;Is amethod of derivind Big 0.
+Steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Define a function i.e mathematical function of the time complexity by counting the number of expression operations.&lt;/li&gt;
+&lt;li&gt;Find the fastest groowing term.&lt;/li&gt;
+&lt;li&gt;Remove the co-efficient.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In some operations the size of the input has no effect on the time it takes the algorithm to run.
+eg.using mathematical formulas.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sumUp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;sumUp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+end &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Order of Complexities&lt;/h3&gt;
+&lt;p&gt;Starting from the &lt;em&gt;smallest&lt;/em&gt; to the &lt;em&gt;largest&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Constant Time: &lt;strong&gt;0(1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Logarithmic Time: &lt;strong&gt;0(log(n))&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Linear Time: &lt;strong&gt;0(n)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Linearithmic Time: &lt;strong&gt;0(nlog(n))&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Quadratic Time: &lt;strong&gt;0(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Cubic Time: &lt;strong&gt;0(n&lt;sup&gt;3&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Exponential Time: &lt;strong&gt;0(b&lt;sup&gt;n&lt;/sup&gt;), b &gt; 1&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Factorial Time: &lt;strong&gt;0(n!)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Static and Dynamic Arrays&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;static array&lt;/strong&gt; is a fixed length container containing &lt;em&gt;n&lt;/em&gt; elements &lt;em&gt;indexable&lt;/em&gt;(each slot can be refernced with a number) from the range of [0, n-1]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dynamic arrays&lt;/strong&gt; can grow and shrink in size&lt;/p&gt;
+&lt;h3&gt;Singly and Doubly linked list&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Singly linked list&lt;/em&gt; uses less memory, has a simpler implementaion and it’s not easy to access the previous element.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Doubly linked list&lt;/em&gt; can be traversed backwards and it takes 2 times the memory.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Head&lt;/em&gt; refers to the first node in a linked list.
+&lt;em&gt;Tail&lt;/em&gt; refers to the last item in the node.
+&lt;em&gt;Pointer&lt;/em&gt; reference another node.
+&lt;em&gt;Node&lt;/em&gt; is an object containing data.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Stack&lt;/em&gt; is a one ended liner data structure models a real world stack by having two primary operations ie. push, pop.
+&lt;em&gt;Queue&lt;/em&gt; is a linear data structure which models real world queues by having two primary operations namely enqueue and dequeue,&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Solidity - Smart Contract Oriented Language]]></title><description><![CDATA[Solidity is a smart contract development language.
 It is statically typed,supports inheritance, libraries etc. Solidity code is written in…]]></description><link>https://bwakedavis.github.io/learn-solidity/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-solidity/</guid><pubDate>Tue, 03 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Solidity&lt;/strong&gt; is a smart contract development language.
 It is statically typed,supports inheritance, libraries etc.&lt;/p&gt;
 &lt;p&gt;Solidity code is written in files with &lt;strong&gt;.sol&lt;/strong&gt; extension. You can use remix browser editor here &lt;a href=&quot;http://remix.ethereum.org&quot;&gt;Remix&lt;/a&gt; .It allows you to compile and deploy your contracts on the go.&lt;/p&gt;
@@ -317,6 +386,128 @@ They can be used to restrict write access, validate input and prevent reentrancy
 &lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld3&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;HelloWorld2 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Contracts are inherited from the most base like to the most derived.
+You can call contracts &lt;code class=&quot;language-text&quot;&gt;explicitly&lt;/code&gt; or using &lt;code class=&quot;language-text&quot;&gt;super&lt;/code&gt; to get the parent method.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token version number&quot;&gt;0.5.3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hi&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;emit&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A greetings function was called from contract 1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;habari&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;emit&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;habari yako kutoka kwa kandarasi ya  ya pili&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld2&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hi&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;emit&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A greetings function was called from contract 2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hi&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        super&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;habari&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld3&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;HelloWorld2 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hi&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;emit&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A greetings function was called from contract 3&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hi&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld4&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;HelloWorld2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; HelloWorld3 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can inherit and call the contructor function in three ways:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token version number&quot;&gt;0.5.3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt; _name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Greeting&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; text&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt; _text&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        text &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _text&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld2&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A fixed name input&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Greeting&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Another fixed text Input&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld3&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Greeting &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hard code new input&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Greeting&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hard code new greeting&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld4&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Greeting &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt; _name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Greeting&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The order in which the contracts are called is determined by the inheritance.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token version number&quot;&gt;0.5.3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt; _name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;emit&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Greeting&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; text&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;memory&lt;/span&gt; _text&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        text &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; _text&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        
+        &lt;span class=&quot;token keyword&quot;&gt;emit&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_text&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld3&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Greeting &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;HelloWorld contract called&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Greeting&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Greetings contract called&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld5&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Greeting &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Greeting&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Greetings contract called&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;HelloWorld contract called&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can override an inherited state variable in a contructor and not by re-assigning it outside the constructor.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token version number&quot;&gt;0.5.3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Davis&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Greeting&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; HelloWorld &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Bwake&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Private&lt;/strong&gt; state variables and functions are only accessible to the contract that defines it.
+&lt;strong&gt;Internal&lt;/strong&gt; state variables and functions are  accessible to the contract that defines it and the child contract.
+&lt;strong&gt;External&lt;/strong&gt; state variables and functions are  accessible to the other contracts and accounts.
+&lt;strong&gt;External&lt;/strong&gt; state variables and functions are  accessible to any contracts and accounts.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Ether&lt;/em&gt; is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.
 &lt;em&gt;Wei&lt;/em&gt; one ether equals to 10 ^ 18 wei.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Gas&lt;/em&gt; - total amount of computation used to proecess each transaction on the blockchain is measured in gas.

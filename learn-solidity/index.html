@@ -231,6 +231,128 @@ They can be used to restrict write access, validate input and prevent reentrancy
 <span class="token keyword">contract</span> <span class="token class-name">HelloWorld3</span> <span class="token keyword">is</span> HelloWorld<span class="token punctuation">,</span>HelloWorld2 <span class="token punctuation">{</span>
 
 <span class="token punctuation">}</span></code></pre></div>
+<p>Contracts are inherited from the most base like to the most derived.
+You can call contracts <code class="language-text">explicitly</code> or using <code class="language-text">super</code> to get the parent method.</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld</span><span class="token punctuation">{</span>
+<span class="token keyword">event</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token builtin">string</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">hi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token keyword">emit</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"A greetings function was called from contract 1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">habari</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token keyword">emit</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"habari yako kutoka kwa kandarasi ya  ya pili"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld2</span> <span class="token keyword">is</span> HelloWorld <span class="token punctuation">{</span>
+<span class="token keyword">function</span> <span class="token function">hi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        <span class="token keyword">emit</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"A greetings function was called from contract 2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        HelloWorld<span class="token punctuation">.</span><span class="token function">hi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        super<span class="token punctuation">.</span><span class="token function">habari</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld3</span> <span class="token keyword">is</span> HelloWorld<span class="token punctuation">,</span>HelloWorld2 <span class="token punctuation">{</span>
+<span class="token keyword">function</span> <span class="token function">hi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        <span class="token keyword">emit</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"A greetings function was called from contract 3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        HelloWorld<span class="token punctuation">.</span><span class="token function">hi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld4</span> <span class="token keyword">is</span> HelloWorld<span class="token punctuation">,</span>HelloWorld2<span class="token punctuation">,</span> HelloWorld3 <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span></code></pre></div>
+<p>You can inherit and call the contructor function in three ways:</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld</span><span class="token punctuation">{</span>
+<span class="token builtin">string</span> <span class="token keyword">public</span> name<span class="token punctuation">;</span>
+
+<span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _name<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    name <span class="token operator">=</span> _name<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">Greeting</span> <span class="token punctuation">{</span>
+    <span class="token builtin">string</span> <span class="token keyword">public</span> text<span class="token punctuation">;</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _text<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        text <span class="token operator">=</span> _text<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld2</span> <span class="token keyword">is</span> <span class="token function">HelloWorld</span><span class="token punctuation">(</span><span class="token string">"A fixed name input"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">Greeting</span><span class="token punctuation">(</span><span class="token string">"Another fixed text Input"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld3</span> <span class="token keyword">is</span> HelloWorld<span class="token punctuation">,</span> Greeting <span class="token punctuation">{</span>
+<span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token function">HelloWorld</span><span class="token punctuation">(</span><span class="token string">"Hard code new input"</span><span class="token punctuation">)</span> <span class="token function">Greeting</span><span class="token punctuation">(</span><span class="token string">"Hard code new greeting"</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld4</span> <span class="token keyword">is</span> HelloWorld<span class="token punctuation">,</span> Greeting <span class="token punctuation">{</span>
+<span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _name<span class="token punctuation">)</span> <span class="token function">HelloWorld</span><span class="token punctuation">(</span>_name<span class="token punctuation">)</span> <span class="token function">Greeting</span><span class="token punctuation">(</span>_name<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>The order in which the contracts are called is determined by the inheritance.</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld</span><span class="token punctuation">{</span>
+<span class="token keyword">event</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token builtin">string</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token builtin">string</span> <span class="token keyword">public</span> name<span class="token punctuation">;</span>
+
+<span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _name<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    name <span class="token operator">=</span> _name<span class="token punctuation">;</span>
+    
+    <span class="token keyword">emit</span> <span class="token function">Log</span><span class="token punctuation">(</span>_name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">Greeting</span> <span class="token punctuation">{</span>
+     <span class="token keyword">event</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token builtin">string</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin">string</span> <span class="token keyword">public</span> text<span class="token punctuation">;</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _text<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        text <span class="token operator">=</span> _text<span class="token punctuation">;</span>
+        
+        <span class="token keyword">emit</span> <span class="token function">Log</span><span class="token punctuation">(</span>_text<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld3</span> <span class="token keyword">is</span> HelloWorld<span class="token punctuation">,</span> Greeting <span class="token punctuation">{</span>
+<span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token function">HelloWorld</span><span class="token punctuation">(</span><span class="token string">"HelloWorld contract called"</span><span class="token punctuation">)</span> <span class="token function">Greeting</span><span class="token punctuation">(</span><span class="token string">"Greetings contract called"</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld5</span> <span class="token keyword">is</span> HelloWorld<span class="token punctuation">,</span> Greeting <span class="token punctuation">{</span>
+<span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token function">Greeting</span><span class="token punctuation">(</span><span class="token string">"Greetings contract called"</span><span class="token punctuation">)</span> <span class="token function">HelloWorld</span><span class="token punctuation">(</span><span class="token string">"HelloWorld contract called"</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>You can override an inherited state variable in a contructor and not by re-assigning it outside the constructor.</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HelloWorld</span><span class="token punctuation">{</span>
+
+<span class="token builtin">string</span> <span class="token keyword">public</span> name <span class="token operator">=</span> <span class="token string">"Davis"</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">Greeting</span> <span class="token keyword">is</span> HelloWorld <span class="token punctuation">{</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        name <span class="token operator">=</span> <span class="token string">"Bwake"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><strong>Private</strong> state variables and functions are only accessible to the contract that defines it.
+<strong>Internal</strong> state variables and functions are  accessible to the contract that defines it and the child contract.
+<strong>External</strong> state variables and functions are  accessible to the other contracts and accounts.
+<strong>External</strong> state variables and functions are  accessible to any contracts and accounts.</p>
 <p><em>Ether</em> is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.
 <em>Wei</em> one ether equals to 10 ^ 18 wei.</p>
 <p><em>Gas</em> - total amount of computation used to proecess each transaction on the blockchain is measured in gas.
