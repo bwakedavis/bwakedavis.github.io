@@ -127,3 +127,33 @@ A **static array** is a fixed length container containing *n* elements *indexabl
 
 *Stack* is a one ended liner data structure models a real world stack by having two primary operations ie. push, pop.
 *Queue* is a linear data structure which models real world queues by having two primary operations namely enqueue and dequeue,
+
+#### Stacks
+
+Stack using arrays. Check if a word is a palindrome.
+
+```javascript
+//Functions: pop, push, peek, length
+
+let letters = []; //our stack
+
+let word = "racecar";
+
+let reverseWord = "";
+
+//put the letters into the stack
+for(let i = 0; i< word.length; i++){
+    letters.push(word[i]);
+}
+
+//Pop the stack in a reverse order
+for(var i = 0; i < word.length; i++){
+    reverseWord += letters.pop();
+}
+
+if(reverseWord === word) {
+    console.log(word + " is a palindome");
+}else {
+    console.log(word + " is not a palindome")
+}
+```
