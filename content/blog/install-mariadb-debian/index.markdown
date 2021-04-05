@@ -33,3 +33,43 @@ Run
 ```bash
 sudo service mysqld start
 ```
+
+## Mysql
+
+### Comments
+
+Single line comments are preceded with ```-```
+
+```sql
+-Update all:
+SELECT * FROM Product;
+```
+
+Multi-line comments start with ```/*``` and end with ```*/```
+
+```sql
+/* Select all the columns
+of all the records
+in the Products table: */
+SELECT * FROM Products;
+```
+
+#### Connect to MySQL as a root user
+
+To start working wwith mysql you need to establish an active SSH session on your server
+
+```bash
+sudo mysql -u root -p
+```
+
+#### Create a new Mysql user
+
+```sql
+CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+```
+
+#### Delete a user
+
+```sql
+DROP USER 'username'@'localhost'
+```

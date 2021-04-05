@@ -36,6 +36,8 @@ Providing too little gas leads to failed transactions.
 
 A **Smart Contract** is a software program on the distributed ledger, allowing an immutable, verifiable and secure record all contract and transactions.
 
+They're digital representation of real world contracts.
+
 #### Properties of Smart Contracts
 
 + *Autonomous* - the creator doesn't have to participate in the process after deployig the contract.

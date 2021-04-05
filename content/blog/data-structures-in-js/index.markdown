@@ -69,6 +69,40 @@ It gives you an upper bound on the complexity in the worst case, helping to quan
 
 **Auxiliary Space** - space required by the algorithm, not including space taken by the input
 
+Suppose we have a problem to write a function that that calculates the sum of all numbers from one upto and inclunding a certain number ```n```.
+
+The shorter ```solution 2``` runs in a shorter amount of time than ```solution 1```.
+The number of operations in ```solution 1``` grows as n increases.
+The number of operations in ```solution 2``` remains constant(3) despite the value of ```n```.
+
+```javascript
+//solution 1
+function addUpTo(n){
+let total = 0;
+
+for (let i=1; i <= n; i++) {
+    total += i;
+}
+return total;
+}
+let startTime;
+let stopTime;
+startTime = performance.now()
+console.log(addUpTo(100));
+stopTime = performance.now();
+console.log(stopTime - startTime)
+
+//solution 2
+function addUpToN(n){
+    return n * (n + 1) / 2;
+}
+
+startTime = performance.now()
+console.log(addUpToN(100));
+stopTime = performance.now();
+console.log(stopTime - startTime)
+```
+
 ### Asymptomatic Analysis
 
 Is amethod of derivind Big 0.
@@ -157,3 +191,104 @@ if(reverseWord === word) {
     console.log(word + " is not a palindome")
 }
 ```
+
+#### Arrays
+
+Ordered lists.
+Used when you need order.
+fast access,insertion and removal of elements
+Insertion order is kept.
+Element accessed via indexes.
+Iterable using loops.
+Size/length adjus dynamically.
+Duplicate value are allowed.
+
+Insertion - Depends.
+
++ inseting at the beginning is 0(N)
++ inserting at the end is 0(1)
+  
+Removal - Depends
+Searching - 0(N)
+Access - 0(1)
+
+push - 0(1)
+pop - 0(1)
+shift - 0(N)
+unshift - 0(N)
+concat - 0(N)
+slice - 0(N)
+splice - 0(N)
+sort - 0(N * log N)
+forEach/map/filter/reduce... - 0(N)
+
+#### Sets
+
+Are created with constructor function.
+Doesn't allow duplicate values.
+Insertion order is not stored.
+Element access and extraction via methods.
+Size/lenght adjusts dynamically.
+Duplicate values are not allowed.
+Allows mixed type of data.
+Deletion and finding of elements is trivial fast.
+Can't be accessed by index. instead uses ```.has``` method.
+
+#### Objects
+
+We use objects when we:
+
++ don't need order
++ fast access, insertion and removal
+
+Objects can have methods, keys and values.
+Unordered key values.
+Elements accessed via key(proprty name).
+Not iterable (only with for in loop).
+Keys are unique, values are not.
+Keys can be strings, numbers or symbols.
+Can store data and functionality through methods.
+
+Insertion - 0(1)
+Removal - 0(1)
+Searching - 0(N)
+Access - 0(1)
+
+Object.keys - 0(N)
+
+```javascript
+console.log(Object.keys(myObject))
+```
+
+Object.values - 0(N)
+
+```javascript
+console.log(Object.values(myObject)
+```
+
+Object.entries - 0(N)
+
+```javascript
+console.log(Object.entries(myObject))
+```
+
+Object.hasOwnProperty - 0(1)
+
+```javascript
+console.log(Object.hasOwnProperty(myObject))
+```
+
+#### Maps
+
+Are ordered key value pairs.
+Element accessed by the keys.
+Iterable
+Keys are unique, values aren't.
+Keys can be anything including referencing values like arrays.
+They're pure data storage optimized for data access.
+
+#### Weakset and Weakmaps
+
+Variations of sets and maps.
+Values and keys are only weakly referenced. Garbage collection can delete keys and values if not used in the app.
+

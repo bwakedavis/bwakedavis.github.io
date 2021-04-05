@@ -41,6 +41,29 @@ You can use ```-w``` flag to watch the file during development so that you don't
 tsc main.js -w
 ```
 
+Suppose you have multiple typescript file in thw ```src``` and you want to compile all the file to the ```public``` folder
+
+this creates a ```ts-confi```g file
+
+```bash
+tsc init
+```
+
+Edit the generated file according to your preffered configurations
+
+```json
+target: "es6",
+rootDir: "./src",
+outDir: "./public",
+```
+
+Suppose You want to compile  files from the ```src``` to the ```public```.Add the line at the end.
+
+```javascript
+,
+"include", ["src"]
+```
+
 ### Types in Typescript
 
 Once you declare a variable type you cannot re-assign it with a different type eg sub a string with an integer.
@@ -93,4 +116,30 @@ myObject3 = {
     age: 10,
     likesCoffe: true
 }
+```
+
+```any``` type. A variable can be any type in future.
+
+```typescript
+let age: any = 21;
+age = true;
+console.log(age);
+age = "Hi";
+console.log(age);
+age = {fname: "my FirstName"};
+console.log(age);
+
+const mixed: any[] = [];
+mixed.push(10);
+mixed.push("name");
+mixed.push(true);
+console.log(mixed);
+
+let myObject: {
+    name: any,
+    age:  any
+}
+
+myObject = {name: "Davis", age: 30}
+console.log(myObject)
 ```
