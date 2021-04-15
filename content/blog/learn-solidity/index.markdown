@@ -409,6 +409,336 @@ contract Greeting is HelloWorld {
 **External** state variables and functions are  accessible to the other contracts and accounts.
 **External** state variables and functions are  accessible to any contracts and accounts.
 
+### Events
+
+contracts can tell us that something has happened in the blockchain by firing events.
+Applications can be notified when this events are fired.
+Events accept 3 paramaters.
+We can get access to the past events and subcribe to new ones.
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+
+//indexed allows you to search for events where the parameter equals to a certain value
+event Log(address indexed sender, string message);
+event AnotherLog();
+
+function fireEvents() public {
+    emit Log(msg.sender, "Hello World");
+    emit Log(msg.sender, "Hello Again");
+    emit AnotherLog();
+}
+
+}
+```
+
+Interacting with past events from Dai stable coin
+
+```javascript
+const Web3 =  require("web3");
+//DAI stablecoin ABI
+const abi = require("./abi.json");
+const INFURA_URL = "Infura URL";
+
+const web3 = new Web3(INFURA_URL);
+
+//Address of Dai Stablecoin
+const address = "0x89d24A6b4...";
+
+async function main() {
+const latest = await web3.eth.getBlockNumber();
+
+console.log("Latest block is", latest);
+
+const contract = new web3.eth.Contract(abi, address);
+
+const logs = await contract.getPastEvents("Transfer", {fromBlock: latest - 100,
+toBlock: latest
+//filter by sender
+//filter: {src: "0x526a.."},
+//filter by receiver
+///filter: {dst: "0x397553..."}
+});
+console.log("Logs", logs, `${logs.length logs}`)
+}
+```
+
+Subscribe to new events.
+
+```javascript
+const Web3 = require("web3");
+
+//Dai StableCoin ABI
+const abi = require("./abi.json");
+const INFURA_URL = "infura url";
+
+const web3 = new Web3(new Web3.providers.WebsocketProvider(INFURA_URL));
+
+//Adddress for Dai stablecoin
+const address = "0x89d24...";
+
+async function main() {
+    const contract = new web3.eth.Contract(abi, address);
+    console.log("Subscribe to transfer event");
+
+    contract.events.Transfer({
+        //filter by sender
+        filter: {src: "0x397553..."}
+    },
+    (error, log) => {
+        if(error) {
+            console.log("error", error);
+        }
+        console.log("log", log);
+    });
+}
+```
+
+### Error handling
+
+#### Assert
+
+Should never evaluate to false.
+Uses up all the gas.
+
+#### Require
+
+Used in validating input,preconditions and outputs.
+Doesn't use up all the gas.
+
+#### Revert
+
+Used when checking more complex conditions.
+takes in one argument
+
+### Loops
+
+Doing ```for``` loops in JavaScript.
+
+```javascript
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+
+uint public count;
+address[100] public shareholders;
+function loop(uint n) public {
+    for (uint i = 0; i < n; i++) {
+        count += 1;
+    }
+}
+
+function dividendPay() public {
+    for (uint i = 0; i < shareholders.length; i++) {
+        //send Ether to each shareholder
+    }
+}
+}
+```
+
+### Arrays
+
+```javascript
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+
+uint[] public myArray;
+uint[] public myArray2 = [5,7,3];
+uint[10] public newFixedArray;
+
+function push(uint i) public {
+    myArray.push(i);
+}
+
+function pop(uint i) public {
+    myArray.pop();
+}
+
+function getLength() public view returns(uint) {
+    return myArray.length;
+}
+
+function remove(uint index) public {
+    
+    // delete myArray[index];
+    myArray[index] = myArray[myArray.length - 1];
+    
+}
+}
+```
+
+### Mappings
+
+Are like maps in JavaScript.
+Are good for easy and faster access of data.
+You cannot iterate or get the size of a mapping.
+
+```javascript
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+
+mapping(address => uint) public myMap;
+
+function get(address _addr) public view returns (uint) {
+    return myMap[_addr];
+}
+
+function set(address _addr, uint _i) public {
+    myMap[_addr] = _i;
+}
+function remove(address _addr) public {
+    delete myMap[_addr];
+}
+}
+
+
+```
+
+### Merkle Tree
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract HelloWorld{
+
+    function verifyMerkleProof(bytes32[] memory proof, bytes32 root, bytes32 leaf, uint index) public pure returns (bool) {
+        bytes32 hash = leaf;
+        
+        //recompute merkle root
+        for (uint i = 0; i < proof.length; i++) {
+            if (index % 2 == 0) {
+                hash = keccak256(abi.encodePacked(hash, proof[i]));
+            } else {
+                hash = keccak256(abi.encodePacked(proof[i], hash));
+            }
+            
+            index = index / 2;
+        }
+        
+        return hash == root;
+    }
+}
+```
+
+### Enum
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract Order{
+
+    enum Status {
+        Pending,
+        Shipped, 
+        Accepted,
+        Rejected,
+        Cancelled
+    }
+    
+    Status public status;
+    
+    function ship() public {
+        require(status == Status.Pending);
+        status = Status.Shipped;
+    }
+    
+    function acceptDelivery() public {
+        require(status == Status.Shipped);
+        status = Status.Accepted;
+    }
+    
+    function rejectDelivery() public {
+        require(status == Status.Shipped);
+        status = Status.Rejected;
+    }
+    
+    function cancel() public {
+        require(status == Status.Pending);
+        status = Status.Cancelled;
+    }
+}
+```
+
+### Structs
+
+Are user defined data types in solidity
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract Todos {
+    
+    struct Todo {
+        string text;
+        bool completed;
+    }
+    
+    Todo[] public todos;
+    
+    function create(string memory _text) public {
+        todos.push(Todo(_text, false));
+
+    }
+    
+    function get(uint _index) public view returns (string memory, bool) {
+        Todo storage todo = todos[_index];
+        return (todo.text, todo.completed);
+    }
+    
+    
+}
+```
+
+### Payable functions and address
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract Wallet {
+    //payable function & address
+    event Deposit(address sender, uint amount, uint balance);
+    event Withdraw(uint amount, uint balance);
+    event Transfer(address to, uint amount, uint balance);
+    
+    address payable public owner;
+    
+    constructor() public payable {
+        owner = msg.sender;
+    }
+    function deposit() public payable {
+        emit Deposit(msg.sender, msg.value, address(this).balance);
+    }
+    
+    function notPayable() public {
+        
+    }
+    
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not owner");
+        _;
+    }
+    
+    function withdraw(uint _amount) public onlyOwner {
+        owner.transfer(_amount);
+        emit Withdraw(_amount, address(this).balance);
+    }
+    
+    function transfer(address payable _to, uint _amount) public onlyOwner {
+        _to.transfer(_amount);
+        emit Transfer(_to, _amount, address(this).balance);
+    }
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+```
+
+### Deployment
 
 *Ether* is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.
 *Wei* one ether equals to 10 ^ 18 wei.

@@ -162,36 +162,6 @@ A **static array** is a fixed length container containing *n* elements *indexabl
 *Stack* is a one ended liner data structure models a real world stack by having two primary operations ie. push, pop.
 *Queue* is a linear data structure which models real world queues by having two primary operations namely enqueue and dequeue,
 
-#### Stacks
-
-Stack using arrays. Check if a word is a palindrome.
-
-```javascript
-//Functions: pop, push, peek, length
-
-let letters = []; //our stack
-
-let word = "racecar";
-
-let reverseWord = "";
-
-//put the letters into the stack
-for(let i = 0; i< word.length; i++){
-    letters.push(word[i]);
-}
-
-//Pop the stack in a reverse order
-for(var i = 0; i < word.length; i++){
-    reverseWord += letters.pop();
-}
-
-if(reverseWord === word) {
-    console.log(word + " is a palindome");
-}else {
-    console.log(word + " is not a palindome")
-}
-```
-
 #### Arrays
 
 Ordered lists.
@@ -222,6 +192,29 @@ splice - 0(N)
 sort - 0(N * log N)
 forEach/map/filter/reduce... - 0(N)
 
+```javascript
+let numbers = [100, 200, 300, 400, 500, 650];
+
+//access by index
+console.log(numbers[0]);
+
+//iterable
+for(const element of numbers){
+    console.log(element);
+}
+
+//add element to the end
+numbers.push(250);
+console.log(numbers.length);
+
+//find index of an element
+console.log(numbers.findIndex(element => element === 650));
+
+//deleting element with splice
+numbers.splice(2,1)
+console.log(numbers)
+```
+
 #### Sets
 
 Are created with constructor function.
@@ -233,6 +226,21 @@ Duplicate values are not allowed.
 Allows mixed type of data.
 Deletion and finding of elements is trivial fast.
 Can't be accessed by index. instead uses ```.has``` method.
+Iterable.
+
+```javascript
+const names = new Set(["Kyle", "Jack", "Evans", 1]);
+
+//add a value
+names.add("Shawn");
+console.log(names);
+
+//Check if a value exists
+console.log(names.has(1))
+
+//loop
+names.forEach(item => console.log(item));
+```
 
 #### Objects
 
@@ -278,6 +286,24 @@ Object.hasOwnProperty - 0(1)
 console.log(Object.hasOwnProperty(myObject))
 ```
 
+```javascript
+const student = {
+    name: "Davis",
+    admNo: "COM 001",
+    unit: ["Assembly", "Data Structures"],
+    numberOfUnits: 8,
+    //Add method to object
+    hello() {
+        console.log("hello", this.name);
+    }
+}
+//add property
+student.age = 21;
+
+console.log(student);
+student.hello();
+```
+
 #### Maps
 
 Are ordered key value pairs.
@@ -287,8 +313,301 @@ Keys are unique, values aren't.
 Keys can be anything including referencing values like arrays.
 They're pure data storage optimized for data access.
 
+```JavaScript
+const map = new Map();
+
+map.set("country", "Kenya");
+map.set("population", 50000000);
+
+let cities = {numberOfCities: 3}
+
+map.set(cities, "three");
+
+console.log(map)
+
+for( const element of map){
+    console.log(element);
+}
+
+console.log(map.get("country"));
+map.delete(cities);
+```
+
 #### Weakset and Weakmaps
 
 Variations of sets and maps.
-Values and keys are only weakly referenced. Garbage collection can delete keys and values if not used in the app.
+Values and keys are only weakly referenced. Garbage collection can delete keys and values if not used in the app hence giving you memory advantage.
 
+#### Stacks
+
+Stacks works on the principle of first in last out and last in first out.
+
+```javascript
+//Create a class stack
+class Stack {
+    constructor() {
+        this.items = [];
+        this.count = 0;
+    }
+
+    //Adds element to the top of the stack
+    push(item) {
+        this.items[this.count] = item;
+        console.log(`${item} added to ${this.count}`);
+        this.count += 1;
+
+        return this.count - 1;
+    }
+
+    //Remove and return the top item in the stack
+    //if the stack is empty return undefined
+    pop() {
+        if(this.count == 0) return undefined;
+        let deleteItem = this.items[this.count - 1];
+        this.count -= 1;
+        console.log(`${deleteItem} removed`);
+        return deleteItem;
+    }
+
+    //Check for the top most element in the stack
+    peek() {
+        console.log(`Top element is ${this.items[this.count - 1]}`);
+        return this.items[this.count - 1];
+    }
+
+    //check if the stack is empty
+    isEmpty(){
+        console.log(this.count == 0 ? "Stack is empty": "Stack is not empty");
+        return this.count == 0;
+    }
+
+    //Check size of the stack
+    size() {
+        console.log(`${this.count} items in stack`);
+        return this.count;
+    }
+
+    // print items
+    print() {
+        let str = '';
+        for(let i = 0; i < this.count; i++) {
+            str += this.items[i] + ' ';
+        }
+        return str;
+    }
+
+    //clear everything in the stack
+    clear() {
+        this.items = [];
+        this.count = 0;
+        console.log("stack cleared");
+        return this.items
+    }
+}
+
+const stack = new Stack();
+
+stack.isEmpty()
+stack.push(100);
+stack.push(200);
+stack.push(300);
+
+console.log(stack.print())
+stack.peek()
+stack.size()
+
+stack.pop();
+stack.pop();
+stack.clear()
+```
+Stack using arrays. Check if a word is a palindrome.
+
+```javascript
+//Functions: pop, push, peek, length
+
+let letters = []; //our stack
+
+let word = "racecar";
+
+let reverseWord = "";
+
+//put the letters into the stack
+for(let i = 0; i< word.length; i++){
+    letters.push(word[i]);
+}
+
+//Pop the stack in a reverse order
+for(var i = 0; i < word.length; i++){
+    reverseWord += letters.pop();
+}
+
+if(reverseWord === word) {
+    console.log(word + " is a palindome");
+}else {
+    console.log(word + " is not a palindome")
+}
+```
+
+### Linked Lists
+
+A linked list is a list data structure.
+It's a linear data structure.Ordered collection of data.
+The nodes are not stored in the sequntial memory location
+Elements are linked together using a pointer.
+The first element is called the head.
+Each node has data and a reference to the next element.
+The last element is called the tail and has a reference to null.
+
+```javascript
+//Our nodde class with a constructor taking in data and refernce to the next node
+class Node {
+    constructor (data, next = null) {
+        this.data = data;
+        this.next = next;
+    }
+}
+
+//Our linked list class initially empty since head is null and it's size is 0
+class LinkedList {
+    constructor() {
+        this.head = null;
+        this.size = 0;
+    }
+
+    //Insert first node
+    insertFirstNode(data) {
+        //pushes the element passed as data as the first node and pushes the current head to the next value.
+        this.head = new Node(data, this.head);
+        this.size++;
+    }
+
+    //Insert Last node
+    insertLastNode(data) {
+
+        let node = new Node(data);
+        let current;
+
+        //If empty make the node head or this.head == null 
+        if(!this.head) {
+            this.head = node;
+        } else {
+            current = this.head;
+
+            while(current.next) {
+                current = current.next
+            }
+            current.next = node
+        }
+        this.size++
+    }
+    //Insert at index
+    insertNodeAt(data, index) {
+        //if index is out of range
+        if(index > 0 && index > this.size ) {
+            return;
+        }
+
+        //if first index
+        if(index === 0) {
+            this.head = new Node(data, this.head);
+            return;
+        }
+
+        const node = new Node(data);
+
+        let current, previous;
+
+        //Set current to first
+        current = this.head;
+        let count = 0;
+
+        while(count < index) {
+            previous = current; //Node before index
+            count++;
+            current = current.next; // Node after index
+        }
+
+        node.next = current;
+        previous.next = node;
+
+        this.size++;
+    }
+
+    //Get node at index
+    getNodeAtIndex(index) {
+        //represents current node starting from the head
+        let current = this.head;
+        let count = 0;
+
+        while(current) {
+            if(count = index) {
+                console.log(current.data);
+            }
+            count++;
+            current = current.next;
+        }
+        return null;
+    }
+
+    //Remove node at index
+    removeNodeAtIndex(index) {
+        if(index > 0 && index > this.size) {
+            return;
+        }
+
+        let current = this.head;
+        let previous;
+        let count = 0;
+
+        //Remove first
+        if(index === 0){
+            this.head = current.next;
+        } else {
+            while(count < index) {
+                count++;
+                previous = current;
+                current = current.next;
+            }
+            previous.next = current.next;
+        }
+        this.size--;
+    }
+
+    //Clear the list
+    clearList() {
+        this.head = null;
+        this.count = 0;
+    }
+    //Print the list data
+    printData() {
+        //represents current node starting from the head
+        let current = this.head;
+
+        while(current) {
+            console.log(current.data);
+            current = current.next;
+        }
+    }
+}
+const  linkedlist = new LinkedList();
+
+linkedlist.insertFirstNode(100);
+linkedlist.insertFirstNode(200);
+linkedlist.insertFirstNode(300);
+linkedlist.insertLastNode(400);
+linkedlist.insertFirstNode(500);
+linkedlist.insertNodeAt(450, 2);
+linkedlist.getNodeAtIndex(2);
+linkedlist.removeNodeAtIndex(3)
+
+linkedlist.clearList()
+linkedlist.printData();
+```
+
+### Problem solving
+
++ Understand the problem.
++ Explore concrete example
++ Break it down.
++ Solve/ simplify.
++ Look back and refactor.
