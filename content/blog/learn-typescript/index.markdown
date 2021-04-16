@@ -43,10 +43,10 @@ tsc main.js -w
 
 Suppose you have multiple typescript file in thw ```src``` and you want to compile all the file to the ```public``` folder
 
-this creates a ```ts-confi```g file
+this creates a ```ts-config``` file
 
 ```bash
-tsc init
+tsc --init
 ```
 
 Edit the generated file according to your preffered configurations
@@ -142,4 +142,38 @@ let myObject: {
 
 myObject = {name: "Davis", age: 30}
 console.log(myObject)
+```
+
+### Functions
+
+```typescript
+let sayHi = () => {
+    console.log("Hi");
+}
+
+let sayhello: Function;
+
+sayhello = () => {
+    console.log("hello");
+}
+
+const add = (a: number, b: number, c?: number| string, d: number| string = "10") => {
+    console.log(a+ b);
+    return a+ b;
+}
+//c and d are optional parameters
+
+let result = add(3,42);
+```
+
+### Type Alias
+
+```typescript
+type StringOrNumber = string | number;
+
+const greet = (uid: StringOrNumber, username: string) => {
+    console.log(`${uid} - ${username}`)
+}
+
+greet(4,"davis");
 ```

@@ -120,7 +120,98 @@ export default App;
 
 ```props.children``` allows you to pass individual props to individual components.
 
+#### Destructuring props
+
+With function paramaters.
+
+```javascript
+function Hello({name, hero}) {
+    return (
+        <div>
+           <h1> Hello {name}</h1> 
+           <h1>Hero {hero}</h1>
+        </div>
+    )
+}
+export default Hello
+```
+
+In the component body.
+
+```javascript
+function Hello(props) {
+    const {name, hero} = props;
+    return (
+        <div>
+           <h1> Hello {name}</h1> 
+           <h1>Hero {hero}</h1>
+        </div>
+    )
+}
+export default Hello
+```
+
+In class components
+
+```javascript
+class Hello extends React.Component {
+    render() {
+        const {name, hero} = this.props;
+        return(
+            <div>
+                <h1>Hello {name}</h1>
+                <h1>Hero {hero}</h1>
+            </div>
+        )
+    }
+}
+
+export default Hello
+```
+
 ### State
+
+state should not be updated directly instead use ```useState```.
+
+```javascript
+import React from 'react';
+
+class Hello extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            count: 0,
+            count2: 0
+        }
+        this.increment = this.increment.bind(this);
+    }
+    //use callback function
+    increment() {
+        this.setState({count: this.state.count + 1}, ()=>{
+            console.log(this.state.count);
+        })
+
+        //using previous state
+        this.setState((prevState, props) => ({
+            count2: prevState.count2 + 1
+            // count2: prevState.count2 + props.value
+        }))
+    }
+    render() {
+        return(
+            <div>
+                <h1>Count {this.state.count}</h1>
+                <h1>Count2 {this.state.count2}</h1>
+                <button onClick={this.increment}>Increment</button>
+            </div>
+        )
+    }
+}
+
+export default Hello
+
+
+```
 
 ### Event handling
 

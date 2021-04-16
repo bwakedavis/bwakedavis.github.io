@@ -73,3 +73,44 @@ CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
 ```sql
 DROP USER 'username'@'localhost'
 ```
+
+
+SELECT — choose specific data from your database
+UPDATE — update data in your database
+DELETE — deletes data from your database
+INSERT INTO — inserts new data into a database
+CREATE DATABASE — generate a new database
+ALTER DATABASE — modify an existing database
+CREATE TABLE — create a new table in a database
+ALTER TABLE — change the selected table
+DROP TABLE — delete a table
+CREATE INDEX — create an index (search key for all the info stored)
+DROP INDEX — delete an index
+
+### Tables
+
+#### Create a table
+
+```sql
+CREATE TABLE [IF NOT EXISTS] table_name(
+column_list
+);
+```
+
+```sql
+CREATE TABLE user(
+uname VARCHAR(100),
+favcolor VARCHAR(100),
+age VARCHAR(20)
+);
+```
+
+show tables — call a list of all tables associated with a database.
+DESCRIBE table_name; — see the columns of your table.
+DESCRIBE table_name column_name; — review the information of the column in
+
+#### Delete table
+
+```sql
+DROP TABLE tablename;
+```
