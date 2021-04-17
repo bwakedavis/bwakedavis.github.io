@@ -158,3 +158,51 @@ Arrays are used to store multiple values in a single variable
 
     //Binary logical operators => &&, ||
 ```
+
+### For loops
+
+Nested for loops in arrays and objects.
+
+```javascript
+
+for (let i = 0; i< 4; i++) {
+    for(let j= 0; j< 4; j++) {
+        console.log(i, j)
+    }
+}
+
+let twoDNumbersArray = [[8,4,5,5,4,6],
+[9,4,5,5,4,6],
+[56,4,5,5,4,6],
+[42,4,5,5,4,6]];
+
+let rows = twoDNumbersArray.length;
+for(let i=0; i< rows; i++) {
+    let items = twoDNumbersArray.length;
+    console.log(i, items);
+    for(let j= 0; j < items; j++) {
+        console.log(twoDNumbersArray[i][j])
+    }
+}
+
+let names = { people: [
+    {name: "hiro", voice: "Ryan"},
+    {name: "baymax", voice: "Scott"},
+    {name: "tamago", voice: "Jamie"},
+    {name: "fred", voice: "Miller"},
+]}
+
+//nested for loops.
+
+
+
+let characters = names.people;
+
+for(let i=0; i< characters.length; i++) {
+    console.log(characters[i].name, characters[i].voice);
+    for(let prop in characters[i]) {
+        console.log(prop, characters[i][prop]);
+    }
+}
+
+```
