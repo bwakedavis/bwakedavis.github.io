@@ -629,6 +629,332 @@ contract HelloWorld<span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token builtin">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>balance<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
+<h3>Send Ether</h3>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+<span class="token comment">//You can send ether to another contract with:</span>
+<span class="token comment">//transfer( forwards 2300 gas, throws error)</span>
+<span class="token comment">//send(forwards 2300 gas, returns bool)</span>
+<span class="token comment">//call(forwards all gas or set gas, returns bool)</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">ReceiveEther</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">external</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">getBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">view</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">uint</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token builtin">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>balance<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">SendEther</span> <span class="token punctuation">{</span>
+        <span class="token keyword">function</span> <span class="token function">sendViaTransfer</span><span class="token punctuation">(</span><span class="token builtin">address</span> <span class="token keyword">payable</span> _to<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+            _to<span class="token punctuation">.</span><span class="token function">transfer</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token keyword">function</span> <span class="token function">sendViaSend</span><span class="token punctuation">(</span><span class="token builtin">address</span> <span class="token keyword">payable</span> _to<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+            <span class="token builtin">bool</span> sent <span class="token operator">=</span> _to<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">require</span><span class="token punctuation">(</span>sent<span class="token punctuation">,</span> <span class="token string">"Failed to send Ether"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment">//call can prevent re-entrancy hack</span>
+        <span class="token keyword">function</span> <span class="token function">sendViaCall</span><span class="token punctuation">(</span><span class="token builtin">address</span> <span class="token keyword">payable</span> _to<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+            <span class="token punctuation">(</span><span class="token builtin">bool</span> sent<span class="token punctuation">,</span> <span class="token builtin">bytes</span> <span class="token keyword">memory</span> data<span class="token punctuation">)</span> <span class="token operator">=</span> _to<span class="token punctuation">.</span>call<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">require</span><span class="token punctuation">(</span>sent<span class="token punctuation">,</span> <span class="token string">"Failed to send Ether"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Fallback Function</h3>
+<p>Receives 2300 gas from <code class="language-text">transfer</code> and <code class="language-text">send</code> methods.
+Can receive all gas from <code class="language-text">call</code> method.</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">Fallback</span> <span class="token punctuation">{</span>
+    <span class="token keyword">event</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token builtin">uint</span> gas<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">external</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        <span class="token keyword">emit</span> <span class="token function">Log</span><span class="token punctuation">(</span><span class="token function">gasleft</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">getBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">view</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">uint</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token builtin">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>balance<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">sendToFallback</span> <span class="token punctuation">{</span>
+    <span class="token comment">//fails to send ether</span>
+    <span class="token keyword">function</span> <span class="token function">transferToFallback</span><span class="token punctuation">(</span><span class="token builtin">address</span> <span class="token keyword">payable</span> _to<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        _to<span class="token punctuation">.</span><span class="token function">transfer</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">//sends Ether</span>
+    <span class="token keyword">function</span> <span class="token function">callFallback</span><span class="token punctuation">(</span><span class="token builtin">address</span> <span class="token keyword">payable</span> _to<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">(</span><span class="token builtin">bool</span> sent<span class="token punctuation">,</span> <span class="token punctuation">)</span> <span class="token operator">=</span> _to<span class="token punctuation">.</span>call<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">require</span><span class="token punctuation">(</span>sent<span class="token punctuation">,</span> <span class="token string">"Failed to send Ether"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Call Method</h3>
+<p>Is a low level method available on address type.
+A Fallback function is called when the function called does not exist.
+eg.</p>
+<ul>
+<li>call existing function.</li>
+<li>call non-existing functions(it triggers a callback function).</li>
+</ul>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">contract</span> <span class="token class-name">Receiver</span> <span class="token punctuation">{</span>
+    <span class="token keyword">event</span> <span class="token function">Received</span><span class="token punctuation">(</span><span class="token builtin">address</span> caller<span class="token punctuation">,</span> <span class="token builtin">uint</span> amount<span class="token punctuation">,</span> <span class="token builtin">string</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">external</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        <span class="token keyword">emit</span> Received <span class="token punctuation">(</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">,</span> msg<span class="token punctuation">.</span>value<span class="token punctuation">,</span> <span class="token string">"Fallback was called"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span> <span class="token builtin">string</span> <span class="token keyword">memory</span> _message<span class="token punctuation">,</span> <span class="token builtin">uint</span> _x<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">uint</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">emit</span> <span class="token function">Received</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">,</span> msg<span class="token punctuation">.</span>value<span class="token punctuation">,</span> _message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">return</span> _x <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">Caller</span> <span class="token punctuation">{</span>
+    <span class="token keyword">event</span> <span class="token function">Response</span><span class="token punctuation">(</span><span class="token builtin">bool</span> success<span class="token punctuation">,</span> <span class="token builtin">bytes</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">function</span> <span class="token function">testCallFoo</span><span class="token punctuation">(</span><span class="token builtin">address</span> <span class="token keyword">payable</span> _addr<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">(</span><span class="token builtin">bool</span> success<span class="token punctuation">,</span> <span class="token builtin">bytes</span> <span class="token keyword">memory</span> data<span class="token punctuation">)</span> <span class="token operator">=</span> _addr<span class="token punctuation">.</span>call<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">gas</span><span class="token punctuation">(</span><span class="token number">5000</span><span class="token punctuation">)</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodeWithSignature</span><span class="token punctuation">(</span><span class="token string">"foo(string, uint256)"</span><span class="token punctuation">,</span> <span class="token string">"call foo"</span><span class="token punctuation">,</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">emit</span> <span class="token function">Response</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">testCallDoesNotExist</span><span class="token punctuation">(</span> <span class="token builtin">address</span> _addr<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">(</span><span class="token builtin">bool</span> success<span class="token punctuation">,</span> <span class="token builtin">bytes</span> <span class="token keyword">memory</span> data<span class="token punctuation">)</span> <span class="token operator">=</span> _addr<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodeWithSignature</span><span class="token punctuation">(</span><span class="token string">"doesNotExit()"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">emit</span> <span class="token function">Response</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Delegatecal</h3>
+<p>Is a low level function similar to call.
+When a contract A delegatecall contract B, it runs B’s code inside A’s context (storage, msg.sender, msg.value)
+hence contract A can be upgraded without changing any code inside it.</p>
+<p>It runs code of callee in caller’s context(storage, msg.sender, msg.value).
+State variables of the caller and callee should be the same.</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">contract</span> <span class="token class-name">B</span> <span class="token punctuation">{</span>
+    <span class="token builtin">uint</span> <span class="token keyword">public</span> num<span class="token punctuation">;</span>
+    <span class="token builtin">address</span> <span class="token keyword">public</span> sender<span class="token punctuation">;</span>
+    <span class="token builtin">uint</span> <span class="token keyword">public</span> value<span class="token punctuation">;</span>
+    
+    <span class="token keyword">function</span> <span class="token function">setVars</span><span class="token punctuation">(</span><span class="token builtin">uint</span> _num<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        num <span class="token operator">=</span> _num<span class="token punctuation">;</span>
+        sender <span class="token operator">=</span> msg<span class="token punctuation">.</span>sender<span class="token punctuation">;</span>
+        value <span class="token operator">=</span> msg<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">A</span> <span class="token punctuation">{</span>
+    <span class="token builtin">uint</span> <span class="token keyword">public</span> num<span class="token punctuation">;</span>
+    <span class="token builtin">address</span> <span class="token keyword">public</span> sender<span class="token punctuation">;</span>
+    <span class="token builtin">uint</span> <span class="token keyword">public</span> value<span class="token punctuation">;</span>
+    
+    <span class="token keyword">function</span> <span class="token function">setVars</span><span class="token punctuation">(</span><span class="token builtin">address</span> _contract<span class="token punctuation">,</span> <span class="token builtin">uint</span> _num<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        _contract<span class="token punctuation">.</span><span class="token function">delegatecall</span><span class="token punctuation">(</span>
+            abi<span class="token punctuation">.</span><span class="token function">encodeWithSignature</span><span class="token punctuation">(</span><span class="token string">"setVars(uint256)"</span><span class="token punctuation">,</span> _num<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>calling other functions</h3>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.3</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">contract</span> <span class="token class-name">Callee</span><span class="token punctuation">{</span>
+    <span class="token builtin">uint</span> <span class="token keyword">public</span> x<span class="token punctuation">;</span>
+    <span class="token builtin">uint</span> <span class="token keyword">public</span> value<span class="token punctuation">;</span>
+    
+    <span class="token keyword">function</span> <span class="token function">setX</span><span class="token punctuation">(</span><span class="token builtin">uint</span> _x<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">returns</span><span class="token punctuation">(</span><span class="token builtin">uint</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        x <span class="token operator">=</span> _x<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">setXAndSendEther</span><span class="token punctuation">(</span><span class="token builtin">uint</span> _x<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">uint</span><span class="token punctuation">,</span> <span class="token builtin">uint</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        x <span class="token operator">=</span> _x<span class="token punctuation">;</span>
+        value <span class="token operator">=</span> msg<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+        
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">Caller</span> <span class="token punctuation">{</span>
+    
+    <span class="token keyword">function</span> <span class="token function">setX</span><span class="token punctuation">(</span>Callee _callee<span class="token punctuation">,</span> <span class="token builtin">uint</span> _x<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        <span class="token builtin">uint</span> x <span class="token operator">=</span> _callee<span class="token punctuation">.</span><span class="token function">setX</span><span class="token punctuation">(</span>_x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">setXFromAddress</span><span class="token punctuation">(</span><span class="token builtin">address</span> _addr<span class="token punctuation">,</span> <span class="token builtin">uint</span> _x<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        Callee callee <span class="token operator">=</span> <span class="token function">Callee</span><span class="token punctuation">(</span>_addr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token builtin">uint</span> x <span class="token operator">=</span> callee<span class="token punctuation">.</span><span class="token function">setX</span><span class="token punctuation">(</span>_x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">setXAndSendEther</span><span class="token punctuation">(</span>Callee _callee<span class="token punctuation">,</span> <span class="token builtin">uint</span> _x<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">(</span><span class="token builtin">uint</span> x<span class="token punctuation">,</span> <span class="token builtin">uint</span> value<span class="token punctuation">)</span> <span class="token operator">=</span> _callee<span class="token punctuation">.</span>setXAndSendEther<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">(</span>_x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Creating Contracts from a contract</h3>
+<p>Creating contracts inside a contract can be useful when:</p>
+<ul>
+<li>passing fixed inputs to a new contract</li>
+<li>you want to manage several contracts from a single contract.</li>
+</ul>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">contract</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
+    <span class="token builtin">string</span> <span class="token keyword">public</span> model<span class="token punctuation">;</span>
+    <span class="token builtin">address</span> <span class="token keyword">public</span> owner<span class="token punctuation">;</span>
+    
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _model<span class="token punctuation">,</span> <span class="token builtin">address</span> _owner<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        model <span class="token operator">=</span> _model<span class="token punctuation">;</span>
+        owner <span class="token operator">=</span> _owner<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">CarFactory</span> <span class="token punctuation">{</span>
+    Car <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token keyword">public</span> cars<span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token builtin">address</span> _owner<span class="token punctuation">,</span> <span class="token builtin">string</span> <span class="token keyword">memory</span> _model<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+        Car car <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Car</span><span class="token punctuation">(</span>_model<span class="token punctuation">,</span> _owner<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cars<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>car<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">createAndSendEther</span><span class="token punctuation">(</span><span class="token builtin">address</span> _owner<span class="token punctuation">,</span> <span class="token builtin">string</span> <span class="token keyword">memory</span> _model<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">payable</span> <span class="token punctuation">{</span>
+        Car car <span class="token operator">=</span>  <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Car</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">(</span>_model<span class="token punctuation">,</span> _owner<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Import</h3>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.11</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token string">'./sendmoney.sol'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">TestImport</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+<span class="token keyword">import</span> <span class="token string">"github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">MyToken</span> <span class="token keyword">is</span> ERC20 <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Library</h3>
+<p>Libraries are like contracts but they have no staorage nor ether.
+They help you keep your coode DRY(Don’t Repeat Yourself)
+by adding functionality types
+Can save gas.
+Embedded library have only internal functions.</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.11</span><span class="token punctuation">;</span>
+
+<span class="token keyword">library</span> <span class="token class-name">SafeMath</span> <span class="token punctuation">{</span>
+   <span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token builtin">uint</span> x<span class="token punctuation">,</span> <span class="token builtin">uint</span> y<span class="token punctuation">)</span> <span class="token keyword">internal</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">uint</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token builtin">uint</span> z <span class="token operator">=</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+       <span class="token keyword">require</span><span class="token punctuation">(</span> z <span class="token operator">>=</span> x<span class="token punctuation">,</span> <span class="token string">"uint overflow"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       
+       <span class="token keyword">return</span> z<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">TestSafeMath</span> <span class="token punctuation">{</span>
+   <span class="token keyword">using</span> <span class="token class-name">SafeMath</span> <span class="token keyword">for</span> <span class="token builtin">uint</span><span class="token punctuation">;</span>
+   <span class="token comment">//using  A for break</span>
+   <span class="token comment">//Attach functions from library A to type B</span>
+   
+   
+   <span class="token keyword">function</span> <span class="token function">testAdd</span><span class="token punctuation">(</span> <span class="token builtin">uint</span> x<span class="token punctuation">,</span> <span class="token builtin">uint</span> y<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">uint</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">return</span> x<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+
+
+
+<span class="token keyword">library</span> <span class="token class-name">Array</span> <span class="token punctuation">{</span>
+   <span class="token keyword">function</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token builtin">uint</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token keyword">storage</span> arr<span class="token punctuation">,</span> <span class="token builtin">uint</span> index<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+       arr<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+       arr<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">TestArray</span> <span class="token punctuation">{</span>
+   <span class="token keyword">using</span> <span class="token class-name">Array</span> <span class="token keyword">for</span> <span class="token builtin">uint</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+   
+   <span class="token builtin">uint</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token keyword">public</span> arr<span class="token punctuation">;</span>
+   
+   <span class="token keyword">function</span> <span class="token function">testArrayRemove</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+       <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token builtin">uint</span> i <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+           arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+       
+       <span class="token comment">// [0,1,2]</span>
+       arr<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token comment">// [0,2]</span>
+       <span class="token keyword">assert</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">assert</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">assert</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Hash Function(Keccak256)</h3>
+<p>A cryptographic hash function takes an arbitrary size input and outputs a data of fixed  size.
+It is deterministic, quick to compute the hash, irreversible, small input changes the output significantly and collition resistant.</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.11</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">HashFunction</span> <span class="token punctuation">{</span>
+    
+    <span class="token keyword">function</span> <span class="token function">hash</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _text<span class="token punctuation">,</span> <span class="token builtin">uint</span> _num<span class="token punctuation">,</span> <span class="token builtin">address</span> _addr<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">bytes32</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span>_text<span class="token punctuation">,</span> _num<span class="token punctuation">,</span> _addr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">collission</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _text<span class="token punctuation">,</span> <span class="token builtin">string</span> <span class="token keyword">memory</span> _anothertext<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">bytes32</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encode</span><span class="token punctuation">(</span>_text<span class="token punctuation">,</span> _anothertext<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">GuessTheMagicWord</span> <span class="token punctuation">{</span>
+    <span class="token builtin">bytes32</span> <span class="token keyword">public</span> answer <span class="token operator">=</span> <span class="token string">"hey"</span>
+    
+    <span class="token keyword">function</span> <span class="token function">guess</span><span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token keyword">memory</span> _word<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">view</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">bool</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span>_word<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> answer<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Signature Verification</h3>
+<p>Create a message to sign, hash the message, sign the hash(off chain, keep your private key secret)</p>
+<div class="gatsby-highlight" data-language="solidity"><pre class="language-solidity"><code class="language-solidity"><span class="token keyword">pragma</span> <span class="token keyword">solidity</span> <span class="token operator">^</span><span class="token version number">0.5.11</span><span class="token punctuation">;</span>
+
+<span class="token keyword">contract</span> <span class="token class-name">VerifySignature</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">getMessagehash</span><span class="token punctuation">(</span> <span class="token builtin">address</span> _to<span class="token punctuation">,</span> <span class="token builtin">uint</span> _amount<span class="token punctuation">,</span> <span class="token builtin">string</span> <span class="token keyword">memory</span> _message<span class="token punctuation">,</span> <span class="token builtin">uint</span> _nonce<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">bytes32</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span>_to<span class="token punctuation">,</span> _amount<span class="token punctuation">,</span> _message<span class="token punctuation">,</span>_nonce<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">getEthSignedMessageHash</span><span class="token punctuation">(</span><span class="token builtin">bytes32</span> _messageHash<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">bytes32</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span><span class="token string">"\x19Ethereum Signed message:\n32"</span><span class="token punctuation">,</span> _messageHash<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">verify</span><span class="token punctuation">(</span><span class="token builtin">address</span> _signer<span class="token punctuation">,</span> <span class="token builtin">address</span> _to<span class="token punctuation">,</span> <span class="token builtin">uint</span> _amount<span class="token punctuation">,</span> <span class="token builtin">string</span> <span class="token keyword">memory</span> _message<span class="token punctuation">,</span> <span class="token builtin">uint</span> _nonce<span class="token punctuation">,</span> <span class="token builtin">bytes</span> <span class="token keyword">memory</span> _signature<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">bool</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token builtin">bytes32</span> messageHash <span class="token operator">=</span> <span class="token function">getMessagehash</span><span class="token punctuation">(</span>_to<span class="token punctuation">,</span> _amount<span class="token punctuation">,</span>_message<span class="token punctuation">,</span> _nonce<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token builtin">bytes32</span> ethSignedMessageHash <span class="token operator">=</span> <span class="token function">getEthSignedMessageHash</span><span class="token punctuation">(</span>messageHash<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">return</span> <span class="token function">recoverSigner</span><span class="token punctuation">(</span>ethSignedMessageHash<span class="token punctuation">,</span> _signature<span class="token punctuation">)</span> <span class="token operator">==</span> _signer<span class="token punctuation">;</span>
+        
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">recoverSigner</span><span class="token punctuation">(</span><span class="token builtin">bytes32</span> _ethSignedMessageHash<span class="token punctuation">,</span> <span class="token builtin">bytes</span> <span class="token keyword">memory</span> _signature<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token builtin">address</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">(</span><span class="token builtin">bytes32</span> r<span class="token punctuation">,</span> <span class="token builtin">bytes32</span> s<span class="token punctuation">,</span> <span class="token builtin">uint8</span> v<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">splitSignature</span><span class="token punctuation">(</span>_signature<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">return</span> <span class="token function">ecrecover</span><span class="token punctuation">(</span>_ethSignedMessageHash<span class="token punctuation">,</span> v<span class="token punctuation">,</span>r<span class="token punctuation">,</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">function</span> <span class="token function">splitSignature</span><span class="token punctuation">(</span><span class="token builtin">bytes</span> <span class="token keyword">memory</span> _sig<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token keyword">pure</span> <span class="token keyword">returns</span><span class="token punctuation">(</span><span class="token builtin">bytes32</span> r<span class="token punctuation">,</span> <span class="token builtin">bytes32</span> s<span class="token punctuation">,</span> <span class="token builtin">uint8</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">require</span><span class="token punctuation">(</span>_sig<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">65</span><span class="token punctuation">,</span> <span class="token string">"invalid signature length"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">assembly</span> <span class="token punctuation">{</span>
+            r <span class="token operator">:=</span> <span class="token function">mload</span><span class="token punctuation">(</span><span class="token function">add</span><span class="token punctuation">(</span>_sig<span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            s <span class="token operator">:=</span> <span class="token function">mload</span><span class="token punctuation">(</span><span class="token function">add</span><span class="token punctuation">(</span>_sig<span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            v <span class="token operator">:=</span> <span class="token builtin">byte</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token function">mload</span><span class="token punctuation">(</span><span class="token function">add</span><span class="token punctuation">(</span>_sig<span class="token punctuation">,</span> <span class="token number">96</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <h3>Deployment</h3>
 <p><em>Ether</em> is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.
 <em>Wei</em> one ether equals to 10 ^ 18 wei.</p>
