@@ -738,6 +738,378 @@ contract Wallet {
 }
 ```
 
+### Send Ether
+
+```solidity
+pragma solidity ^0.5.3;
+
+//You can send ether to another contract with:
+//transfer( forwards 2300 gas, throws error)
+//send(forwards 2300 gas, returns bool)
+//call(forwards all gas or set gas, returns bool)
+
+contract ReceiveEther {
+    function () external payable {
+        
+    }
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+
+contract SendEther {
+        function sendViaTransfer(address payable _to) public payable {
+            _to.transfer(msg.value);
+        }
+        
+        function sendViaSend(address payable _to) public payable {
+            bool sent = _to.send(msg.value);
+            require(sent, "Failed to send Ether");
+        }
+        
+        //call can prevent re-entrancy hack
+        function sendViaCall(address payable _to) public payable {
+            (bool sent, bytes memory data) = _to.call.value(msg.value)("");
+            require(sent, "Failed to send Ether");
+        }
+}
+```
+
+### Fallback Function
+
+Receives 2300 gas from ```transfer``` and ```send``` methods.
+Can receive all gas from ```call``` method.
+
+```solidity
+pragma solidity ^0.5.3;
+
+contract Fallback {
+    event Log(uint gas);
+    function () external payable {
+        emit Log(gasleft());
+    }
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+
+contract sendToFallback {
+    //fails to send ether
+    function transferToFallback(address payable _to) public payable {
+        _to.transfer(msg.value);
+    }
+    
+    //sends Ether
+    function callFallback(address payable _to) public payable {
+        (bool sent, ) = _to.call.value(msg.value)("");
+        require(sent, "Failed to send Ether");
+    }
+}
+```
+
+### Call Method
+
+Is a low level method available on address type.
+A Fallback function is called when the function called does not exist.
+eg.
+
++ call existing function.
++ call non-existing functions(it triggers a callback function).
+
+```solidity
+pragma solidity ^0.5.3;
+
+
+contract Receiver {
+    event Received(address caller, uint amount, string message);
+    
+    function () external payable {
+        emit Received (msg.sender, msg.value, "Fallback was called");
+    }
+    function foo( string memory _message, uint _x) public payable returns (uint) {
+        emit Received(msg.sender, msg.value, _message);
+        
+        return _x + 1;
+    }
+}
+
+contract Caller {
+    event Response(bool success, bytes data);
+    
+    function testCallFoo(address payable _addr) public payable {
+        (bool success, bytes memory data) = _addr.call.value(msg.value).gas(5000)(abi.encodeWithSignature("foo(string, uint256)", "call foo", 123));
+         emit Response(success, data);
+    }
+    
+    function testCallDoesNotExist( address _addr) public {
+        (bool success, bytes memory data) = _addr.call(abi.encodeWithSignature("doesNotExit()"));
+         emit Response(success, data);
+    }
+}
+```
+
+### Delegatecal
+Is a low level function similar to call.
+When a contract A delegatecall contract B, it runs B's code inside A's context (storage, msg.sender, msg.value)
+hence contract A can be upgraded without changing any code inside it.
+
+It runs code of callee in caller's context(storage, msg.sender, msg.value).
+State variables of the caller and callee should be the same.
+
+```solidity
+pragma solidity ^0.5.3;
+
+
+contract B {
+    uint public num;
+    address public sender;
+    uint public value;
+    
+    function setVars(uint _num) public payable {
+        num = _num;
+        sender = msg.sender;
+        value = msg.value;
+    }
+}
+
+contract A {
+    uint public num;
+    address public sender;
+    uint public value;
+    
+    function setVars(address _contract, uint _num) public payable {
+        _contract.delegatecall(
+            abi.encodeWithSignature("setVars(uint256)", _num));
+    }
+}
+```
+
+### calling other functions
+
+```solidity
+pragma solidity ^0.5.3;
+
+
+contract Callee{
+    uint public x;
+    uint public value;
+    
+    function setX(uint _x) public returns(uint) {
+        x = _x;
+        return x;
+    }
+    
+    function setXAndSendEther(uint _x) public payable returns (uint, uint) {
+        x = _x;
+        value = msg.value;
+        
+        return (x, value);
+    }
+}
+
+contract Caller {
+    
+    function setX(Callee _callee, uint _x) public {
+        uint x = _callee.setX(_x);
+    }
+    
+    function setXFromAddress(address _addr, uint _x) public {
+        Callee callee = Callee(_addr);
+        uint x = callee.setX(_x);
+    }
+    
+    function setXAndSendEther(Callee _callee, uint _x) public payable {
+        (uint x, uint value) = _callee.setXAndSendEther.value(msg.value)(_x);
+    }
+}
+```
+
+### Creating Contracts from a contract
+
+Creating contracts inside a contract can be useful when:
+
++ passing fixed inputs to a new contract
++ you want to manage several contracts from a single contract.
+
+```solidity
+
+contract Car {
+    string public model;
+    address public owner;
+    
+    constructor(string memory _model, address _owner) public payable {
+        model = _model;
+        owner = _owner;
+    }
+}
+
+contract CarFactory {
+    Car [] public cars;
+    function create(address _owner, string memory _model) public {
+        Car car = new Car(_model, _owner);
+        cars.push(car);
+    }
+    
+    function createAndSendEther(address _owner, string memory _model) public payable {
+        Car car =  (new Car).value(msg.value)(_model, _owner);
+    }
+}
+```
+
+### Import
+
+```solidity
+pragma solidity ^0.5.11;
+
+import './sendmoney.sol';
+
+contract TestImport {
+    
+}
+
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+
+contract MyToken is ERC20 {
+    
+}
+```
+
+### Library
+
+Libraries are like contracts but they have no staorage nor ether.
+They help you keep your coode DRY(Don't Repeat Yourself)
+ by adding functionality types
+ Can save gas.
+ Embedded library have only internal functions.
+
+ ```solidity
+ pragma solidity ^0.5.11;
+
+library SafeMath {
+    function add(uint x, uint y) internal pure returns (uint) {
+        uint z = x + y;
+        require( z >= x, "uint overflow");
+        
+        return z;
+    }
+}
+
+contract TestSafeMath {
+    using SafeMath for uint;
+    //using  A for break
+    //Attach functions from library A to type B
+    
+    
+    function testAdd( uint x, uint y) public pure returns (uint) {
+        return x.add(y);
+    }
+}
+
+
+
+
+
+library Array {
+    function remove(uint[] storage arr, uint index) public {
+        arr[index] = arr[arr.length - 1];
+        arr.pop();
+    }
+}
+
+contract TestArray {
+    using Array for uint[];
+    
+    uint[] public arr;
+    
+    function testArrayRemove() public {
+        for (uint i =0; i < 3; i++) {
+            arr.push(i);
+        }
+        
+        // [0,1,2]
+        arr.remove(1);
+        // [0,2]
+        assert(arr.length == 2);
+        assert(arr[0] == 0);
+        assert(arr[1] == 2);
+        
+    }
+}
+```
+
+### Hash Function(Keccak256)
+
+A cryptographic hash function takes an arbitrary size input and outputs a data of fixed  size.
+It is deterministic, quick to compute the hash, irreversible, small input changes the output significantly and collition resistant.
+
+```solidity
+pragma solidity ^0.5.11;
+
+contract HashFunction {
+    
+    function hash(string memory _text, uint _num, address _addr) public pure returns (bytes32) {
+        return keccak256(abi.encodePacked(_text, _num, _addr));
+    }
+    
+    function collission(string memory _text, string memory _anothertext) public pure returns (bytes32) {
+        return keccak256(abi.encode(_text, _anothertext));
+    }
+}
+
+contract GuessTheMagicWord {
+    bytes32 public answer = "hey"
+    
+    function guess(string memory _word) public view returns (bool) {
+        return keccak256(abi.encodePacked(_word)) == answer;
+    }
+}
+```
+
+### Signature Verification
+
+Create a message to sign, hash the message, sign the hash(off chain, keep your private key secret)
+
+```solidity
+pragma solidity ^0.5.11;
+
+contract VerifySignature {
+    function getMessagehash( address _to, uint _amount, string memory _message, uint _nonce) public pure returns (bytes32) {
+        return keccak256(abi.encodePacked(_to, _amount, _message,_nonce));
+    }
+    
+    function getEthSignedMessageHash(bytes32 _messageHash) public pure returns (bytes32) {
+        return keccak256(abi.encodePacked("\x19Ethereum Signed message:\n32", _messageHash));
+        
+    }
+    
+    function verify(address _signer, address _to, uint _amount, string memory _message, uint _nonce, bytes memory _signature) public pure returns (bool) {
+        bytes32 messageHash = getMessagehash(_to, _amount,_message, _nonce);
+        bytes32 ethSignedMessageHash = getEthSignedMessageHash(messageHash);
+        
+        return recoverSigner(ethSignedMessageHash, _signature) == _signer;
+        
+    }
+    
+    function recoverSigner(bytes32 _ethSignedMessageHash, bytes memory _signature) public pure returns (address) {
+        (bytes32 r, bytes32 s, uint8 v) = splitSignature(_signature);
+        
+        return ecrecover(_ethSignedMessageHash, v,r,s);
+    }
+    
+    function splitSignature(bytes memory _sig) public pure returns(bytes32 r, bytes32 s, uint8 v) {
+        require(_sig.length == 65, "invalid signature length");
+        
+        assembly {
+            r := mload(add(_sig, 32))
+            s := mload(add(_sig, 64))
+            v := byte(0, mload(add(_sig, 96)))
+        }
+    }
+}
+```
+
 ### Deployment
 
 *Ether* is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.

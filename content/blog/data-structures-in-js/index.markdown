@@ -614,3 +614,158 @@ linkedlist.printData();
 + Break it down.
 + Solve/ simplify.
 + Look back and refactor.
+
+##### What is the order of the output.
+
+```javascript
+console.log('a');
+
+let functionOne = setTimeout(function (){
+    console.log("b");
+}, 1);
+
+let functionTwo = setTimeout(function (){
+    console.log("c")
+}, 10);
+
+let functionThree = setTimeout(function(){
+    console.log('d');
+}, 0)
+console.log('e')
+```
+
+output
+
+```bash
+a
+e
+b
+d
+c
+```
+
+```b``` runs before ```c``` because it's on top of the stack and the one second is used to run the first console logs.
+
+##### using async/await and how it affects the order by which code runs
+
+What is the resulting output.
+
+```javascript
+let num = 0;
+
+async function increment() {
+    num += await 2; //Promise.resolve(2)
+    console.log(num);
+}
+
+increment();
+num += 1;
+console.log(num);
+```
+
+output
+
+```bash
+1
+2
+```
+
+##### Revealing module pattern
+
+Turn the object literal into a module that exposes only the ```render``` method.
+
+```javascript
+let myModule = {
+    data: [],
+    render: () => {
+
+    },
+    add: () => {
+
+    },
+    remove: () => {
+
+    }
+}
+
+myModule.render();
+```
+
+~solution~
+
+```javascript
+let myModule = (function(){
+    _data: [];
+
+    _render = () => {
+
+    }
+    _add = () => {
+
+    }
+    _remove = () => {
+
+    }
+
+    return {
+        render: _render
+    }
+})();
+
+//only the render method is the only one accessible
+myModule.render();
+```
+
+##### Determine if a function received the expected number of parameters
+
+```javascript
+let func = function (a,b) {
+
+};
+
+func(1);
+func(1,2);
+func(1,2,3);
+```
+
+~solution~
+
+```javascript
+let func = function (a,b) {
+    if(arguments.length  === func.length){
+        console.log("We have a match")
+    }else{
+        console.log("no match")
+    }
+};
+
+func(1);
+func(1,2);
+func(1,2,3);
+```
+
+##### What happens hen you run the code
+
+ASI, object literals,hoisting, square bracket syntax.
+How do you fix the error
+
+```javscript
+
+let a = {
+    a: 123
+}
+[a].forEach(function (x) {
+    console.log(x)
+})
+```
+
+~solution~
+
+```javascript
+let a = {
+    a: 123
+};
+[a].forEach(function (x) {
+    console.log(x)
+})
+```

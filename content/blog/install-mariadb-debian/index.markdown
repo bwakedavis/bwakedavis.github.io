@@ -114,3 +114,36 @@ DESCRIBE table_name column_name; — review the information of the column in
 ```sql
 DROP TABLE tablename;
 ```
+
+### Columns
+
+Columns are defined by different storage types.
+i.e ```CHAR```, ```VARCHAR```, ```TEXT```, ```BLOB```, ```EUT```.
+
+Add a new column
+
+```sql
+ALTER TABLE table
+ADD [COLUMN] column_name;
+```
+
+Deleting/ Drpoing a column
+
+```sql
+ALTER TABLE table_name
+DROP [COLUMN] column_name;
+```
+
+Inserting a new row
+
+```sql
+INSERT INTO table_name (field1, field2, ...) VALUES (value1,
+value2, ...)
+```
+
+Selecting specific data from a row
+
+```sql
+INSERT INTO table_name (field1, field2, ...) VALUES (value1,
+value2, ...)
+```

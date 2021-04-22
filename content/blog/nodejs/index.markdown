@@ -106,3 +106,48 @@ debug("debug after loop");
   }
 }
 ```
+
+### Handling HTTP requsts
+
+```javascript
+
+const http = require('http');
+const url = require('url');
+const StringDecorder = require('string_decoder').StringDecoder;
+const util = require('util');
+const formidable = require('formidable');
+
+//create a server with the http module
+const server = http.createServer(function(req, res){
+    //req.method eg. GET,POST, req.headers
+    // console.log(http.METHODS, http.STATUS_CODES)
+    let path = url.parse(req.url, true);
+    //path.pathname, path.search, path.port, path.protocol, path.origin
+   if(req.method.toLowerCase() == 'post') {
+    let form = new formidable.IncomingForm();
+    form.parse(req, function(err, fields, files){
+        if(err){
+            console.log(err)
+            return;
+        }
+        res.writeHead(200, "OK", {"Content-Type": "text/plain"});
+        res.write("The POST output response\n\n");
+        res.end(util.inspect({fields: fields, files:files}));
+    })
+   }else if(req.method.toLowerCase() == 'get') {
+    res.writeHead(200, "OK", {"Content-Type": "text/plain"});
+    res.write("The Response");
+    res.write(util.inspect(path.query) + "\n\n");
+    res.end("End of Response");
+   } else {
+
+   }
+
+  
+});
+
+//listen to request on port 5000
+server.listen(5000, function(){
+    console.log("listening on port 5000");
+});
+```

@@ -177,3 +177,79 @@ const greet = (uid: StringOrNumber, username: string) => {
 
 greet(4,"davis");
 ```
+
+### Function signatures
+
+Specifying the function a variable can hold.
+
+```typescript
+//A void function returns nothing
+let sayHi: (a:string, b:string) => void;
+sayHi = (name:string, greeting:string) => {
+    console.log(`${name} says ${greeting}`);
+}
+
+
+let calculate: (a: number, b: number, c: string) => number;
+
+calculate = (num1: number, num2: number, action: string) => {
+    if(action === "add"){
+        return num1 + num2;
+    } else {
+        return num1 - num2;
+    }
+}
+
+let logDetails: (obj: {name: string, age: number}) => void;
+
+type person = {name: string, age: number}
+logDetails = (newObj: person) => {
+    console.log(`${newObj.name} is ${newObj.age}`)
+}
+```
+
+### Typecasting and interacting with the DOM
+
+```typescript
+const a = document.querySelector('a');
+
+if(a) {
+    console.log(a.href);
+}
+//or
+
+const a2 = document.querySelector('a')!;
+
+console.log(a2.href);
+
+const form = document.querySelector('form')!;
+
+//typecasting
+const form2 = document.querySelector('.form-container') as HTMLFormElement;
+
+const select = document.querySelector('#select') as HTMLSelectElement;
+
+const input = document.querySelector('#input') as HTMLInputElement;
+```
+
+### Classes
+
+```typescript
+class Invoice {
+    client: string;
+    details: string;
+    amount: number;
+
+    constructor(c: string,d: string,a: number) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+
+    format() {
+        return `${this.client} owes $ ${this.amount} for ${this.details}`;
+    }
+}
+
+const invoice = new Invoice("Davis", "building a smart contract", 500);
+```

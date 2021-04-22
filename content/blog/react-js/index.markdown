@@ -169,6 +169,8 @@ class Hello extends React.Component {
 export default Hello
 ```
 
+#### passing methods as props
+
 ### State
 
 state should not be updated directly instead use ```useState```.
@@ -214,6 +216,76 @@ export default Hello
 ```
 
 ### Event handling
+
+```javascript
+import React from 'react';
+
+class Hello extends React.Component {
+    constructor(){
+        super();
+
+    }
+    handleClick = () => {
+        console.log("hello")
+    }
+
+    render() {
+        return(
+            <div>
+
+                <button onClick={this.handleClick}>Click</button>
+    
+            </div>
+        )
+    }
+}
+
+
+export default Hello
+```
+
+#### Binding event handlers
+
+Event handlers are binded because of ```this``` keyword
+
+```javascript
+import React from 'react';
+
+class Hello extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            greeting: "hi"
+        }
+        this.clickHandler = this.clickHandler.bind(this);
+    }
+    clickHandler(){
+        this.setState({greeting: "hello"})
+    }
+    //doesn't require binding
+    handleClick = () => {
+        this.setState({greeting: "hello"})
+    }
+
+    render() {
+        return(
+            <div>
+
+                <h1>{this.state.greeting}</h1>
+                <button onClick={this.handleClick}>Click</button>
+                <button onClick={this.handleClick.bind(this)}>Click2</button>
+                <button onClick={()=>{
+                    this.handleClick();
+                }}>Click3</button>
+            </div>
+        )
+    }
+}
+
+
+export default Hello
+
+```
 
 ### Conditional Rendering
 
