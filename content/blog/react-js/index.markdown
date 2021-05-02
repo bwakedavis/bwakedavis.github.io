@@ -171,6 +171,93 @@ export default Hello
 
 #### passing methods as props
 
+```parent.js```
+
+```javascript
+import React from 'react';
+import Hello from './hello';
+class Parent extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            parentName: "parent"
+        }
+       
+    }
+
+    greetParent = () => {
+        console.log(`hello ${this.state.parentName}`)
+    }
+
+    render() {
+        return(
+            <div>
+                <Hello greetHandler ={this.greetParent} />
+                
+            </div>
+        )
+    }
+}
+
+
+export default Parent
+
+```
+
+```child.js```
+
+```javascript
+import React from 'react'
+
+function Hello(props) {
+    return (
+        <div>
+            <button onClick={() => props.greetHandler(`child`)}>Greet Parent</button>
+        </div>
+    )
+}
+
+export default Hello;
+
+
+```
+
+With parameters
+
+```parent.js```
+
+```javascript
+import React from 'react';
+import Hello from './hello';
+class Parent extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            parentName: "parent"
+        }
+       
+    }
+
+    greetParent = (childname) => {
+        console.log(`hello ${this.state.parentName} from ${childname}`);
+    }
+
+    render() {
+        return(
+            <div>
+                <Hello greetHandler ={this.greetParent} />
+                
+            </div>
+        )
+    }
+}
+
+
+export default Parent
+
+
+```
+
 ### State
 
 state should not be updated directly instead use ```useState```.
@@ -291,9 +378,96 @@ export default Hello
 
 #### If ... else
 
+```javascript
+import React from 'react';
+
+class Hello extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            isLoggedIn:false
+        }
+    }
+
+    render() {
+        if(this.state.isLoggedIn) {
+            return(
+                <div>
+                     <h1>Welcome Davis</h1>
+                </div>
+            )
+        } else{
+        return(
+            <div>
+                <h1>Welcome  Guest</h1>
+            </div>
+        )
+    }
+    }
+}
+
+
+export default Hello;
+
+```
+
 #### Element variables
 
+```javascript
+import React from 'react';
+
+class Hello extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            isLoggedIn:false
+        }
+    }
+
+    render() {
+        let message;
+        if(this.state.isLoggedIn) {
+                message =  <h1>Welcome Davis</h1>;
+        } else{
+                message = <h1>Welcome  Guest</h1>;
+    }
+
+    return <div>{message}</div>
+    }
+}
+
+export default Hello;
+
+```
+
 #### Ternary operators
+
+```javascript
+import React from 'react';
+
+class Hello extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            isLoggedIn:false
+        }
+    }
+
+    render() {
+    return (
+    <div>
+        {this.state.isLoggedIn ? <h1>Welcome Davis</h1> : <h1>Welcome  Guest</h1>}
+
+        or render blank if false
+
+        {this.state.isLoggedIn && <h1>Welcome Davis</h1>}
+    </div>
+    )
+    }
+}
+
+export default Hello;
+```
 
 #### List rendering
 
