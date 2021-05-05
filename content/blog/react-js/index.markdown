@@ -471,14 +471,352 @@ export default Hello;
 
 #### List rendering
 
+```javascript
+import React from 'react';
+
+function Hello() {
+
+    const colors = ["pink", "blue", "white"];
+    const colorList = colors.map(color=> <h2>{color}</h2>)
+    return (
+    <div>
+        {colors.map(color => 
+            <h1>{color}</h1>
+        )}
+
+        {colorList}
+    </div>
+    )
+    }
+
+export default Hello;
+```
+
+Lists and keys.Keys are not accessible in the child component.
+
+```javascript
+import React from 'react';
+
+function Hello() {
+
+    const colors = ["pink", "blue", "white"];
+    const colorList = colors.map(color=> <h2 key= {color}>{color}</h2>)
+    return (
+    <div>
+        {colors.map(color => 
+            <h1 key={color}>{color}</h1>
+        )}
+
+        {colorList}
+    </div>
+    )
+    }
+
+export default Hello;
+```
+
+Using index as key. It's not recommended especially when the items can be removed or others added at the beginning.
+Use index as a key when:
+
++ your items don't have an id
++ your list is static and won't change
++ your list won't be reordered or filtered.
+
+```javascript
+import React from 'react';
+
+function Hello() {
+
+    const colors = ["pink", "blue", "white"];
+    const colorList = colors.map((color, index)=> <h2 key= {index}>{color}</h2>)
+    return (
+    <div>
+        {colors.map((color,index) => 
+            <h1 key={index}>{index} - {color}</h1>
+        )}
+
+        {colorList}
+    </div>
+    )
+    }
+
+export default Hello;
+```
+
 ### Styling
 
 #### CSS Stylesheets
 
+```javascript
+import './index.css';
+```
+
 #### Inline Styling
 
-#### CSS Modules
+```javascript
+import React from 'react';
 
-#### CSS in JS
+const styles = {
+    color: 'blue',
+    fontSize: '60'
+}
+function Hello() {
+    return (
+    <div>
+        <h1 style= {styles}>Helo</h1>
+    </div>
+    )
+    }
+
+export default Hello;
+```
 
 ### Forms
+
+```javascript
+import React, { Component } from 'react'
+
+export class hello extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: "",
+            description: "",
+            color: ""
+        }
+    }
+
+    handleName = (event) => {
+        event.preventDefault();
+
+        this.setState({name: event.target.value})
+    }
+
+    handleDesc = (event) => {
+        event.preventDefault();
+
+        this.setState({description: event.target.value})
+    }
+
+    handleColor = (event) => {
+        event.preventDefault();
+
+        this.setState({color: event.target.value})
+    }
+    render() {
+        return (
+            <div>
+                <label htmlFor="name">Name</label>
+                <input type="text" value={this.state.name} onChange = {this.handleName}/>
+
+                <label htmlFor="description">Description</label>
+                <textarea name="description" id="desc" cols="30" rows="10" value = {this.state.description} onChange = {this.handleDesc}></textarea>
+
+                <label htmlFor="color">color</label>
+                <select name="color" id="clr" onChange= {
+                    this.handleColor
+                }>
+                    <option value="blue">blue</option>
+                    <option value="green">green</option>
+                    <option value="red">red</option>
+                </select>
+            </div>
+        )
+    }
+}
+
+export default hello
+```
+
+### Lifecycle Methods
+
+#### Mounting phase
+
+Components are mounted after all the childrens have been rendered.
+
+```js
+import React, { Component } from 'react'
+
+export class Hello extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: "Davis"
+        }
+        console.log("Lifecycle1 - constructor")
+    }
+
+    static getDerivedStateFromProps(props,state) {
+        console.log("Lifecycle1 - getDerivedStateFromProps")
+    }
+
+    componentDidMount() {
+        console.log("Lifecycle1 - componentDidMount")
+    }
+
+    render() {
+        console.log("Lifecycle1 - render")
+        return (
+            <div>
+                <h1>hey</h1>
+            </div>
+        )
+    }
+}
+
+export default Hello
+
+```
+
+#### UPdating phase
+
+```js
+import React, { Component } from 'react'
+
+export class Hello extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: "Davis"
+        }
+        console.log("Lifecycle1 - constructor")
+    }
+
+    static getDerivedStateFromProps(props,state) {
+        console.log("Lifecycle1 - getDerivedStateFromProps")
+        return null;
+    }
+
+    componentDidMount() {
+        console.log("Lifecycle1 - componentDidMount")
+    }
+
+    shouldComponentUpdate() {
+        console.log("Lifecycle1 - shouldComponentUpdate")
+        return true;
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log("Lifecycle1 - getSnapshotBeforeUpdate")
+        return null;
+    }
+
+    componentDidUpdate() {
+        console.log("Lifecycle1 - componentDidUpdate")
+    }
+
+    changeName = (e) =>{
+        e.preventDefault();
+
+        this.setState({name: "Bwake"})
+    }
+
+    render() {
+        console.log("Lifecycle1 - render")
+        return (
+            <div>
+                <h1>hey</h1>
+                <button onClick= {this.changeName}>button</button>
+            </div>
+        )
+    }
+}
+
+export default Hello
+```
+
+### PureComponent
+
+```js
+import React, { PureComponent } from 'react'
+
+export default class Hello extends PureComponent {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: "Davis"
+        }
+    }
+
+    componentDidMount() {
+        setInterval(() => {
+            this.setState({
+                name: "Davis"
+            })
+        }, 2000)
+    }
+    render() {
+        console.log("pure component");
+        return (
+            <div>
+                <h1>Pure component {this.state.name}</h1>
+            </div>
+        )
+    }
+}
+```
+
+### memo
+
+```js
+import React from 'react'
+
+function Hello({name}) {
+    console.log('Render memo')
+    return (
+        <div>
+            {name}
+        </div>
+    )
+}
+
+export default React.memo(Hello);
+```
+
+### refs
+
+```js
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
+export class Hello extends Component {
+    constructor(props) {
+        super(props);
+
+        this.inputRef = React.createRef();
+        this.cbRef = null;
+        this.setCbRef = (element) => {
+            this.cbRef = element
+        }
+    }
+
+    componentDidMount(){
+        this.inputRef.current.focus();
+        console.log(this.inputRef)
+
+        if(this.cbRef) {
+            this.cbRef.focus()
+        }
+    }
+
+    btnHandler = () => {
+        console.log(this.inputRef.current.value)
+    }
+    render() {
+        return (
+            <div>
+                <input type="text" ref={this.inputRef}/>
+                <input type="text" ref={this.setCbRef}/>
+
+                <button onClick={this.btnHandler}>button</button>
+            </div>
+        )
+    }
+}
+
+export default Hello
+```
