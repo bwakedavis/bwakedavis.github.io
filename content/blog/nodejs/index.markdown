@@ -13,22 +13,45 @@ Create a .js file eg.```server.js```
 ```javascript
 //A basic node server
 
-const http = require('http');//brings the built in http module
+const http = require('http');
+const fs = require('fs');
 
-//create a server with the http module
-const server = http.createServer(function(req, res){
-    res.setHeader('Content-Type', 'pplication/json');
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.writeHead(200);// status code
+const server = http.createServer((req, res) => {
+res.setHeader('Content-Type', 'text/html');
+let path = './views/';
 
-    let dataObject = {"id": 346, "name": "Davis", "email": "davis@email.com"};
-    let data = JSON.stringify(dataObject);
-    res.end(data)
+switch(req.url) {
+    case '/':
+        path += 'index.html';
+        res.statusCode = 200;
+        break;
+    case '/about':
+        path += 'about.html';
+        res.statusCode = 200;
+        break;
+    case '/aboutme':
+        res.statusCode = 301;
+        res.setHeader('Location', '/about');
+        res.end();
+    default:
+        path += '404.html';
+        res.statusCode = 404;
+        break;
+}
+
+fs.readFile(path, (err, data) => {
+    if(err) {
+        console.log(err);
+        res.end();
+    } else {
+        // res.write(data);
+        res.end(data);
+    }
+})
 });
 
-//listen to request on port 5000
-server.listen(5000, function(){
-    console.log("listening on port 5000");
+server.listen(5000,'localhost', ()=> {
+    console.log("Server created");
 });
 ```
 

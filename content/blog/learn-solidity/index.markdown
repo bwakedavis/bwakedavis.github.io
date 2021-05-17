@@ -1171,3 +1171,188 @@ The purpose of gas is to limit the amount of computations that a transction can 
 *Ether = Gas limit * Gas Price*
 
 When your transaction runs out of gas it's aborted but you still pay for the gas already used.
+
+#### Group transactions
+
+grouping transactions and sending them as one.
+
+```solidity
+pragma solidity 0.6.0;
+
+contract Utils {
+    function groupExecute(uint arg1, uint arg2) external {
+        A(0x...).foo(arg1);
+        B(0x...).bar(arg2);
+    }
+}
+
+contract A {
+    function foo(uint arg) external {
+        //code here
+    }
+}
+
+contract B {
+    function bar(uint arg) external {
+        //code here
+    }
+}
+```
+
+#### Manage a collection of smart contracts
+
+Manage a collection of smart contracts using factory(the child pattern
+
+```solidity
+pragma solidity 0.6.0;
+
+contract Factory {
+    Child[] public children;
+    event ChildCreated(
+        uint date,
+        uint data,
+        address childAdrres
+        );
+    function createChild(uint _data) external {
+        Child child = Child(_data);
+        children.push(child);
+        emit ChildCreated(now, _data, address(child));
+    }
+}
+
+contract Child {
+    uint data;
+    constructor(uint _data) public {
+        data = _data;
+    }
+}
+```
+
+### How to delete an element in array
+
+```solidity
+pragma solidity 0.6.0;
+
+contract Hello {
+    string[] public data;
+    
+    constructor() public {
+        data.push("Davis");
+        data.push("Steve");
+        data.push("Dan");
+        data.push("Stacy");
+        data.push("Marion");
+    }
+    
+    function removeWithNoOrder(uint index) external {
+        data[index] = data[data.length - 1];
+        data.pop();
+    }
+    
+    function removeWithOrder(uint index) external {
+        for(uint i = index; i < data.length - 1; i++) {
+            data.pop();
+        }
+    }
+}
+```
+
+#### Representing collection of data
+
+```solidity
+pragma solidity 0.6.0;
+
+contract Collections {
+    struct User {
+        uint id;
+        string name;
+    }
+    User[] userrs;
+    mapping(uint => User) users
+    uint nextUserId;
+}
+```
+
+#### Return an array
+
+```solidity
+pragma solidity 0.6.0;
+pragma experimental ABIEncoderV2;
+
+contract Collections {
+    struct User {
+        uint userAddress;
+        string balance;
+    }
+    User[] users;
+    
+    function getUsers() external view returns(User[] memory) {
+        return users;
+    }
+}
+```
+
+#### String manipulation
+
+```solidity
+  pragma solidity ^ 0.6.0;
+ 
+ 
+ contract MyContract {
+     function length(string calldata str) external pure returns(uint) {
+         return bytes(str).length;
+     }
+     function concatenate(
+         string calldata a,
+         string calldata b
+         ) external pure returns(string memory) {
+             return string(abi.encodePacked(a,b));
+         }
+         
+     function reverse(string calldata _str) external pure returns(string memory) {
+         bytes memory str = bytes(_str);
+         string memory tmp = new string(str.length);
+         bytes memory _reverse = bytes(tmp);
+         
+         for(uint i = 0; i < str.length; i++) {
+             _reverse[str.length - i -1] = str[i];
+         }
+         return string(_reverse);
+     }
+     
+     function compare(
+         string calldata a,
+         string calldata b
+         ) external pure returns(bool) {
+             return keccak256(abi.encodePacked(a)) == keccak256(abi.encodePacked(b));
+         }
+ }
+```
+
+#### Create a ERC20 token faucet
+
+```solidity
+pragma solidity >=0.6.0 <0.8.0;
+
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.3/contracts/token/ERC20/ERC20.sol";
+
+contract MyToken is ERC20 {
+    constructor(
+        string memory name,
+        string memory symbol)
+        ERC20(name, symbol)
+        public {
+            
+        }
+        
+        function mint(address recipient, uint amount) external {
+            _mint(recipient, amount);
+        }
+}
+```
+
+#### Create a wrapped ether token
+
+```solidity
+
+```
