@@ -1,7 +1,7 @@
 ---
 title: Learn Deveops
 date: "2020-05-12T22:12:03.284Z"
-description: "JavaScript is a scripting language developed to add functionality in the browser. It's use nowdays extends building mobile apps, creating servers, building desktop apps etc"
+description: "Deveops is an important part of software development that links software evelopment and production"
 ---
 
 Docker is replacing virtual machines
