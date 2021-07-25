@@ -35,6 +35,12 @@ As a developer believe me you need it more than anything else ('*Just kidding* ð
     git init
 ```
 
+-name or rrename your branch
+
+```git
+$git branch -m main. 
+```
+
 -initialize a local directory on you computer as a git repository
 
 ```git
@@ -161,6 +167,8 @@ As a developer believe me you need it more than anything else ('*Just kidding* ð
 
 ```git
     git remote add <alias> <url>
+
+    git remote add origin https://github.com/...
 ```
 
 -add a remote git url to your local repository
@@ -179,6 +187,8 @@ As a developer believe me you need it more than anything else ('*Just kidding* ð
 
 ```git
     git push <alias> branch
+
+    git push -u origin main
 ```
 
 -transmit local branch to the remote repository branch
@@ -187,6 +197,7 @@ As a developer believe me you need it more than anything else ('*Just kidding* ð
     git push -u <alias> branch    OR
     
     git push --set-upstream <alias> <branchName>
+
 ```
 
 -push the current branch and set the remote as upstream
