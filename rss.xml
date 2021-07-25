@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Jun 2021 16:26:29 GMT</lastBuildDate><item><title><![CDATA[Understanding webRTC]]></title><description><![CDATA[Web RealTime Communication offers realtime communication natively from a web browser.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Jul 2021 10:39:28 GMT</lastBuildDate><item><title><![CDATA[Understanding webRTC]]></title><description><![CDATA[Web RealTime Communication offers realtime communication natively from a web browser.
 webRTC is a media engine with JavaScript API’s. How…]]></description><link>https://bwakedavis.github.io/webRTC/</link><guid isPermaLink="false">https://bwakedavis.github.io/webRTC/</guid><pubDate>Wed, 10 Feb 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Web RealTime Communication offers realtime communication natively from a web browser.
 webRTC is a media engine with JavaScript API’s.&lt;/p&gt;
 &lt;h2&gt;How&lt;/h2&gt;
@@ -2133,7 +2133,23 @@ The purpose of gas is to limit the amount of computations that a transction can 
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;Create a wrapped ether token&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[A walk through reactjs]]></title><description><![CDATA[Reactjs React JS is a open source frontend JavaScript library that focuses on building reach user interfaces.
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;solidity&quot;&gt;&lt;pre class=&quot;language-solidity&quot;&gt;&lt;code class=&quot;language-solidity&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token version number&quot;&gt;0.6.0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WETH&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; ERC20 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ERC20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Wrapped Ether&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;WETH&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;external&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;payable&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;_mint&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;msg&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sender&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; msg&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; burn &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;uint&lt;/span&gt; amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;external&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        msg&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sender&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;transfer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;_burn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;msg&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sender&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Make your contract updatable&lt;/h4&gt;</content:encoded></item><item><title><![CDATA[A walk through reactjs]]></title><description><![CDATA[Reactjs React JS is a open source frontend JavaScript library that focuses on building reach user interfaces.
 It has a component based…]]></description><link>https://bwakedavis.github.io/react-js/</link><guid isPermaLink="false">https://bwakedavis.github.io/react-js/</guid><pubDate>Thu, 03 Sep 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Reactjs&lt;/strong&gt; React JS is a open source frontend JavaScript library that focuses on building reach user interfaces.
 It has a component based architecture and handles DOM update gracefully.
 You can intergrate other third party packages into react and react too intergrate with other applications or a portion of an application gracefully.&lt;/p&gt;
@@ -3188,7 +3204,10 @@ Hardware - One Os(eg Ubuntu) - Docker - Other Os to create containers&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You only need one kernel&lt;/li&gt;
 &lt;li&gt;They are lightweight&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Understand Ethereum and it's Wide Ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/learn-about-ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-about-ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learn Deveops]]></title><description><![CDATA[Install a package Hello World]]></description><link>https://bwakedavis.github.io/learn-go-lang/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-go-lang/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h3&gt;Install a package&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt; go get &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;package url&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Hello World&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Learn Deveops]]></title><link>https://bwakedavis.github.io/learn-rust/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-rust/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Understand Ethereum and it's Wide Ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/learn-about-ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/learn-about-ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
 &lt;h2&gt;Features of Ethereum&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Supports smart contracts&lt;/li&gt;
@@ -3784,6 +3803,8 @@ As a developer believe me you need it more than anything else (’&lt;em&gt;Just
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git config --global color.ui auto&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-set automatic coloring of git in the command line&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git init&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;-name or rrename your branch&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;$git branch -m main. &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-initialize a local directory on you computer as a git repository&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git clone&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-retrieve a repository from a central remote hosting&lt;/p&gt;
@@ -3828,13 +3849,17 @@ As a developer believe me you need it more than anything else (’&lt;em&gt;Just
 &lt;p&gt;-changes an existing path and stage the move&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git log --stat -M&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-shows all commits log and paths changed&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git remote add &amp;lt;alias&gt; &amp;lt;url&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git remote add &amp;lt;alias&gt; &amp;lt;url&gt;
+
+    git remote add origin https://github.com/...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-add a remote git url to your local repository&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git fetch &amp;lt;alias&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-fetch all the branches from a central remote repositoy&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git merge &amp;lt;alias&gt;/&amp;lt;branch&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-merge a remote branch into your current one locally&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git push &amp;lt;alias&gt; branch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git push &amp;lt;alias&gt; branch
+
+    git push -u origin main&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;-transmit local branch to the remote repository branch&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;git&quot;&gt;&lt;pre class=&quot;language-git&quot;&gt;&lt;code class=&quot;language-git&quot;&gt;    git push -u &amp;lt;alias&gt; branch    OR
     
