@@ -251,3 +251,20 @@ $git branch -m main.
 
 -revert non committed changes from the staging area
 
+```bash
+echo "# new" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:bwakedavis/new.git
+git push -u origin main
+```
+
+OR
+
+```bash
+git remote add origin git@github.com:bwakedavis/new.git
+git branch -M main
+git push -u origin main
+```
