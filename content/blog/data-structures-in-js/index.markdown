@@ -7,11 +7,35 @@ description: "Data Structures and Algorithms are important concepts in Computer 
 
 **Data Structure** is a way of organizing data so that it can be used effectively.
 
-An **algorithm** is a sequence of instructions to solve a clearly defined problem.
-The best algorithm is the one which has the best performance.
-
 **Abstract data types** are abstraction of data which provides only the interface to which a data structure must adhere to.
 The interface does not give any specific details about how something should be done.
+
+An **algorithm** is a sequence of instructions to solve a clearly defined problem.
+or
+Is a set of steps to accomplis a certain task.
+
+The best algorithm is the one which has the best performance.
+
+#### Steps of solving a problem
+
+1. **Understand the problem**
+   + Can you restate the problem in your own words
+   + Wh Understand the problemat are the inputs that go into the problem
+   + What are the outputs that are expectedCan output be dertermined from inputs
+   + How do you label important pieces of data that are part of the problem
+2. Explore concrete example
+   + come up with an example
+   + sanity check so that the solution works
+   + user stories
+   + unit tests
+   + start with simple examples
+3. Break down the problem
+   + Explicitly write the steps you need to take
+4. Solve and simplify the problem
+   + Write a simplified solution
+   + Master common problem solving pattern
+   + devise a plan for solving the problems
+5. Look back to the solution and refactor
 
 #### Importance
 

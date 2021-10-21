@@ -6,8 +6,16 @@ As a developer believe me you need it more than anything else ('Just kidding ðŸ˜
 ---
 
 
-**Git** is a free open source distributed version control tool that tracks changes in your file. 
+**Git** is a free open source distributed version control tool that tracks changes in your file.
 As a developer believe me you need it more than anything else ('*Just kidding* ðŸ˜›'). But its important.
+
+## Advantages
+
++ Enhance collaboration
++ Storage of versions
++ Enables analysis of project evolution
+
+**Github** is a social network that allow developer to store and share code
 
 ## Git Terminal commands
 

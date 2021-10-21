@@ -820,3 +820,221 @@ export class Hello extends Component {
 
 export default Hello
 ```
+
+### Portals
+
+Gives you the ability to breakout of DOM element
+
+```index.html```
+
+```html
+    <div id="root"></div>
+    <div class="portal-root"></div>
+```
+
+```component.js```
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function PortalComp() {
+    return ReactDOM.createPortal(
+            <h1>Portal demo</h1>,
+            document.getElementById('portal-root')
+    )
+}
+
+export default PortalComp;
+```
+
+### Error handling
+
+Error boundaries are REact components thhat catch javaScript error in their child component tree, log thos errors and display a fall-back UI.
+
+A class component becomes an Error Boundary by defining either or both of getDErivedFromError and componentDidCatch lifecycle methods.
+
+The placement of the Error Boundary matters as it controls if the entire app should have the fall-back UI or just a component causing the problem. It provides a way to gracefully handle error in application code.
+
+```js
+import React, { Component } from 'react'
+
+export class ErrorBoundary extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            hasError: false
+        }
+    }
+    static getDerivedStateFromError(error) {
+        return {
+            hasError: true
+        }
+    }
+        componentDidCatch(error, info) {
+        return{
+            hasError:true
+        }
+    }
+    render() {
+        if(this.state.hasError) {
+            return <h1>Something went wrong</h1>
+        }
+        return this.props.children
+    }
+}
+
+export default ErrorBoundary
+```
+
+### Higher order components - HOC
+
+Helps share common functionality between components
+
+```js
+import React from 'react'
+
+const UpdatedComponent = OriginalComponent => {
+    class NewComponent extends React.Component {
+        constructor(props) {
+            super(props);
+    
+            this.state = {
+                count: 0
+            }
+        }
+    
+        incrementCount = () => {
+            this.setState(prevState => {
+                return {count: prevState.count + 1 }
+            })
+        }
+        render() {
+            return <OriginalComponent count={this.state.count}
+            incrementCount={this.incrementCount} />
+        }
+    }
+    return NewComponent
+}
+
+export default UpdatedComponent
+```
+
+```js
+import React, { Component } from 'react'
+import UpdatedComponent from './withCounter';
+
+export class HoverCounter extends Component {
+ 
+    render() {
+        const {count, incrementCount} = this.props;
+        return (
+            <div>
+                <h2 onMouseOver = {incrementCount}>  Hovered {count} timer</h2>
+            </div>
+        )
+    }
+}
+
+export default UpdatedComponent(HoverCounter) 
+```
+
+## REACT HOOKS
+
+```js
+import React, { useState } from "react";
+
+function Todo({todo, index, completeTodo, removeTodo}){
+  return (
+    <div className="todo" style={{textDecoration: todo.isCompleted ? 'line-through' : ''}}>
+      {todo.text}
+      <div>
+        <button onClick = {() => completeTodo(index)}>Complete</button>
+        <button onClick = {() => removeTodo(index)}>X</button>
+      </div>
+    </div>
+  )
+}
+
+function TodoForm({addTodo}) {
+  const [value, setValue] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(!value) return;
+    addTodo(value);
+    setValue('');
+  }
+  return(
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={value} onChange={e => setValue(e.target.value
+      )}/>
+    </form>
+  )
+}
+
+function App() {
+  const [todos, setTodos] =  useState([
+    {
+      text: "Learn React",
+      isCompleted: false
+    },
+    {
+      text: "Meet a friend",
+      isCompleted: false
+    },
+    {
+      text: "Build timer app",
+      isCompleted: false
+    }
+  ])
+
+  const addTodo = text => {
+    const NewTodos = [...todos, {text}];
+    setTodos(NewTodos);
+  }
+
+  const completeTodo = index => {
+    const newTodos = [...todos];
+    newTodos[index].isCompleted = true;
+    setTodos(newTodos);
+  }
+
+  const removeTodo = index => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  }
+  return (
+    <div>
+      <div className="todo-list">
+        {todos.map((todo, index) => (
+          <Todo key={index} todo={todo} 
+          index={index} completeTodo={completeTodo} removeTodo={removeTodo}/>
+        ))}
+        <TodoForm addTodo={addTodo}/>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
+
+
+```js
+import React, { useState } from 'react'
+
+function ClickCounter() {
+    const [count, setCount] = useState(0);
+    return (
+        <div>
+            <button onClick={() => setCount(count + 1)}>Count {count}</button>
+        </div>
+    )
+}
+
+export default ClickCounter
+```
