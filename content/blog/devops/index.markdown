@@ -22,45 +22,45 @@ How to use:
 + Pull an image
   
 ```bash
-    $ docker pull centos
-    $ docker pull centos/version:number //get specific version of an image
+    $docker pull centos
+    $docker pull centos/version:number //get specific version of an image
 ```
 
 + Run a Container
   
 ```bash
-    $ docker run -d -t --name containername centos
-    $ docker run -d -t -p 80:80 -name containername centos/version:number //run docker image on your website
+    $docker run -d -t --name containername centos
+    $docker run -d -t -p 80:80 -name containername centos/version:number //run docker image on your website
 ```
 
 + Check your your running containers
 
 ```bash
-    $ docker ps
+    $docker ps
 ```
 
 + Connect to your docker container
 
 ```bash
-    $ docker exec -it containername bash
+    $docker exec -it containername bash
 ```
 
 + Stop reunning docker container
 
 ```bash
-    $ docker stop containername
+    $docker stop containername
 ```
 
 + Start reunning docker container
 
 ```bash
-    $ docker start containername
+    $docker start containername
 ```
 
 + Check resources being used
 
 ```bash
-    $ docker stats
+    $docker stats
 ```
 
 Why docker is cool:
