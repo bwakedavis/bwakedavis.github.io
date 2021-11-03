@@ -1,33 +1,103 @@
 ---
 title: A walk through reactjs
 date: "2020-09-03T22:12:03.284Z"
-description: "React JS is a open source frontend JavaScript library that focuses on building reach user interfaces.It was created and maintained by Facebook"
+description: "React Hooks"
 ---
 
-**Reactjs** React JS is a open source frontend JavaScript library that focuses on building reach user interfaces.
-It has a component based architecture and handles DOM update gracefully.
-You can intergrate other third party packages into react and react too intergrate with other applications or a portion of an application gracefully.
 
-To get started with reactjs you need *nodejs*, *a code editor* and *npm*.
+```js
+import React, { useState } from "react";
 
-install create-react-app with npm
+function Todo({todo, index, completeTodo, removeTodo}){
+  return (
+    <div className="todo" style={{textDecoration: todo.isCompleted ? 'line-through' : ''}}>
+      {todo.text}
+      <div>
+        <button onClick = {() => completeTodo(index)}>Complete</button>
+        <button onClick = {() => removeTodo(index)}>X</button>
+      </div>
+    </div>
+  )
+}
 
-```bash
-npm install create-react-app -g
+function TodoForm({addTodo}) {
+  const [value, setValue] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(!value) return;
+    addTodo(value);
+    setValue('');
+  }
+  return(
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={value} onChange={e => setValue(e.target.value
+      )}/>
+    </form>
+  )
+}
+
+function App() {
+  const [todos, setTodos] =  useState([
+    {
+      text: "Learn React",
+      isCompleted: false
+    },
+    {
+      text: "Meet a friend",
+      isCompleted: false
+    },
+    {
+      text: "Build timer app",
+      isCompleted: false
+    }
+  ])
+
+  const addTodo = text => {
+    const NewTodos = [...todos, {text}];
+    setTodos(NewTodos);
+  }
+
+  const completeTodo = index => {
+    const newTodos = [...todos];
+    newTodos[index].isCompleted = true;
+    setTodos(newTodos);
+  }
+
+  const removeTodo = index => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  }
+  return (
+    <div>
+      <div className="todo-list">
+        {todos.map((todo, index) => (
+          <Todo key={index} todo={todo} 
+          index={index} completeTodo={completeTodo} removeTodo={removeTodo}/>
+        ))}
+        <TodoForm addTodo={addTodo}/>
+      </div>
+    </div>
+  );
+}
+
+export default App;
 ```
 
-Create your reactjs project with ```npx``` and open it in your code editor.
+```js
+import React, { useState } from 'react'
 
-```bash
-npx create-react-app project-name
+function ClickCounter() {
+    const [count, setCount] = useState(0);
+    return (
+        <div>
+            <button onClick={() => setCount(count + 1)}>Count {count}</button>
+        </div>
+    )
+}
+
+export default ClickCounter
 ```
 
-move into your project folder and run ```npm start``` to start a local live server on port ```3000```.
-
-Components are part of the UI. There are two types of components:
-
-+ Functional components
-+ Class components
-
-Reactjs uses jsx(JavaScript XMl) an extension of JavaScript language syntax which allows you to write xml like code which is intuitive and easy to understand.
 It translates to regular JavaScript.

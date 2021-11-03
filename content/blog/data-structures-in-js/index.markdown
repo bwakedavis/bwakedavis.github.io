@@ -7,14 +7,25 @@ description: "Data Structures and Algorithms are important concepts in Computer 
 
 **Data Structure** is a way of organizing data so that it can be used effectively.
 
+It's a named collection that can be used to store and organize data so that it can be accessed efficiently
+
 **Abstract data types** are abstraction of data which provides only the interface to which a data structure must adhere to.
 The interface does not give any specific details about how something should be done.
+
+Types of Datastructures - Linear, non-linear
 
 An **algorithm** is a sequence of instructions to solve a clearly defined problem.
 or
 Is a set of steps to accomplis a certain task.
 
 The best algorithm is the one which has the best performance.
+
+#### Fatctors of a good algorithm
+
++ Input and output should be defined precisely
++ Clear steps and unambigous
++ Most effective
++ Should just include code
 
 #### Steps of solving a problem
 
@@ -367,7 +378,8 @@ Values and keys are only weakly referenced. Garbage collection can delete keys a
 
 #### Stacks
 
-Stacks works on the principle of first in last out and last in first out.
+Stacks works on the principle of first in last out and last in first out(LIFO).
+
 
 ```javascript
 //Create a class stack
@@ -631,6 +643,21 @@ linkedlist.clearList()
 linkedlist.printData();
 ```
 
+### Queue
+
+Works in the Firt In Firt Out(FIFO) principle
+
+## Non-Linear DataS tructures
+
+### Graph DS
+
+Each node is called vertex and each vertex is connected to other vertices through edges
+
+| Linear Data Structure| Linear Data Structure 2|
+| :------------- | :----------: |
+|  Data items are arranged in a sequantial order, one after the other | Data items are arranged in a non-sequantial order   |
+| You Can Also   | Put Pipes In | 
+
 ### Problem solving
 
 + Understand the problem.
@@ -639,7 +666,7 @@ linkedlist.printData();
 + Solve/ simplify.
 + Look back and refactor.
 
-##### What is the order of the output.
+#### What is the order of the output.
 
 ```javascript
 console.log('a');

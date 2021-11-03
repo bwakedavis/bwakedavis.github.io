@@ -4,6 +4,15 @@ date: "2018-12-27T22:12:03.284Z"
 description: "JavaScript is a scripting language developed to add functionality in the browser. It's use nowdays extends building mobile apps, creating servers, building desktop apps etc"
 ---
 
+Was created by Brendan Eich in 19996
+Inbuilt in all the browsers
+```code``` is a set of special instructions written to tell a computer what to do
+```computer language``` is  a set of rules for valid format and combination of instructions
+```statements``` - a group of words, numbers and operators that perform a specific function or task
+```variables``` - boxes that store data
+```literal value``` - a value not stored in a variable
+```expressions``` - any reference to a variable and values combined with operators
+
 ### Linking JavaScript to your HTML
 
 #### Method 1

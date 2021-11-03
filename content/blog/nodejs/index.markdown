@@ -4,6 +4,34 @@ date: "2020-06-12T22:12:03.284Z"
 description: "Nodejss"
 ---
 
+
+Here is a way to update your node js version to the current stable version or current latest version
+Get the latest stable version
+
+```bash
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
+
+Or you can get the latest and not stable version using
+
+```bash
+sudo n latest
+```
+
+This changes your current the path of your nodejs and if you're using the same shell run update the path with
+
+```bash
+PATH="$PATH"
+```
+
+Or Fix path ny running
+
+```bash
+sudo apt-get install --reinstall nodejs-legacy     # fix /usr/bin/node
+```
+
 ## Create a basic server in node js
 
 Make a web server that responds to a http request.
