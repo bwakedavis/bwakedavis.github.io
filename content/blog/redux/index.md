@@ -4,6 +4,18 @@ date: "2020-09-03T22:12:03.284Z"
 description: "Redux is state management library"
 ---
 
+Is a predictable state container for JavaScript apps
+It stores the state of your app in a container and manages it
+
+Redux has a **store** that holds the state of your app. The state of the whole app is stored in an object tree with a single store. Allow access to the state via ```getState()```. Allow state to be updated via ```dispatch(action)```. Register listeners via ```subscrie(listener)```. Handles unregistering of listeners via the function returned by ```subscribe()```. The redux store is separate from the app and can be accessed anywhere in the app.
+
+An **action** that describes the changes in the state of the app. The only way to change state is to emit an action, an object describing what happens. The only way your app can interact with the store is through actions.The action carry information from the app to the store.They are plain JavaScript objects.
+
+A **reducer** specify how the app's state changes in response to the actions sent to the store. To specify how state trees transformed by actions, you write pure reducers
+
+
+
+
 ## Example one
 
 ```js
