@@ -1,5 +1,5 @@
 ---
-title: Learn all things Bitcoin
+title: learn all things bitcoin
 date: "2020-04-13T22:12:03.284Z"
 description: "I guess you have heard of Bitcoin almost anywhere.It's all over and has been 
 since it's inception.In this aticle we're going to dive into it's fundamentals to the advanced tech it's built on"

@@ -1,5 +1,5 @@
 ---
-title: Understanding webRTC
+title: understanding webRTC
 date: "2021-02-10T22:12:03.284Z"
 description: "WEBRTC Browser API"
 ---

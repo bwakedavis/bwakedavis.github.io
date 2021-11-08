@@ -1,5 +1,5 @@
 ---
-title: A walk through reactjs
+title: a walk through reactjs
 date: "2020-09-03T22:12:03.284Z"
 description: "React JS is a open source frontend JavaScript library that focuses on building reach user interfaces.It was created and maintained by Facebook"
 ---

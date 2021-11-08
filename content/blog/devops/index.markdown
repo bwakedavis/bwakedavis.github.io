@@ -1,5 +1,5 @@
 ---
-title: Learn Deveops
+title: learn deveops
 date: "2020-05-12T22:12:03.284Z"
 description: "Deveops is an important part of software development that links software evelopment and production"
 ---

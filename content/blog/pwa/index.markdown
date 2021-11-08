@@ -1,5 +1,5 @@
 ---
-title: Progressive Web Apps
+title: progressive web apps(PWA)
 date: "2020-09-03T22:12:03.284Z"
 description: "progressive web applications"
 ---

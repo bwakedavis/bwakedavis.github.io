@@ -1,5 +1,5 @@
 ---
-title: User Experience and User Interface Design
+title: user experience(UX) and user interface design(UI)
 date: "2020-05-02T22:12:03.284Z"
 description: "User Experience and User Interface Design are important elements in development of any product"
 ---

@@ -1,5 +1,5 @@
 ---
-title: Understand Blockchain Technology
+title: understand blockchain technology
 date: "2020-04-12T22:12:03.284Z"
 description: "Blockchain technology brought to the limelight by Bitcoin implementation is a promising tech 
 that will power the important part of Web 3.0. Lets take a look at the confusing parts of the BlockChain Technology."

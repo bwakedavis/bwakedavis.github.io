@@ -1,5 +1,5 @@
 ---
-title: A walk through Redux with react
+title: a walk through redux with react
 date: "2020-09-03T22:12:03.284Z"
 description: "Redux is state management library"
 ---

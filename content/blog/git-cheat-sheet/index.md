@@ -1,5 +1,5 @@
 ---
-title: Git Cheat Sheet
+title: git cheat sheet
 date: "2019-02-21T22:12:03.284Z"
 description: "Git is a free open source distributed version control tool that tracks changes in your file. 
 As a developer believe me you need it more than anything else ('Just kidding 😛'). But its important."

@@ -1,5 +1,5 @@
 ---
-title: How to install Mariadb on linux debian
+title: how to install mariadb on linux debian
 date: "2020-06-12T22:12:03.284Z"
 description: "Mysql has given me a hard time setting it up evrything I have a fresh install on my machine.Lets take a look on how we can set it up and trouble shoot in case you run into errors"
 ---

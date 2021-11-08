@@ -1,5 +1,5 @@
 ---
-title: JavaScript High Order Array Methods
+title: JavaScript high order array methods
 date: "2019-05-06T23:46:37.121Z"
 description: "The es6+ array methods are now a way to go when working with arrays and objects in an array.They can save you a lot of pain and even make you say bye to loops 😁😁😁 .
 Lets have a look at the most used ones:"

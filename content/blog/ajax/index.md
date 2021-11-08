@@ -1,5 +1,5 @@
 ---
-title: Learn Asynchronous JavaScript and XML(AJAX)
+title: learn asynchronous JavaScript and XML(AJAX)
 date: "2019-11-17T22:40:32.169Z"
 description : "Asynchronous JavaScript and XMLAJAX enables you to:
 

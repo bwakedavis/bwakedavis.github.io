@@ -1,5 +1,5 @@
 ---
-title: Understand Ethereum and it's Wide Ecosystem
+title: understand ethereum and it's wide ecosystem
 date: "2020-05-02T22:12:03.284Z"
 description: "Ethereum is the second most popular blockchain after the one that runs on Bitcoin. It's value token is called Ether"
 ---
