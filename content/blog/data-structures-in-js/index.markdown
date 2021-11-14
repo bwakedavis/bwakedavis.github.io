@@ -9,10 +9,7 @@ description: "Data Structures and Algorithms are important concepts in Computer 
 
 It's a named collection that can be used to store and organize data so that it can be accessed efficiently
 
-**Abstract data types** are abstraction of data which provides only the interface to which a data structure must adhere to.
-The interface does not give any specific details about how something should be done.
-
-### Classification of Data Structus
+### Classification of Data Structures
 
 + Linear vs non-linear
     + Linear data structure items are arranged in a linear sequence. eg. stacks, queues, arrays
@@ -23,7 +20,8 @@ The interface does not give any specific details about how something should be d
 + Primitive vs Abstract
     + Primitive data structures are basic data structures. 
     i.e. Integers(fractional numbers), character(alphabet and special characters), string(sequence of alphabet, alphanumeric, special symbols), pointer(address variable)
-    + Abstract data structures are derived from primitive data structures. eg. arrays, lists and files
+    + Abstract data structures are derived from primitive data structures. eg. arrays, lists and files. **Abstract data types** are abstraction of data which provides only the interface to which a data structure must adhere to.
+The interface does not give any specific details about how something should be done.
 
 ### Factors to consider when designing a data structure
 
@@ -57,98 +55,6 @@ end - start
 ```
 
 + *speed might not be precise*
-
-## Big O Notation
-
-It allows us to talk formally how the runtime of an input grows as the input grows.
-It gives you an upper bound on the complexity in the worst case, helping to quantify performance as input size becomes arbitrary large.
-It helps us write code tha runs faster using less memory(RAM).
-Constants don't matter.It only cares about the graph shape.
-Smaller terms don't matter.It only cares about the number of operations as N approaches infinity.
-
-+ Arithmetic operations are constant
-+ Variable assignment is constant
-+ Acessing elements in an array(by index) or object (by key) is constant.
-+ In a loop, the time complexity is the length of the loop times the complexity or whatever happens inside the loop.
-  
-**Space Complexity** - refers to how much additional memory is needed to be allocated in order to run the code in our algorithm.
-
-**Time Complexity** - Analyze runtime as the size of the input increases.
-
-**Auxiliary Space** - space required by the algorithm, not including space taken by the input
-
-Suppose we have a problem to write a function that that calculates the sum of all numbers from one upto and inclunding a certain number ```n```.
-
-The shorter ```solution 2``` runs in a shorter amount of time than ```solution 1```.
-The number of operations in ```solution 1``` grows as n increases.
-The number of operations in ```solution 2``` remains constant(3) despite the value of ```n```.
-
-```javascript
-//solution 1
-function addUpTo(n){
-let total = 0;
-
-for (let i=1; i <= n; i++) {
-    total += i;
-}
-return total;
-}
-let startTime;
-let stopTime;
-startTime = performance.now()
-console.log(addUpTo(100));
-stopTime = performance.now();
-console.log(stopTime - startTime)
-
-//solution 2
-function addUpToN(n){
-    return n * (n + 1) / 2;
-}
-
-startTime = performance.now()
-console.log(addUpToN(100));
-stopTime = performance.now();
-console.log(stopTime - startTime)
-```
-
-### Asymptomatic Analysis
-
-Is amethod of derivind Big 0.
-Steps:
-
-+ Define a function i.e mathematical function of the time complexity by counting the number of expression operations.
-+ Find the fastest groowing term.
-+ Remove the co-efficient.
-
-In some operations the size of the input has no effect on the time it takes the algorithm to run.
-eg.using mathematical formulas.
-
-```javascript
-let start = 0;
-let end = 0
-
-function sumUp(n) {
-    return (n/2) * (1 + n);
-}
-
-start = performance.now();
-sumUp(1000);
-end = performance.now();
-end - start
-```
-
-### Order of Complexities
-
-Starting from the *smallest* to the *largest*.
-
-+ Constant Time: **0(1)**
-+ Logarithmic Time: **0(log(n))**
-+ Linear Time: **0(n)**
-+ Linearithmic Time: **0(nlog(n))**
-+ Quadratic Time: **0(n<sup>2</sup>)**
-+ Cubic Time: **0(n<sup>3</sup>)**
-+ Exponential Time: **0(b<sup>n</sup>), b > 1**
-+ Factorial Time: **0(n!)**
 
 ### Arrays
 
@@ -211,7 +117,7 @@ numbers.splice(2,1)
 console.log(numbers)
 ```
 
-#### Stacks
+### Stacks
 
 Is an ordered list which all insertion are made at one end called the TOP.
 Stacks works on the principle of first in last out and last in first out(LIFO).
@@ -547,7 +453,7 @@ console.log(names.has(1))
 names.forEach(item => console.log(item));
 ```
 
-#### Objects
+### Objects
 
 We use objects when we:
 
@@ -943,7 +849,7 @@ Is a non empty collection of nodes and edges that satisfies the following requir
 
 #### Binary trees
 
-#### Bianary Search trees
+#### Binary Search trees
 
 # Algorithms
 
@@ -1028,3 +934,95 @@ The best algorithm is the one which has the best performance.
     }
     ```
     + O(n*m)
+
+## Big O Notation
+
+It allows us to talk formally how the runtime of an input grows as the input grows.
+It gives you an upper bound on the complexity in the worst case, helping to quantify performance as input size becomes arbitrary large.
+It helps us write code tha runs faster using less memory(RAM).
+Constants don't matter.It only cares about the graph shape.
+Smaller terms don't matter.It only cares about the number of operations as N approaches infinity.
+
++ Arithmetic operations are constant
++ Variable assignment is constant
++ Acessing elements in an array(by index) or object (by key) is constant.
++ In a loop, the time complexity is the length of the loop times the complexity or whatever happens inside the loop.
+  
+**Space Complexity** - refers to how much additional memory is needed to be allocated in order to run the code in our algorithm.
+
+**Time Complexity** - Analyze runtime as the size of the input increases.
+
+**Auxiliary Space** - space required by the algorithm, not including space taken by the input
+
+Suppose we have a problem to write a function that that calculates the sum of all numbers from one upto and inclunding a certain number ```n```.
+
+The shorter ```solution 2``` runs in a shorter amount of time than ```solution 1```.
+The number of operations in ```solution 1``` grows as n increases.
+The number of operations in ```solution 2``` remains constant(3) despite the value of ```n```.
+
+```javascript
+//solution 1
+function addUpTo(n){
+let total = 0;
+
+for (let i=1; i <= n; i++) {
+    total += i;
+}
+return total;
+}
+let startTime;
+let stopTime;
+startTime = performance.now()
+console.log(addUpTo(100));
+stopTime = performance.now();
+console.log(stopTime - startTime)
+
+//solution 2
+function addUpToN(n){
+    return n * (n + 1) / 2;
+}
+
+startTime = performance.now()
+console.log(addUpToN(100));
+stopTime = performance.now();
+console.log(stopTime - startTime)
+```
+
+### Asymptomatic Analysis
+
+Is amethod of derivind Big 0.
+Steps:
+
++ Define a function i.e mathematical function of the time complexity by counting the number of expression operations.
++ Find the fastest groowing term.
++ Remove the co-efficient.
+
+In some operations the size of the input has no effect on the time it takes the algorithm to run.
+eg.using mathematical formulas.
+
+```javascript
+let start = 0;
+let end = 0
+
+function sumUp(n) {
+    return (n/2) * (1 + n);
+}
+
+start = performance.now();
+sumUp(1000);
+end = performance.now();
+end - start
+```
+
+### Order of Complexities
+
+Starting from the *smallest* to the *largest*.
+
++ Constant Time: **0(1)**
++ Logarithmic Time: **0(log(n))**
++ Linear Time: **0(n)**
++ Linearithmic Time: **0(nlog(n))**
++ Quadratic Time: **0(n<sup>2</sup>)**
++ Cubic Time: **0(n<sup>3</sup>)**
++ Exponential Time: **0(b<sup>n</sup>), b > 1**
++ Factorial Time: **0(n!)**
