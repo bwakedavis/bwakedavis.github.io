@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 08 Nov 2021 19:45:55 GMT</lastBuildDate><item><title><![CDATA[understanding webRTC]]></title><description><![CDATA[Web RealTime Communication offers realtime communication natively from a web browser.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Techincal Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Nov 2021 11:56:18 GMT</lastBuildDate><item><title><![CDATA[understanding webRTC]]></title><description><![CDATA[Web RealTime Communication offers realtime communication natively from a web browser.
 webRTC is a media engine with JavaScript API’s. How…]]></description><link>https://bwakedavis.github.io/webrtc/</link><guid isPermaLink="false">https://bwakedavis.github.io/webrtc/</guid><pubDate>Wed, 10 Feb 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Web RealTime Communication offers realtime communication natively from a web browser.
 webRTC is a media engine with JavaScript API’s.&lt;/p&gt;
 &lt;h2&gt;How&lt;/h2&gt;
@@ -217,63 +217,31 @@ myObject &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span cl
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; invoice &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Davis&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;building a smart contract&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;500&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[data structures and algorithms in JavaScript]]></title><description><![CDATA[Data Structure is a way of organizing data so that it can be used effectively. It’s a named collection that can be used to store and…]]></description><link>https://bwakedavis.github.io/data-structures-in-js/</link><guid isPermaLink="false">https://bwakedavis.github.io/data-structures-in-js/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Data Structure&lt;/strong&gt; is a way of organizing data so that it can be used effectively.&lt;/p&gt;
 &lt;p&gt;It’s a named collection that can be used to store and organize data so that it can be accessed efficiently&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Abstract data types&lt;/strong&gt; are abstraction of data which provides only the interface to which a data structure must adhere to.
-The interface does not give any specific details about how something should be done.&lt;/p&gt;
-&lt;p&gt;Types of Datastructures - Linear, non-linear&lt;/p&gt;
-&lt;p&gt;An &lt;strong&gt;algorithm&lt;/strong&gt; is a sequence of instructions to solve a clearly defined problem.
-or
-Is a set of steps to accomplis a certain task.&lt;/p&gt;
-&lt;p&gt;The best algorithm is the one which has the best performance.&lt;/p&gt;
-&lt;h4&gt;Fatctors of a good algorithm&lt;/h4&gt;
+&lt;h3&gt;Classification of Data Structures&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Input and output should be defined precisely&lt;/li&gt;
-&lt;li&gt;Clear steps and unambigous&lt;/li&gt;
-&lt;li&gt;Most effective&lt;/li&gt;
-&lt;li&gt;Should just include code&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Steps of solving a problem&lt;/h4&gt;
-&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Understand the problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Linear vs non-linear&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Can you restate the problem in your own words&lt;/li&gt;
-&lt;li&gt;Wh Understand the problemat are the inputs that go into the problem&lt;/li&gt;
-&lt;li&gt;What are the outputs that are expectedCan output be dertermined from inputs&lt;/li&gt;
-&lt;li&gt;How do you label important pieces of data that are part of the problem&lt;/li&gt;
+&lt;li&gt;Linear data structure items are arranged in a linear sequence. eg. stacks, queues, arrays&lt;/li&gt;
+&lt;li&gt;Non-linear data structures, the items are not in sequence. eg. tree, graph&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Explore concrete example&lt;/p&gt;
+&lt;p&gt;Homogenous vs non-homogenous&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;come up with an example&lt;/li&gt;
-&lt;li&gt;sanity check so that the solution works&lt;/li&gt;
-&lt;li&gt;user stories&lt;/li&gt;
-&lt;li&gt;unit tests&lt;/li&gt;
-&lt;li&gt;start with simple examples&lt;/li&gt;
+&lt;li&gt;In homegenous all elements are of the same type&lt;/li&gt;
+&lt;li&gt;In non-homogenous the elements are not of the same type&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Break down the problem&lt;/p&gt;
+&lt;p&gt;Primitive vs Abstract&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Explicitly write the steps you need to take&lt;/li&gt;
+&lt;li&gt;Primitive data structures are basic data structures.
+i.e. Integers(fractional numbers), character(alphabet and special characters), string(sequence of alphabet, alphanumeric, special symbols), pointer(address variable)&lt;/li&gt;
+&lt;li&gt;Abstract data structures are derived from primitive data structures. eg. arrays, lists and files. &lt;strong&gt;Abstract data types&lt;/strong&gt; are abstraction of data which provides only the interface to which a data structure must adhere to.
+The interface does not give any specific details about how something should be done.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Solve and simplify the problem&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Write a simplified solution&lt;/li&gt;
-&lt;li&gt;Master common problem solving pattern&lt;/li&gt;
-&lt;li&gt;devise a plan for solving the problems&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Look back to the solution and refactor&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Importance&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Code performance&lt;/li&gt;
-&lt;li&gt;Trade offs among different approaches&lt;/li&gt;
-&lt;li&gt;Identifying inefficiencies&lt;/li&gt;
-&lt;li&gt;Interviews&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Factors to consider when designing a data structure&lt;/h3&gt;
 &lt;ul&gt;
@@ -305,96 +273,7 @@ end &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; start&lt;/code&g
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;speed might not be precise&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Big O Notation&lt;/h2&gt;
-&lt;p&gt;It allows us to talk formally how the runtime of an input grows as the input grows.
-It gives you an upper bound on the complexity in the worst case, helping to quantify performance as input size becomes arbitrary large.
-It helps us write code tha runs faster using less memory(RAM).
-Constants don’t matter.It only cares about the graph shape.
-Smaller terms don’t matter.It only cares about the number of operations as N approaches infinity.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Arithmetic operations are constant&lt;/li&gt;
-&lt;li&gt;Variable assignment is constant&lt;/li&gt;
-&lt;li&gt;Acessing elements in an array(by index) or object (by key) is constant.&lt;/li&gt;
-&lt;li&gt;In a loop, the time complexity is the length of the loop times the complexity or whatever happens inside the loop.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Space Complexity&lt;/strong&gt; - refers to how much additional memory is needed to be allocated in order to run the code in our algorithm.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Time Complexity&lt;/strong&gt; - Analyze runtime as the size of the input increases.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Auxiliary Space&lt;/strong&gt; - space required by the algorithm, not including space taken by the input&lt;/p&gt;
-&lt;p&gt;Suppose we have a problem to write a function that that calculates the sum of all numbers from one upto and inclunding a certain number &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The shorter &lt;code class=&quot;language-text&quot;&gt;solution 2&lt;/code&gt; runs in a shorter amount of time than &lt;code class=&quot;language-text&quot;&gt;solution 1&lt;/code&gt;.
-The number of operations in &lt;code class=&quot;language-text&quot;&gt;solution 1&lt;/code&gt; grows as n increases.
-The number of operations in &lt;code class=&quot;language-text&quot;&gt;solution 2&lt;/code&gt; remains constant(3) despite the value of &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//solution 1&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;addUpTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    total &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; total&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; startTime&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; stopTime&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-startTime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addUpTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-stopTime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stopTime &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; startTime&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;//solution 2&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;addUpToN&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-startTime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addUpToN&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-stopTime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stopTime &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; startTime&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Asymptomatic Analysis&lt;/h3&gt;
-&lt;p&gt;Is amethod of derivind Big 0.
-Steps:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Define a function i.e mathematical function of the time complexity by counting the number of expression operations.&lt;/li&gt;
-&lt;li&gt;Find the fastest groowing term.&lt;/li&gt;
-&lt;li&gt;Remove the co-efficient.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In some operations the size of the input has no effect on the time it takes the algorithm to run.
-eg.using mathematical formulas.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sumUp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;sumUp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-end &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Order of Complexities&lt;/h3&gt;
-&lt;p&gt;Starting from the &lt;em&gt;smallest&lt;/em&gt; to the &lt;em&gt;largest&lt;/em&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Constant Time: &lt;strong&gt;0(1)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Logarithmic Time: &lt;strong&gt;0(log(n))&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Linear Time: &lt;strong&gt;0(n)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Linearithmic Time: &lt;strong&gt;0(nlog(n))&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Quadratic Time: &lt;strong&gt;0(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Cubic Time: &lt;strong&gt;0(n&lt;sup&gt;3&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Exponential Time: &lt;strong&gt;0(b&lt;sup&gt;n&lt;/sup&gt;), b &gt; 1&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Factorial Time: &lt;strong&gt;0(n!)&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Static and Dynamic Arrays&lt;/h3&gt;
-&lt;p&gt;A &lt;strong&gt;static array&lt;/strong&gt; is a fixed length container containing &lt;em&gt;n&lt;/em&gt; elements &lt;em&gt;indexable&lt;/em&gt;(each slot can be refernced with a number) from the range of [0, n-1]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Dynamic arrays&lt;/strong&gt; can grow and shrink in size&lt;/p&gt;
-&lt;h3&gt;Singly and Doubly linked list&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Singly linked list&lt;/em&gt; uses less memory, has a simpler implementaion and it’s not easy to access the previous element.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Doubly linked list&lt;/em&gt; can be traversed backwards and it takes 2 times the memory.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Head&lt;/em&gt; refers to the first node in a linked list.
-&lt;em&gt;Tail&lt;/em&gt; refers to the last item in the node.
-&lt;em&gt;Pointer&lt;/em&gt; reference another node.
-&lt;em&gt;Node&lt;/em&gt; is an object containing data.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Stack&lt;/em&gt; is a one ended liner data structure models a real world stack by having two primary operations ie. push, pop.
-&lt;em&gt;Queue&lt;/em&gt; is a linear data structure which models real world queues by having two primary operations namely enqueue and dequeue,&lt;/p&gt;
-&lt;h4&gt;Arrays&lt;/h4&gt;
+&lt;h3&gt;Arrays&lt;/h3&gt;
 &lt;p&gt;Ordered lists.
 Used when you need order.
 fast access,insertion and removal of elements
@@ -403,6 +282,12 @@ Element accessed via indexes.
 Iterable using loops.
 Size/length adjus dynamically.
 Duplicate value are allowed.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;static array&lt;/strong&gt; is a fixed length container containing &lt;em&gt;n&lt;/em&gt; elements &lt;em&gt;indexable&lt;/em&gt;(each slot can be refernced with a number) from the range of [0, n-1]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dynamic arrays&lt;/strong&gt; can grow and shrink in size
+&lt;strong&gt;Linear Array&lt;/strong&gt; is a list of finite elements with the same data types
+&lt;strong&gt;Multidimensional array&lt;/strong&gt; is an array where an element is reffered by more than one subscript
+&lt;strong&gt;Column major order&lt;/strong&gt; is an element that is stored in the memory column
+&lt;strong&gt;Row major order&lt;/strong&gt; is an element that is stored in the memory row&lt;/p&gt;
 &lt;p&gt;Insertion - Depends.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;inseting at the beginning is 0(N)&lt;/li&gt;
@@ -440,97 +325,40 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;span class=&quot;token comment&quot;&gt;//deleting element with splice&lt;/span&gt;
 numbers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;numbers&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Sets&lt;/h4&gt;
-&lt;p&gt;Are created with constructor function.
-Doesn’t allow duplicate values.
-Insertion order is not stored.
-Element access and extraction via methods.
-Size/lenght adjusts dynamically.
-Duplicate values are not allowed.
-Allows mixed type of data.
-Deletion and finding of elements is trivial fast.
-Can’t be accessed by index. instead uses &lt;code class=&quot;language-text&quot;&gt;.has&lt;/code&gt; method.
-Iterable.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; names &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Kyle&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Jack&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Evans&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;//add a value&lt;/span&gt;
-names&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Shawn&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;names&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;//Check if a value exists&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;names&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;has&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;//loop&lt;/span&gt;
-names&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;item&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Objects&lt;/h4&gt;
-&lt;p&gt;We use objects when we:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;don’t need order&lt;/li&gt;
-&lt;li&gt;fast access, insertion and removal&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Objects can have methods, keys and values.
-Unordered key values.
-Elements accessed via key(proprty name).
-Not iterable (only with for in loop).
-Keys are unique, values are not.
-Keys can be strings, numbers or symbols.
-Can store data and functionality through methods.&lt;/p&gt;
-&lt;p&gt;Insertion - 0(1)
-Removal - 0(1)
-Searching - 0(N)
-Access - 0(1)&lt;/p&gt;
-&lt;p&gt;Object.keys - 0(N)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Object.values - 0(N)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Object.entries - 0(N)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;entries&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Object.hasOwnProperty - 0(1)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hasOwnProperty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; student &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Davis&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    admNo&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;COM 001&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    unit&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Assembly&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Data Structures&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    numberOfUnits&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;//Add method to object&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;//add property&lt;/span&gt;
-student&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;student&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-student&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Maps&lt;/h4&gt;
-&lt;p&gt;Are ordered key value pairs.
-Element accessed by the keys.
-Iterable
-Keys are unique, values aren’t.
-Keys can be anything including referencing values like arrays.
-They’re pure data storage optimized for data access.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; map &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;country&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Kenya&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;population&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; cities &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;numberOfCities&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cities&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;three&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;map&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; element &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; map&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;element&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;country&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cities&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Weakset and Weakmaps&lt;/h4&gt;
-&lt;p&gt;Variations of sets and maps.
-Values and keys are only weakly referenced. Garbage collection can delete keys and values if not used in the app hence giving you memory advantage.&lt;/p&gt;
-&lt;h4&gt;Stacks&lt;/h4&gt;
-&lt;p&gt;Stacks works on the principle of first in last out and last in first out(LIFO).&lt;/p&gt;
+&lt;h3&gt;Stacks&lt;/h3&gt;
+&lt;p&gt;Is an ordered list which all insertion are made at one end called the TOP.
+Stacks works on the principle of first in last out and last in first out(LIFO).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Stack&lt;/em&gt; is a one ended liner data structure models a real world stack by having two primary operations ie. push, pop.&lt;/p&gt;
+&lt;p&gt;There’re 2 operations push and pop&lt;/p&gt;
+&lt;h5&gt;push operation&lt;/h5&gt;
+&lt;p&gt;The process of adding new element to the top of a stack.
+Each time an element is inserted into a stack, top pointer will be impelented by one position and new value will be stored in the top location.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorith Add(item) {
+// pust an element into a stack, returns true if succesfull
+//else return item is used as input
+{
+    if (top &amp;gt;= n-1) then {
+        write(&amp;quot;Stack is full)
+    } esle {
+        Top = top + 1
+        Stack(top) = item
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Pop Operation&lt;/h5&gt;
+&lt;p&gt;Deleting an existing element from the top of the stack
+On each delete attempt, the data element at the top of the stack is retrieved and the top pointer decremented by one position down.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm Delete(item){
+    //pop the top element from the stack returns true if successful
+    //else return false &amp;quot;item
+ is used as an output
+ if(top &amp;lt; 0) then
+ {
+     Write(&amp;quot;Stack is empty&amp;quot;)
+ } else{
+     item = stack(top)
+     Top = top - 1
+ }
+ }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//Create a class stack&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Stack&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -631,7 +459,255 @@ stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;word &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; is not a palindome&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Linked Stack&lt;/h5&gt;
+&lt;p&gt;Another way to represent a stack is by using links or pointers.
+NODE is a collection of data and information.
+A stack can be represented using nodes with 2 fields called data and links.&lt;/p&gt;
+&lt;p&gt;Stack polish notation implementation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Normaly in arithmetic expressions, when the operators symbol is placed between 2 operand it’s called &lt;strong&gt;infix notation&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prefix notation&lt;/strong&gt; the operator symboll is placed before the operand&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Post fix/reverse polish notation&lt;/strong&gt; operator symbol is placed after the operator.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The computer evalutes the arithmetic expressions written in infix notation in 2 steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It converts the arithmetic expressions to postfix notation and then evalutes the postfix expression&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6&gt;Converion of infix to postfix expression&lt;/h6&gt;
+&lt;p&gt;Let E be an arithmetic expression written in infix notation P is postfix expression&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Algorith Polish (E,P)&lt;/li&gt;
+&lt;li&gt;Add to the end E&lt;/li&gt;
+&lt;li&gt;Scan E from left to right and repeat 4-7 for each element of E until the stack is empty&lt;/li&gt;
+&lt;li&gt;If an operand is encounterd add it to P&lt;/li&gt;
+&lt;li&gt;If a left parenthesis is encountered , add onto the satck&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If an operator is encountered;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pop from the stack  continously and add it to P. Each operator which has the same amount or higher precedence than the scanned operator&lt;/li&gt;
+&lt;li&gt;Add the scanned operator to the stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If a right paranthesis is encountered then:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pop from stack continusly and add it to P. Each operator until a left parenthesis is encountered&lt;/li&gt;
+&lt;li&gt;Remove the left parenthesis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;END&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Queue&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Queue&lt;/em&gt; is a linear data structure which models real world queues by having two primary operations namely enqueue and dequeue,&lt;/p&gt;
+&lt;p&gt;Works in the First In First Out(FIFO) principle.
+Inserting element at the end of the queue involves:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updating the rear maker&lt;/li&gt;
+&lt;li&gt;Placing the new element in the location pointed by the rear maker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adding element to a queue&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm addQ(item Q, n, rear )
+//insert item into the queue represented in Q ( 1:n)
+{
+    if(rear = n) then
+    {
+        Write(&amp;quot;Queue is full&amp;quot;)
+    }
+    else
+    {
+        rear = rear + 1;
+        Q(rear) = item
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Deleting an element from a queue.
+It’s carried out at the front. Elements inserted first are deleted first&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorthm Delete Q(item Q, front, rear)
+//Delete &amp;quot;item&amp;quot; from the Queue
+{
+if(front &amp;gt; rear) then
+{
+    Write(&amp;quot;Queue is empty)
+}
+front = front + 1
+item = Q(front)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Types of Queue&lt;/h5&gt;
+&lt;p&gt;Linear, Circular, Dequeue&lt;/p&gt;
+&lt;h6&gt;a. Linear Queue&lt;/h6&gt;
+&lt;p&gt;Has front and rear end
+Insertion takes place at the rear end and deletion at the front end.
+Can be traversed only in one direction(front to rear)
+If the front pointer is int the front position and the rear in the rear position then the queue is said to be fully occupied
+If the front override the rear the queue is said to be empty.&lt;/p&gt;
+&lt;h6&gt;b. Circular queue&lt;/h6&gt;
+&lt;p&gt;An advanced linear queue where the last position is connected to the first position
+It has 2 ends:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Front end where the deletion takes place&lt;/li&gt;
+&lt;li&gt;Rear end where the insertion takes place
+Traversal can be in one direction from front to rear&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Initially when such a queue is empty the front and rear values are -1 and -1 respectively and the queue has a null value for all its elements.&lt;/p&gt;
+&lt;p&gt;Everytime we add an element to the queue the rear value increments by one till the time it reaches the upper limit of the queue after which it starts all over again from zero&lt;/p&gt;
+&lt;p&gt;Everytime we delete an element from the queue the front value increments by one till the time it reaches the upper limit of the queue after which it starts all over again from zero(0)&lt;/p&gt;
+&lt;p&gt;Algorithm to add an item into a circular queue:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm Add Q( Item Q, n, front, rear)
+{
+    //Insert &amp;quot;item&amp;quot; in circular queue stated in Q(0:n)
+    //rear points to the last item
+    //counter clockwise from first item in Q
+    Rear = rear + 1
+    if(front = rear) then
+    {
+        Write(&amp;quot;Queue is full&amp;quot;)
+    }
+    Q(raer) = item // insert new item
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Algorithm to delete an item from circular queue&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm Delete Q(item Q, n, front, rear)
+{
+    //removes &amp;quot;item&amp;quot; in circular queue started in Q(0:n)
+    //counter clockwise from first item in Q
+    rear = rear + 1
+    if(front = rear) then 
+    {
+        Write(&amp;quot;Queue is full&amp;quot;)
+    }
+    Q(rear) = item //insert new item
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm Delete Q (item Q, n, front, rear)
+{
+    //removes &amp;quot;item&amp;quot; in circular queue started in Q(0:n - 1)
+    if(front = rear) then
+    {
+        Write(&amp;quot;Queue is empty&amp;quot;)
+    }
+    Front = (front ++1)
+    item = Q(front) // removes item from the queue
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h6&gt;c. Double ended queue(Deque)&lt;/h6&gt;
+&lt;p&gt;Also called homogenous list of elements in which insertion and deletion operation ae performed in both ends called double ended queue&lt;/p&gt;
+&lt;h5&gt;Priority queue&lt;/h5&gt;
+&lt;p&gt;It’s a data structure for maintaining a set of elements such that each element has been assigned priority such that the order in which elements are deleted and processed come from the following rules:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;An element for higher priority is processed before any element of low priority&lt;/li&gt;
+&lt;li&gt;Two element with the same priority are processed according to the order in which they were added to the queue.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Sets&lt;/h3&gt;
+&lt;p&gt;Are created with constructor function.
+Doesn’t allow duplicate values.
+Insertion order is not stored.
+Element access and extraction via methods.
+Size/lenght adjusts dynamically.
+Duplicate values are not allowed.
+Allows mixed type of data.
+Deletion and finding of elements is trivial fast.
+Can’t be accessed by index. instead uses &lt;code class=&quot;language-text&quot;&gt;.has&lt;/code&gt; method.
+Iterable.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; names &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Kyle&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Jack&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Evans&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//add a value&lt;/span&gt;
+names&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Shawn&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;names&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//Check if a value exists&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;names&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;has&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//loop&lt;/span&gt;
+names&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;item&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Objects&lt;/h3&gt;
+&lt;p&gt;We use objects when we:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;don’t need order&lt;/li&gt;
+&lt;li&gt;fast access, insertion and removal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Objects can have methods, keys and values.
+Unordered key values.
+Elements accessed via key(proprty name).
+Not iterable (only with for in loop).
+Keys are unique, values are not.
+Keys can be strings, numbers or symbols.
+Can store data and functionality through methods.&lt;/p&gt;
+&lt;p&gt;Insertion - 0(1)
+Removal - 0(1)
+Searching - 0(N)
+Access - 0(1)&lt;/p&gt;
+&lt;p&gt;Object.keys - 0(N)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Object.values - 0(N)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Object.entries - 0(N)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;entries&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Object.hasOwnProperty - 0(1)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hasOwnProperty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; student &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Davis&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    admNo&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;COM 001&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    unit&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Assembly&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Data Structures&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    numberOfUnits&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//Add method to object&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//add property&lt;/span&gt;
+student&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;student&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+student&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Maps&lt;/h3&gt;
+&lt;p&gt;Are ordered key value pairs.
+Element accessed by the keys.
+Iterable
+Keys are unique, values aren’t.
+Keys can be anything including referencing values like arrays.
+They’re pure data storage optimized for data access.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; map &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;country&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Kenya&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;population&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; cities &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;numberOfCities&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cities&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;three&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;map&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; element &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; map&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;element&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;country&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cities&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Weakset and Weakmaps&lt;/h4&gt;
+&lt;p&gt;Variations of sets and maps.
+Values and keys are only weakly referenced. Garbage collection can delete keys and values if not used in the app hence giving you memory advantage.&lt;/p&gt;
+&lt;h3&gt;Lists&lt;/h3&gt;
+&lt;p&gt;A list is an organised collection of items or elements of size n
+The general form of a list:
+List L { A1, A2, …, An} where A is the list of element and n is the list size&lt;/p&gt;
+&lt;h6&gt;List of operations&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;PrintList(L) - displays all the elements of the list&lt;/li&gt;
+&lt;li&gt;MakeEmpty - deletes all the elements of the list&lt;/li&gt;
+&lt;li&gt;Find - it returns the position of the first occurence of the element&lt;/li&gt;
+&lt;li&gt;Insert - it inserts some key in the same position&lt;/li&gt;
+&lt;li&gt;Delete - deletes some key in the same position&lt;/li&gt;
+&lt;li&gt;Find Kth - returns some element in the same position&lt;/li&gt;
+&lt;li&gt;Next - takes a position as an argument and returns the position of the successor&lt;/li&gt;
+&lt;li&gt;Previous - returns the position of the predecessor&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3&gt;Linked Lists&lt;/h3&gt;
+&lt;p&gt;The address that is stored in a linked list are of 3 types:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;External address&lt;/strong&gt; - the address of the first node which is stored in the head pointer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Internal address&lt;/strong&gt; - the address stored in the inner nodes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Null address&lt;/strong&gt; - the address stored by the null pointer of the last node.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Head&lt;/em&gt; refers to the first node in a linked list.
+&lt;em&gt;Tail&lt;/em&gt; refers to the last item in the node.
+&lt;em&gt;Pointer&lt;/em&gt; reference another node.
+&lt;em&gt;Node&lt;/em&gt; is an object containing data.&lt;/p&gt;
 &lt;p&gt;A linked list is a list data structure.
 It’s a linear data structure.Ordered collection of data.
 The nodes are not stored in the sequntial memory location
@@ -639,6 +715,47 @@ Elements are linked together using a pointer.
 The first element is called the head.
 Each node has data and a reference to the next element.
 The last element is called the tail and has a reference to null.&lt;/p&gt;
+&lt;p&gt;Types of linked list - Singly, Double and circular linked lists&lt;/p&gt;
+&lt;h6&gt;Singly LinkedList&lt;/h6&gt;
+&lt;p&gt;It’s a linked list in which each node contains only one linked list poinitng to the next node in the list.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Singly linked list&lt;/em&gt; uses less memory, has a simpler implementaion and it’s not easy to access the previous element.&lt;/p&gt;
+&lt;p&gt;It’s traversed only in one direction that is from head to null.&lt;/p&gt;
+&lt;p&gt;Algorithm to create a linked list&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudocode&quot;&gt;&lt;pre class=&quot;language-pseudocode&quot;&gt;&lt;code class=&quot;language-pseudocode&quot;&gt;Algorithm CreatKist(T) 
+{
+    //T is a pointer to the first node in the list
+    Get new node I //get new node
+    T = I
+    Data(I) = &amp;quot;A&amp;quot; //store information into a node
+    Get a new node I
+    Link(T) = I //atach first node to second node
+    Link(I) = 0
+    Data(I) = &amp;quot;B&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Algorithm to insert a node in a list&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm insertNode(T, X)
+{
+    //T is alist T=0 if T has no nodes
+    //Insert an item &amp;quot;c&amp;quot; after node x
+    Get new node F
+    Data (I) = &amp;quot;C&amp;quot;
+    if(T = 0) then
+    {
+        T = I
+        Link(I) = 0
+    } else {
+        Link(I) = Link(x)
+        Link(x) = I
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Algorithm to delete a node in a list&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm DeleteNode(x, y, T)
+{
+    //Prcedure to delete node &amp;quot;x&amp;quot; from &amp;quot;T&amp;quot; &amp;quot;y&amp;quot; be the node preceding &amp;quot;x&amp;quot;, &amp;quot;y&amp;quot; = 0 if &amp;quot;x&amp;quot; is first node of &amp;quot;T&amp;quot;
+    if(y=0) then T = Link(x)
+    else Link(y) = Link(x)
+    Remove &amp;quot;x&amp;quot; from storage
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//Our nodde class with a constructor taking in data and refernce to the next node&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;data&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; next &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -782,11 +899,42 @@ linkedlist&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span
 
 linkedlist&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;clearList&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 linkedlist&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;printData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Queue&lt;/h3&gt;
-&lt;p&gt;Works in the Firt In Firt Out(FIFO) principle&lt;/p&gt;
-&lt;h2&gt;Non-Linear DataS tructures&lt;/h2&gt;
+&lt;h6&gt;Doubly Linked List&lt;/h6&gt;
+&lt;p&gt;Has 2 pointer a forward link and a backward link.
+The forward link points to the next node in the list wheras the backward link points to the preceeding node
+&lt;em&gt;Doubly linked list&lt;/em&gt; can be traversed backwards and it takes 2 times the memory.&lt;/p&gt;
+&lt;p&gt;L LINK - previous node address
+R LINK - Next node address
+DATA - oiginal data value&lt;/p&gt;
+&lt;p&gt;Algorithm to delete a node from a list&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm D Delete(X,T)
+{
+    //delete node x from list T
+    if(X = T) the pint &amp;quot;No more node return
+    RLINK(LLINK(X)) = RLINK(X)
+    LLINK(RLINK(X)) = LLINK(X)
+    Removes X from storage
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Algorithm to insert a node into the list&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;pseudo&quot;&gt;&lt;pre class=&quot;language-pseudo&quot;&gt;&lt;code class=&quot;language-pseudo&quot;&gt;Algorithm  D Isert(P,X)
+{
+    //Insert node P into the right of node X
+    LLINK(P) = X
+    RLINK(P) = RLINK(X)
+    LLINK(RLINK(X)) = P
+    RLINK(X) = P
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h6&gt;d. Circular linkedlist&lt;/h6&gt;
+&lt;p&gt;A linked list in which the node at the tail of the list instead of having a null pointer points back to the start of the list thus both ends of the list can be accessed using a single pointer&lt;/p&gt;
+&lt;p&gt;It can be a :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Circular singly list - the last node is conected to the first
+or a &lt;/li&gt;
+&lt;li&gt;Circular doubly linked list - the last node is connected to the first node as well as  the first node is connected to the last node(double way)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Non-Linear Data tructures&lt;/h2&gt;
 &lt;h3&gt;Graph DS&lt;/h3&gt;
-&lt;p&gt;Each node is called vertex and each vertex is connected to other vertices through edges&lt;/p&gt;
+&lt;p&gt;Each node is called vertex(point) and each vertex is connected to other vertices through edges&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -805,124 +953,194 @@ linkedlist&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3&gt;Problem solving&lt;/h3&gt;
+&lt;h3&gt;Trees&lt;/h3&gt;
+&lt;p&gt;Is a non empty collection of nodes and edges that satisfies the following requirements&lt;/p&gt;
+&lt;h4&gt;Binary trees&lt;/h4&gt;
+&lt;h4&gt;Binary Search trees&lt;/h4&gt;
+&lt;h1&gt;Algorithms&lt;/h1&gt;
+&lt;p&gt;An &lt;strong&gt;algorithm&lt;/strong&gt; is a sequence of instructions to solve a clearly defined problem.
+or
+Is a set of steps to accomplish a certain task.
+A finite set of instructions to solve a particular task&lt;/p&gt;
+&lt;p&gt;The best algorithm is the one which has the best performance.&lt;/p&gt;
+&lt;h4&gt;Fatctors of a good algorithm&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Understand the problem.&lt;/li&gt;
-&lt;li&gt;Explore concrete example&lt;/li&gt;
-&lt;li&gt;Break it down.&lt;/li&gt;
-&lt;li&gt;Solve/ simplify.&lt;/li&gt;
-&lt;li&gt;Look back and refactor.&lt;/li&gt;
+&lt;li&gt;Input and output should be defined precisely. Zero or more should be supplied and atleast one produced&lt;/li&gt;
+&lt;li&gt;Definiteness - Clear steps and unambigous instructions&lt;/li&gt;
+&lt;li&gt;Effectiveness - basic instructions and carried in priciple&lt;/li&gt;
+&lt;li&gt;Finiteness - should terminate after a number of steps&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;What is the order of the output.&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;h4&gt;Steps of solving a problem&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Understand the problem&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you restate the problem in your own words&lt;/li&gt;
+&lt;li&gt;Wh Understand the problemat are the inputs that go into the problem&lt;/li&gt;
+&lt;li&gt;What are the outputs that are expectedCan output be dertermined from inputs&lt;/li&gt;
+&lt;li&gt;How do you label important pieces of data that are part of the problem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Explore concrete example&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;come up with an example&lt;/li&gt;
+&lt;li&gt;sanity check so that the solution works&lt;/li&gt;
+&lt;li&gt;user stories&lt;/li&gt;
+&lt;li&gt;unit tests&lt;/li&gt;
+&lt;li&gt;start with simple examples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Break down the problem&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Explicitly write the steps you need to take&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Solve and simplify the problem&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write a simplified solution&lt;/li&gt;
+&lt;li&gt;Master common problem solving pattern&lt;/li&gt;
+&lt;li&gt;devise a plan for solving the problems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Look back to the solution and refactor&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Importance of Algorithms&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Code performance&lt;/li&gt;
+&lt;li&gt;Trade offs among different approaches&lt;/li&gt;
+&lt;li&gt;Identifying inefficiencies&lt;/li&gt;
+&lt;li&gt;Interviews&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Computing time of an algorithm depends on&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;The input to the program&lt;/li&gt;
+&lt;li&gt;The code generated by the program which is used to create an object program&lt;/li&gt;
+&lt;li&gt;The nature and speed of instructio on the machine used to execute the program&lt;/li&gt;
+&lt;li&gt;The time taken by the program(TCP) is the sum the compiled time and the run time within the bracket execution time&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;How to determine complexities&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Sequence of statements&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Statement 1 … Statement n. Total time is found by adding the time for all statements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If then else statements&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(condition) {
+    sequence of statement 1;
+} else {
+    sequence of statement 2
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Either statement 1 or 2 will be executed. Worst case is O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For loops&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;for( i = 0; i &amp;lt; N; i++)
+{
+    Sequence
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nested Loops&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;for( i = 0; i &amp;lt; N; i++)
+{
+    for( j = 0; j &amp;lt; m; j++)
+    {
+        Sequence of statement
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;O(n*m)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Big O Notation&lt;/h2&gt;
+&lt;p&gt;It allows us to talk formally how the runtime of an input grows as the input grows.
+It gives you an upper bound on the complexity in the worst case, helping to quantify performance as input size becomes arbitrary large.
+It helps us write code tha runs faster using less memory(RAM).
+Constants don’t matter. It only cares about the graph shape.
+Smaller terms don’t matter. It only cares about the number of operations as N approaches infinity.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Arithmetic operations are constant&lt;/li&gt;
+&lt;li&gt;Variable assignment is constant&lt;/li&gt;
+&lt;li&gt;Acessing elements in an array(by index) or object (by key) is constant.&lt;/li&gt;
+&lt;li&gt;In a loop, the time complexity is the length of the loop times the complexity or whatever happens inside the loop.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Space Complexity&lt;/strong&gt; - refers to how much additional memory is needed to be allocated in order to run the code in our algorithm.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Time Complexity&lt;/strong&gt; - Analyze runtime as the size of the input increases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Auxiliary Space&lt;/strong&gt; - space required by the algorithm, not including space taken by the input&lt;/p&gt;
+&lt;p&gt;Suppose we have a problem to write a function that that calculates the sum of all numbers from one upto and inclunding a certain number &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The shorter &lt;code class=&quot;language-text&quot;&gt;solution 2&lt;/code&gt; runs in a shorter amount of time than &lt;code class=&quot;language-text&quot;&gt;solution 1&lt;/code&gt;.
+The number of operations in &lt;code class=&quot;language-text&quot;&gt;solution 1&lt;/code&gt; grows as n increases.
+The number of operations in &lt;code class=&quot;language-text&quot;&gt;solution 2&lt;/code&gt; remains constant(3) despite the value of &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//solution 1&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;addUpTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; total &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; functionOne &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    total &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; total&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; startTime&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; stopTime&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+startTime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addUpTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+stopTime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stopTime &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; startTime&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; functionTwo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; functionThree &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;d&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;e&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;output&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;a
-e
-b
-d
-c&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; runs before &lt;code class=&quot;language-text&quot;&gt;c&lt;/code&gt; because it’s on top of the stack and the one second is used to run the first console logs.&lt;/p&gt;
-&lt;h5&gt;using async/await and how it affects the order by which code runs&lt;/h5&gt;
-&lt;p&gt;What is the resulting output.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;increment&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    num &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Promise.resolve(2)&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//solution 2&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;addUpToN&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;token function&quot;&gt;increment&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-num &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;output&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h5&gt;Revealing module pattern&lt;/h5&gt;
-&lt;p&gt;Turn the object literal into a module that exposes only the &lt;code class=&quot;language-text&quot;&gt;render&lt;/code&gt; method.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; myModule &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    data&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token function-variable function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+startTime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addUpToN&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+stopTime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stopTime &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; startTime&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Asymptomatic Analysis&lt;/h3&gt;
+&lt;p&gt;Is a method of derivind Big 0.
+Steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Define a function i.e mathematical function of the time complexity by counting the number of expression operations.&lt;/li&gt;
+&lt;li&gt;Find the fastest groowing term.&lt;/li&gt;
+&lt;li&gt;Remove the co-efficient.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In some operations the size of the input has no effect on the time it takes the algorithm to run.
+eg.using mathematical formulas.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
 
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token function-variable function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token function-variable function&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sumUp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-myModule&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;~solution~&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; myModule &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    _data&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;token function-variable function&quot;&gt;_render&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token function-variable function&quot;&gt;_add&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token function-variable function&quot;&gt;_remove&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        render&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; _render
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;//only the render method is the only one accessible&lt;/span&gt;
-myModule&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h5&gt;Determine if a function received the expected number of parameters&lt;/h5&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token function&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;~solution~&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arguments&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length  &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; func&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;We have a match&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;no match&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token function&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h5&gt;What happens hen you run the code&lt;/h5&gt;
-&lt;p&gt;ASI, object literals,hoisting, square bracket syntax.
-How do you fix the error&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javscript&quot;&gt;&lt;pre class=&quot;language-javscript&quot;&gt;&lt;code class=&quot;language-javscript&quot;&gt;let a = {
-    a: 123
-}
-[a].forEach(function (x) {
-    console.log(x)
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;~solution~&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    a&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[asynchronous JavaScript]]></title><description><![CDATA[Callbacks Promises Async/ Await]]></description><link>https://bwakedavis.github.io/asyncjs/</link><guid isPermaLink="false">https://bwakedavis.github.io/asyncjs/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;Callbacks&lt;/h2&gt;
+start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;sumUp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; performance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+end &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Order of Complexities&lt;/h3&gt;
+&lt;p&gt;Starting from the &lt;em&gt;smallest&lt;/em&gt; to the &lt;em&gt;largest&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Constant Time: &lt;strong&gt;0(1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Logarithmic Time: &lt;strong&gt;0(log(n))&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Linear Time: &lt;strong&gt;0(n)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Linearithmic Time: &lt;strong&gt;0(nlog(n))&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Quadratic Time: &lt;strong&gt;0(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Cubic Time: &lt;strong&gt;0(n&lt;sup&gt;3&lt;/sup&gt;)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Exponential Time: &lt;strong&gt;0(b&lt;sup&gt;n&lt;/sup&gt;), b &gt; 1&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Factorial Time: &lt;strong&gt;0(n!)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[asynchronous JavaScript]]></title><description><![CDATA[Callbacks Promises Async/ Await]]></description><link>https://bwakedavis.github.io/asyncjs/</link><guid isPermaLink="false">https://bwakedavis.github.io/asyncjs/</guid><pubDate>Thu, 10 Dec 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;Callbacks&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; posts &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Post One&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; body&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Lorem 1...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Post Two&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; body&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Lorem 2...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
