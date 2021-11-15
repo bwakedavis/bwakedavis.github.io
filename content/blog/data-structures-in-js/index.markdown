@@ -940,8 +940,8 @@ The best algorithm is the one which has the best performance.
 It allows us to talk formally how the runtime of an input grows as the input grows.
 It gives you an upper bound on the complexity in the worst case, helping to quantify performance as input size becomes arbitrary large.
 It helps us write code tha runs faster using less memory(RAM).
-Constants don't matter.It only cares about the graph shape.
-Smaller terms don't matter.It only cares about the number of operations as N approaches infinity.
+Constants don't matter. It only cares about the graph shape.
+Smaller terms don't matter. It only cares about the number of operations as N approaches infinity.
 
 + Arithmetic operations are constant
 + Variable assignment is constant
@@ -990,7 +990,7 @@ console.log(stopTime - startTime)
 
 ### Asymptomatic Analysis
 
-Is amethod of derivind Big 0.
+Is a method of derivind Big 0.
 Steps:
 
 + Define a function i.e mathematical function of the time complexity by counting the number of expression operations.
