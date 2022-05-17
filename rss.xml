@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Technical Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 17 May 2022 08:48:23 GMT</lastBuildDate><item><title><![CDATA[understanding webRTC]]></title><description><![CDATA[Web RealTime Communication offers realtime communication natively from a web browser.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Technical Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 17 May 2022 09:56:26 GMT</lastBuildDate><item><title><![CDATA[understanding webRTC]]></title><description><![CDATA[Web RealTime Communication offers realtime communication natively from a web browser.
 webRTC is a media engine with JavaScript API’s. How…]]></description><link>https://bwakedavis.github.io/webrtc/</link><guid isPermaLink="false">https://bwakedavis.github.io/webrtc/</guid><pubDate>Wed, 10 Feb 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Web RealTime Communication offers realtime communication natively from a web browser.
 webRTC is a media engine with JavaScript API’s.&lt;/p&gt;
 &lt;h2&gt;How&lt;/h2&gt;
@@ -4950,81 +4950,7 @@ compiled to regular CSS form (.scss/sass)&lt;/p&gt;
 &lt;h2&gt;Loops&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;each in&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;imports&lt;/h2&gt;
-&lt;p&gt;Allows imports from other files&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn devops]]></title><description><![CDATA[Docker is replacing virtual machines
-Docker can be used with VM’s on large projects Hypervisors eg. vmware ESX1 How docker works
-Hardware…]]></description><link>https://bwakedavis.github.io/devops/</link><guid isPermaLink="false">https://bwakedavis.github.io/devops/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Docker is replacing virtual machines
-Docker can be used with VM’s on large projects&lt;/p&gt;
-&lt;p&gt;Hypervisors eg. vmware ESX1&lt;/p&gt;
-&lt;p&gt;How docker works
-Hardware - One Os(eg Ubuntu) - Docker - Other Os to create containers&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Containers&lt;/em&gt; - are fast virtual lightweight isolated micro-computers environments. They run instances of images.
-&lt;em&gt;Docker image&lt;/em&gt; is a package or a template.&lt;/p&gt;
-&lt;p&gt;How to use:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Install docker&lt;/li&gt;
-&lt;li&gt;Pull an image&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; pull centos
-    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; pull centos/version:number //get specific version of an image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Run a Container&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; run -d -t --name container_name centos
-    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; run -d -t -p &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;:80 -name container_name centos/version:number //run docker image on your website&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Check your your running containers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ps&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Connect to your docker container&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;exec&lt;/span&gt; -it container_name &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Stop running docker container&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; stop container_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Start running docker container&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; start container_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Check resources being used&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; stats&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Why docker is cool:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You only need one kernel&lt;/li&gt;
-&lt;li&gt;They are lightweight&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Regex]]></title><description><![CDATA[Allows us to check a series of character for matches eg. emails  - 0 or more matches
- - 0 or 1 match
- - matches the start of the string or…]]></description><link>https://bwakedavis.github.io/regex/</link><guid isPermaLink="false">https://bwakedavis.github.io/regex/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Allows us to check a series of character for matches eg. emails&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt; - 0 or more matches
-&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; - 0 or 1 match
-&lt;code class=&quot;language-text&quot;&gt;^&lt;/code&gt; - matches the start of the string or line
-&lt;code class=&quot;language-text&quot;&gt;$&lt;/code&gt; - signifies escape sequence
-&lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; - matches any single character except new line
-&lt;code class=&quot;language-text&quot;&gt;()&lt;/code&gt; - captures a group that can be saved and used later
-&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; - 0 or 1 match
-&lt;code class=&quot;language-text&quot;&gt;|&lt;/code&gt; - used as a logic or inside a capturing
-&lt;code class=&quot;language-text&quot;&gt;[abc]&lt;/code&gt; - character set. matches one of the things in the brackets
-&lt;code class=&quot;language-text&quot;&gt;[^abc]&lt;/code&gt; - negated character set, matches anything except the ones in the bracket.
-&lt;code class=&quot;language-text&quot;&gt;[a-zA-Z]&lt;/code&gt; - matches all upper and lowercase letters, you can specify any range
-&lt;code class=&quot;language-text&quot;&gt;{1}&lt;/code&gt; - exact one number of matches, comes after a set of group
-&lt;code class=&quot;language-text&quot;&gt;{1,5}&lt;/code&gt; - inclusive range for number of matches
-&lt;code class=&quot;language-text&quot;&gt;{1, }&lt;/code&gt; - maximum number of matches
-&lt;code class=&quot;language-text&quot;&gt;{ ,5}&lt;/code&gt; - maximum number of matches
-&lt;code class=&quot;language-text&quot;&gt;\s&lt;/code&gt; - matches any whitespace character
-&lt;code class=&quot;language-text&quot;&gt;\d&lt;/code&gt; - matches any digit same as &lt;code class=&quot;language-text&quot;&gt;[0-9]&lt;/code&gt;
-&lt;code class=&quot;language-text&quot;&gt;\D&lt;/code&gt; - matches any non digit
-&lt;code class=&quot;language-text&quot;&gt;w&lt;/code&gt; - any word character same as &lt;code class=&quot;language-text&quot;&gt;[a-zA-Z0-9]&lt;/code&gt;
-&lt;code class=&quot;language-text&quot;&gt;W&lt;/code&gt; - any non-word character same as &lt;code class=&quot;language-text&quot;&gt;[^a-zA-Z0-9]&lt;/code&gt;
-&lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; - word boundary
-&lt;code class=&quot;language-text&quot;&gt;B&lt;/code&gt; - non-word boundary
-&lt;code class=&quot;language-text&quot;&gt;\b&lt;/code&gt; - escape sequence for a backspace character
-&lt;code class=&quot;language-text&quot;&gt;u0404&lt;/code&gt; - 4 digital unicode hex value for a character
-&lt;code class=&quot;language-text&quot;&gt;\t&lt;/code&gt; - matches tab character only
-&lt;code class=&quot;language-text&quot;&gt;\d --&lt;/code&gt; - matches only digit character
-&lt;code class=&quot;language-text&quot;&gt;d--&lt;/code&gt; - matches d character&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn Rust lang]]></title><description><![CDATA[Rust is a system programming language.
+&lt;p&gt;Allows imports from other files&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn Rust lang]]></title><description><![CDATA[Rust is a system programming language.
 Used in building web browsers, web servers, databases, firmware, tools and utilities, gaming and…]]></description><link>https://bwakedavis.github.io/rust/</link><guid isPermaLink="false">https://bwakedavis.github.io/rust/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Rust is a system programming language.
 Used in building web browsers, web servers, databases, firmware, tools and utilities, gaming and operating systems.
 No garbage collection.
@@ -5159,7 +5085,190 @@ Can be mutable by adding &lt;code class=&quot;language-text&quot;&gt;mut&lt;/cod
 
     &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; tuple &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1u32&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;do&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; first_element &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tuple&lt;span class=&quot;token number&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[understand ethereum and it's wide ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Functions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with &lt;code class=&quot;language-text&quot;&gt;fn&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The function name.&lt;/li&gt;
+&lt;li&gt;An optional list of arguments. Stating arguments type is required.&lt;/li&gt;
+&lt;li&gt;An optional return type. A return type is required if a value is returned. If not return type is unit.&lt;/li&gt;
+&lt;li&gt;The function body.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;rust&quot;&gt;&lt;pre class=&quot;language-rust&quot;&gt;&lt;code class=&quot;language-rust&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;token function-definition function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token macro property&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;last_char&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;token function-definition function&quot;&gt;last_char&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;string&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;is_empty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token char string&quot;&gt;&apos;O&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;chars&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next_back&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unwrap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Structs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A type composed of other types&lt;/li&gt;
+&lt;li&gt;Can contain different types.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Three flavours of structs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Classic - Most commonly used, each field has a name and a type.&lt;/li&gt;
+&lt;li&gt;Tuple - Similar to classic structs, have no names.&lt;/li&gt;
+&lt;li&gt;Unit - have no fields, similar to () unit type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use keyword &lt;code class=&quot;language-text&quot;&gt;struct&lt;/code&gt; followed by the name of the struct.&lt;/li&gt;
+&lt;li&gt;Name describe the object appropriately.&lt;/li&gt;
+&lt;li&gt;Create an instance of the struct by supplying &lt;code class=&quot;language-text&quot;&gt;key: value&lt;/code&gt; pairs.&lt;/li&gt;
+&lt;li&gt;More instances can be created.&lt;/li&gt;
+&lt;li&gt;access properties with the dot notation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;rust&quot;&gt;&lt;pre class=&quot;language-rust&quot;&gt;&lt;code class=&quot;language-rust&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;token type-definition class-name&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;u8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    likes_oranges&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;bool&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;token type-definition class-name&quot;&gt;Point2D&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;token function-definition function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; person &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Davis&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+       likes_oranges&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+       age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+   &lt;span class=&quot;token macro property&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Person name is: {}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; origin &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Point2D&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token macro property&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; Point contains {:?} and {:?}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; origin&lt;span class=&quot;token number&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; origin&lt;span class=&quot;token number&quot;&gt;.1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+   &lt;span class=&quot;token comment&quot;&gt;//destructuring&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Point2D&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token macro property&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; Point contains {:?} and {:?}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Enums&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List all variations of some data.&lt;/li&gt;
+&lt;li&gt;Common across programming languages.&lt;/li&gt;
+&lt;li&gt;Referred to as algebraic data types.&lt;/li&gt;
+&lt;li&gt;use the keyword &lt;code class=&quot;language-text&quot;&gt;enum&lt;/code&gt; followed by the name.&lt;/li&gt;
+&lt;li&gt;List all variations.&lt;/li&gt;
+&lt;li&gt;The enum is now a custom data type that can be used in code.&lt;/li&gt;
+&lt;li&gt;Can include any kind of data.&lt;/li&gt;
+&lt;li&gt;can have a variety of types.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Similar to structs but with more flexibility and advantages.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Describe what kind of data will be stored.&lt;/li&gt;
+&lt;li&gt;Each variant can have a different type.&lt;/li&gt;
+&lt;li&gt;All variants stored under the custom enum type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;rust&quot;&gt;&lt;pre class=&quot;language-rust&quot;&gt;&lt;code class=&quot;language-rust&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;token type-definition class-name&quot;&gt;WebEvent&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;PageLoad&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;PageUnload&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;KeyPress&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;Paste&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;Click&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;i64&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;i64&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;token type-definition class-name&quot;&gt;Option&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;token function-definition function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; quit &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WebEvent&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;KeyPress&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token char string&quot;&gt;&apos;q&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; something &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[learn devops]]></title><description><![CDATA[Docker is replacing virtual machines
+Docker can be used with VM’s on large projects Hypervisors eg. vmware ESX1 How docker works
+Hardware…]]></description><link>https://bwakedavis.github.io/devops/</link><guid isPermaLink="false">https://bwakedavis.github.io/devops/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Docker is replacing virtual machines
+Docker can be used with VM’s on large projects&lt;/p&gt;
+&lt;p&gt;Hypervisors eg. vmware ESX1&lt;/p&gt;
+&lt;p&gt;How docker works
+Hardware - One Os(eg Ubuntu) - Docker - Other Os to create containers&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Containers&lt;/em&gt; - are fast virtual lightweight isolated micro-computers environments. They run instances of images.
+&lt;em&gt;Docker image&lt;/em&gt; is a package or a template.&lt;/p&gt;
+&lt;p&gt;How to use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install docker&lt;/li&gt;
+&lt;li&gt;Pull an image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; pull centos
+    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; pull centos/version:number //get specific version of an image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Run a Container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; run -d -t --name container_name centos
+    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; run -d -t -p &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;:80 -name container_name centos/version:number //run docker image on your website&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Check your your running containers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ps&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Connect to your docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;exec&lt;/span&gt; -it container_name &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Stop running docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; stop container_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Start running docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; start container_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Check resources being used&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; stats&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Why docker is cool:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You only need one kernel&lt;/li&gt;
+&lt;li&gt;They are lightweight&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Regex]]></title><description><![CDATA[Allows us to check a series of character for matches eg. emails  - 0 or more matches
+ - 0 or 1 match
+ - matches the start of the string or…]]></description><link>https://bwakedavis.github.io/regex/</link><guid isPermaLink="false">https://bwakedavis.github.io/regex/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Allows us to check a series of character for matches eg. emails&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt; - 0 or more matches
+&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; - 0 or 1 match
+&lt;code class=&quot;language-text&quot;&gt;^&lt;/code&gt; - matches the start of the string or line
+&lt;code class=&quot;language-text&quot;&gt;$&lt;/code&gt; - signifies escape sequence
+&lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; - matches any single character except new line
+&lt;code class=&quot;language-text&quot;&gt;()&lt;/code&gt; - captures a group that can be saved and used later
+&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; - 0 or 1 match
+&lt;code class=&quot;language-text&quot;&gt;|&lt;/code&gt; - used as a logic or inside a capturing
+&lt;code class=&quot;language-text&quot;&gt;[abc]&lt;/code&gt; - character set. matches one of the things in the brackets
+&lt;code class=&quot;language-text&quot;&gt;[^abc]&lt;/code&gt; - negated character set, matches anything except the ones in the bracket.
+&lt;code class=&quot;language-text&quot;&gt;[a-zA-Z]&lt;/code&gt; - matches all upper and lowercase letters, you can specify any range
+&lt;code class=&quot;language-text&quot;&gt;{1}&lt;/code&gt; - exact one number of matches, comes after a set of group
+&lt;code class=&quot;language-text&quot;&gt;{1,5}&lt;/code&gt; - inclusive range for number of matches
+&lt;code class=&quot;language-text&quot;&gt;{1, }&lt;/code&gt; - maximum number of matches
+&lt;code class=&quot;language-text&quot;&gt;{ ,5}&lt;/code&gt; - maximum number of matches
+&lt;code class=&quot;language-text&quot;&gt;\s&lt;/code&gt; - matches any whitespace character
+&lt;code class=&quot;language-text&quot;&gt;\d&lt;/code&gt; - matches any digit same as &lt;code class=&quot;language-text&quot;&gt;[0-9]&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;\D&lt;/code&gt; - matches any non digit
+&lt;code class=&quot;language-text&quot;&gt;w&lt;/code&gt; - any word character same as &lt;code class=&quot;language-text&quot;&gt;[a-zA-Z0-9]&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;W&lt;/code&gt; - any non-word character same as &lt;code class=&quot;language-text&quot;&gt;[^a-zA-Z0-9]&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; - word boundary
+&lt;code class=&quot;language-text&quot;&gt;B&lt;/code&gt; - non-word boundary
+&lt;code class=&quot;language-text&quot;&gt;\b&lt;/code&gt; - escape sequence for a backspace character
+&lt;code class=&quot;language-text&quot;&gt;u0404&lt;/code&gt; - 4 digital unicode hex value for a character
+&lt;code class=&quot;language-text&quot;&gt;\t&lt;/code&gt; - matches tab character only
+&lt;code class=&quot;language-text&quot;&gt;\d --&lt;/code&gt; - matches only digit character
+&lt;code class=&quot;language-text&quot;&gt;d--&lt;/code&gt; - matches d character&lt;/p&gt;</content:encoded></item><item><title><![CDATA[understand ethereum and it's wide ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
 &lt;h2&gt;Features of Ethereum&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Supports smart contracts&lt;/li&gt;
