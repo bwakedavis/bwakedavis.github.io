@@ -143,3 +143,97 @@ fn main() {
 }
 ```
 
+3. Functions
+    + Start with ```fn```.
+    + The function name.
+    + An optional list of arguments. Stating arguments type is required.
+    + An optional return type. A return type is required if a value is returned. If not return type is unit.
+    + The function body.
+
+```rust
+fn main() {
+    println!("Hello, world!");
+    last_char(String::from("Hello"));
+}
+
+fn last_char(string: String) -> char {
+    if string.is_empty() {
+        return 'O';
+    }
+    string.chars().next_back().unwrap()
+}
+```
+
+4. Structs
+    + A type composed of other types
+    + Can contain different types.
+    + Three flavours of structs
+        + Classic - Most commonly used, each field has a name and a type.
+        + Tuple - Similar to classic structs, have no names.
+        + Unit - have no fields, similar to () unit type.
+    + Use keyword ```struct``` followed by the name of the struct.
+    + Name describe the object appropriately.
+    + Create an instance of the struct by supplying ```key: value``` pairs.
+    + More instances can be created.
+    + access properties with the dot notation.
+
+```rust
+struct Person {
+    name: String,
+    age: u8,
+    likes_oranges: bool
+}
+
+struct Point2D(u32, u32);
+fn main() {
+   let person = Person{
+       name: String::from("Davis"),
+       likes_oranges: false,
+       age: 20,
+   };
+
+   println!("Person name is: {}", person.name);
+
+   let origin = Point2D(100, 200);
+   println!(" Point contains {:?} and {:?}", origin.0, origin.1);
+
+   //destructuring
+   let Point2D(x, y) = origin;
+   println!(" Point contains {:?} and {:?}", x, y)
+}
+```
+
+5. Enums
+    + List all variations of some data.
+    + Common across programming languages.
+    + Referred to as algebraic data types.
+    + use the keyword ```enum``` followed by the name.
+    + List all variations.
+    + The enum is now a custom data type that can be used in code.
+    + Can include any kind of data.
+    + can have a variety of types.
+    + Similar to structs but with more flexibility and advantages.
+        + Describe what kind of data will be stored.
+        + Each variant can have a different type.
+        + All variants stored under the custom enum type.
+
+```rust
+enum WebEvent {
+    PageLoad,
+    PageUnload,
+    KeyPress(char),
+    Paste(String),
+    Click{x:i64, y:i64},
+}
+
+enum Option <T> {
+    Some(T),
+    None,
+}
+
+fn main() {
+    let quit = WebEvent::KeyPress('q');
+
+    let something = Some(1);
+}
+```
