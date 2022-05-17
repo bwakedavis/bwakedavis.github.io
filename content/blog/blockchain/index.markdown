@@ -24,7 +24,7 @@ To access the data of the *genesis* block you have to traverse to the first bloc
 + *Timestamped* - when a transaction occurs it's timestamp is recorded on the block.
 + *Immutable* - all validated transaction records are irreversible and cannot be changed.
 + *Programmable* - a blockchain is programmable eg. using smart contracts.
-+ *Unanimous* - all network partcipants agree to the validity of each record.
++ *Unanimous* - all network participants agree to the validity of each record.
 
 ### Benefits of Blockchain
 

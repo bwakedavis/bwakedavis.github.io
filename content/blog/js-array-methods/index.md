@@ -45,7 +45,7 @@ const users = [
     },
     {
         "age":56,
-        "name": "Charlote",
+        "name": "Charlotte",
         "email":"charlote@gmail.com"
     },
     {
@@ -187,7 +187,7 @@ console.log(sumOfAges)
 
 ## .some()
 
-Dertemines whether one or more an array value corresponds with what you are looking for and returns true or false
+Determines whether one or more an array value corresponds with what you are looking for and returns true or false
 
 ```javascript
 

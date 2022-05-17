@@ -19,7 +19,7 @@ Install typescript compiler globally from npm.
 sudo npm install -g typescript
 ```
 
-Create a .ts file and open it in your favourite code editoreg. ```main.ts```
+Create a .ts file and open it in your favorite code editor eg. ```main.ts```
 
 ```typescript
 let greetings = "Hello World";
@@ -35,7 +35,7 @@ tsc main.js
 
 This creates a ```.js``` file in the same directory with the same name and writes the javascript code from our typescript file.
 
-You can use ```-w``` flag to watch the file during development so that you don't have to recompile the code everytime you save your code
+You can use ```-w``` flag to watch the file during development so that you don't have to recompile the code every time you save your code.
 
 ```bash
 tsc main.js -w
@@ -49,7 +49,7 @@ this creates a ```ts-config``` file
 tsc --init
 ```
 
-Edit the generated file according to your preffered configurations
+Edit the generated file according to your preferred configurations
 
 ```json
 target: "es6",
@@ -86,8 +86,8 @@ let isCold: boolean = false;
 let id: string|number;
 
 //Arrays
-let names = ["Davis", "Austine", "Williams" ];
-let names2: string = ["Davis", "Austine", "Williams" ];
+let names = ["Davis", "Austin", "Williams" ];
+let names2: string = ["Davis", "Austin", "Williams" ];
 //mixed arrays
 let mixed = ["Reactjs", 2021, true, 420];
 let mixed2: (string| number| boolean)[] = ['hey', 420, true];
@@ -96,25 +96,25 @@ let mixed2: (string| number| boolean)[] = ['hey', 420, true];
 let myObject = {
     language: "Swahili",
     age: 21,
-    likesCoffe: true
+    likesCoffee: true
 
 }
 
 let myObject2: object = {
     language: "English",
     age: 8,
-    likesCoffe: false
+    likesCoffee: false
 }
 
 let myObject3 = {
     language: string,
     age: number,
-    likesCoffe: boolean
+    likesCoffee: boolean
 }
 myObject3 = {
     language: "English",
     age: 10,
-    likesCoffe: true
+    likesCoffee: true
 }
 ```
 
@@ -126,7 +126,7 @@ age = true;
 console.log(age);
 age = "Hi";
 console.log(age);
-age = {fname: "my FirstName"};
+age = {fName: "my FirstName"};
 console.log(age);
 
 const mixed: any[] = [];
@@ -151,9 +151,9 @@ let sayHi = () => {
     console.log("Hi");
 }
 
-let sayhello: Function;
+let sayHello: Function;
 
-sayhello = () => {
+sayHello = () => {
     console.log("hello");
 }
 

@@ -5,7 +5,7 @@ module.exports = {
       name: `Davis Bwake`,
       summary: `A fullstack developer who likes JavaScript and everything web 3.0(BlockChain..)`,
     },
-    description: `Techincal Blogs and Portfolio Projects by Davis Bwake`,
+    description: `Technical Blogs and Portfolio Projects by Davis Bwake`,
     siteUrl: `https://bwakedavis.github.io`,
     social: {
       twitter: `bwakedavis`,
@@ -48,12 +48,6 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-4586398942478434`
       },
     },
     `gatsby-transformer-sharp`,

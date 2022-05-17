@@ -1,10 +1,10 @@
 ---
 title: learn JavaScript
 date: "2018-12-27T22:12:03.284Z"
-description: "JavaScript is a scripting language developed to add functionality in the browser. It's use nowdays extends building mobile apps, creating servers, building desktop apps etc"
+description: "JavaScript is a scripting language developed to add functionality in the browser. It's use nowadays extends building mobile apps, creating servers, building desktop apps etc"
 ---
 
-Was created by Brendan Eich in 19996
+Was created by Brendan Eich in 1996
 Inbuilt in all the browsers
 ```code``` is a set of special instructions written to tell a computer what to do
 ```computer language``` is  a set of rules for valid format and combination of instructions
@@ -33,9 +33,9 @@ Linking an external javaScript file to your HTML
     <script src="./path/index.js"></script>
 ```
 
-## JavaScript Datatypes
+## JavaScript Datatype
 
-### Primitive Datatypes
+### Primitive Datatype
 
 * String
 * Number
@@ -148,20 +148,20 @@ Arrays are used to store multiple values in a single variable
     if(age ==20){
     console.log('You are twenty years old')
     }else if(age<20){
-        console.log('youre 19 years old or younger')
+        console.log("you're 19 years old or younger")
     }else{
-        console.log('youre above 20 years old')
+        console.log("you're above 20 years old'"
     }
 
     if(age<30 && age>10){
-        console.log('youre between 11 and 30 age bracket')
+        console.log("you're between 11 and 30 age bracket")
     }
     if(age==20 || name=='bwake'){
-        console.log(name + ' youre ' + age +' years old')
+        console.log(name + " you're " + age +' years old')
     }
     //Ternary operator
-    name =='bwake'? console.log(name): console.log('I dont know you ')
-    //Falsey(values that evaluate to false) => false, null,undefined, 0, "",'', NaN
+    name =='bwake'? console.log(name): console.log("I don't know you ")
+    //Falsy(values that evaluate to false) => false, null,undefined, 0, "",'', NaN
 
     //Comparison operators => <, <=, >, >=, ==, !=, !==
 
@@ -195,10 +195,10 @@ for(let i=0; i< rows; i++) {
 }
 
 let names = { people: [
-    {name: "hiro", voice: "Ryan"},
-    {name: "baymax", voice: "Scott"},
-    {name: "tamago", voice: "Jamie"},
-    {name: "fred", voice: "Miller"},
+    {name: "Hiro", voice: "Ryan"},
+    {name: "Baymax", voice: "Scott"},
+    {name: "Tamago", voice: "Jamie"},
+    {name: "Fred", voice: "Miller"},
 ]}
 
 //nested for loops.

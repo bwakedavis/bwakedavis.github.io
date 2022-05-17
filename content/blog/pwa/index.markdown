@@ -9,13 +9,13 @@ description: "progressive web applications"
 
 + A PWA should be **reliable** to provide some level of functionality when offline. It should provide a better performance than a typical website.Service Workers and Caching should make assets load faster.
 
-+ A PWA should be **installable**. Should have a registered Service Worker, a ```web manifest``` file, meets an engagement heurastic, pases the lighthouse test.
++ A PWA should be **installable**. Should have a registered Service Worker, a ```web manifest``` file, meets an engagement heuristic, passes the lighthouse test.
 
 + A PWA should be **secure**. Must run on HTTPS except on localhost.
 
 + A PWA should be **responsive**. The UI must be designed to work on the device where it's installed.
 
-+ It should be **acessible**, meetinng the WCAG 2.0 requirements and work with any input device.
++ It should be **accessible**, meeting the WCAG 2.0 requirements and work with any input device.
 
 + It should be **discoverable**. A PWA should have a good SEO. Use Lighthouse SEO to test.
 
@@ -23,7 +23,7 @@ description: "progressive web applications"
 ## Web manifest file
  
  can be called ```web.manifest``` or ```manifest.json```.
- Sould be linked in every HTML file.
+ Should be linked in every HTML file.
 
 ```html
 <link rel="manifest" href="/manifest.json">
@@ -52,7 +52,7 @@ description: "progressive web applications"
 + "theme_color" - a hex value.
 + "description"
 + "orientation"
-   + any, natural, landscape, landscape-primary, landscape-secondary, potrait, potrait-primary, potrait-secondary
+   + any, natural, landscape, landscape-primary, landscape-secondary, portrait, portrait-primary, portrait-secondary
 + "lang" eg "en-US"
 + "prefer_related_applications" - Boolean
 + "related_applications. If you have a native app.
@@ -60,15 +60,15 @@ description: "progressive web applications"
 ```json
 {
     "platform": "play",
-    "url": "playstore url",
-    "id": "com.example.appli"
+    "url": "play store url",
+    "id": "com.example.application"
 }, {
     "platform": "itunes",
     "url": "itunes url"
 }
 ```
 
-+ "screenshots" - if youre publishing in a store.
++ "screenshots" - if you're publishing in a store.
 
 ```json
 {

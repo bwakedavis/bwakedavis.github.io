@@ -7,20 +7,20 @@ description: "User Experience and User Interface Design are important elements i
 ## UI Design
 
 UI design is the designing of visual interface of a software.
-I the look and feel, the presentaion and interactivity of a product.
+I the look and feel, the presentation and interactivity of a product.
 It's the point of interaction between the user and the digital product
-Good design makes someething intelligent, memorable and meaningful.
+Good design makes something intelligent, memorable and meaningful.
 A design language is a set of consistent visual element that can be reused.
 
 ### Principles of UI design
 
-+ White Space - the amount empty space betwwen elements.
++ White Space - the amount empty space between elements.
 + Color - use 4 or 5 colors(recommended).
 + Contrast - being 'strikingly' different from something else.
 + Scale - consider the size of the element.
 + Alignment - the process of  ensuring every element is positioned correctly in relation to each other.
 + Typography
-+ Visual Hierachy
++ Visual Hierarchy
 
 ### Stages of UI design
 
@@ -33,7 +33,7 @@ A design language is a set of consistent visual element that can be reused.
 ### Tips to make a great design
 
 + Emphasis and importance
-+ Make evrything the user needs readily accessible.
++ Make everything the user needs readily accessible.
 + Be consistent and mobile friendly
 + Contrast and readability
 + Be clear by splitting steps into different pages.
@@ -50,7 +50,7 @@ A design language is a set of consistent visual element that can be reused.
 # UX Design
 
 UX mostly focuses on usability, problems and accessibility.
-It involves interactions between the potential or active user of a product. It relies on visual design, behavoiural psychology and consumer research.
+It involves interactions between the potential or active user of a product. It relies on visual design, behavioral psychology and consumer research.
 
 ## Steps in UX Design
 
@@ -64,17 +64,17 @@ User personas - representation of a typical user to identify their needs.
 Use cases - how might different people use the product or service.
 Journey maps - how a user might start to use and finish the experience
 
-### Bainstorming
+### Brainstorming
 
 How to solve the problem. Generate and validate ideas.
 Involves:
-User flows - diagrams that outline the steps a user might take during the experience as they go from dtep to step in the UI.
-Wireframes - a rough skeleton representation of the UI and the various components that make up the UI.Templates of each page are sketched.Color schemes are choosen
+User flows - diagrams that outline the steps a user might take during the experience as they go from step to step in the UI.
+Wireframes - a rough skeleton representation of the UI and the various components that make up the UI.Templates of each page are sketched.Color schemes are chosen
 
 ### Implementation
 
-Prototype - UI designers create a low or high fidelity prortype, which may or may not be interactive.
-Front-end and Back-end development - once the prototype has been approved the developers make the prortotype of a workig product.
+Prototype - UI designers create a low or high fidelity prototype, which may or may not be interactive.
+Front-end and Back-end development - once the prototype has been approved the developers make the prototype of a working product.
 
 ### Reporting
 

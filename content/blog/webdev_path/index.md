@@ -1,5 +1,5 @@
 ---
-title: web development roadmap
+title: web development road map
 date: "2019-02-21T22:12:03.284Z"
 description: "Visual studio code shortcuts"
 ---
@@ -21,12 +21,12 @@ description: "Visual studio code shortcuts"
 
 + User Interface(UI) User Experience(UX) Design
 + HTML5 - semantic elements
-+ CSS3 - css grid, css flexbox, css custom properties, css variables, transtions
++ CSS3 - css grid, css flexbox, css custom properties, css variables, transitions
 + Responsive design - viewport, fluid width, mobile first, media queries, rem over px
 
 ## Custom pre-processors
 
-+ Sass - variables, nesting, condtionals
++ Sass - variables, nesting, conditionals
   
 ## CSS Frameworks
 
@@ -41,7 +41,7 @@ description: "Visual studio code shortcuts"
 + Axios
 + Web API's
 + Modern ES6+ javascript
-+ Webpact or parcel for module bundling
++ Webpack or parcel for module bundling
 
 ## JavaScript Framework
 
@@ -56,10 +56,10 @@ description: "Visual studio code shortcuts"
   + Splash screen
   + HTTPS
   + Reliable fast and engaging
-+ **Nextjs** - serverside rendering
++ **Nextjs** - server-side rendering
   + Better SEO
   + File system routing
-  + Automatic spilliting
+  + Automatic splitting
   + static exporting
 + **Gatsbyjs** - static site generator
   + Better SEO
@@ -72,7 +72,7 @@ description: "Visual studio code shortcuts"
 ## TypeScript
 
 + Static typing
-+ Good tooling with intelisence
++ Good tooling with intellisense
 + Modules
 + Classes
 + Compiles to clean javascript
@@ -94,7 +94,7 @@ description: "Visual studio code shortcuts"
 + GETH - Ethereum client
 + Truffle - smart contract framework
 + Openzeppelin - smart contract library
-+ Test blockchains - ganache, rinkeby, kovan goerli, ropstein
++ Test blockchains - ganache, rinkeby, kovan goerli, ropsten
 + Infura or alchemy - Ethereum nodes as a service
 + Ethereum Naming Service(ENS) - domains
 + Etherscan - looking for ethereum transactions

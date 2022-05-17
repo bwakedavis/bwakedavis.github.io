@@ -19,7 +19,7 @@ public class Main {
 
 Strings use double quotes
 Characters can use single quote
-Compile and run application using the run button on intelj idea
+Compile and run application using the run button on intelij idea
 or
 by using the terminal.
 ```bash
@@ -427,15 +427,15 @@ public class Main {
 
     public  static  int  count(char [] letters,
                                char searchLetter) {
-        int occurence = 0;
+        int occurrence = 0;
         System.out.println(Arrays.toString((letters)));
         System.out.println(searchLetter);
         for (char letter : letters) {
             if (letter == searchLetter) {
-                occurence++;
+                occurrence++;
             }
         }
-        return  occurence;
+        return  occurrence;
     }
 }
 ```

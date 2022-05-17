@@ -1,7 +1,7 @@
 ---
 title: learn nodejS
 date: "2020-06-12T22:12:03.284Z"
-description: "Nodejss"
+description: "Learn Nodejs"
 ---
 
 
@@ -57,7 +57,7 @@ switch(req.url) {
         path += 'about.html';
         res.statusCode = 200;
         break;
-    case '/aboutme':
+    case '/about_me':
         res.statusCode = 301;
         res.setHeader('Location', '/about');
         res.end();
@@ -85,7 +85,7 @@ server.listen(5000,'localhost', ()=> {
 
 Run the server by running ```node server.js``` on the terminal
 
-### Using pre and post sripts (NPM)
+### Using pre and post scripts (NPM)
 
 Here we create and append the content in the .gitignore file when we run the script.
 
@@ -125,7 +125,7 @@ DEBUG=davis node app.js
 ```javascript
 const debug = require("debug")("davis");
 
-debug("debuging with debug module")
+debug("debugging with debug module")
 console.log("hello world");
 
 let array1 = [].fill(123, 0, 10000);
@@ -158,13 +158,13 @@ debug("debug after loop");
 }
 ```
 
-### Handling HTTP requsts
+### Handling HTTP requests
 
 ```javascript
 
 const http = require('http');
 const url = require('url');
-const StringDecorder = require('string_decoder').StringDecoder;
+const StringDecoder = require('string_decoder').StringDecoder;
 const util = require('util');
 const formidable = require('formidable');
 

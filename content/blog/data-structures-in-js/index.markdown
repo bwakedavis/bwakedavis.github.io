@@ -1,7 +1,7 @@
 ---
 title: data structures and algorithms in JavaScript
 date: "2020-12-10T22:12:03.284Z"
-description: "Data Structures and Algorithms are important concepts in Computer Science and oftenly come up in software development and related roles interview questions.Let's dive and start learning using javaScript"
+description: "Data Structures and Algorithms are important concepts in Computer Science and often come up in software development and related roles interview questions.Let's dive and start learning using javaScript"
 ---
 
 
@@ -15,7 +15,7 @@ It's a named collection that can be used to store and organize data so that it c
     + Linear data structure items are arranged in a linear sequence. eg. stacks, queues, arrays
     + Non-linear data structures, the items are not in sequence. eg. tree, graph
 + Homogenous vs non-homogenous
-    + In homegenous all elements are of the same type
+    + In homogenous all elements are of the same type
     + In non-homogenous the elements are not of the same type
 + Primitive vs Abstract
     + Primitive data structures are basic data structures. 
@@ -27,7 +27,7 @@ The interface does not give any specific details about how something should be d
 
 + Speed - how fast
 + Memory - less memory intensive
-+ Readability - more readble code
++ Readability - more readable code
 
 The problem with *time* facto is that:
 
@@ -64,20 +64,20 @@ fast access,insertion and removal of elements
 Insertion order is kept.
 Element accessed via indexes.
 Iterable using loops.
-Size/length adjus dynamically.
+Size/length adjust dynamically.
 Duplicate value are allowed.
 
-A **static array** is a fixed length container containing *n* elements *indexable*(each slot can be refernced with a number) from the range of [0, n-1]
+A **static array** is a fixed length container containing *n* elements *indexable*(each slot can be referenced with a number) from the range of [0, n-1]
 
 **Dynamic arrays** can grow and shrink in size
 **Linear Array** is a list of finite elements with the same data types
-**Multidimensional array** is an array where an element is reffered by more than one subscript
+**Multidimensional array** is an array where an element is refereed by more than one subscript
 **Column major order** is an element that is stored in the memory column
 **Row major order** is an element that is stored in the memory row
 
 Insertion - Depends.
 
-+ inseting at the beginning is 0(N)
++ inserting at the beginning is 0(N)
 + inserting at the end is 0(1)
   
 Removal - Depends
@@ -129,16 +129,16 @@ There're 2 operations push and pop
 ##### push operation
 
 The process of adding new element to the top of a stack.
-Each time an element is inserted into a stack, top pointer will be impelented by one position and new value will be stored in the top location.
+Each time an element is inserted into a stack, top pointer will be implemented by one position and new value will be stored in the top location.
 
 ```pseudo
-Algorith Add(item) {
-// pust an element into a stack, returns true if succesfull
+Algorithm Add(item) {
+// push an element into a stack, returns true if successfully
 //else return item is used as input
 {
     if (top >= n-1) then {
         write("Stack is full)
-    } esle {
+    } else {
         Top = top + 1
         Stack(top) = item
     }
@@ -265,9 +265,9 @@ for(var i = 0; i < word.length; i++){
 }
 
 if(reverseWord === word) {
-    console.log(word + " is a palindome");
+    console.log(word + " is a palindrome");
 }else {
-    console.log(word + " is not a palindome")
+    console.log(word + " is not a palindrome")
 }
 ```
 
@@ -278,26 +278,26 @@ NODE is a collection of data and information.
 A stack can be represented using nodes with 2 fields called data and links.
 
 Stack polish notation implementation:
-+ Normaly in arithmetic expressions, when the operators symbol is placed between 2 operand it's called **infix notation**
-+ **Prefix notation** the operator symboll is placed before the operand
++ Normally in arithmetic expressions, when the operators symbol is placed between 2 operand it's called **infix notation**
++ **Prefix notation** the operator symbol is placed before the operand
 + **Post fix/reverse polish notation** operator symbol is placed after the operator.
 
-The computer evalutes the arithmetic expressions written in infix notation in 2 steps:
-1. It converts the arithmetic expressions to postfix notation and then evalutes the postfix expression
+The computer evaluates the arithmetic expressions written in infix notation in 2 steps:
+1. It converts the arithmetic expressions to postfix notation and then evaluates the postfix expression
 
-###### Converion of infix to postfix expression
+###### Conversion of infix to postfix expression
 Let E be an arithmetic expression written in infix notation P is postfix expression
 
-1. Algorith Polish (E,P)
+1. Algorithm Polish (E,P)
 2. Add to the end E
 3. Scan E from left to right and repeat 4-7 for each element of E until the stack is empty
-4. If an operand is encounterd add it to P
-5. If a left parenthesis is encountered , add onto the satck
+4. If an operand is encountered add it to P
+5. If a left parenthesis is encountered , add onto the stack
 6. If an operator is encountered;
-    + Pop from the stack  continously and add it to P. Each operator which has the same amount or higher precedence than the scanned operator
+    + Pop from the stack  continuously and add it to P. Each operator which has the same amount or higher precedence than the scanned operator
     + Add the scanned operator to the stack
-7. If a right paranthesis is encountered then:
-    + Pop from stack continusly and add it to P. Each operator until a left parenthesis is encountered
+7. If a right parenthesis is encountered then:
+    + Pop from stack continuously and add it to P. Each operator until a left parenthesis is encountered
     + Remove the left parenthesis
 8. END
 
@@ -333,7 +333,7 @@ Deleting an element from a queue.
 It's carried out at the front. Elements inserted first are deleted first
 
 ```pseudo
-Algorthm Delete Q(item Q, front, rear)
+Algorithm Delete Q(item Q, front, rear)
 //Delete "item" from the Queue
 {
 if(front > rear) then
@@ -366,9 +366,9 @@ Traversal can be in one direction from front to rear
 
 Initially when such a queue is empty the front and rear values are -1 and -1 respectively and the queue has a null value for all its elements.
 
-Everytime we add an element to the queue the rear value increments by one till the time it reaches the upper limit of the queue after which it starts all over again from zero
+Every time we add an element to the queue the rear value increments by one till the time it reaches the upper limit of the queue after which it starts all over again from zero
 
-Everytime we delete an element from the queue the front value increments by one till the time it reaches the upper limit of the queue after which it starts all over again from zero(0)
+Every time we delete an element from the queue the front value increments by one till the time it reaches the upper limit of the queue after which it starts all over again from zero(0)
 
 Algorithm to add an item into a circular queue:
 
@@ -383,7 +383,7 @@ Algorithm Add Q( Item Q, n, front, rear)
     {
         Write("Queue is full")
     }
-    Q(raer) = item // insert new item
+    Q(rear) = item // insert new item
 }
 ```
 
@@ -432,7 +432,7 @@ Are created with constructor function.
 Doesn't allow duplicate values.
 Insertion order is not stored.
 Element access and extraction via methods.
-Size/lenght adjusts dynamically.
+Size/length adjusts dynamically.
 Duplicate values are not allowed.
 Allows mixed type of data.
 Deletion and finding of elements is trivial fast.
@@ -462,7 +462,7 @@ We use objects when we:
 
 Objects can have methods, keys and values.
 Unordered key values.
-Elements accessed via key(proprty name).
+Elements accessed via key(property name).
 Not iterable (only with for in loop).
 Keys are unique, values are not.
 Keys can be strings, numbers or symbols.
@@ -551,7 +551,7 @@ Values and keys are only weakly referenced. Garbage collection can delete keys a
 
 ### Lists
 
-A list is an organised collection of items or elements of size n
+A list is an organized collection of items or elements of size n
 The general form of a list:
 List L { A1, A2, ..., An} where A is the list of element and n is the list size
 
@@ -559,7 +559,7 @@ List L { A1, A2, ..., An} where A is the list of element and n is the list size
 
 1. PrintList(L) - displays all the elements of the list
 2. MakeEmpty - deletes all the elements of the list
-3. Find - it returns the position of the first occurence of the element
+3. Find - it returns the position of the first occurrence of the element
 4. Insert - it inserts some key in the same position
 5. Delete - deletes some key in the same position
 6. Find Kth - returns some element in the same position
@@ -580,7 +580,7 @@ The address that is stored in a linked list are of 3 types:
 
 A linked list is a list data structure.
 It's a linear data structure.Ordered collection of data.
-The nodes are not stored in the sequntial memory location
+The nodes are not stored in the sequential memory location
 Elements are linked together using a pointer.
 The first element is called the head.
 Each node has data and a reference to the next element.
@@ -590,22 +590,22 @@ Types of linked list - Singly, Double and circular linked lists
 
 ###### Singly LinkedList
 
-It's a linked list in which each node contains only one linked list poinitng to the next node in the list.
+It's a linked list in which each node contains only one linked list pointing to the next node in the list.
 
-*Singly linked list* uses less memory, has a simpler implementaion and it's not easy to access the previous element.
+*Singly linked list* uses less memory, has a simpler implementation and it's not easy to access the previous element.
 
 It's traversed only in one direction that is from head to null.
 
 Algorithm to create a linked list
-```pseudocode
-Algorithm CreatKist(T) 
+```pseudo
+Algorithm CreateLinkedList(T) 
 {
     //T is a pointer to the first node in the list
     Get new node I //get new node
     T = I
     Data(I) = "A" //store information into a node
     Get a new node I
-    Link(T) = I //atach first node to second node
+    Link(T) = I //attach first node to second node
     Link(I) = 0
     Data(I) = "B"
 }
@@ -615,7 +615,7 @@ Algorithm to insert a node in a list
 ```pseudo
 Algorithm insertNode(T, X)
 {
-    //T is alist T=0 if T has no nodes
+    //T is a list T=0 if T has no nodes
     //Insert an item "c" after node x
     Get new node F
     Data (I) = "C"
@@ -633,7 +633,7 @@ Algorithm to delete a node in a list
 ```pseudo
 Algorithm DeleteNode(x, y, T)
 {
-    //Prcedure to delete node "x" from "T" "y" be the node preceding "x", "y" = 0 if "x" is first node of "T"
+    //Procedure to delete node "x" from "T" "y" be the node preceding "x", "y" = 0 if "x" is first node of "T"
     if(y=0) then T = Link(x)
     else Link(y) = Link(x)
     Remove "x" from storage
@@ -642,7 +642,7 @@ Algorithm DeleteNode(x, y, T)
 
 
 ```javascript
-//Our nodde class with a constructor taking in data and refernce to the next node
+//Our node class with a constructor taking in data and reference to the next node
 class Node {
     constructor (data, next = null) {
         this.data = data;
@@ -790,12 +790,12 @@ linkedlist.printData();
 ###### Doubly Linked List
 
 Has 2 pointer a forward link and a backward link.
-The forward link points to the next node in the list wheras the backward link points to the preceeding node
+The forward link points to the next node in the list whereas the backward link points to the preceding node
 *Doubly linked list* can be traversed backwards and it takes 2 times the memory.
 
 L LINK - previous node address
 R LINK - Next node address
-DATA - oiginal data value
+DATA - original data value
 
 Algorithm to delete a node from a list
 
@@ -813,7 +813,7 @@ Algorithm D Delete(X,T)
 Algorithm to insert a node into the list
 
 ```pseudo
-Algorithm  D Isert(P,X)
+Algorithm  D Insert(P,X)
 {
     //Insert node P into the right of node X
     LLINK(P) = X
@@ -828,11 +828,11 @@ Algorithm  D Isert(P,X)
 A linked list in which the node at the tail of the list instead of having a null pointer points back to the start of the list thus both ends of the list can be accessed using a single pointer
 
 It can be a :
-+ Circular singly list - the last node is conected to the first
++ Circular singly list - the last node is connected to the first
  or a 
 + Circular doubly linked list - the last node is connected to the first node as well as  the first node is connected to the last node(double way)
 
-## Non-Linear Data tructures
+## Non-Linear Data structures
 
 ### Graph DS
 
@@ -840,7 +840,7 @@ Each node is called vertex(point) and each vertex is connected to other vertices
 
 | Linear Data Structure| Linear Data Structure 2|
 | :------------- | :----------: |
-|  Data items are arranged in a sequantial order, one after the other | Data items are arranged in a non-sequantial order   |
+|  Data items are arranged in a sequential order, one after the other | Data items are arranged in a non-sequential order   |
 | You Can Also   | Put Pipes In | 
 
 ### Trees
@@ -860,19 +860,19 @@ A finite set of instructions to solve a particular task
 
 The best algorithm is the one which has the best performance.
 
-#### Fatctors of a good algorithm
+#### Factors of a good algorithm
 
-+ Input and output should be defined precisely. Zero or more should be supplied and atleast one produced
-+ Definiteness - Clear steps and unambigous instructions
-+ Effectiveness - basic instructions and carried in priciple
++ Input and output should be defined precisely. Zero or more should be supplied and at least one produced
++ Definiteness - Clear steps and unambiguous instructions
++ Effectiveness - basic instructions and carried in principle
 + Finiteness - should terminate after a number of steps
 
 #### Steps of solving a problem
 
 1. **Understand the problem**
    + Can you restate the problem in your own words
-   + Wh Understand the problemat are the inputs that go into the problem
-   + What are the outputs that are expectedCan output be dertermined from inputs
+   + Wh Understand the problems are the inputs that go into the problem
+   + What are the outputs that are expectedCan output be determined from inputs
    + How do you label important pieces of data that are part of the problem
 2. Explore concrete example
    + come up with an example
@@ -899,7 +899,7 @@ The best algorithm is the one which has the best performance.
 
 1. The input to the program
 2. The code generated by the program which is used to create an object program
-3. The nature and speed of instructio on the machine used to execute the program
+3. The nature and speed of instruction on the machine used to execute the program
 4. The time taken by the program(TCP) is the sum the compiled time and the run time within the bracket execution time
 
 #### How to determine complexities
@@ -945,7 +945,7 @@ Smaller terms don't matter. It only cares about the number of operations as N ap
 
 + Arithmetic operations are constant
 + Variable assignment is constant
-+ Acessing elements in an array(by index) or object (by key) is constant.
++ Accessing elements in an array(by index) or object (by key) is constant.
 + In a loop, the time complexity is the length of the loop times the complexity or whatever happens inside the loop.
   
 **Space Complexity** - refers to how much additional memory is needed to be allocated in order to run the code in our algorithm.
@@ -954,7 +954,7 @@ Smaller terms don't matter. It only cares about the number of operations as N ap
 
 **Auxiliary Space** - space required by the algorithm, not including space taken by the input
 
-Suppose we have a problem to write a function that that calculates the sum of all numbers from one upto and inclunding a certain number ```n```.
+Suppose we have a problem to write a function that that calculates the sum of all numbers from one up to and including a certain number ```n```.
 
 The shorter ```solution 2``` runs in a shorter amount of time than ```solution 1```.
 The number of operations in ```solution 1``` grows as n increases.
@@ -990,11 +990,11 @@ console.log(stopTime - startTime)
 
 ### Asymptomatic Analysis
 
-Is a method of derivind Big 0.
+Is a method of deriving Big 0.
 Steps:
 
 + Define a function i.e mathematical function of the time complexity by counting the number of expression operations.
-+ Find the fastest groowing term.
++ Find the fastest growing term.
 + Remove the co-efficient.
 
 In some operations the size of the input has no effect on the time it takes the algorithm to run.
@@ -1021,7 +1021,7 @@ Starting from the *smallest* to the *largest*.
 + Constant Time: **0(1)**
 + Logarithmic Time: **0(log(n))**
 + Linear Time: **0(n)**
-+ Linearithmic Time: **0(nlog(n))**
++ Linear Logarithmic Time: **0(nlog(n))**
 + Quadratic Time: **0(n<sup>2</sup>)**
 + Cubic Time: **0(n<sup>3</sup>)**
 + Exponential Time: **0(b<sup>n</sup>), b > 1**

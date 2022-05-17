@@ -9,11 +9,6 @@ export default function Projects (){
                 <p><a href="https://bwakedavis.github.io/Crypto-Portfolio-Price-Tracker-HTML-Widget-Builder/">Live Site</a></p>
                 <p><a href="https://github.com/bwakedavis/Crypto-Portfolio-Price-Tracker-HTML-Widget-Builder">Code</a></p>
             </div>
-            <div>
-                <h2>Decentralised Fitness App</h2>
-                <p><a href="https://hidden-meadow-7015.on.fleek.co/">Live Site</a></p>
-                <p><a href="https://github.com/bwakedavis">Code</a></p>
-            </div>
 
             <div>
                 <h2></h2>

@@ -22,7 +22,7 @@ As a developer believe me you need it more than anything else ('*Just kidding* ð
 *Here is a cheat sheet of commands you might find useful and come to love:*
 
 ```git
-    git config --global user.name "exampleuser"
+    git config --global user.name "example_user"
 ```
 
 -sets a name identifiable for credit when reviewing version history
@@ -43,7 +43,7 @@ As a developer believe me you need it more than anything else ('*Just kidding* ð
     git init
 ```
 
--name or rrename your branch
+-name or rename your branch
 
 ```git
 $git branch -m main. 
@@ -79,7 +79,7 @@ $git branch -m main.
     git reset
 ```
 
--unstage a file but retains changes in the working directory
+-un stage a file but retains changes in the working directory
 
 ```git
     git diff
@@ -153,7 +153,7 @@ $git branch -m main.
     git show <SHA>
 ```
 
--shows any object in git in human-readble format
+-shows any object in git in human-readable format
 
 ```git
     git rm <fileName>
@@ -185,7 +185,7 @@ $git branch -m main.
     git fetch <alias>
 ```
 
--fetch all the branches from a central remote repositoy
+-fetch all the branches from a central remote repository
 
 ```git
     git merge <alias>/<branch>

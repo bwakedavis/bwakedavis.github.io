@@ -2,7 +2,7 @@
 title: learn Solidity - smart contract oriented language
 date: "2020-11-03T22:12:03.284Z"
 description: "Solidity is an object-oriented, high-level language for implementing smart contracts.
-It's designed to target the Ethereum Virtual Macine to implement Smart Contracts. It's influenced by C++, Python and JavaScript. So it will be easy to pick if you're familiar with any of the languages."
+It's designed to target the Ethereum Virtual Machine to implement Smart Contracts. It's influenced by C++, Python and JavaScript. So it will be easy to pick if you're familiar with any of the languages."
 ---
 
 **Solidity** is a smart contract development language.
@@ -37,7 +37,7 @@ contract HelloWorld{
     //state variable
     string public num1 = "1";
 
-    function mynumber(string memory _num2) public {
+    function myNumber(string memory _num2) public {
         //local variable
         string memory num2 = _num2;
     }
@@ -58,7 +58,7 @@ You can store large amount of data records on **IPFS**. It's cheaper and public.
 
 #### Functions
 
-Function are categorized according to **visibility** i.e *public, private, internal and external* and **behaviour** i.e *payable*,*view* and *pure*.
+Function are categorized according to **visibility** i.e *public, private, internal and external* and **behavior** i.e *payable*,*view* and *pure*.
 There are functions that:
 
 + *Create transactions on the blockchain*. They cost gas to call them.
@@ -66,7 +66,7 @@ There are functions that:
     + Writing to state variables.
     + Emitting events
     + Creating other contracts
-    + Using selfdestruct
+    + Using self-destruct
     + Sending Ether via calls
     + Calling any function bot marked as **view** or **pure**.
     + Using low-level calls
@@ -123,7 +123,7 @@ solidity functions can return multiple values
     //Destructing Assignments
     function destructuredAssignments() public pure returns (uint, bool, uint, uint, uint) {
     (uint a, bool b, uint c) = returnMultipleValuesA();
-    //lEaving values cout
+    //leaving values out
     (uint x, uint y) = (5,6);
     
     return(a, b, c, x, y);
@@ -165,7 +165,7 @@ modifier validAddress(address _addr) {
      owner = _newOwner;
  }
 
- //No reentrency
+ //No reentrancy
  uint public x = 10;
  bool locked;
  
@@ -207,7 +207,7 @@ contract HelloWorld2 is HelloWorld{
 }
 ```
 
-You can override a function from the parrent function.
+You can override a function from the parent function.
 
 ```solidity
 pragma solidity ^0.5.3;
@@ -226,10 +226,9 @@ contract HelloWorld2 is HelloWorld{
 }
 ```
 
-When you deploy contract ```Helloworld2``` you'll see it has the ```greet()``` method
+When you deploy contract ```HelloWorld2``` you'll see it has the ```greet()``` method
 
-You can inherit constructor paramaters
-
+You can inherit constructor parameters
 ```solidity
 pragma solidity ^0.5.3;
 
@@ -307,7 +306,7 @@ contract HelloWorld4 is HelloWorld,HelloWorld2, HelloWorld3 {
 }
 ```
 
-You can inherit and call the contructor function in three ways:
+You can inherit and call the constructor function in three ways:
 
 ```solidity
 pragma solidity ^0.5.3;
@@ -386,7 +385,7 @@ constructor() Greeting("Greetings contract called") HelloWorld("HelloWorld contr
 }
 ```
 
-You can override an inherited state variable in a contructor and not by re-assigning it outside the constructor.
+You can override an inherited state variable in a constructor and not by re-assigning it outside the constructor.
 
 ```solidity
 pragma solidity ^0.5.3;
@@ -413,8 +412,8 @@ contract Greeting is HelloWorld {
 
 contracts can tell us that something has happened in the blockchain by firing events.
 Applications can be notified when this events are fired.
-Events accept 3 paramaters.
-We can get access to the past events and subcribe to new ones.
+Events accept 3 parameters.
+We can get access to the past events and subscribe to new ones.
 
 ```solidity
 pragma solidity ^0.5.3;
@@ -476,7 +475,7 @@ const INFURA_URL = "infura url";
 
 const web3 = new Web3(new Web3.providers.WebsocketProvider(INFURA_URL));
 
-//Adddress for Dai stablecoin
+//Address for Dai stablecoin
 const address = "0x89d24...";
 
 async function main() {
@@ -980,8 +979,8 @@ contract MyToken is ERC20 {
 
 ### Library
 
-Libraries are like contracts but they have no staorage nor ether.
-They help you keep your coode DRY(Don't Repeat Yourself)
+Libraries are like contracts but they have no storage nor ether.
+They help you keep your code DRY(Don't Repeat Yourself)
  by adding functionality types
  Can save gas.
  Embedded library have only internal functions.
@@ -1044,7 +1043,7 @@ contract TestArray {
 ### Hash Function(Keccak256)
 
 A cryptographic hash function takes an arbitrary size input and outputs a data of fixed  size.
-It is deterministic, quick to compute the hash, irreversible, small input changes the output significantly and collition resistant.
+It is deterministic, quick to compute the hash, irreversible, small input changes the output significantly and collision resistant.
 
 ```solidity
 pragma solidity ^0.5.11;
@@ -1055,8 +1054,8 @@ contract HashFunction {
         return keccak256(abi.encodePacked(_text, _num, _addr));
     }
     
-    function collission(string memory _text, string memory _anothertext) public pure returns (bytes32) {
-        return keccak256(abi.encode(_text, _anothertext));
+    function collision(string memory _text, string memory _another_text) public pure returns (bytes32) {
+        return keccak256(abi.encode(_text, _another_text));
     }
 }
 
@@ -1077,7 +1076,7 @@ Create a message to sign, hash the message, sign the hash(off chain, keep your p
 pragma solidity ^0.5.11;
 
 contract VerifySignature {
-    function getMessagehash( address _to, uint _amount, string memory _message, uint _nonce) public pure returns (bytes32) {
+    function getMessageHash( address _to, uint _amount, string memory _message, uint _nonce) public pure returns (bytes32) {
         return keccak256(abi.encodePacked(_to, _amount, _message,_nonce));
     }
     
@@ -1087,7 +1086,7 @@ contract VerifySignature {
     }
     
     function verify(address _signer, address _to, uint _amount, string memory _message, uint _nonce, bytes memory _signature) public pure returns (bool) {
-        bytes32 messageHash = getMessagehash(_to, _amount,_message, _nonce);
+        bytes32 messageHash = getMessageHash(_to, _amount,_message, _nonce);
         bytes32 ethSignedMessageHash = getEthSignedMessageHash(messageHash);
         
         return recoverSigner(ethSignedMessageHash, _signature) == _signer;
@@ -1159,14 +1158,14 @@ contract UniswapExample {
 
 ### Deployment
 
-*Ether* is used to pay block rewards, pay transaction fee and can be transferred betwwen accounts.
+*Ether* is used to pay block rewards, pay transaction fee and can be transferred between accounts.
 *Wei* one ether equals to 10 ^ 18 wei.
 
-*Gas* - total amount of computation used to proecess each transaction on the blockchain is measured in gas.
-The purpose of gas is to limit the amount of computations that a transction can do. eg. an eternal loop.
+*Gas* - total amount of computation used to process each transaction on the blockchain is measured in gas.
+The purpose of gas is to limit the amount of computations that a transaction can do. eg. an eternal loop.
 
 *Gas limit* is the maximum amount of gas you're willing to use.Set by you.
-*Block gas limit* is the maximum amount alowed in the blockchain set by the network.
+*Block gas limit* is the maximum amount allowed in the blockchain set by the network.
 
 *Gas price* - Is the amount of ether you're willing for one gas.
 
@@ -1213,7 +1212,7 @@ contract Factory {
     event ChildCreated(
         uint date,
         uint data,
-        address childAdrres
+        address childAddress
         );
     function createChild(uint _data) external {
         Child child = Child(_data);
@@ -1269,7 +1268,7 @@ contract Collections {
         uint id;
         string name;
     }
-    User[] userrs;
+    User[] users;
     mapping(uint => User) users
     uint nextUserId;
 }
@@ -1377,7 +1376,8 @@ contract WETH is ERC20 {
 
 ### Web3
 
-```jsconst Web3 = require('web3');
+```js
+const Web3 = require('web3');
 
 const customProvider = {
     sendAsync: (payload, cb) =>{
@@ -1655,7 +1655,7 @@ contract Attack {
 }
 ```
 
-#### Prvention
+#### Prevention
 
 - Use safemath
 

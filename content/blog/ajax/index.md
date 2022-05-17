@@ -5,7 +5,7 @@ description : "Asynchronous JavaScript and XMLAJAX enables you to:
 
 Read data from a web server  after the page has loaded,
 Update a web page without reloading the page,
-Send data to a web server - in the background.You gonna like it.Lets look how you can update data asynchonously with Ajax"
+Send data to a web server - in the background.You gonna like it.Lets look how you can update data asynchronously with Ajax"
 ---
 
 
@@ -17,7 +17,7 @@ Asynchronous JavaScript and XML enables you to:
   
 * Send data to a web server - in the background
 
-You gonna like it.Lets look how you can update data asynchonously with Ajax
+You gonna like it.Lets look how you can update data asynchronously with Ajax
 
 Create a html file where we will display the data we fetch with AJAX on the browser.
 
@@ -88,14 +88,14 @@ function loadFile(){
     }
 
     xhr.onerror = function(){
-        console.log("an error occured")
+        console.log("an error occurred")
     }
 
     //Using onreadystatechange(You can use this method instead of onload)
 
         // HTTP STATUSES
         //200: "OK"
-        //403: "Fobiden"
+        //403: "Forbidden"
         //404: "Not Found"
         //READY STATE VALUES
         //0:"Request not initialized"

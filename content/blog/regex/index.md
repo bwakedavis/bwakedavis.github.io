@@ -16,7 +16,7 @@ Allows us to check a series of character for matches eg. emails
 ```|``` - used as a logic or inside a capturing
 ```[abc]``` - character set. matches one of the things in the brackets
 ```[^abc]``` - negated character set, matches anything except the ones in the bracket.
-```[a-zA-Z]``` - matches all upper and lowercase lettters, you can specify any range
+```[a-zA-Z]``` - matches all upper and lowercase letters, you can specify any range
 ```{1}``` - exact one number of matches, comes after a set of group
 ```{1,5}``` - inclusive range for number of matches
 ```{1, }``` - maximum number of matches

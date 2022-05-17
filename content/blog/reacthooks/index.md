@@ -38,7 +38,7 @@ function TodoForm({addTodo}) {
 }
 
 function App() {
-  const [todos, setTodos] =  useState([
+  const [todo, setTodo] =  useState([
     {
       text: "Learn React",
       isCompleted: false
@@ -54,26 +54,26 @@ function App() {
   ])
 
   const addTodo = text => {
-    const NewTodos = [...todos, {text}];
-    setTodos(NewTodos);
+    const NewTodo = [...todo, {text}];
+    setTodo(NewTodo);
   }
 
   const completeTodo = index => {
-    const newTodos = [...todos];
-    newTodos[index].isCompleted = true;
-    setTodos(newTodos);
+    const newTodo = [...todo];
+    newTodo[index].isCompleted = true;
+    setTodo(newTodo);
   }
 
   const removeTodo = index => {
-    const newTodos = [...todos];
-    newTodos.splice(index, 1);
-    setTodos(newTodos);
+    const newTodo = [...todo;
+    newTodo.splice(index, 1);
+    setTodo(newTodo);
   }
   return (
     <div>
       <div className="todo-list">
-        {todos.map((todo, index) => (
-          <Todo key={index} todo={todo} 
+        {todo.map((item, index) => (
+          <Todo key={index} item={item} 
           index={index} completeTodo={completeTodo} removeTodo={removeTodo}/>
         ))}
         <TodoForm addTodo={addTodo}/>

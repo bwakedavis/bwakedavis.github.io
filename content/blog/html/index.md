@@ -43,7 +43,7 @@ table, th,td {
 
 ## Lists
 
-Unorderd lists
+Unordered lists
 
 ```html
     <ul>
@@ -51,7 +51,7 @@ Unorderd lists
     </ul>
 ```
 
-Orderd lists
+Ordered lists
 
 ```html
     <ol>
@@ -64,7 +64,7 @@ Nested lists - lists inside lists
 ```html
 <dl>
     <dt>Coffee</dt>
-    <dd>blackhot</dd>
+    <dd>black coffee</dd>
 </dl>
 ```
 
@@ -151,7 +151,7 @@ Used to collect user inputs
 
 ### Form Inputs
 
-### Input Atrributes
+### Input Attributes
 
 ## Canvas
 

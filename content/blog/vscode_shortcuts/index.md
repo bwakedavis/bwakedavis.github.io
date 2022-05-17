@@ -6,5 +6,5 @@ description: "Visual studio code shortcuts"
 
 + ```Ctrl + B``` - close or open code explorer
 + ```Ctrl + W``` - close window
-+ ```Ctrl + Shift + P``` - Open command pallete
++ ```Ctrl + Shift + P``` - Open command pallet
   

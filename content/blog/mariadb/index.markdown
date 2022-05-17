@@ -1,7 +1,7 @@
 ---
 title: how to install mariadb on linux debian
 date: "2020-06-12T22:12:03.284Z"
-description: "Mysql has given me a hard time setting it up evrything I have a fresh install on my machine.Lets take a look on how we can set it up and trouble shoot in case you run into errors"
+description: "Mysql has given me a hard time setting it up everything I have a fresh install on my machine.Lets take a look on how we can set it up and trouble shoot in case you run into errors"
 ---
 
 Update your package index
@@ -56,7 +56,7 @@ SELECT * FROM Products;
 
 #### Connect to MySQL as a root user
 
-To start working wwith mysql you need to establish an active SSH session on your server
+To start working with mysql you need to establish an active SSH session on your server
 
 ```bash
 sudo mysql -u root -p
@@ -100,7 +100,7 @@ column_list
 ```sql
 CREATE TABLE user(
 uname VARCHAR(100),
-favcolor VARCHAR(100),
+fav_color VARCHAR(100),
 age VARCHAR(20)
 );
 ```
@@ -112,7 +112,7 @@ DESCRIBE table_name column_name; — review the information of the column in
 #### Delete table
 
 ```sql
-DROP TABLE tablename;
+DROP TABLE table_name;
 ```
 
 ### Columns
@@ -127,7 +127,7 @@ ALTER TABLE table
 ADD [COLUMN] column_name;
 ```
 
-Deleting/ Drpoing a column
+Deleting/ dropping a column
 
 ```sql
 ALTER TABLE table_name

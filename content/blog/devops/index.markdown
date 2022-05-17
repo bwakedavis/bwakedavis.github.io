@@ -1,13 +1,13 @@
 ---
-title: learn deveops
+title: learn devops
 date: "2020-05-12T22:12:03.284Z"
-description: "Deveops is an important part of software development that links software evelopment and production"
+description: "Devops is an important part of software development that links software development and production"
 ---
 
 Docker is replacing virtual machines
 Docker can be used with VM's on large projects
 
-Hypervisores eg. vmware ESX1
+Hypervisors eg. vmware ESX1
 
 How docker works
 Hardware - One Os(eg Ubuntu) - Docker - Other Os to create containers
@@ -29,8 +29,8 @@ How to use:
 + Run a Container
   
 ```bash
-    $docker run -d -t --name containername centos
-    $docker run -d -t -p 80:80 -name containername centos/version:number //run docker image on your website
+    $docker run -d -t --name container_name centos
+    $docker run -d -t -p 80:80 -name container_name centos/version:number //run docker image on your website
 ```
 
 + Check your your running containers
@@ -42,19 +42,19 @@ How to use:
 + Connect to your docker container
 
 ```bash
-    $docker exec -it containername bash
+    $docker exec -it container_name bash
 ```
 
-+ Stop reunning docker container
++ Stop running docker container
 
 ```bash
-    $docker stop containername
+    $docker stop container_name
 ```
 
-+ Start reunning docker container
++ Start running docker container
 
 ```bash
-    $docker start containername
+    $docker start container_name
 ```
 
 + Check resources being used

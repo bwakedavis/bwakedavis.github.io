@@ -13,7 +13,7 @@ API - used in setting up the connection
 Identify - client identification.
 Type of data.
 Network Address Translation(NAT) - Establishes a connection between the clients.
-Security - Encyrption of data.
+Security - Encryption of data.
 
 ### Challenges facing webRTC
 
@@ -31,7 +31,7 @@ Security - Encyrption of data.
 
 + **getUserMedia** - It represents a stream of audio/video.gaining access to camera, microphone and screen.
 + **peerConnection** - does everything.encodes, decodes and sends data over.signal processing,codec handling,peer to peer communication, security, bandwidth management.
-+ **dataChannel** - send arbitrary data directly between browsers in a bidirectional way.ultra low latencym,secure.
++ **dataChannel** - send arbitrary data directly between browsers in a bidirectional way.ultra low latency,secure.
 
 ### Servers for webRTC
 

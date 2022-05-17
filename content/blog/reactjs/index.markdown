@@ -6,7 +6,7 @@ description: "React JS is a open source frontend JavaScript library that focuses
 
 **Reactjs** React JS is a open source frontend JavaScript library that focuses on building reach user interfaces.
 It has a component based architecture and handles DOM update gracefully.
-You can intergrate other third party packages into react and react too intergrate with other applications or a portion of an application gracefully.
+You can integrate other third party packages into react and react too integrate with other applications or a portion of an application gracefully.
 
 To get started with reactjs you need *nodejs*, *a code editor* and *npm*.
 
@@ -53,7 +53,7 @@ React without ```jsx```.
 import React from 'react'
 
 export default function Hello() {
-    return React.createElement("div", {id:"hello"}, React.createElement("div", {classNane:"text"}, "Hello World"))
+    return React.createElement("div", {id:"hello"}, React.createElement("div", {className:"text"}, "Hello World"))
 }
 ```
 
@@ -99,7 +99,7 @@ export default Hello
 
 ```app.js```
 
-```javscript
+```javascript
 import React from "react";
 import Hello from './components/hello';
 
@@ -122,7 +122,7 @@ export default App;
 
 #### Destructuring props
 
-With function paramaters.
+With function parameters.
 
 ```javascript
 function Hello({name, hero}) {
@@ -238,8 +238,8 @@ class Parent extends React.Component {
        
     }
 
-    greetParent = (childname) => {
-        console.log(`hello ${this.state.parentName} from ${childname}`);
+    greetParent = (childName) => {
+        console.log(`hello ${this.state.parentName} from ${childName}`);
     }
 
     render() {
@@ -333,7 +333,7 @@ export default Hello
 
 #### Binding event handlers
 
-Event handlers are binded because of ```this``` keyword
+Event handlers are bind because of ```this``` keyword
 
 ```javascript
 import React from 'react';
@@ -563,7 +563,7 @@ const styles = {
 function Hello() {
     return (
     <div>
-        <h1 style= {styles}>Helo</h1>
+        <h1 style= {styles}>Hello</h1>
     </div>
     )
     }
@@ -633,7 +633,7 @@ export default hello
 
 #### Mounting phase
 
-Components are mounted after all the childrens have been rendered.
+Components are mounted after all the children have been rendered.
 
 ```js
 import React, { Component } from 'react'
@@ -850,7 +850,7 @@ export default PortalComp;
 
 ### Error handling
 
-Error boundaries are REact components thhat catch javaScript error in their child component tree, log thos errors and display a fall-back UI.
+Error boundaries are REact components that catch javaScript error in their child component tree, log this errors and display a fall-back UI.
 
 A class component becomes an Error Boundary by defining either or both of getDErivedFromError and componentDidCatch lifecycle methods.
 

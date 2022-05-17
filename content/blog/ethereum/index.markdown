@@ -10,13 +10,13 @@ description: "Ethereum is the second most popular blockchain after the one that 
 ## Features of Ethereum
 
 + Supports smart contracts
-+ Has a Crptocurrency called *ether*
++ Has a cryptocurrency called *ether*
 + Has Smart Property
 + Supports  DEcentralized Autonomous Organizations (DAO)
 
 ## Pillars of Ethereum
 
-+ **Ethereum Virtual Machine** - serves as the heart of ethereu, architecture and provides computer power.
++ **Ethereum Virtual Machine** - serves as the heart of ethereum, architecture and provides computer power.
   
 + **Inter-Planetary-File-System** - *IPFS* serves as a distributed storage unit  for large files being stored on the ethereum network.
   
@@ -28,29 +28,29 @@ Every time a contract is executed, Ethereum consumes token which is termed as 'g
 
 ### Gas
 
-**Gas** is the unit for the amount of computional work done by the computer for one cycle of the contract.
+**Gas** is the unit for the amount of computational work done by the computer for one cycle of the contract.
 A transaction fee is charged as some amount of ether and is taken from the account balance where the transaction originate.
 The more the fee, the higher the chances that the transaction will be picked up faster by the miners for inclusion in the block.
 Providing too little gas leads to failed transactions.
 Miners who add blocks to the blockchain are paid the transaction fees.
-Gas prevents bogous transactions which can spam the network transaction fee is variable
+Gas prevents bogus transactions which can spam the network transaction fee is variable
 **Gas price**
 ```gasCost = gasPrice * gasCost(gas)```
 
 **Gas limit** is the maximum amount of gas the contract can use for it's computation.
 
-#### Gas optimisation tis
+#### Gas optimization tis
 
 1. Put part of your code in a centralized server
 2. Use a library with pre-tested contracts
 3. Use ERC1167 if you want to deploy same contract several times
-4. Use events because they consume less gas than state varables
+4. Use events because they consume less gas than state variables
 5. Use literal values rather than computed ones
 6. Avoid copying arrays in memory
 7. Avoid using loops over dynamic ranges
-8. Optimize the order of variables declaration i.e uints, byte, strings
-9. Turn on the optimizer in solidity compiler inside ```truffle.config.js```.Though not allways reliable.
-10. Use ```eth-gas-reporter``` npm package to show your gas consumption everytime you run tests
+8. Optimize the order of variables declaration i.e uint, byte, strings
+9. Turn on the optimizer in solidity compiler inside ```truffle.config.js```.Though not always reliable.
+10. Use ```eth-gas-reporter``` npm package to show your gas consumption every time you run tests
 
 ### Smart Contracts
 
@@ -60,21 +60,21 @@ They're digital representation of real world contracts.
 
 #### Properties of Smart Contracts
 
-+ *Autonomous* - the creator doesn't have to participate in the process after deployig the contract.
++ *Autonomous* - the creator doesn't have to participate in the process after deploying the contract.
 + *Auto-sufficient* - contracts are able to collect money, realize transactions, distribute resources, issue and spend funds to allow a large capacity of storage.
 
 #### Advantages of Smart Contracts
 
 + Faster, simpler and hassle free processes.
 + Secure - data in decentralized registry cannot be easily lost or cyber attacked
-+ Pecision - Mistakes are not easily made due to absence of physical forms
++ Precision - Mistakes are not easily made due to absence of physical forms
 + Reduces settlement time.
 + Low operational overheads and costs.
 + Reduced administration and services cost owing .to automation and ease of compliance and reports.
 
 #### Disadvantages of Smart Contracts
 
-+ Hard to maintain - contracts deployed are immutable so changes in bussiness logic and general bug fixes  become tough.
++ Hard to maintain - contracts deployed are immutable so changes in business logic and general bug fixes  become tough.
 + Small community because it's a new field.
   
 **Decentralized Autonomous Organization(DAO)** are organizations that exist entirely on the blockchain and are governed by the protocols.
@@ -90,11 +90,11 @@ DAO's comprise of a global network of nodes and members that all work together a
 
 **EVM** is a blockchain-based software platform. It allows developers to create decentralized applications (Dapps).
 
-Contracts written in a smart contract specific language are compiled into *bytecode* which the **evm** can read and execute.
+Contracts written in a smart contract specific language are compiled into *byte code* which the **evm** can read and execute.
 
 ## Decentralized Applications(DApps)
 
-**DApps** are digital applications or programs that exist and run on a blockchain or peer to peer network of computers instead of a single computer, and are not controllled by a single authority.
+**DApps** are digital applications or programs that exist and run on a blockchain or peer to peer network of computers instead of a single computer, and are not controlled by a single authority.
 
 #### Features of DApps
 
@@ -103,12 +103,12 @@ Contracts written in a smart contract specific language are compiled into *bytec
 + Use Consensus Mechanism
 + Generates tokens to provide value to their contributing nodes.
 
-#### Adavantages of DApps
+#### Advantages of DApps
 
 + *Autonomy* - you make the agreement yourself.
-+ *Trust* - yourrecords are encrypted on a shared ledger.
++ *Trust* - your records are encrypted on a shared ledger.
 + Backup - your document are duplicated many times over.
-+ *Accuracy* - they're sometime kinda slower and expensive but avoid errors that arise from tedious computional work.
++ *Accuracy* - they're sometime kinda slower and expensive but avoid errors that arise from tedious computational work.
 
 #### Best practices for DApps design
 
@@ -128,7 +128,7 @@ Contracts written in a smart contract specific language are compiled into *bytec
 14. Support multiple wallets
 15. Don't trigger the metamask dapp popup too early
 16. Describe the effect of the transaction clearly and what it's for
-17. Show feedback after the transaction is sent and is beign processed
+17. Show feedback after the transaction is sent and is being processed
 18. Keep the UI updated with the smart contract by using events
 
 ### Decentralized Finance (DeFi)
@@ -154,7 +154,7 @@ Applications on the blockchain decentralizing finance, lending and interest earn
 ## Tokens
 
 A token is an ethereum smart contract that represents an assert or a service in real world or in the blockchain. eg.cryptokitties.
-Governed by **Ethereum Request for Commrnts(ERC)** token standard.
+Governed by **Ethereum Request for Comments(ERC)** token standard.
 
 ### ERC20 tokens
 
@@ -211,8 +211,8 @@ Forced token transfer
 Simplify contract interaction
 A contract can delegate execution of a function to another contract.
 
-#### Initial Coin Offerring(ICO)
+#### Initial Coin Offering(ICO)
 
-**Advantages** - allows retaining of control, globaliztion, no regulation
+**Advantages** - allows retaining of control, globalization, no regulation
 
-**Initial Public Offerring(IPO)** .
+**Initial Public Offering(IPO)** .
