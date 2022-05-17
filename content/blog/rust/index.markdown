@@ -237,3 +237,99 @@ fn main() {
     let something = Some(1);
 }
 ```
+
+## Control flow
+
+### if ... else, else if expressions
+Provide a condition , and then execute a block of code if the condition evaluates to true.
+An else expression can be added optionally.
+If no else is provided, the program will skip the if block if the condition evaluates to false.
+If you have more than two conditions to check, if and else can be combined in an else if expression.
+
+In the case all if and else if conditions evaluates to false, then the else block is executed.
+
+### match
+
+Similar to switch in other programming languages.
+A scrutiny expression is provided to compare to the patterns.
+Arms are evaluated and compared with the scrutiny expression.
+
+The scrutiny expression is x.
+Each arm has a pattern and some code. The "=>" operator separates the pattern and the code to run.
+The first arm with the matching pattern is executed.
+
+```rust
+fn main() {
+    if 1 == 2 {
+        println!("match is broken");
+    } else {
+        println!("Everything is fine");
+    }
+
+    let formal = true;
+    let greeting = if formal {
+        println!("Good evening");
+    } else {
+        println!("Hey, friend!");
+    };
+
+
+    let number = 6;
+
+    if number % 4 == 0 {
+        println!("Number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("Number is divisible by 3")
+    } else {
+        println!("Number is not divisible by 3 or 4");
+    }
+
+    let boolean = true;
+
+    let binary = match boolean {
+        false => 0,
+        true => 1,
+    };
+
+}
+```
+
+### Loop
+
+Used to execute over a block of code forever. Or until it is stopped, or the program quits.
+Instead of having this code run infinitely, the ```break``` keyword can be used.
+
+
+### while loop
+
+Conditional loops
+Run until condition is met or become false.
+
+### for loop
+
+Iterate through elements in a collection.
+Each pass of the loop extracts a values.
+
+```rust
+fn main() {
+    let mut i = 1;
+    let something = loop {
+        i *= 2;
+        if i > 100 {
+            break i;
+        }
+    };
+    assert_eq!(something, 128);
+
+    let mut counter = 0;
+
+    while counter < 10 {
+        println!("Hello");
+        counter += 1; 
+    }
+
+    for item in 0..5{
+        println!("{}", item*2);
+    }
+}
+```
