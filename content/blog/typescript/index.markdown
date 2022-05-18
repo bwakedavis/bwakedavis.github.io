@@ -82,42 +82,37 @@ let num2: string = 21;
 let isHot = true;
 let isCold: boolean = false;
 
+let id: number = 5;
+let company: string = "Bwake Group";
+let isPublished: boolean = false;
+let x: any = "hello world";
+
 //more than one possible type variable
 let id: string|number;
 
 //Arrays
 let names = ["Davis", "Austin", "Williams" ];
 let names2: string = ["Davis", "Austin", "Williams" ];
+let ids: number[] = [1, 2, 3, 4, 5];
 //mixed arrays
 let mixed = ["Reactjs", 2021, true, 420];
+let arr: any[] = ["hi", true, 5];
+
 let mixed2: (string| number| boolean)[] = ['hey', 420, true];
 
-//Objects
-let myObject = {
-    language: "Swahili",
-    age: 21,
-    likesCoffee: true
+//Tuple
+let person: [number, string, boolean] = [1, "hello", true];
 
-}
+//Tuple Array
+let employee: [number, string][];
 
-let myObject2: object = {
-    language: "English",
-    age: 8,
-    likesCoffee: false
-}
+employee = [
+    [1, 'John'],
+    [2, 'Jane'],
+    [3, 'Doe']
+]
 
-let myObject3 = {
-    language: string,
-    age: number,
-    likesCoffee: boolean
-}
-myObject3 = {
-    language: "English",
-    age: 10,
-    likesCoffee: true
-}
 ```
-
 ```any``` type. A variable can be any type in future.
 
 ```typescript
@@ -135,13 +130,6 @@ mixed.push("name");
 mixed.push(true);
 console.log(mixed);
 
-let myObject: {
-    name: any,
-    age:  any
-}
-
-myObject = {name: "Davis", age: 30}
-console.log(myObject)
 ```
 
 ### Functions
@@ -164,18 +152,22 @@ const add = (a: number, b: number, c?: number| string, d: number| string = "10")
 //c and d are optional parameters
 
 let result = add(3,42);
-```
 
-### Type Alias
+//Functions
 
-```typescript
-type StringOrNumber = string | number;
-
-const greet = (uid: StringOrNumber, username: string) => {
-    console.log(`${uid} - ${username}`)
+function addNum(x: number, y: number): number {
+    return x + y;
 }
 
-greet(4,"davis");
+console.log(addNum(2,3))
+
+// Void
+
+function log(message: string | number): void {
+    console.log(message);
+}
+
+log(100)
 ```
 
 ### Function signatures
@@ -206,6 +198,77 @@ type person = {name: string, age: number}
 logDetails = (newObj: person) => {
     console.log(`${newObj.name} is ${newObj.age}`)
 }
+```
+
+### Type Alias
+
+```typescript
+type StringOrNumber = string | number;
+
+const greet = (uid: StringOrNumber, username: string) => {
+    console.log(`${uid} - ${username}`)
+}
+
+greet(4,"davis");
+
+// Type Assertion
+
+let cid: any = 1;
+// let customerId = <number>cid
+let customerId = cid as number
+
+```
+
+### Objects
+
+```typescript
+let myObject: {
+    name: any,
+    age:  any
+}
+
+myObject = {name: "Davis", age: 30}
+console.log(myObject)
+//Objects
+let myObject = {
+    language: "Swahili",
+    age: 21,
+    likesCoffee: true
+
+}
+
+let myObject2: object = {
+    language: "English",
+    age: 8,
+    likesCoffee: false
+}
+
+let myObject3 = {
+    language: string,
+    age: number,
+    likesCoffee: boolean
+}
+myObject3 = {
+    language: "English",
+    age: 10,
+    likesCoffee: true
+}
+
+//Objects  and types
+type User = {
+    id: number,
+    name: string
+}
+
+const user: User = {
+    id: 1,
+    name: "John"
+}
+
+type Point = number | string;
+const p1: Point = 1;
+
+console.log(p1);
 ```
 
 ### Typecasting and interacting with the DOM
@@ -252,4 +315,107 @@ class Invoice {
 }
 
 const invoice = new Invoice("Davis", "building a smart contract", 500);
+
+//Classes
+interface ManInterface {
+    sayName(): string
+}
+
+class Man implements ManInterface{
+    private id: number; // makes property private to the class. protected
+    name: string;
+
+    constructor(id: number, name: string) {
+        this.id = id;
+        this.name = name
+    }
+
+    register() {
+        return `${this.name} is now registered`;
+    }
+
+    sayName(): string {
+        return `The user's name is ${this.name}`
+    }
+}
+
+const dave = new Man(1, "Dave");
+
+console.log(dave.sayName());
+console.log(dave.register());
+
+class Employee extends Man {
+    position: string;
+
+    constructor(id: number, name: string, position: string) {
+        super(id, name);
+        this.position = position;
+    }
+
+    
+}
+
+const emp = new Employee(36, "Steve", "Developer");
+```
+
+### enums
+
+```typescript
+//Enum
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right
+}
+
+console.log(Direction.Left)
+```
+
+### Generics
+
+```typescript
+//Generics
+
+function getArray<T>(items: T[]): T[] {
+    return new Array().concat(items)
+}
+
+let numArray = getArray<number>([1,2,3,4])
+console.log(numArray)
+let strArray = getArray<string>(["Jane", "Doe"])
+console.log(strArray)
+```
+
+### Unions
+
+```typescript
+//Union 
+let pid: string | number;
+pid = 22;
+```
+
+### Interfaces
+
+```ts
+// Interfaces
+
+interface PersonInterface {
+    readonly id: number //set to readonly
+    name: string
+    age?: number // optional
+}
+
+const person2: PersonInterface = {
+    id: 34,
+    name: "Jane"
+}
+
+interface MathFunc {
+    (x: number, y: number): number
+}
+
+const add: MathFunc = (x: number, y: number): number => x + y;
+const subtract: MathFunc = (x: number, y: number): number => x - y;
+
 ```
