@@ -385,6 +385,35 @@ let numArray = getArray<number>([1,2,3,4])
 console.log(numArray)
 let strArray = getArray<string>(["Jane", "Doe"])
 console.log(strArray)
+
+//
+const last = <T>(arr: Array<T>) =>{
+    return arr[arr.length - 1];
+}
+
+const l = last([1,2,3]);
+
+const l2 = last<string>(["a", "b", "c", "d"]);
+
+const makeArr = <T, Y = number>(x:T, y:Y) => {
+    return [x];
+}
+
+const v = makeArr <number, number>(5,6);
+const v2 = makeArr("a", "b");
+const v3 = makeArr(8, "d");
+const v4 = makeArr<string| null>("a", 7)
+
+const makeFullName = <T extends { firstName: string, lastName: string}> (
+    obj: T
+) => {
+    return {
+        ...obj,
+        fullName: obj.firstName + " " + obj.lastName;
+    }
+}
+
+const v5 = makeFullName({firstName: "John", lastName: "Doe"}, age: 22);
 ```
 
 ### Unions

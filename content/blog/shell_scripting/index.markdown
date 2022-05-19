@@ -207,3 +207,428 @@ else
     echo "$file_name empty"
 fi
 ```
+
+### Append to file
+
+```bash
+
+echo -e "Enter name of the file : \c"
+read file_name
+
+if [ -f $file_name ]
+then
+    if [ -w $file_name ]
+    then
+        echo "Type some text. To quit, press Ctrl+D."
+        cat >> $file_name
+    else
+        echo "You do not have the right permissions"
+    fi
+else
+    echo "$file_name does not exist"
+fi
+```
+
+### Logical 'AND' Operator
+
+```bash
+#! /usr/bin/bash
+
+age=20
+
+if [ "$age" -gt 18 ] && [ "$age" -lt 30 ]
+then
+    echo "Valid candidate"
+else
+    echo "Candidate not valid"
+fi
+
+#OR
+age=3
+
+if [ "$age" -gt 18 -a "$age" -lt 30 ]
+then
+    echo "Valid candidate"
+else
+    echo "Candidate not valid"
+fi
+
+#OR
+age=23
+
+if [[ "$age" -gt 18 && "$age" -lt 30 ]]
+then
+    echo "Valid candidate"
+else
+    echo "Candidate not valid"
+fi
+```
+
+### Logical 'OR' operator
+
+```bash
+#! /usr/bin/bash
+
+age=40
+
+if [ "$age" -lt 18 ] || [ "$age" -lt 30 ]
+then
+    echo "Valid candidate"
+else
+    echo "Candidate not valid"
+fi
+
+#OR
+age=3
+
+if [ "$age" -gt 18 -o "$age" -lt 30 ]
+then
+    echo "Valid candidate"
+else
+    echo "Candidate not valid"
+fi
+
+#OR
+age=230
+
+if [[ "$age" -lt 18 || "$age" -lt 30 ]]
+then
+    echo "Valid candidate"
+else
+    echo "Candidate not valid"
+fi
+```
+
+### Arithmetic  operations
+
+Whole numbers
+```bash
+num1=20
+num2=5
+
+echo $(( num1 + num2 ))
+echo $(( num1 - num2 ))
+echo $(( num1 * num2 ))
+echo $(( num1 / num2 ))
+echo $(( num1 % num2 ))
+
+#OR
+echo $(expr $num1 + $num2 )
+echo $(expr $num1 - $num2 )
+echo $(expr $num1 \* $num2 )
+echo $(expr $num1 / $num2 )
+echo $(expr $num1 % $num2 )
+```
+
+Floating point numbers math operations
+Get around using ``bc`` tool
+```bash
+echo "20.5+5" | bc
+echo "20.5-5" | bc
+echo "20.5*5" | bc
+echo "scale2;20.5/5" | bc
+echo "20.5%5" | bc
+
+num=27
+echo "scale=2;sqrt($num)" | bc -l
+echo "scale=2;3^3" | bc -l
+```
+
+### Case Statement
+
+```bash
+vehicle=$1
+
+case "$vehicle" in
+    "car" )
+        echo "Rent of $vehicle is 100 dollars" ;;
+    "van" )
+        echo "Rent of $vehicle is 120 dollars" ;;
+    "truck" )
+        echo "Rent of $vehicle is 150 dollars" ;;
+    "bicycle" )
+        echo "Rent of $vehicle is 10 dollars" ;;
+    * )
+        echo "$vehicle is an unknown vehicle, try car, van, truck or bicycle" ;;
+esac   
+```
+
+run
+```bash
+./hello.sh tuktuk
+```
+
+Regular Expression
+```bash
+
+echo -e "Enter some character: \c"
+read value
+
+
+case "$value" in
+    [a-z] )
+        echo "You entered $value which is between a-z" ;;
+    [A-Z] )
+        echo "You entered $value which is between A-Z" ;;
+    [0-9] )
+        echo "You entered $value which is between 0-9" ;;
+    ? )
+        echo "You entered $value which is a special character" ;;
+    * )
+        echo "$value is an unknown value, possibly more than one character" ;;
+esac   
+```
+
+### Arrays Variables
+
+```bash
+os=("Parrot Os" "Kali Linux" "Windows" "Mac OS X" "Ubuntu")
+
+echo "${os[@]}" # prints items in yhe array
+echo "${!os[@]}" # prints index
+echo "${#os[@]}" # prints length
+echo "${os[3]}" # prints 4th element
+echo "${os[0]}"
+os[2]="Xubuntu"
+echo "${os[@]}"
+unset os[4]
+echo "${os[@]}"
+
+strings="An array of string"
+echo "${strings[@]}"
+echo "${strings[0]}" # the whole string is assigned to the index 0
+echo "${#strings[1]}" #0
+```
+
+### While loops
+
+```bash
+
+n=1
+while [ $n -le 10 ]
+do
+    echo "$n"
+    n=$(( n+1 ))
+done
+
+
+#OR
+n=1
+while [ $n -le 10 ]
+do
+    echo "$n"
+   (( n++ ))
+done
+
+#OR
+n=1
+while (( $n <= 10 ))
+do
+    echo "$n"
+   (( ++n ))
+done
+
+n=1
+while [ $n -le 10 ]
+do
+    echo "$n"
+   (( n++ ))
+   sleep 1 # delays each iteration by 1 second
+done
+
+
+n=1
+while [ $n -le 3 ]
+do
+    echo "$n"
+   (( n++ ))
+   mate-terminal & # opens 3 terminal windows
+done
+
+# Read file content
+while read p
+do
+    echo $p
+done < file.txt
+
+#OR
+# Read file content
+cat file.txt | while read p
+do
+    echo $p
+done
+
+#OR
+# Read file content
+while IFS=' ' read -r line
+do
+    echo $line
+done < file.txt
+```
+
+### Until loop
+Execute if condition is false
+
+```bash
+n=1
+until [ $n -ge 10 ]
+do
+    echo $n
+    n=$(( n+1 ))
+done
+```
+
+### For loop
+
+```bash
+for i in 1 2 3 4 5
+do
+    echo "$i"
+done
+
+#OR
+for i in {1..10}
+do
+    echo "$i"
+done
+
+# specify loop range
+for i in {1..10..2}
+do
+    echo "$i"
+done
+
+#OR
+for (( i=0; i<5; i++ ))
+do
+    echo "$i"
+done
+
+# execute commands
+for command in ls pwd date
+do
+    echo "$command"
+    $command
+done
+```
+
+### Select loop
+
+```bash
+select name in mark jane isaac tom
+do
+    echo "$name selected"
+done
+
+select name in mark jane isaac tom
+do
+    case $name in
+    mark )
+    echo "mark selected" ;;
+    jane )
+    echo "jane selected" ;;
+    isaac )
+    echo "isaac selected" ;;
+    tom )
+    echo "tom selected" ;;
+    * )
+    echo "please select number between 1 and 4" ;;
+    esac
+done
+```
+
+### Break and Continue
+
+```bash
+for (( i = 0; i <10; i++ ))
+do
+    if [ $i -eq 2 -o $i -eq 5 ]
+    then
+        continue
+    fi
+    if [ $i -gt 7 ]
+    then
+        break
+    fi
+    echo "$i"
+done
+```
+
+### Functions
+
+Sequence matters in execution but not in declaration
+```bash
+
+function Hello() {
+    echo "Hello"
+}
+
+function print() {
+    echo "$1"
+}
+
+quit() {
+    exit
+}
+
+print "Hi there!"
+Hello
+echo "foo"
+quit
+
+```
+
+### Local variables
+
+```bash
+function print() {
+    local name=$1
+    echo "the name is $name"
+}
+
+name="Jane"
+
+echo "name is $name"
+print John
+echo "name is $name"
+
+# function example
+usage() {
+    echo "You need to provide an argument : "
+    echo "usage : $0 file_name"
+}
+
+is_file_exist() {
+    local filename="$1"
+    [[ -f "${filename}" ]] && return 0 || return 1
+
+}
+
+if ( is_file_exist "$1")
+then
+    echo "File exists"
+else
+    echo "File does not exist"
+fi
+```
+
+## readonly variables
+
+```bash
+var=31 #cannot be changed
+
+readonly var
+```
+
+### Signals and traps
+
+```bash
+echo "pid is $$"
+while (( COUNT < 10 ))
+do
+    sleep 1
+    (( COUNT++ ))
+    echo "${COUNT}"
+done
+exit 0
+```
