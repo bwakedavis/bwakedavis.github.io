@@ -1,7 +1,7 @@
 ---
 title: IT Support
 date: "2022-05-20T12:44:03.284Z"
-description: "what am learning on IT support course"
+description: "what am learning on IT support"
 ---
 
 table of content
