@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Technical Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 20 May 2022 12:54:10 GMT</lastBuildDate><item><title><![CDATA[IT Support]]></title><description><![CDATA[Contents: Foundation of project management. Project Initiation: Starting a successful project. Project Planning: Putting it all together…]]></description><link>https://bwakedavis.github.io/project_management/</link><guid isPermaLink="false">https://bwakedavis.github.io/project_management/</guid><pubDate>Fri, 20 May 2022 14:26:03 GMT</pubDate><content:encoded>&lt;p&gt;Contents:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Technical Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 20 May 2022 14:54:28 GMT</lastBuildDate><item><title><![CDATA[IT Support]]></title><description><![CDATA[Contents: Foundation of project management. Project Initiation: Starting a successful project. Project Planning: Putting it all together…]]></description><link>https://bwakedavis.github.io/project_management/</link><guid isPermaLink="false">https://bwakedavis.github.io/project_management/</guid><pubDate>Fri, 20 May 2022 14:26:03 GMT</pubDate><content:encoded>&lt;p&gt;Contents:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Foundation of project management.&lt;/li&gt;
 &lt;li&gt;Project Initiation: Starting a successful project.&lt;/li&gt;
@@ -6552,7 +6552,196 @@ Hardware - One Os(eg Ubuntu) - Docker - Other Os to create containers&lt;/p&gt;
 &lt;code class=&quot;language-text&quot;&gt;u0404&lt;/code&gt; - 4 digital unicode hex value for a character
 &lt;code class=&quot;language-text&quot;&gt;\t&lt;/code&gt; - matches tab character only
 &lt;code class=&quot;language-text&quot;&gt;\d --&lt;/code&gt; - matches only digit character
-&lt;code class=&quot;language-text&quot;&gt;d--&lt;/code&gt; - matches d character&lt;/p&gt;</content:encoded></item><item><title><![CDATA[understand ethereum and it's wide ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
+&lt;code class=&quot;language-text&quot;&gt;d--&lt;/code&gt; - matches d character&lt;/p&gt;</content:encoded></item><item><title><![CDATA[user experience(UX) and user interface design(UI)]]></title><description><![CDATA[UI Design UI design is the designing of visual interface of a software.
+I the look and feel, the presentation and interactivity of a product…]]></description><link>https://bwakedavis.github.io/ui-ux/</link><guid isPermaLink="false">https://bwakedavis.github.io/ui-ux/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;UI Design&lt;/h2&gt;
+&lt;p&gt;UI design is the designing of visual interface of a software.
+I the look and feel, the presentation and interactivity of a product.
+It’s the point of interaction between the user and the digital product
+Good design makes something intelligent, memorable and meaningful.
+A design language is a set of consistent visual element that can be reused.&lt;/p&gt;
+&lt;h3&gt;Principles of UI design&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;White Space - the amount empty space between elements.&lt;/li&gt;
+&lt;li&gt;Color - use 4 or 5 colors(recommended).&lt;/li&gt;
+&lt;li&gt;Contrast - being ‘strikingly’ different from something else.&lt;/li&gt;
+&lt;li&gt;Scale - consider the size of the element.&lt;/li&gt;
+&lt;li&gt;Alignment - the process of  ensuring every element is positioned correctly in relation to each other.&lt;/li&gt;
+&lt;li&gt;Typography&lt;/li&gt;
+&lt;li&gt;Visual Hierarchy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Stages of UI design&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Rough sketches&lt;/li&gt;
+&lt;li&gt;Block design&lt;/li&gt;
+&lt;li&gt;Wire frame&lt;/li&gt;
+&lt;li&gt;Mockup ui&lt;/li&gt;
+&lt;li&gt;Prototype&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;UX DESIGN&lt;/h1&gt;
+&lt;p&gt;content:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Foundations of User Experience design&lt;/li&gt;
+&lt;li&gt;Start the UX Design process: Empathize, Define and Ideate&lt;/li&gt;
+&lt;li&gt;Build wireframes and Low-fidelity prototypes.&lt;/li&gt;
+&lt;li&gt;Conduct UX research and test Early concepts.&lt;/li&gt;
+&lt;li&gt;Create High-Fidelity Designs and prototypes in figma.&lt;/li&gt;
+&lt;li&gt;Responsive web design in Adobe XD.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Foundations of User Experience Design&lt;/h3&gt;
+&lt;h4&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;User Experience Design&lt;/strong&gt; focus on the experience that the users have while using a product like websites, apps and physical objects.&lt;/p&gt;
+&lt;p&gt;UX mostly focuses on usability, problems and accessibility.
+It involves interactions between the potential or active user of a product. It relies on visual design, behavioral psychology and consumer research.&lt;/p&gt;
+&lt;p&gt;Tools - figma, adobe xd&lt;/p&gt;
+&lt;p&gt;A good design should be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;usable&lt;/li&gt;
+&lt;li&gt;equitable - accessible to all&lt;/li&gt;
+&lt;li&gt;enjoyable&lt;/li&gt;
+&lt;li&gt;useful - give value to users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tips to make a great design:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Emphasis and importance&lt;/li&gt;
+&lt;li&gt;Make everything the user needs readily accessible.&lt;/li&gt;
+&lt;li&gt;Be consistent and mobile friendly&lt;/li&gt;
+&lt;li&gt;Contrast and readability&lt;/li&gt;
+&lt;li&gt;Be clear by splitting steps into different pages.&lt;/li&gt;
+&lt;li&gt;Give Feedback to the user eg “form submitted”&lt;/li&gt;
+&lt;li&gt;Proximity and layout&lt;/li&gt;
+&lt;li&gt;Use recognition by using most used icons that users can easily identify.&lt;/li&gt;
+&lt;li&gt;Follow design standards.&lt;/li&gt;
+&lt;li&gt;Borders and spacing&lt;/li&gt;
+&lt;li&gt;Keep things stupid simple.&lt;/li&gt;
+&lt;li&gt;Fill and corners&lt;/li&gt;
+&lt;li&gt;keep relevant items eg.buttons together&lt;/li&gt;
+&lt;li&gt;Test your designs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A UX designer can do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;user research&lt;/li&gt;
+&lt;li&gt;branding&lt;/li&gt;
+&lt;li&gt;user flows&lt;/li&gt;
+&lt;li&gt;UX writing&lt;/li&gt;
+&lt;li&gt;visual design&lt;/li&gt;
+&lt;li&gt;prototyping&lt;/li&gt;
+&lt;li&gt;product design&lt;/li&gt;
+&lt;li&gt;information architecture&lt;/li&gt;
+&lt;li&gt;usability testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;User experience&lt;/strong&gt; is how a person , the user feels about interacting with or experiencing a product.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;product&lt;/strong&gt; is a good, service or a feature.&lt;/p&gt;
+&lt;p&gt;A UX designer is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Curious&lt;/em&gt;- try to understand people and how their minds work.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Empathetic&lt;/em&gt; - ability to understand someone’s feeling or thought situation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Types and colleagues of UX designers&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Interaction Designer&lt;/em&gt; - focus on designing the experience of a product and how it functions.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Visual Designer&lt;/em&gt; - focus on how a product or technology looks. eg ui, fonts, logo.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Motion Designer&lt;/em&gt;  - thinks on how it feels like for a user to move through a product. ie transition.&lt;/li&gt;
+&lt;li&gt;Graphic Designer - focus on the physical appearance of of the product.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;UX Researcher&lt;/em&gt; - conduct studies or interviews that help us learn how people use a product.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;UX Writers&lt;/em&gt; - think about how to make the language within a product clearer.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Production designer&lt;/em&gt; - works as a bridge between interaction designers and engineers.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;UX engineer&lt;/em&gt; - translate the design intent into functioning experience.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;UX Program Manager&lt;/em&gt; - ensure clear and timely communication so that the process of building a useful product moves smoothly from start to finish.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Assets - text, images, design, specification, font style, color, size , spacing, etc.&lt;/p&gt;
+&lt;h5&gt;Product Development Cycle&lt;/h5&gt;
+&lt;p&gt;Refers to the process used to take a product from an idea to product.&lt;/p&gt;
+&lt;p&gt;Stages:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Brainstorm&lt;/em&gt; - research to understand user problem.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Define&lt;/em&gt; - using the insights from the brainstorming stage and starting to narrow the focus.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Design&lt;/em&gt; - implementing insights into new designs using various tools ie. create assets, storyboards, sketches, prototypes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Test&lt;/em&gt; - Evaluating the product design based on feedback from potential users.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Launch&lt;/em&gt; - sharing the finished version of the design with the public&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Research -&gt; Brainstorming -&gt; Implementation -&gt; Reporting&lt;/p&gt;
+&lt;h6&gt;Research&lt;/h6&gt;
+&lt;p&gt;Involves:
+Understanding - conducting of user interviews to identify the requirements.Understand the problem you’re solving.
+User personas - representation of a typical user to identify their needs.
+Use cases - how might different people use the product or service.
+Journey maps - how a user might start to use and finish the experience&lt;/p&gt;
+&lt;h6&gt;Brainstorming&lt;/h6&gt;
+&lt;p&gt;How to solve the problem. Generate and validate ideas.
+Involves:
+User flows - diagrams that outline the steps a user might take during the experience as they go from step to step in the UI.
+Wireframes - a rough skeleton representation of the UI and the various components that make up the UI.Templates of each page are sketched.Color schemes are chosen&lt;/p&gt;
+&lt;h6&gt;Implementation&lt;/h6&gt;
+&lt;p&gt;Prototype - UI designers create a low or high fidelity prototype, which may or may not be interactive.
+Front-end and Back-end development - once the prototype has been approved the developers make the prototype of a working product.&lt;/p&gt;
+&lt;h6&gt;Reporting&lt;/h6&gt;
+&lt;p&gt;Usability reporting - observing real users using the product through a variety of means.
+Split testing - testing the effectiveness of one design iteration over another.
+Analytics reporting - gaining additional insights eg. time spend on pages, bouncing rates&lt;/p&gt;
+&lt;h5&gt;Job Responsibilities of a UX designer&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Researching - understand the audience&lt;/li&gt;
+&lt;li&gt;Wireframing - outline/ sketching products or screens.&lt;/li&gt;
+&lt;li&gt;Prototyping - develop early design of the product that demonstrates functionality.&lt;/li&gt;
+&lt;li&gt;Creating information architecture - framework of a website, how it is organized and steructured.&lt;/li&gt;
+&lt;li&gt;Communicating effectively&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;UX common terms, tools and frameworks&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;End user&lt;/strong&gt;  - is the specific audience a UX designer creates something for.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;user&lt;/strong&gt; - refers to any person using the product.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;user -centric design&lt;/strong&gt; - putting the user at the front and center.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand&lt;/li&gt;
+&lt;li&gt;Specify&lt;/li&gt;
+&lt;li&gt;Design&lt;/li&gt;
+&lt;li&gt;Evaluate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Key UX frameworks:&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;framework&lt;/strong&gt; creates the basic structure that focuses and supports the problem you’re trying to solve.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The five elements of UX design framework.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;steps a designer takes to turn an idea into a working product.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;strategy - most abstract&lt;/li&gt;
+&lt;li&gt;scope&lt;/li&gt;
+&lt;li&gt;structure&lt;/li&gt;
+&lt;li&gt;skeleton&lt;/li&gt;
+&lt;li&gt;surface - most concrete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Design thinking UX framework.
+A way to create solutions that addresses a real user problems and are functional and affordable.
+steps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;empathize&lt;/li&gt;
+&lt;li&gt;define&lt;/li&gt;
+&lt;li&gt;ideate&lt;/li&gt;
+&lt;li&gt;prototype&lt;/li&gt;
+&lt;li&gt;test&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Equity based design.
+build products that meet the needs of specific individuals and groups who have historically been excluded.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Next Billion Issue&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cost&lt;/li&gt;
+&lt;li&gt;Connectivity&lt;/li&gt;
+&lt;li&gt;Digital literacy&lt;/li&gt;
+&lt;li&gt;Literacy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Platform&lt;/em&gt; is the medium that users experience your product on eg mobile, desktop.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Brand identity&lt;/em&gt; is the visual appearance and voice of a company.&lt;/p&gt;
+&lt;p&gt;Responsive web design allows a website to change automatically depending on the size of the device users behave differently depending on their device.&lt;/p&gt;
+&lt;p&gt;When designing for different platforms ensure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Consistency&lt;/li&gt;
+&lt;li&gt;Continuity&lt;/li&gt;
+&lt;li&gt;Context&lt;/li&gt;
+&lt;li&gt;Complementary&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[understand ethereum and it's wide ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
 &lt;h2&gt;Features of Ethereum&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Supports smart contracts&lt;/li&gt;
@@ -6716,71 +6905,7 @@ Governed by &lt;strong&gt;Ethereum Request for Comments(ERC)&lt;/strong&gt; toke
 A contract can delegate execution of a function to another contract.&lt;/p&gt;
 &lt;h4&gt;Initial Coin Offering(ICO)&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt; - allows retaining of control, globalization, no regulation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Initial Public Offering(IPO)&lt;/strong&gt; .&lt;/p&gt;</content:encoded></item><item><title><![CDATA[user experience(UX) and user interface design(UI)]]></title><description><![CDATA[UI Design UI design is the designing of visual interface of a software.
-I the look and feel, the presentation and interactivity of a product…]]></description><link>https://bwakedavis.github.io/ui-ux/</link><guid isPermaLink="false">https://bwakedavis.github.io/ui-ux/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;UI Design&lt;/h2&gt;
-&lt;p&gt;UI design is the designing of visual interface of a software.
-I the look and feel, the presentation and interactivity of a product.
-It’s the point of interaction between the user and the digital product
-Good design makes something intelligent, memorable and meaningful.
-A design language is a set of consistent visual element that can be reused.&lt;/p&gt;
-&lt;h3&gt;Principles of UI design&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;White Space - the amount empty space between elements.&lt;/li&gt;
-&lt;li&gt;Color - use 4 or 5 colors(recommended).&lt;/li&gt;
-&lt;li&gt;Contrast - being ‘strikingly’ different from something else.&lt;/li&gt;
-&lt;li&gt;Scale - consider the size of the element.&lt;/li&gt;
-&lt;li&gt;Alignment - the process of  ensuring every element is positioned correctly in relation to each other.&lt;/li&gt;
-&lt;li&gt;Typography&lt;/li&gt;
-&lt;li&gt;Visual Hierarchy&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Stages of UI design&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Rough sketches&lt;/li&gt;
-&lt;li&gt;Block design&lt;/li&gt;
-&lt;li&gt;Wire frame&lt;/li&gt;
-&lt;li&gt;Mockup ui&lt;/li&gt;
-&lt;li&gt;Prototype&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Tips to make a great design&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Emphasis and importance&lt;/li&gt;
-&lt;li&gt;Make everything the user needs readily accessible.&lt;/li&gt;
-&lt;li&gt;Be consistent and mobile friendly&lt;/li&gt;
-&lt;li&gt;Contrast and readability&lt;/li&gt;
-&lt;li&gt;Be clear by splitting steps into different pages.&lt;/li&gt;
-&lt;li&gt;Give Feedback to the user eg “form submitted”&lt;/li&gt;
-&lt;li&gt;Proximity and layout&lt;/li&gt;
-&lt;li&gt;Use recognition by using most used icons that users can easily identify.&lt;/li&gt;
-&lt;li&gt;Follow design standards.&lt;/li&gt;
-&lt;li&gt;Borders and spacing&lt;/li&gt;
-&lt;li&gt;Keep things stupid simple.&lt;/li&gt;
-&lt;li&gt;Fill and corners&lt;/li&gt;
-&lt;li&gt;keep relevant items eg.buttons together&lt;/li&gt;
-&lt;li&gt;Test your designs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;UX Design&lt;/h1&gt;
-&lt;p&gt;UX mostly focuses on usability, problems and accessibility.
-It involves interactions between the potential or active user of a product. It relies on visual design, behavioral psychology and consumer research.&lt;/p&gt;
-&lt;h2&gt;Steps in UX Design&lt;/h2&gt;
-&lt;p&gt;Research -&gt; Brainstorming -&gt; Implementation -&gt; Reporting&lt;/p&gt;
-&lt;h3&gt;Research&lt;/h3&gt;
-&lt;p&gt;Involves:
-Understanding - conducting of user interviews to identify the requirements.Understand the problem you’re solving.
-User personas - representation of a typical user to identify their needs.
-Use cases - how might different people use the product or service.
-Journey maps - how a user might start to use and finish the experience&lt;/p&gt;
-&lt;h3&gt;Brainstorming&lt;/h3&gt;
-&lt;p&gt;How to solve the problem. Generate and validate ideas.
-Involves:
-User flows - diagrams that outline the steps a user might take during the experience as they go from step to step in the UI.
-Wireframes - a rough skeleton representation of the UI and the various components that make up the UI.Templates of each page are sketched.Color schemes are chosen&lt;/p&gt;
-&lt;h3&gt;Implementation&lt;/h3&gt;
-&lt;p&gt;Prototype - UI designers create a low or high fidelity prototype, which may or may not be interactive.
-Front-end and Back-end development - once the prototype has been approved the developers make the prototype of a working product.&lt;/p&gt;
-&lt;h3&gt;Reporting&lt;/h3&gt;
-&lt;p&gt;Usability reporting - observing real users using the product through a variety of means.
-Split testing - testing the effectiveness of one design iteration over another.
-Analytics reporting - gaining additional insights eg. time spend on pages, bouncing rates&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn all things bitcoin]]></title><description><![CDATA[Bitcoin is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments. It follows the ideas set out…]]></description><link>https://bwakedavis.github.io/bitcoin/</link><guid isPermaLink="false">https://bwakedavis.github.io/bitcoin/</guid><pubDate>Mon, 13 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Bitcoin&lt;/strong&gt; is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Initial Public Offering(IPO)&lt;/strong&gt; .&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn all things bitcoin]]></title><description><![CDATA[Bitcoin is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments. It follows the ideas set out…]]></description><link>https://bwakedavis.github.io/bitcoin/</link><guid isPermaLink="false">https://bwakedavis.github.io/bitcoin/</guid><pubDate>Mon, 13 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Bitcoin&lt;/strong&gt; is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments.&lt;/p&gt;
 &lt;p&gt;It follows the ideas set out in the Bitcoin White authored by &lt;em&gt;Satoshi Nakamoto&lt;/em&gt; whose identity is not yet known, Get the pdf here &lt;a href=&quot;https://bitcoin.org/bitcoin.pdf&quot;&gt;Bitcoin White Paper&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[understand blockchain technology]]></title><description><![CDATA[A Blockchain is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an…]]></description><link>https://bwakedavis.github.io/blockchain/</link><guid isPermaLink="false">https://bwakedavis.github.io/blockchain/</guid><pubDate>Sun, 12 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;A &lt;strong&gt;Blockchain&lt;/strong&gt; is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an unchangeable record of transactions, each time-stamped and linked to the previous one.
 Each digital record or transaction in the electronic ledger is called a &lt;em&gt;block&lt;/em&gt;.
 Transactions are protected by strong cryptographic algorithms.
