@@ -419,3 +419,147 @@ Types of tools include:
 
 example of tools - Asana, atlassian tools, trello, google workspace, clickup, monday.com
 
+### Project Planning: Putting it all together
+
+#### Benefits of project planning
+
+##### Project initiation
+
+1. Project manager gets assigned.
+2. Project goals, scope and deliverables have to be approved.
+3. Team members get assigned.
+4. Sign off your project charter.
+
+##### Project Planning
+
+1. Understand the work needed to achieve your goals.
+2. Coordinate efforts and timelines with other teams, contractors and vendors.
+3. Identify and prepare for risks.
+4. Get "buy-in" from key members of the project team.
+
+Teamwork
+
++ *Schedule* - the project timeline  which includes the start date, end date and dates for events in between.
++ *Budget* - accounts for the total cost for possible problems related to the project and planning ahead to mitigate those risks.
++ *Project kick-off meeting* - the first meeting in which a project team comes together to ground everyone in a shared vision, gain a shared understanding of the project's goals and scope, and to understand each person's individual roles within a team. Can include the project team, project stakeholders and project sponsors
+    Importance
+    + Establish a shared vision
+    + Align on scope
+    + Build team rapport
+    + Ask questions and offer insights
+
+    Agenda
+    1. Introduction
+        + Team member names.
+        + Project roles
+        + Fun facts
+    2. Background
+        + How the project came to be
+        + Why the project matters
+    3. Goals and scope
+        + In-scope
+        + Out-of-scope
+        + Target launch date.
+        + Milestone
+    4. Roles
+        + What work everyone is responsible for throughout the duration of the project.
+    5. Collaboration
+        + Shared project tools and documents
+        + Communication expectations. eg. emails, chatroom
+    6. What comes next
+        + Set expectations on what is next and members upcoming responsibility.
+    7. Questions
+        + Gain clarity on meeting topics
+        + Ensure the project benefits from diversity of thorough experience and ideas.
+
+    Best practices:
+    + Ask teammates to take notes on key points and action items.
+    + After the meeting, send follow-up email that summarizes the key points and outcomes from the meeting and any action items to the attendees.
+
+##### Understanding tasks and milestones
+
++ A **milestone** is an important point within the project schedule that indicates progress and usually signifies the completion of a deliverable or phase of the project.
++ A **project task** is an activity tha needs to done within a set period of time.
++ Tasks add up to milestones
+
+*Importance of milestones:*
+1. Setting milestones gives you a clear understanding of the amount of work that needs to be done
+2. Help you keep your project on track.
+3. help uncover areas where you might need to adjust scope, timeline, or project resources to meet your goals.
+4. Reaching milestones can seriously motivate your team and illustrate real progress to your stakeholders.
+5. Serve as a great check-in point to highlight your progress to stakeholders.
+
++ Milestones must be completed on time and in sequential order.
++ If you fail to complete a deliverable tied to a specific milestone, it could be a set back to your project schedule.
+
+*How to set milestones:*
+1. Evaluate your project as a whole.
+2. Make a list of what is supposed to be done to achieve the goal and group them int milestone.
+3. Assign deadlines to each milestone.
+
+**Work Breakdown Structure** is a tool that sorts the milestone tasks of a project in a hierarchy, in the order they need to be completed. ie. creating a tree diagram
+
+After completing a WBS you should have:
++ A set of discrete project tasks that ladder up to each of your milestone.
++ Team members assigned to each task according to people responsibility, consider each member workload, ensure teammates are clear of their assigned goal timeline. It creates a sense of personal responsibility for each task.
+
+#### Building a project plan
+
+components:
+1. Tasks
+2. Milestones
+3. People
+4. Documentation - RACI, budget, project charter, WBS
+5. Time
+
+
++ *Time estimation* - is a prediction of the total amount of time required to complete a task(active + inactive).
++ *Effort estimation* - is a prediction of the amount and difficulty of active work required to complete a task.
++ *Buffer* - is the extra time added to the end of a task or project to account for unexpected showdowns(delays in work progress).
++ *Task buffer* - extra time tacked on to end of a specific task
++ *Project buffer* - extra time tacked on to the end of a project.
++ *Capacity* - the amount of work that people/ resources assigned the project can reasonably complete in a set period of time.
++ *Capacity planning* - refers to the act of allocating people and resources to the project tasks, and determining whether or not they have the necessary resources required to complete the work on time.
++ *Critical path* - the list of project milestone you must reach in order to meet the project goal on schedule, as well as the mandatory tasks that contribute to the completion of each milestone. The critical path includes the bare minimum number of tasks and milestones you need to reach your project goal.
+    + list all tasks and milestones in order and determine dependency, determine which task can happen sequentially or in parallel.
+    + determine which task has a fixed start date
+    + determine which task has the earliest start date
+    + identify which task has float.
+    *Float* refers to the amount of time you can wait to begin a task before it impacts the project schedule and threatens the project outcome.
+    + tasks on the critical path should have zero float.
++ *Network diagram* - graphical representation of project tasks, responsibilities and workflow.
++ *Planning fallacy* - faulty predictions about how much time you need to complete a task.
++ *Forward pass* - when you move forward through your network diagram to identify early finish dates.
++ *Backward pass* - when you count back from an end result to identify late start and finish dates.
++ *Soft skills* - personal characteristics that help people work efficiently with others.
+    + Asking the right questions(open-ended questions)
+    + Negotiating efficiently
+    + Practising empathy
++ An anchor of a good project plan is a clear schedule containing all the tasks of a project, their owners and when they need to be completed.
++ *Gantt chart* - is a horizontal bar chart that maps out a project schedule. Gantt charts are highly visual representation of a project tasks, with clear breakdown of who's responsible for the work and when those work are due.
++ Kanban boards uses cards.
+
+*Project plan best practices:*
+1. Carefully review deliverables, milestones and tasks.
+2. Give yourself time to plan
+3. Recognize and plan for the inevitable, things will go wrong.
+4. Stay curious.
+5. Champion your plan.
+
++ Understand the expectations of, priorities, risk assessment and communication styles  of your stakeholders and vendors.
++ Task id numbers/ task name
++ Task duration
++ Start and finish dates
++ Who is responsible for what
+
+tools include - asana, jira, trello, smartsheet
+
++ Kanban are a visual tool used to manage tasks and workflows.
++ Kanban boards can be created on whiteboards, magnetic boards, poster boards, computer programs etc.
++ Purpose of kanban boards:
+    + Give quick visual understanding of work details and provide critical task information.
+    + Facilitate handoff between stakeholders
+    + Help capturing metrics and improving workflow. eg Todo, in progress, testing, done
+
+#### Managing budgeting and procurement
+
