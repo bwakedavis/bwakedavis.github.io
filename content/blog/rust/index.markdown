@@ -203,6 +203,104 @@ fn main() {
 }
 ```
 
+Structs from rust book
+
+
+```rust
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
+}
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
+}
+
+//Associative functions
+impl Rectangle {
+    fn square(size: u32) -> Rectangle {
+        Rectangle { width: size, height: size }
+    }
+}
+
+
+fn main() {
+    let mut user = User{
+        email: String::from("john@example.com"),
+        username: String::from("john"),
+        active: true,
+        sign_in_count:1
+    };
+
+    let name = user.username;
+    user.username = String::from("john_doe");
+
+    let user2 = build_user(String::from("janedoe@email.com"), String::from("jane"));
+
+    let user3 = User {
+        email: String::from("Jack@example.com"),
+        username: String::from("jack"),
+        ..user2
+    };
+
+    //tuple structs
+    struct Color(i32, i32, i32);
+    struct Point(i32, i32, i32);
+
+    let rect = Rectangle {
+        width: 30,
+        height: 50
+    };
+    println!("rect: {:#?}", rect);
+    println!("The area of the rectangle is: {}", area(&rect));
+    //using implementation method
+    println!("The area of the rectangle is: {}", rect.area());
+
+    let rect2 = Rectangle {
+        width: 20,
+        height: 40
+    };
+
+    let rect3 = Rectangle {
+        width:40,
+        height: 50,
+    };
+
+    println!("rect can hold rect1: {}", rect.can_hold(&rect2));
+    println!("rect can hold rect1: {}", rect.can_hold(&rect3));
+
+    let rect4 = Rectangle::square(25);
+    println!("{:#?}", rect4);
+}
+
+fn build_user(email: String, username: String) -> User {
+    User {
+        email,
+        username,
+        active: true,
+        sign_in_count:1,
+    }
+}
+
+fn area(dimensions: &Rectangle) -> u32 {
+    dimensions.width * dimensions.height
+}
+```
+
+
 5. Enums
     + List all variations of some data.
     + Common across programming languages.
@@ -235,6 +333,114 @@ fn main() {
     let quit = WebEvent::KeyPress('q');
 
     let something = Some(1);
+}
+```
+
+Enums from rust book
+
+```rust
+enum IPAddrKind {
+    v4,
+    v4u(u8, u8, u8, u8),
+    v6(String),
+}
+
+struct IPAddr {
+    kind: IPAddrKind,
+    address: String,
+}
+
+enum Message {
+    Quit,
+    Move { x: i32, y: i32},
+    Write(String),
+    ChangeColor(i32, i32, i32),
+}
+
+impl Message {
+    fn some_function() {
+        println!("enum implements Message");
+    }
+}
+
+fn main() {
+    let four = IPAddrKind::v4;
+    let six = IPAddrKind::v6;
+
+    let localhost = IPAddr {
+        kind: IPAddrKind::v4,
+        address: String::from("127.0.0.1"),
+    };
+
+    let localhost2 = IPAddrKind::v4u(127, 0, 0, 1);
+
+    // enum Option<T> {
+    //     Some(T),
+    //     None,
+    // }
+
+    let some_number = Some(1);
+    let some_string = Some("A string");
+    let absent_number: Option<i32> = None;
+
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
+
+    let sum = x + y.unwrap_or(0);
+    println!("{}", sum);
+
+    value_in_cents(Coin::Quarter(UsState::Alaska));
+
+    let ten = Some(10);
+    let eleven = plus_one(ten);
+    let none = plus_one(None);
+
+    let some_value = Some(3);
+    match some_value {
+        Some(3) => println!("Three"),
+        _ => (),
+    }
+    // better approach
+    if let Some(3) = some_value {
+        println!("Three");
+    }
+    
+}
+
+#[derive(Debug)]
+enum UsState {
+    Alabama,
+    Alaska,
+    Arizona,
+    Arkansas,
+    California,
+}
+
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter(UsState),
+}
+
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter(state) => {
+            println!("State Quarter from {:?}", state);
+            25
+        }
+    }
+}
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
+        // _ => None,
+    }
 }
 ```
 
@@ -419,6 +625,103 @@ fn print_out(to_print: String) {
 + Dangling pointer
 + Double-free - trying to free memory that has already been freed.
 + Memory leaks - not freeing memory that should have been freed.
+
+##### Ownership from rust book
+You can have multiple immutable reference but not multiple immutable references.
+
+```rust
+fn main() {
+    // Ownership rules
+    //1. Each variable in rust has a value called it's owner
+    //2. There can only be one owner at a time
+    //3. When the owner goes out of scope, the value will be dropped.
+
+    //Stacks and heaps
+    fn a() {
+        let x = "hello";
+        let y = 32;
+        b()
+    }
+
+    fn b() {
+        let x = String::from("world");
+    }
+
+    {// s is not valid here, it's not yet declared
+    let s= "Hello, world!"; //s is valid from this point on
+    let s2= String::from("Hello, world!"); //s is valid from this point on
+    // you can do things with s
+    }// this scope is now over, and is no longer valid
+
+    let x = 5;
+    let y = x; //copy for integers, characters, booleans
+
+    let string1 = String::from("Hello");
+    let string2 = string1; //A move i s performed not shallow copy
+    let string3 = string2.clone(); //A clone
+
+    let string4 = String::from("Takes Ownership");
+    takes_ownership(string4);
+    //println!("{}", string4); // returns an error, ownership lost to the function
+
+    let my_int = 5;
+    makes_copy(my_int);
+    println!("{}", my_int); // prints the integer my_int
+
+    let string5 = gives_ownership();
+    println!("{}", string5); // prints the string
+
+    let string6 = takes_and_gives_back(string5); // takes ownership and gives back
+    println!("{}", string6);//prints the string
+
+    let string_7 = String::from("Does'nt take ownership");
+    let (string_8, len) = calculate_length(string_7);
+    println!("The length of {} is {}", string_8, len);
+
+    //or
+    let string_7_2 = String::from("Does'nt take ownership");
+    let len= calculate_length_2(&string_7_2);
+    println!("The length of {} is {}", string_7_2, len);
+
+    let mut string_9 = String::from("Hello");
+    change_reference(&mut string_9);
+
+}
+
+
+
+fn takes_ownership(some_string: String) {
+    println!("{}", some_string);
+}
+
+fn makes_copy(some_integer:i32) {
+    println!("{}", some_integer);
+}
+
+fn gives_ownership() -> String {
+    let some_string = String::from("Hello, world!");
+    some_string
+}
+
+fn takes_and_gives_back( a_string: String) -> String {
+    a_string
+}
+
+fn calculate_length(s:String) -> ( String, usize) {
+    let length = s.len();
+    (s, length)
+}
+
+fn calculate_length_2(s: &String) -> usize {
+let length = s.len();
+length
+}
+
+fn change_reference(some_string: &mut String) {
+    some_string.push_str(", world");
+}
+```
+
 
 
 
@@ -742,5 +1045,66 @@ fn main() {
     };
 
     let_it_be.describe();
+}
+```
+
+
+### Build a guessing game
+Install a dependencies by adding it to ```cargo.toml``` and run ```cargo build```
+
+Build a rust Guessing game
+
+Add rand to cargo.toml
+
+```rust
+[package]
+name = "guessing_game"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.5.5"
+colored = "2.0.0"
+```
+
+```rust
+use std::io;
+use rand::Rng;
+use  std::cmp::Ordering;
+use colored::*;
+fn main() {
+    println!("Guess the number!");
+
+    let secret_number = rand::thread_rng().gen_range(1, 101);
+
+    println!("The secret number is: {}", secret_number);
+
+    loop {
+        println!("Please input your guess");
+
+        let mut guess = String::new();
+    
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("Failed to read line");
+    
+            let guess: u32 = match guess.trim().parse() {
+                Ok(num) => num,
+                Err(_) => continue,
+            };
+    
+        println!("You guessed: {}", guess);
+    
+        match guess.cmp(&secret_number) {
+            Ordering::Less => println!("{}","Too Small!".red()),
+            Ordering::Greater => println!("{}","Too Big!".red()),
+            Ordering::Equal => {
+                println!("{}","You win!".green());
+                break;
+            } 
+        }
+    }
 }
 ```
