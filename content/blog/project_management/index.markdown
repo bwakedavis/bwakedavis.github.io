@@ -818,3 +818,233 @@ Documents:
 7. Project charter
 8. Work plan schedule
 9. Statement of work.
+
+### Project Execution: Running the Project
+
+**Tracking** - a method of following the progress of project activities.
+
+**Deviation** - anything that alters your original course of action. Deviation from the project plan can cause positive or negative impact. Transparency is essential for accurate decision making.
+
+Importance of tracking:
+
+1. Help in recognizing issues
+2. Help in building confidence and timely delivery
+3. Ensures transparency.
+
+Track project schedules, status action, tasks, milestone, cost, key decisions, changes, dependencies, risks.
+
+Tracking methods include: Gantt charts, Roadmap, burndown charts
+
+**Roadmap** - measure large milestones, high level
+
+**Gantt chart** - measure time against tasks, good for large teams.
+
+**Burndown chart** - good for project that require granular, broken down look at each task, tight schedule(task/time).
+
+**Project status report** - gives an overview of  all the project's common elements and summarizes them in snapshots. Contains project name, date, summary, status, milestone, tasks and issues
+
+Why risk and changes occur:
+
+1. New or changing dependencies.
+2. Changing priorities.
+3. Capacity and people.
+4. Budget/ resource limitations.
+5. Scope creep.
+Force majeure.
+
+Type of dependencies include: External, Internal, Mandatory, Discretionary,
+
+**Dependency management** - process of managing inter-related tasks and resources within the project to ensure the project is completed.
+
+**Risk exposure** - a way to measure the potential future loss resulting from a specific activity/event.
+
+ROAM technique(Resolved, Owned, Accepted, Mitigated)
+
+*Escalating issues* - the process of enlisting the help of higher level project leadership/ management to remove an obstacle, clarify or reinforce priorities and validate next steps.
+Importance of escalation include:
+
+1. Act as checks and balances
+2. Generate speedy decisions.
+3. reduce frustrations.
+4. Encourage participation.
+
+Critical issues to be escalated in a project are:
+
+1. Cause a delay on a major project milestone.
+2. Cause budget overruns.
+3. Can result in the loss of a customer.
+4. push back the estimated project completion date.
+
+**Timeout** - taking a moment away from the project in order to take a breath, regroup and adjust the game plan.
+
+**Retrospective** - a meeting focused on identifying the contributing causes of an incident/ pattern of incidents without blaming any individual.
+
+#### Quality management and continuos improvement
+
+**Quality** - when you fulfill the outlined requirements for the deliverable and meet or exceed the needs or expectations of your customers.
+
++ **Quality standards** - provide requirements, specifications, or guidelines that can be used to ensure that products, processes, or services are fit for achieving desired outcome. eg. reliability standards, usability standards, product standards.
++ **Quality planning** -the actions of the project manager or the team to establish a process for identifying and determining exactly which standards of quality are relevant to the project as a whole.
++ **Quality assurance** - evaluating if your project is moving towards delivering a high quality service or product.
++ **Quality control** - involves monitoring project results and delivery to determine if they are meeting desired result or not.
+
++ *Feedback survey* - a survey in which users provide feedback on features of your product that they like or dislike.
++ *User-acceptance-test* - a test that helps a business make sure a product/solution work for it's users.
++ *Control* - an experiment or observation designed to minimize the effects of a variable.
++ *Data-driven improvement framework* - techniques used to make decisions based on actual data.
+
+DMAIC(Define, Measure, Analyze, Improve, Control)
+
+PDCA(Plan, Do, Check, Act) - a four step process that focuses on identifying a problem, fixing it, assessing whether the fix was successful and fine-tuning the final fix.
+
+*Project* - one single focused endeavour
+
+*Program* - a collection of projects
+
+*Portfolio* - a collection of projects and programs.
+
+Importance of a retrospective:
+
+1. Encourage team building
+2. Facilitate improved collaboration
+3. Promote positive changes.
+
+#### Data-informed decision making
+
+**Data** is a collection of facts or information.
+
+Benefits of using data: make better decisions, solve problems, understand performance, improve processes, understand users.
+
+**Metric** - a quantifiable measurement that is used to track and asses business objectives.
+
+**Productivity metric** - allow you to track the effectiveness and efficiency of your project.
+
+**projection** - how you predict an outcome based on the information you need.
+
+**Duration** - the total time it takes to complete a project from start to finish.
+
+**Quality metrics** - metrics that relate to achieving acceptable outcomes eg number of changes, cost variance, issues.
+
+*change log* - list of all changes
+
+*cost variance* -actual cost vs budgeted cost
+
+*signal* - observable change
+
+**Data ethics** - study and evaluation of moral challenges related to data collection and analysis.
+
+Reasons to apply data ethics:
+
++ Comply with regulations.'
++ Show that they are trustworthy
++ Ensure fair and reasonable data usage
++ Minimize biases
++ Develop a positive public perception
+
+Increase data privacy awareness, using secure tools, anonymize data
+
+**Data biases** - type of error that tend to skew results in a certain direction. ie. sampling, observer interpretation, confirmation bias.
+
+**Data analysis** - the process of collecting and organizing information  to help draw conclusion.
+
+**Quantitative data** - statistical and numerical dat.
+
+**Qualitative data** - subjective qualities that can't be measured with numerical data.
+
+Data Analysis steps:
+
+1. Ask
+2. Prepare
+3. Process
+4. Analyze
+5. Share
+6. Act
+
+*Story telling* - turning facts to narrative
+
+Steps: Define your audience, collect the data, filter and analyze the data, choose a visual representation, shape your story, gather feedback.
+
+*Data visualization* - graphical representation of data. eg. graphs, maps
+
+KPI - a measurable value/metric that demonstrates how effective an organization is at achieving key objectives.
+
+*Dashboard* - a  visualization of project progress
+
+To give an effective presentation you should be precise, flexible, and memorable.
+
+#### Leadership and influencing skills
+
+**Work groups** - people in an organization who work toward a common goal(coordinated, controlled/assigned by a single person)
+
+**Teamwork** - an effective, collaborative way of working in which each person is committed to and heading toward a shared goal. It fosters creativity, accountability, gets work done
+
+Factors that impact team effectiveness are:
+
++ Psychological safety
++ Dependability
++ Structure and clarity
++ Meaning
++ Impact
+
+Leading functional teams:
+
+1. Create systems that turn chaos into order
+2. Communicate and listen
+3. Promote trust and psychological safety
+4. Demonstrate empathy and create motivation
+5. Delegate responsibility and prioritize.
+6. Celebrate team success
+
+Bruce Tuckman's stages of team development:
+1. Forming
+2. Storming
+3. Norming
+4. Performing
+5. Adjourning
+
+**Ethical leadership** - a form of leadership that promotes and values honesty, justice, respect, community and integrity. Fostering culture of respect and creating equal opportunities to succeed
+
+**Influencing** - ability to alter an individual way of thinking.
+
+Four steps of influencing:
+1. Establish credibility - expertise and relationship
+2. Frame for common ground  - how to provide value.
+3. Provide evidence - provide hard data and story telling
+4. Connect emotionally - connect personality  and appreciate work.
+
+**Power sources** - organizational, personal, reputation
+
+**Personal powers** -knowledge, expressiveness, history, character
+
+#### Effective project communication
+
+State what you want clearly, keep the content short and concise, structure your writing, check grammar, punctuation and spelling.
+
+An effective meeting is structured, intentional, collaborative, inclusive
+
+Types of projective meeting:
+
+1. Project kick-off
+2. Status updates - task, schedule, budget, risks, changes
+3. Stakeholders reviews
+4. Project reviews
+
+#### Closing a project
+
+When to close:
+1. Assure all work is done
+2. Agreed upon project management processes are executed
+3. Formal recognition and agreement that the project is done by key stakeholders.
+
++ Never-ending project
++ Abandoned project
+
+Steps in closing:
+1. Provide necessary training, tools, documentation and capability to use your product.
+2. Ensure that the product has satisfied it's goals and desired outcome.
+3. Document acceptance from all stakeholders
+4. Review all contracts and documentation.
+5. Conduct a formal retrospective
+6. Disband and thank the project team.
+
+Impact reporting
