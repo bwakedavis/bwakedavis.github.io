@@ -563,3 +563,258 @@ tools include - asana, jira, trello, smartsheet
 
 #### Managing budgeting and procurement
 
+##### Importance of setting up a budget
+
+A *project budget* is the estimated monetary resources needed to achieve the project's goals and objectives.
+
+*Forecast* - a cost estimate or prediction over a period of time.
+
+Budget creation takes place in the initiation phase. Budgeting takes place in conjunction with scheduling process.
+
+1. Increase workforce productivity.
+2. Increase revenue.
+3. Attempts to save costs.
+
+A project manager must show the requested amount of money was used in order to secure enough budget for future projects.
+
+When creating a budget, the project manager must account for:
+1. Understanding stakeholders needs.
+2. Budgeting for surprise needs and expenses.
+3. Maintain adaptability.
+4. Reviewing and re-forecasting throughout the project.
+
+*Resource cost* - cost of a resource.
+
+*Reserve analysis* -a method to check for remaining project resources.
+
+*Contingency budget* - money that is included to cover potentially unforeseen events that aren't accounted for in a cost estimate.
+
+*Cost quality* - cost that are incurred to prevent issues with products, processes or tasks. ie. prevention costs, appraisal costs, internal failure costs, and external failure costs
+
+Direct costs include:
+1. Wages and salaries
+2. material costs
+3. Equipment rental costs
+3. Software licenses
+4. Project related travel and transportation costs
+5. Staff training
+
+Indirect costs include:
+1. Administrative costs
+2. Utilities costs
+3. Insurance costs
+4. General office equipment
+5. Security
+
+A *Baseline budget* is an estimate of project costs that you start with at the beginning of your project.
+
+When creating a project budget:
+1. Use historical data reference.
+2. Leverage experts
+3. Bottom up - think about all parts, break, add up
+4. Confirm accuracy
+5. Baseline
+    + Break the project into tasks(cost estimate, material)
+    + Add estimates together
+    + Add contingency and tax.
+    + Seek approval from key stakeholders.
+
++ Fixed-one time costs
++ Buffers and reserves
++ Planned cost vs actual cost
++ Estimated  vs final cost
+
+Monitoring the budget is crucial for a project manager to enforce accountability in terms of spending
+
+Milestones are a great opportunity to re-review the budget.
+
+Fixed contracts are paid for when certain milestones are reached.
+
+Time and materials contract are paid monthly based on hours worked and other fees associated with the work.
+
+*Cost control* - a practice where a budget manager identifies factors that might impact their budget and then creates effective actions to minimize variances.
+
+Controlling costs:
+1. Establish a sign off plan and inform the appropriate stakeholders of any changes that occur.
+2. Manage changes as they're made.
+3. Accept that budget misses will happen.
+4. Adequately account for, adapt and manage your budget with that risk in mind(under budget/ over budget = bad)
+
+Overcoming budget challenges:
+1. Budget pre-allocation
+2. Inaccurately calculating total cost of ownership(TCO).
+3. Scope creep caused by:
+    + A vague statement of work(SoW)
+    + Conversations and disagreements about the project that aren't officially documented.
+    + Unattainable time-frames and deadlines
+    + Last minute asks from stakeholders.
+
++ *Cash flow* - inflow and outflow of cash on your project
++ *Capital expense(CAPEX)* - organizations major, long-term upfront expenses. eg buildings, equipment, vehicles
++ *Operating expenses(OPEX)* - organizations short-term expenses that are required for day to day tasks. eg. wages, rent , utilities. They are often recurring.
++ *Contingency reserves* - funds added to the estimates project cost to cover unidentified risks(buffers).
+*Management risks* - cover cost of unidentified risks.
+
+##### Procurement
+
+**Procurement** is the process of obtaining all the materials, services, and supplies required to complete the project.
+
+*Vendors* are individuals or businesses who provide essential goods and services.
+
+Managing Vendors:
+1. Sourcing vendors
+2. Getting quotes for vendors work
+3. Deciphering which vendors will fulfill your needs.
+4. Negotiating vendor contract
+5. Setting deadlines for vendors
+6. Evaluating performance.
+7. Ensuring vendors are paid.
+
+Procurement process:
+1. Initiating
+2. Selecting
+3. Contract writing
+4. Control
+5. Completing
+
+**Agile** procurement management:
+1. Collaborative with both the project team and the supplier.
+2. Emphasis on the relationship between these parties.
+3. Project team plays a larger role in identifying what needs to be procured.
+4. Living contract.
+
+Procurement documentation:
+1. Non-disclosure Agreement(NDA) - keeps confidential information
+2. Request for Proposal(RFP) - project information
+3. Statement of Work(SoW) - clearly lays out the product and services a vendor/contractor will provide + contractor/ vendor needs
+
+*Subject Matter Experts(SME's)
+
+Have a legal team.
+
+Maintain ethics as stated in Project Management Institute(Code of Conduct).
+
+Don't involve yourself in Unethical practices such as:
+1. Bribery and corruption
+2. Sole-supplier sourcing
+3. Interaction with state owned agency.
+
+#### Making risks effectively
+
+**Risk** -  a potential event which can occur and can impact your project.
+
+**Issue** - a known or real problem that can affect the ability to complete a task.
+
+Risks become a issue.
+
+**Risk management** - is the process of identifying and evaluating potential risks and issues that could impact the project.
+Helps in understanding:
+1. What could go wrong
+2. Who you'll need to consult
+3. How the risk could be mitigated.
+
+Not planning ahead can be fatal.
+
+Risk management life cycle:
+1. Identify the risk.
+2. Analyze the risk.
+3. Evaluate the risk.
+4. Treat the risk
+5. Monitor the risk.
+
+An *Opportunity* is a potential positive outcome that may bring additional value to a project. Make a plan to seize opportunities.
+
+Tools to identify risks include: Brainstorming, risk assessment.
+
++ *Cause-and-effect diagram* - a diagram that shows the possible causes of an event or risk.
++ *Risk register* - a table or chart that contains a list of risks.
++ *Risk assessment* - the stage of risk management where  qualities of a risk are estimated or measured.
++ *Impact* - the damage a risk could cause, if it occurs, determined on a scale of high, medium and low.
++ *Probability* - likelihood that a risk will occur(high, medium and low)
++ *Inherent risks* the measure of a risks, calculated by it's probability and impact.
++ *Risk appetite* - the willingness of an organization to accept the possible outcome of a risk.
++ *External risks* - risks resulting from factors outside the company that you could have little control over.
++ *Single point of failure* - a risk that has the potential to be catastrophic and halt work across a project.
++ *Dependency* - a relationship between two project task, where the start or completion of one depends on the start or completion of the other.
++ *Internal dependencies* - dependencies within the project that you and your team have control over.
++ *External dependencies* - dependencies you have no control over.
++ *Decision tree* - a flowchart that helps visualize the wider impact of a decision on the rest of the project.
+
+Types of risks:
+1. Time - project tasks may take longer.
+2. Budget risks - cost increase due to poor planning/ scope increase.
+3. Scope risk - possibility that a project won't produce the result outlined in the project.
+
+Risk mitigation types:
+1. Avoid
+2. Minimize
+3. Transfer
+4. Accept
+
+Types of dependencies:
+1. Final to Start(FS) - task A must be completed  before task b start.
+2. Finish to Finish(FF) - task A must finish before task B finish.
+3. Start to Start(SS) - task A can't be started before task b begins.
+4. Start toFinish(SF) - task A must begin before task B is completed.
+
+Building a risk management plan:
+
+A **risk management plan** is a living document that contains information regarding high level risks and the mitigation plans for those risks.
+
++ Project name
++ Objective
++ Executive summary
++ Possible risks(description, risk rating, mitigation)
++ Appendix(impact chart)
+
+Communicating risk to stakeholders:
+
++ Low - send emails
++ medium - send emails
++ high - share
+
+#### Organizing communication and documentation
+
+**Communication** is the flow of information and includes what is shared , how it is shared, and with whom.
+
+Communication should be clear, honest, relevant and frequent.
+
+Tips for effective communication:
+
+1. Recognize and understand individual differences.
+2. Brainstorm and craft the appropriate message
+3. Deliver your message.
+4. Obtain feedback and incorporate that feedback going forward.
+
+*Communication plan* - organizes and documents the process, types and expectations of communication for the project.
+
++ What needs to be communicated?
++ Who needs to communicate?
++ When communication can happen?
++ Why and how to communicate?
++ Where the information being communicated is stored.
+
+Planning communication upfront:
+
++ Improve communication overall
++ Keeps people engaged and motivated.
++ Get's stakeholders involved in effective conversations.
++ Store documents in a centralized place.
++ Make sure people in relevant roles are granted access to documents so that even in your absence the project can carry on.
+
+*Knowledge management* - a way of ensuring that the project data can be accessed in the future by others who need it for informing decisions or planning similar projects.
+
++ Share information on a need to know basis.
++ Personally Identifiable Information(PII) - information that could be used on it's own to directly identify, contact, or precisely locate an individual.
+
+Documents:
+
+1. Project plan
+2. Budget
+3. RACI chart
+4. Risk Management Plan
+5. Communication plan
+6. Mitigation Plan
+7. Project charter
+8. Work plan schedule
+9. Statement of work.
