@@ -1048,3 +1048,245 @@ Steps in closing:
 6. Disband and thank the project team.
 
 Impact reporting
+
+### Agile project Management
+
+#### Fundamentals of Agile
+
+**Waterfall** - sequential or linear ordering of phases
+
+**Agile** - moving quickly and easily, flexibility and willingness to change and adapt(iterative, flexible, accept change)/.
+
+**Agile project management** - an approach to project and team management that embodies "agility" and is based on the agile manifesto.
+
+Aspects of a project: Requirements, documentation, deliverables
+
+##### Four Values of Project Management
+
+1. Individuals and interactions over processes and tools.
+2. Working software over comprehensive documentation.
+3. Customer collaboration over contract negotiation.
+4. Responding to change over following a plan.
+
+##### Twelve Principles of Agile Manifesto
+
++ *Value delivery* - how do agile teams deliver highly valuable products to their customers.
++ *Business collaboration* - how do agile teams collaborate with their business partners and stakeholders to create business value to organizations.
++ *Team dynamics and culture* - how does a team create and maintain the right interpersonal and team dynamics to deliver value for the customer and the business.
++ *Retrospective and continuous learning* - how does the project learn to continuously increase performance of an organization and business.
+
+**VUCA**(volatility - rate of change, Uncertainty - lack of predictability, Complexity, Ambiguity - possibility of misunderstanding) - an acronym that defines the conditions that affect organizations in a changing and complex world. 
+
+1. **Value Delivery**
+
+    1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+    2. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to a shorter timescale.
+    3. Working software is the primary measure of progress
+    4. Simplicity - the art of maximizing the amount of work not done is essential.'
+    5. Continuous attention to technical excellence and good design enhance agility.
+
+2. Business Collaboration
+
+    6. Welcome changing requirements, even late in development. Agile processes harness change for the customer competitive advantage.
+    7. Business people and developers must work together daily throughout the project.
+
+3. Team Dynamics and culture
+
+    8. Build projects around motivated individuals. Give them the environment and support their needs, and trust them to get the job done.
+    9. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+    10. Agile processes promote sustainable development. The sponsors, developers and users should be able to maintain a constant pace indefinitely.
+    11. The best architectures, requirements and designs emerge from self organizing teams
+
+4. Retrospectives and Continuous learning
+
+    12. At regular intervals, the team reflects on how to become more effective, the tunes and adjusts it's behavior accordingly.
+
+##### SCRUM
+
+Forming a team that will work together to quickly develop and test a deliverable.
+
+**Product backlog** - the central artifact in scrum , where work is done.
+
+**Daily scrum/stand-up** - a meeting of 15 or fewer minutes every day of the sprint.
+
+**Scrum master** - responsible for ensuring the team lives agile values and principles, follows the processes and practices that the team agreed to, sharing information to the larger project team.
+
+**Product owner** - Responsible for for maximizing the value of the product and the work of the team, responsible for the inventory work and has final say on how to prioritize work.
+
+**Development team** - Responsible for how the team will deliver the product.
+
+###### Reasons for scrum popularity
+
+1. Clear roles and responsibilities, while continuously emphasizing the power of the team as a whole.
+2. Regular and predictable meeting and delivery schedules, formats and outcomes.
+3. Support and reinforces the agile values and principles, while adding structure  and foundation that help new agile teams get started and more experienced teams get better.
+4. Free and open for all to use. Huge amounts of online guidance and support, as well as scrum-specific training and certification.
+
+Agile - Scrum, kanban, xp, lean.
+
+###### Benefits of kanban
+
+1. Provides transparent visual feedback
+2. Ensures that the project team only accepts a sustainable amount of in progress work.
+
+**Work-in progress(WIP)** Limit - tasks are limited to what the team can actually handle during a certain amount of time.
+
+Backlog > Creating > Review > Publishing > Done
+
+**Flow** - a core principle of kanban that aims to maximize efficiency.
+
+##### Extreme Programming(XP)
+
+Improve product quality and the ability to respond to changing customer needs.
+
+Takes best practices for the development to "extreme" levels.
+
+XP activities.
+1. Designing(simplicity)
+2. Coding(clear and concise code)
+3. Testing(eliminate flaws)
+4. Listening(listening to the customer feedback and act)
+
+XP innovative practices.
+1. Pair programming
+2. Continuous integration and continuous re-factoring
+3. Avoid big design upfront.
+4. Write tests, not requirements.
+
+##### Lean
+
+Five principles of Lean:
+1. Define value - identify and focus on customer needs
+2. Map value stream - map steps to production, eliminate waste.
+3. Create flow - product flow through value stream, eliminate waste.
+4. establish pull - customer is asking for features and increment deliverables.
+5. Pursue perfection - improve the first for processes.
+
+Blending methods.
++ Kanban - focus on visualization and managing flow
++ XP - concerned with taking product development best practices to an extreme degree.
++ Lean - capture core principles that eliminate waste and deliver value to customers.
+
+Waterfall phases
+1. Initiation
+2. Planning
+3. Executing and completing tasks
+4. Closing the project.
+
+#### Scrum 101
+
+scrum is the main agile framework
+
+**Scrum guide** - a main source of truth for scrum teams and is available at scrumguide.org
+
+Scrum is a framework for developing, delivering and sustaining complex products.
+
+*Iterative* - repeating cycles.
+
+*Incremental* - work is divided into small chunks that build on top of of each other.
+
+*Empiricism* -the idea that the knowledge comes from actual lived experience
+
+Pillars of scrum are *Transparency, Inspection, and Adaptation*.
+
+##### Five values of scrum
+
+1. Commitment - personal commitment to achieve goals
+2. Courage - courage to do right things and do tough work, honesty.
+3. Focus - focusing on necessary work.
+4. Openness - open about work and challenges.
+5. Respect - respect opinions, skills and independence of teammates.
+
+Essential scrum roles include:
+
++ **Mission** -  a short statement that stays constant for your team throughout the power and gives them something to work toward.
++ **Product vision**  - what team is responsible for and team boundaries.
++ **Product owner** -build the right thing.
++ **Development Team** -build things right.
++ **Scrum master** - coach the team members on agile and scrum best practices, rules and values, helping to find ways to manage the product backlog effectively, facilitate scrum events, help team remove blockers, prevent unhelpful interactions from outside the team.
+
+###### Scrum masters
+
+1. Organizational skills
+2. Supportive leader
+3. Facilitate productivity and collaboration.
+4. Coach team members
+5. Create communications
+
+###### Product owners
+
+1. Continuously maximize the value of the product delivered by the scrum team. Act as a voice of the customer in the team.
+2. Help the scrum team understand why their work matters within the overall goal and mission.
+3. Prioritize the product backlog to optimize delivery and value to customer
+4. Ensures the backlog is visible and transparent to all.
+5. Make sure the product/services fulfills the customer needs
+
+A product owner should be:
+1. customer focused
+2. Decisive
+3. Flexible
+4. Optimistic and positive
+5. Available
+6. Collaborative
+
+###### Developer team
+
+People doing the work to build the product (3-9 people).
+
+1. Cross-functional
+2. Self-organizing
+3. Supportive
+4. Customer oriented
+
+##### Implementing scrum
+
+Five scrum events:
+
+1. Sprint
+2. Sprint planning
+3. Daily scrum
+4. Sprint review
+5. SPrint retrospective
+
+**Product backlog** - guide and roadmap of your product. It's a living artifact, owned and adjusted by the product owner, prioritized list of features.It consist of:
+
+1. The description
+2. The value it generates
+3. The order(highest to lowest priority)
+4. The estimate
+
+**User stories** - are short, simple description of a feature told from the perspective of the user. It consist of user, action and benefit. eg." As a *(user role)* I want to this *(action)* so that I can get this *(value)*.
+
+**Epic** - a group or collection of user stories.
+
+**Acceptance criteria** - the checklist you will use to decide whether the user story is done.
+
+**Backlog refinement** - the act of keeping the backlog described, estimated, and prioritized so that the scrum team can operate effectively. Ensures:
+1. It contains the appropriate items and nothing new is needed or nothing to be removed.
+2. That the items are prioritized by the product owner.ie. called settings the order field.
+3. That the items at the top of the backlog are ready for delivery with clear acceptance criteria.
+4. The backlog items include estimates or an informed assessment about how much work a particular backlog item will be.
+
+**Relative estimation** - instead of trying to determine exactly how long a task will take, we compare the effort of that task to another task, and that becomes the estimate.
+
+Types of estimation
+
+1. T-shirt estimation
+2. Story points estimation
+3. Planning poker
+4. Dot voting
+5. The bucket system
+6. Ordering method
+7. Affinity mapping
+
+##### Sprints
+
+Within a sprint, the amount of work is planned based on historical capacity of the team and is made ready for the sprint planning event.
+
+Timeboxes creates a sense of urgency which will drive prioritization, provide a window focus which will translate into productivity gains, help the team develop a predictable rhythm to their work. Think about frequency of changes, the backlog item, how much overhead goes into a "delivery" of your product.
+
+**Sprint planning** - the entire scrum team comes together and meets to confirm how much capacity, meaning time and people are available during this sprint.
+
+**Definition of done** -refers to an agreed upon set of items that must be completed before a user story or backlog item can be considered complete.
+
+1. The code
