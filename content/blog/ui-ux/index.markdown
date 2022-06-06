@@ -150,7 +150,7 @@ Analytics reporting - gaining additional insights eg. time spend on pages, bounc
 1. Researching - understand the audience
 2. Wireframing - outline/ sketching products or screens.
 3. Prototyping - develop early design of the product that demonstrates functionality.
-4. Creating information architecture - framework of a website, how it is organized and steructured.
+4. Creating information architecture - framework of a website, how it is organized and structured.
 5. Communicating effectively
 
 #### UX common terms, tools and frameworks
