@@ -204,3 +204,158 @@ When designing for different platforms ensure:
 + Continuity
 + Context
 + Complementary
+
+**Universal design** is the process of creating one product for users with the widest range of abilities and in the widest range of situations.
+
+**Inclusive design** - making design choices that take into account persoanl identifiers like ability, race, economic status, language, race.
+
+*Accessibility* - the design of products, design, services or environments for the people with disabilities.
+
+**Equity-focused design** - design for groups that have historically underrepresented or ignored when building products.
+
+*Equality* - providing the same amount of opportunity and support.
+
+*Equity* - providing different levels of opportunity and support for each person in order to achieve fair outcomes. (better equality)
+
+*Social model of disability* - defines a disability as being caused by the way society is organized of how products are designed, rather than a person's ability or difference.
+
+**Assistive technology** -Any products, equipment and systems that enhance learning, working and daily living for people with disabilities.
+
+#### Joining design sprints
+
+**Design sprint** - Is a time-bound process, with five phases typically spread over 5 full days.
+The goal of a design sprint is to solve a problem through designing, prototyping and testing ideas with the users.
+
+##### Phases
+
+1. Understand - understand the dewsign challenges.
+2. Ideate - plan for user testing, expert ideas.
+3. Decide - decide the solution to go with.
+4. Prototype - get a working prototype.
+5. Test - observe and interview user for experience.
+
+Benefits of design sprint:
+1. Save time
+2. Create a path to bring a product to market.
+3. Prioritize the user.
+4. Test product before launch.
+5. It's all about the user
+6. Value every person in the room.
+7. The best ideas rise to the top.
+8. Lower risks
+
+When to sprint:
+1. Many potential solutions to challenge?
+2. Cross-functional teams needed to weigh in?
+3. Challenge a scope wide enough.
+
+##### Plan design sprints
+
+1. User research.
+2. Call in the experts.
+3. Find the right space.
+4. Gather supplies.
+5. Establish rules for the sprint
+6. Plan introductions
+7. Post-sprint plannign, documentation.
+
+**Sprint brief** - A document that you share with all your attendees to help them prepare for the sprint.
+1. Sprint challenge
+2. Key deliverables
+3. Logistics
+4. Approvers
+5. Resources
+
+*Sprint leader* - is the person who sends out the sprint brief to the team.
+
+### Starting research into the design process
+
+#### Intergrating research into the design process
+
++ Empathiize with users
++ Build an empathy map
++ Understand user pain points
++ Explore personas
++ Write user stories
++ Identify happy paths and edge cases
++ Discover the benefits of user journey maps.
++ Write problem statements and hypothesis statements.
++ Consider accesibility.
+
+**UX Research** - focuses on understanding user behaviour, needs, and motivation through observation and feedback.
+
+**Product development lifecycle** is the process used to take a product from an idea to reality.
+
+A UX Researcher has:
+1. *Empathy* - ability to understand someone's else feelings or thought in a situation.
+2. *Pragmatism* - focused on reaching goals
+3. *Collaboration* - can work with a range of people personalities and work styles.
+
+*Foundational research* - done before you start designing.
+
+**Bias** - is favouring or having prejudices against something based on limited information.
+
+#### Kinds of UX Biases
+
+1. *Confirmation bias* - occurs when you start looking for evidence to prove a hypothesis you have.
+2. *False consensus bias* - overestimate the number of people who will agree with our idea or design.
+3. *Primary bias* -remember the first participant most strongly.
+4. *Implicit bias* - the collection of attitudes and stereotypes we associate to people without our conscious.
+5. *Sunk cost fallacy* -the deeper we get into a project, we're invested in, the harder it is to change course.
+6. *Recency bias* - remember the last participant most strongly.
+
+*Screener survey* - a detailed list of questions that helps researchers determine if potential participants meet requirements of the research study.
+
+*Representative sample* - a subset of the target population that seeks to accurately reflect the characteristics of the larger group.
+
+##### Prepare for user interviews
+
+1. Script interview questions.
+2. Collect supplies.
+3. research the users.
+4. Practice.
+
+##### Conduct user interviews
+
+1. Meet the participant - build a good rapport, thank the participant for coming, review legal details, gather base details.
+2. Conduct the interview - follow  interview etiquette, ask open ended questions.
+3. Take notes.
+4. Wrap up the interview.
+
+**Empathy map** - an easily understood chart that explains everything designers have learned about a type of user. What tghe users says, thinks, feels, and does.
+
+Aggregated empathy maps represent a visualization of everything designers know about an entire user segment or group of similar users.
+
+*Pain points* are any issues that frustrates the user and block the user from getting what they need.
+
+##### Types of pain points
+
+1. Financial
+2. Product
+3. Process
+4. Support
+
+**Personas** - fictional users whose goals and characteristics represent the needs of a larger group of user personas are built based on research. They help build empathy, tell stories.
+
+**User groups** - a set of people who have similar interests, goals, and concerns.
+
+#### Creating user stories and user journey maps
+
+**User story** - a fictional one-sentence story told from the personas point of view to inspire and inform design decisions.
+
+Advantages of user stories:
+1. Prioritize design goals.
+2. Inspire empathetic design decisions.
+3. Unites the team.
+4. Personalize pitches to stakeholders.
+
+**Edge case** - a rare situation or unexpected problem that interrupts a standard user experience.
+
+Spotting and resolving edge cases:
+1. Create personas and user stories.
+2. Thoroughly review the project before launch.
+3. User wireframes.
+
+**User journey** - the series of experiences a user has as they achieve a specific goal.
+
+**User journey map** - an illustration of what a user goes through to achieve their goals.
