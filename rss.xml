@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Technical Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Jun 2022 14:32:46 GMT</lastBuildDate><item><title><![CDATA[python]]></title><description><![CDATA[Integers Floats Strings Data structures are containers or collections of data that organize and group data types together in different ways…]]></description><link>https://bwakedavis.github.io/python/</link><guid isPermaLink="false">https://bwakedavis.github.io/python/</guid><pubDate>Fri, 27 May 2022 22:25:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Technical Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Jun 2022 19:47:49 GMT</lastBuildDate><item><title><![CDATA[python]]></title><description><![CDATA[Integers Floats Strings Data structures are containers or collections of data that organize and group data types together in different ways…]]></description><link>https://bwakedavis.github.io/python/</link><guid isPermaLink="false">https://bwakedavis.github.io/python/</guid><pubDate>Fri, 27 May 2022 22:25:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Integers&lt;/p&gt;
 &lt;p&gt;Floats&lt;/p&gt;
 &lt;p&gt;Strings&lt;/p&gt;
@@ -6898,7 +6898,81 @@ compiled to regular CSS form (.scss/sass)&lt;/p&gt;
 &lt;h2&gt;Loops&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;each in&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;imports&lt;/h2&gt;
-&lt;p&gt;Allows imports from other files&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn Rust lang]]></title><description><![CDATA[Rust is a system programming language.
+&lt;p&gt;Allows imports from other files&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn devops]]></title><description><![CDATA[Docker is replacing virtual machines
+Docker can be used with VM’s on large projects Hypervisors eg. vmware ESX1 How docker works
+Hardware…]]></description><link>https://bwakedavis.github.io/devops/</link><guid isPermaLink="false">https://bwakedavis.github.io/devops/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Docker is replacing virtual machines
+Docker can be used with VM’s on large projects&lt;/p&gt;
+&lt;p&gt;Hypervisors eg. vmware ESX1&lt;/p&gt;
+&lt;p&gt;How docker works
+Hardware - One Os(eg Ubuntu) - Docker - Other Os to create containers&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Containers&lt;/em&gt; - are fast virtual lightweight isolated micro-computers environments. They run instances of images.
+&lt;em&gt;Docker image&lt;/em&gt; is a package or a template.&lt;/p&gt;
+&lt;p&gt;How to use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install docker&lt;/li&gt;
+&lt;li&gt;Pull an image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; pull centos
+    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; pull centos/version:number //get specific version of an image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Run a Container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; run -d -t --name container_name centos
+    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; run -d -t -p &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;:80 -name container_name centos/version:number //run docker image on your website&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Check your your running containers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ps&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Connect to your docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;exec&lt;/span&gt; -it container_name &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Stop running docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; stop container_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Start running docker container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; start container_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Check resources being used&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; stats&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Why docker is cool:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You only need one kernel&lt;/li&gt;
+&lt;li&gt;They are lightweight&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Regex]]></title><description><![CDATA[Allows us to check a series of character for matches eg. emails  - 0 or more matches
+ - 0 or 1 match
+ - matches the start of the string or…]]></description><link>https://bwakedavis.github.io/regex/</link><guid isPermaLink="false">https://bwakedavis.github.io/regex/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Allows us to check a series of character for matches eg. emails&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt; - 0 or more matches
+&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; - 0 or 1 match
+&lt;code class=&quot;language-text&quot;&gt;^&lt;/code&gt; - matches the start of the string or line
+&lt;code class=&quot;language-text&quot;&gt;$&lt;/code&gt; - signifies escape sequence
+&lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; - matches any single character except new line
+&lt;code class=&quot;language-text&quot;&gt;()&lt;/code&gt; - captures a group that can be saved and used later
+&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; - 0 or 1 match
+&lt;code class=&quot;language-text&quot;&gt;|&lt;/code&gt; - used as a logic or inside a capturing
+&lt;code class=&quot;language-text&quot;&gt;[abc]&lt;/code&gt; - character set. matches one of the things in the brackets
+&lt;code class=&quot;language-text&quot;&gt;[^abc]&lt;/code&gt; - negated character set, matches anything except the ones in the bracket.
+&lt;code class=&quot;language-text&quot;&gt;[a-zA-Z]&lt;/code&gt; - matches all upper and lowercase letters, you can specify any range
+&lt;code class=&quot;language-text&quot;&gt;{1}&lt;/code&gt; - exact one number of matches, comes after a set of group
+&lt;code class=&quot;language-text&quot;&gt;{1,5}&lt;/code&gt; - inclusive range for number of matches
+&lt;code class=&quot;language-text&quot;&gt;{1, }&lt;/code&gt; - maximum number of matches
+&lt;code class=&quot;language-text&quot;&gt;{ ,5}&lt;/code&gt; - maximum number of matches
+&lt;code class=&quot;language-text&quot;&gt;\s&lt;/code&gt; - matches any whitespace character
+&lt;code class=&quot;language-text&quot;&gt;\d&lt;/code&gt; - matches any digit same as &lt;code class=&quot;language-text&quot;&gt;[0-9]&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;\D&lt;/code&gt; - matches any non digit
+&lt;code class=&quot;language-text&quot;&gt;w&lt;/code&gt; - any word character same as &lt;code class=&quot;language-text&quot;&gt;[a-zA-Z0-9]&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;W&lt;/code&gt; - any non-word character same as &lt;code class=&quot;language-text&quot;&gt;[^a-zA-Z0-9]&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; - word boundary
+&lt;code class=&quot;language-text&quot;&gt;B&lt;/code&gt; - non-word boundary
+&lt;code class=&quot;language-text&quot;&gt;\b&lt;/code&gt; - escape sequence for a backspace character
+&lt;code class=&quot;language-text&quot;&gt;u0404&lt;/code&gt; - 4 digital unicode hex value for a character
+&lt;code class=&quot;language-text&quot;&gt;\t&lt;/code&gt; - matches tab character only
+&lt;code class=&quot;language-text&quot;&gt;\d --&lt;/code&gt; - matches only digit character
+&lt;code class=&quot;language-text&quot;&gt;d--&lt;/code&gt; - matches d character&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn Rust lang]]></title><description><![CDATA[Rust is a system programming language.
 Used in building web browsers, web servers, databases, firmware, tools and utilities, gaming and…]]></description><link>https://bwakedavis.github.io/rust/</link><guid isPermaLink="false">https://bwakedavis.github.io/rust/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Rust is a system programming language.
 Used in building web browsers, web servers, databases, firmware, tools and utilities, gaming and operating systems.
 No garbage collection.
@@ -7927,81 +8001,171 @@ colored &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span cla
             &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[learn devops]]></title><description><![CDATA[Docker is replacing virtual machines
-Docker can be used with VM’s on large projects Hypervisors eg. vmware ESX1 How docker works
-Hardware…]]></description><link>https://bwakedavis.github.io/devops/</link><guid isPermaLink="false">https://bwakedavis.github.io/devops/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Docker is replacing virtual machines
-Docker can be used with VM’s on large projects&lt;/p&gt;
-&lt;p&gt;Hypervisors eg. vmware ESX1&lt;/p&gt;
-&lt;p&gt;How docker works
-Hardware - One Os(eg Ubuntu) - Docker - Other Os to create containers&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Containers&lt;/em&gt; - are fast virtual lightweight isolated micro-computers environments. They run instances of images.
-&lt;em&gt;Docker image&lt;/em&gt; is a package or a template.&lt;/p&gt;
-&lt;p&gt;How to use:&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[understand ethereum and it's wide ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
+&lt;h2&gt;Features of Ethereum&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Install docker&lt;/li&gt;
-&lt;li&gt;Pull an image&lt;/li&gt;
+&lt;li&gt;Supports smart contracts&lt;/li&gt;
+&lt;li&gt;Has a cryptocurrency called &lt;em&gt;ether&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Has Smart Property&lt;/li&gt;
+&lt;li&gt;Supports  DEcentralized Autonomous Organizations (DAO)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; pull centos
-    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; pull centos/version:number //get specific version of an image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Pillars of Ethereum&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Run a Container&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ethereum Virtual Machine&lt;/strong&gt; - serves as the heart of ethereum, architecture and provides computer power.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inter-Planetary-File-System&lt;/strong&gt; - &lt;em&gt;IPFS&lt;/em&gt; serves as a distributed storage unit  for large files being stored on the ethereum network.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wallets/Browsers&lt;/strong&gt; - serves as a wallet for storing ether. used to deploy contracts&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; run -d -t --name container_name centos
-    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; run -d -t -p &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;:80 -name container_name centos/version:number //run docker image on your website&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ether&lt;/strong&gt; is the value token of ethereum(ETH).
+It’s used to pay for transaction fees and computational services on ethereum network.
+Every time a contract is executed, Ethereum consumes token which is termed as ‘gas’ to run the computations.&lt;/p&gt;
+&lt;h3&gt;Gas&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Gas&lt;/strong&gt; is the unit for the amount of computational work done by the computer for one cycle of the contract.
+A transaction fee is charged as some amount of ether and is taken from the account balance where the transaction originate.
+The more the fee, the higher the chances that the transaction will be picked up faster by the miners for inclusion in the block.
+Providing too little gas leads to failed transactions.
+Miners who add blocks to the blockchain are paid the transaction fees.
+Gas prevents bogus transactions which can spam the network transaction fee is variable
+&lt;strong&gt;Gas price&lt;/strong&gt;
+&lt;code class=&quot;language-text&quot;&gt;gasCost = gasPrice * gasCost(gas)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gas limit&lt;/strong&gt; is the maximum amount of gas the contract can use for it’s computation.&lt;/p&gt;
+&lt;h4&gt;Gas optimization tis&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Put part of your code in a centralized server&lt;/li&gt;
+&lt;li&gt;Use a library with pre-tested contracts&lt;/li&gt;
+&lt;li&gt;Use ERC1167 if you want to deploy same contract several times&lt;/li&gt;
+&lt;li&gt;Use events because they consume less gas than state variables&lt;/li&gt;
+&lt;li&gt;Use literal values rather than computed ones&lt;/li&gt;
+&lt;li&gt;Avoid copying arrays in memory&lt;/li&gt;
+&lt;li&gt;Avoid using loops over dynamic ranges&lt;/li&gt;
+&lt;li&gt;Optimize the order of variables declaration i.e uint, byte, strings&lt;/li&gt;
+&lt;li&gt;Turn on the optimizer in solidity compiler inside &lt;code class=&quot;language-text&quot;&gt;truffle.config.js&lt;/code&gt;.Though not always reliable.&lt;/li&gt;
+&lt;li&gt;Use &lt;code class=&quot;language-text&quot;&gt;eth-gas-reporter&lt;/code&gt; npm package to show your gas consumption every time you run tests&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Smart Contracts&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;Smart Contract&lt;/strong&gt; is a software program on the distributed ledger, allowing an immutable, verifiable and secure record all contract and transactions.&lt;/p&gt;
+&lt;p&gt;They’re digital representation of real world contracts.&lt;/p&gt;
+&lt;h4&gt;Properties of Smart Contracts&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Check your your running containers&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Autonomous&lt;/em&gt; - the creator doesn’t have to participate in the process after deploying the contract.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Auto-sufficient&lt;/em&gt; - contracts are able to collect money, realize transactions, distribute resources, issue and spend funds to allow a large capacity of storage.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ps&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Advantages of Smart Contracts&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Connect to your docker container&lt;/li&gt;
+&lt;li&gt;Faster, simpler and hassle free processes.&lt;/li&gt;
+&lt;li&gt;Secure - data in decentralized registry cannot be easily lost or cyber attacked&lt;/li&gt;
+&lt;li&gt;Precision - Mistakes are not easily made due to absence of physical forms&lt;/li&gt;
+&lt;li&gt;Reduces settlement time.&lt;/li&gt;
+&lt;li&gt;Low operational overheads and costs.&lt;/li&gt;
+&lt;li&gt;Reduced administration and services cost owing .to automation and ease of compliance and reports.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;exec&lt;/span&gt; -it container_name &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Disadvantages of Smart Contracts&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Stop running docker container&lt;/li&gt;
+&lt;li&gt;Hard to maintain - contracts deployed are immutable so changes in business logic and general bug fixes  become tough.&lt;/li&gt;
+&lt;li&gt;Small community because it’s a new field.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; stop container_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Decentralized Autonomous Organization(DAO)&lt;/strong&gt; are organizations that exist entirely on the blockchain and are governed by the protocols.
+They’re designed to hold onto assets and use a kind of voting to manage their distribution(use peer decision making).
+DAO’s comprise of a global network of nodes and members that all work together and create a unison to manage the distribution.&lt;/p&gt;
+&lt;h4&gt;Types of Ethereum Accounts&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Start running docker container&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;External Owned Accounts&lt;/em&gt; - These are owned by people or organizations and controlled by private Keys.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Contract Accounts&lt;/em&gt; - These are autonomous accounts controlled by code.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; start container_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Ethereum Virtual Machine&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;EVM&lt;/strong&gt; is a blockchain-based software platform. It allows developers to create decentralized applications (Dapps).&lt;/p&gt;
+&lt;p&gt;Contracts written in a smart contract specific language are compiled into &lt;em&gt;byte code&lt;/em&gt; which the &lt;strong&gt;evm&lt;/strong&gt; can read and execute.&lt;/p&gt;
+&lt;h2&gt;Decentralized Applications(DApps)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;DApps&lt;/strong&gt; are digital applications or programs that exist and run on a blockchain or peer to peer network of computers instead of a single computer, and are not controlled by a single authority.&lt;/p&gt;
+&lt;h4&gt;Features of DApps&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Check resources being used&lt;/li&gt;
+&lt;li&gt;Open Sourced.The code is made open source and operates autonomously without any person or group controlling the majority of the tokens&lt;/li&gt;
+&lt;li&gt;Decentralized&lt;/li&gt;
+&lt;li&gt;Use Consensus Mechanism&lt;/li&gt;
+&lt;li&gt;Generates tokens to provide value to their contributing nodes.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$docker&lt;/span&gt; stats&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Why docker is cool:&lt;/p&gt;
+&lt;h4&gt;Advantages of DApps&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;You only need one kernel&lt;/li&gt;
-&lt;li&gt;They are lightweight&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Regex]]></title><description><![CDATA[Allows us to check a series of character for matches eg. emails  - 0 or more matches
- - 0 or 1 match
- - matches the start of the string or…]]></description><link>https://bwakedavis.github.io/regex/</link><guid isPermaLink="false">https://bwakedavis.github.io/regex/</guid><pubDate>Tue, 12 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Allows us to check a series of character for matches eg. emails&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt; - 0 or more matches
-&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; - 0 or 1 match
-&lt;code class=&quot;language-text&quot;&gt;^&lt;/code&gt; - matches the start of the string or line
-&lt;code class=&quot;language-text&quot;&gt;$&lt;/code&gt; - signifies escape sequence
-&lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; - matches any single character except new line
-&lt;code class=&quot;language-text&quot;&gt;()&lt;/code&gt; - captures a group that can be saved and used later
-&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; - 0 or 1 match
-&lt;code class=&quot;language-text&quot;&gt;|&lt;/code&gt; - used as a logic or inside a capturing
-&lt;code class=&quot;language-text&quot;&gt;[abc]&lt;/code&gt; - character set. matches one of the things in the brackets
-&lt;code class=&quot;language-text&quot;&gt;[^abc]&lt;/code&gt; - negated character set, matches anything except the ones in the bracket.
-&lt;code class=&quot;language-text&quot;&gt;[a-zA-Z]&lt;/code&gt; - matches all upper and lowercase letters, you can specify any range
-&lt;code class=&quot;language-text&quot;&gt;{1}&lt;/code&gt; - exact one number of matches, comes after a set of group
-&lt;code class=&quot;language-text&quot;&gt;{1,5}&lt;/code&gt; - inclusive range for number of matches
-&lt;code class=&quot;language-text&quot;&gt;{1, }&lt;/code&gt; - maximum number of matches
-&lt;code class=&quot;language-text&quot;&gt;{ ,5}&lt;/code&gt; - maximum number of matches
-&lt;code class=&quot;language-text&quot;&gt;\s&lt;/code&gt; - matches any whitespace character
-&lt;code class=&quot;language-text&quot;&gt;\d&lt;/code&gt; - matches any digit same as &lt;code class=&quot;language-text&quot;&gt;[0-9]&lt;/code&gt;
-&lt;code class=&quot;language-text&quot;&gt;\D&lt;/code&gt; - matches any non digit
-&lt;code class=&quot;language-text&quot;&gt;w&lt;/code&gt; - any word character same as &lt;code class=&quot;language-text&quot;&gt;[a-zA-Z0-9]&lt;/code&gt;
-&lt;code class=&quot;language-text&quot;&gt;W&lt;/code&gt; - any non-word character same as &lt;code class=&quot;language-text&quot;&gt;[^a-zA-Z0-9]&lt;/code&gt;
-&lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; - word boundary
-&lt;code class=&quot;language-text&quot;&gt;B&lt;/code&gt; - non-word boundary
-&lt;code class=&quot;language-text&quot;&gt;\b&lt;/code&gt; - escape sequence for a backspace character
-&lt;code class=&quot;language-text&quot;&gt;u0404&lt;/code&gt; - 4 digital unicode hex value for a character
-&lt;code class=&quot;language-text&quot;&gt;\t&lt;/code&gt; - matches tab character only
-&lt;code class=&quot;language-text&quot;&gt;\d --&lt;/code&gt; - matches only digit character
-&lt;code class=&quot;language-text&quot;&gt;d--&lt;/code&gt; - matches d character&lt;/p&gt;</content:encoded></item><item><title><![CDATA[user experience(UX) and user interface design(UI)]]></title><description><![CDATA[UI Design UI design is the designing of visual interface of a software.
+&lt;li&gt;&lt;em&gt;Autonomy&lt;/em&gt; - you make the agreement yourself.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Trust&lt;/em&gt; - your records are encrypted on a shared ledger.&lt;/li&gt;
+&lt;li&gt;Backup - your document are duplicated many times over.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Accuracy&lt;/em&gt; - they’re sometime kinda slower and expensive but avoid errors that arise from tedious computational work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Best practices for DApps design&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;You should not take control of your user private keys&lt;/li&gt;
+&lt;li&gt;First define your data model.Decide what to put and what not to put on the blockchain.&lt;/li&gt;
+&lt;li&gt;You should not sign transactions on behalf of your users from a central server&lt;/li&gt;
+&lt;li&gt;You should not put all the critical data and code on the blockchain&lt;/li&gt;
+&lt;li&gt;You should always run security tools on your smart contract&lt;/li&gt;
+&lt;li&gt;You should deploy your app on a public testnet before deploying on the test net&lt;/li&gt;
+&lt;li&gt;You should use ethereum addresses to identify users using &lt;code class=&quot;language-text&quot;&gt;msg.sender&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;You should explain the update mechanism of your smart contract&lt;/li&gt;
+&lt;li&gt;You should explain how the external data is collected&lt;/li&gt;
+&lt;li&gt;You should verify you smart contract on etherscan&lt;/li&gt;
+&lt;li&gt;You should show feedback to users while transactions are underway&lt;/li&gt;
+&lt;li&gt;Have read-only UI mode for users who don’t have wallets&lt;/li&gt;
+&lt;li&gt;Have a fallback web3 provider that connects to infura without connecting to any wallet&lt;/li&gt;
+&lt;li&gt;Support multiple wallets&lt;/li&gt;
+&lt;li&gt;Don’t trigger the metamask dapp popup too early&lt;/li&gt;
+&lt;li&gt;Describe the effect of the transaction clearly and what it’s for&lt;/li&gt;
+&lt;li&gt;Show feedback after the transaction is sent and is being processed&lt;/li&gt;
+&lt;li&gt;Keep the UI updated with the smart contract by using events&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Decentralized Finance (DeFi)&lt;/h3&gt;
+&lt;p&gt;Applications on the blockchain decentralizing finance, lending and interest earnings&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Yield Farming&lt;/strong&gt; - Earning money on deposit to be given to other people as loans and they payback with interest&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Liquidity mining&lt;/strong&gt; - distributing tokens to users of a protocol for doing some tasks&lt;/p&gt;
+&lt;h4&gt;Advantages of DeFi&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Transparency&lt;/li&gt;
+&lt;li&gt;Decentralized&lt;/li&gt;
+&lt;li&gt;Flexibility&lt;/li&gt;
+&lt;li&gt;Free for all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Disadvantages of DeFi&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Still in infancy stage&lt;/li&gt;
+&lt;li&gt;Sometime partially centralized&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tokens&lt;/h2&gt;
+&lt;p&gt;A token is an ethereum smart contract that represents an assert or a service in real world or in the blockchain. eg.cryptokitties.
+Governed by &lt;strong&gt;Ethereum Request for Comments(ERC)&lt;/strong&gt; token standard.&lt;/p&gt;
+&lt;h3&gt;ERC20 tokens&lt;/h3&gt;
+&lt;p&gt;Represents fungible tokens&lt;/p&gt;
+&lt;h3&gt;ERC 165&lt;/h3&gt;
+&lt;p&gt;Allow smart contract to tell other contract what function to implement&lt;/p&gt;
+&lt;h3&gt;ERC 223&lt;/h3&gt;
+&lt;p&gt;Prevents token from being lost in the smart contract&lt;/p&gt;
+&lt;h3&gt;ERC 721 - Non-Fungible Tokens&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;NFTs&lt;/em&gt;  are digital assets that represent a wide range of unique tangible and intangible items. eg songs, tweets&lt;/p&gt;
+&lt;p&gt;Non-fungible tokens are indivisible  and can’t be swapped with the other one.&lt;/p&gt;
+&lt;p&gt;Fungible tokens can be swapped with others of the same kind&lt;/p&gt;
+&lt;h4&gt;characteristics of NFTs&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Indivisible&lt;/li&gt;
+&lt;li&gt;Verifiable&lt;/li&gt;
+&lt;li&gt;Indestructible&lt;/li&gt;
+&lt;li&gt;Unique&lt;/li&gt;
+&lt;li&gt;Provably scarce&lt;/li&gt;
+&lt;li&gt;Transferable easily&lt;/li&gt;
+&lt;li&gt;Guarantee ownership&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;ERC 1410&lt;/h3&gt;
+&lt;p&gt;Token partition&lt;/p&gt;
+&lt;h3&gt;ERC 1155&lt;/h3&gt;
+&lt;p&gt;Fungible and non-fungible tokens&lt;/p&gt;
+&lt;h3&gt;ERC 1594&lt;/h3&gt;
+&lt;p&gt;Core standard&lt;/p&gt;
+&lt;h3&gt;ERC 1643&lt;/h3&gt;
+&lt;p&gt;Attack documents&lt;/p&gt;
+&lt;h3&gt;ERC 1644&lt;/h3&gt;
+&lt;p&gt;Forced token transfer&lt;/p&gt;
+&lt;h3&gt;ERC 1820&lt;/h3&gt;
+&lt;p&gt;Simplify contract interaction
+A contract can delegate execution of a function to another contract.&lt;/p&gt;
+&lt;h4&gt;Initial Coin Offering(ICO)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt; - allows retaining of control, globalization, no regulation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Initial Public Offering(IPO)&lt;/strong&gt; .&lt;/p&gt;</content:encoded></item><item><title><![CDATA[user experience(UX) and user interface design(UI)]]></title><description><![CDATA[UI Design UI design is the designing of visual interface of a software.
 I the look and feel, the presentation and interactivity of a product…]]></description><link>https://bwakedavis.github.io/ui-ux/</link><guid isPermaLink="false">https://bwakedavis.github.io/ui-ux/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;UI Design&lt;/h2&gt;
 &lt;p&gt;UI design is the designing of visual interface of a software.
 I the look and feel, the presentation and interactivity of a product.
@@ -8190,171 +8354,140 @@ build products that meet the needs of specific individuals and groups who have h
 &lt;li&gt;Continuity&lt;/li&gt;
 &lt;li&gt;Context&lt;/li&gt;
 &lt;li&gt;Complementary&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[understand ethereum and it's wide ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
-&lt;h2&gt;Features of Ethereum&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Supports smart contracts&lt;/li&gt;
-&lt;li&gt;Has a cryptocurrency called &lt;em&gt;ether&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Has Smart Property&lt;/li&gt;
-&lt;li&gt;Supports  DEcentralized Autonomous Organizations (DAO)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Pillars of Ethereum&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Ethereum Virtual Machine&lt;/strong&gt; - serves as the heart of ethereum, architecture and provides computer power.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inter-Planetary-File-System&lt;/strong&gt; - &lt;em&gt;IPFS&lt;/em&gt; serves as a distributed storage unit  for large files being stored on the ethereum network.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wallets/Browsers&lt;/strong&gt; - serves as a wallet for storing ether. used to deploy contracts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Ether&lt;/strong&gt; is the value token of ethereum(ETH).
-It’s used to pay for transaction fees and computational services on ethereum network.
-Every time a contract is executed, Ethereum consumes token which is termed as ‘gas’ to run the computations.&lt;/p&gt;
-&lt;h3&gt;Gas&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Gas&lt;/strong&gt; is the unit for the amount of computational work done by the computer for one cycle of the contract.
-A transaction fee is charged as some amount of ether and is taken from the account balance where the transaction originate.
-The more the fee, the higher the chances that the transaction will be picked up faster by the miners for inclusion in the block.
-Providing too little gas leads to failed transactions.
-Miners who add blocks to the blockchain are paid the transaction fees.
-Gas prevents bogus transactions which can spam the network transaction fee is variable
-&lt;strong&gt;Gas price&lt;/strong&gt;
-&lt;code class=&quot;language-text&quot;&gt;gasCost = gasPrice * gasCost(gas)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Gas limit&lt;/strong&gt; is the maximum amount of gas the contract can use for it’s computation.&lt;/p&gt;
-&lt;h4&gt;Gas optimization tis&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Universal design&lt;/strong&gt; is the process of creating one product for users with the widest range of abilities and in the widest range of situations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Inclusive design&lt;/strong&gt; - making design choices that take into account persoanl identifiers like ability, race, economic status, language, race.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Accessibility&lt;/em&gt; - the design of products, design, services or environments for the people with disabilities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Equity-focused design&lt;/strong&gt; - design for groups that have historically underrepresented or ignored when building products.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Equality&lt;/em&gt; - providing the same amount of opportunity and support.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Equity&lt;/em&gt; - providing different levels of opportunity and support for each person in order to achieve fair outcomes. (better equality)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Social model of disability&lt;/em&gt; - defines a disability as being caused by the way society is organized of how products are designed, rather than a person’s ability or difference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistive technology&lt;/strong&gt; -Any products, equipment and systems that enhance learning, working and daily living for people with disabilities.&lt;/p&gt;
+&lt;h4&gt;Joining design sprints&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Design sprint&lt;/strong&gt; - Is a time-bound process, with five phases typically spread over 5 full days.
+The goal of a design sprint is to solve a problem through designing, prototyping and testing ideas with the users.&lt;/p&gt;
+&lt;h5&gt;Phases&lt;/h5&gt;
 &lt;ol&gt;
-&lt;li&gt;Put part of your code in a centralized server&lt;/li&gt;
-&lt;li&gt;Use a library with pre-tested contracts&lt;/li&gt;
-&lt;li&gt;Use ERC1167 if you want to deploy same contract several times&lt;/li&gt;
-&lt;li&gt;Use events because they consume less gas than state variables&lt;/li&gt;
-&lt;li&gt;Use literal values rather than computed ones&lt;/li&gt;
-&lt;li&gt;Avoid copying arrays in memory&lt;/li&gt;
-&lt;li&gt;Avoid using loops over dynamic ranges&lt;/li&gt;
-&lt;li&gt;Optimize the order of variables declaration i.e uint, byte, strings&lt;/li&gt;
-&lt;li&gt;Turn on the optimizer in solidity compiler inside &lt;code class=&quot;language-text&quot;&gt;truffle.config.js&lt;/code&gt;.Though not always reliable.&lt;/li&gt;
-&lt;li&gt;Use &lt;code class=&quot;language-text&quot;&gt;eth-gas-reporter&lt;/code&gt; npm package to show your gas consumption every time you run tests&lt;/li&gt;
+&lt;li&gt;Understand - understand the dewsign challenges.&lt;/li&gt;
+&lt;li&gt;Ideate - plan for user testing, expert ideas.&lt;/li&gt;
+&lt;li&gt;Decide - decide the solution to go with.&lt;/li&gt;
+&lt;li&gt;Prototype - get a working prototype.&lt;/li&gt;
+&lt;li&gt;Test - observe and interview user for experience.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Smart Contracts&lt;/h3&gt;
-&lt;p&gt;A &lt;strong&gt;Smart Contract&lt;/strong&gt; is a software program on the distributed ledger, allowing an immutable, verifiable and secure record all contract and transactions.&lt;/p&gt;
-&lt;p&gt;They’re digital representation of real world contracts.&lt;/p&gt;
-&lt;h4&gt;Properties of Smart Contracts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Autonomous&lt;/em&gt; - the creator doesn’t have to participate in the process after deploying the contract.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Auto-sufficient&lt;/em&gt; - contracts are able to collect money, realize transactions, distribute resources, issue and spend funds to allow a large capacity of storage.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Advantages of Smart Contracts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Faster, simpler and hassle free processes.&lt;/li&gt;
-&lt;li&gt;Secure - data in decentralized registry cannot be easily lost or cyber attacked&lt;/li&gt;
-&lt;li&gt;Precision - Mistakes are not easily made due to absence of physical forms&lt;/li&gt;
-&lt;li&gt;Reduces settlement time.&lt;/li&gt;
-&lt;li&gt;Low operational overheads and costs.&lt;/li&gt;
-&lt;li&gt;Reduced administration and services cost owing .to automation and ease of compliance and reports.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Disadvantages of Smart Contracts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Hard to maintain - contracts deployed are immutable so changes in business logic and general bug fixes  become tough.&lt;/li&gt;
-&lt;li&gt;Small community because it’s a new field.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Decentralized Autonomous Organization(DAO)&lt;/strong&gt; are organizations that exist entirely on the blockchain and are governed by the protocols.
-They’re designed to hold onto assets and use a kind of voting to manage their distribution(use peer decision making).
-DAO’s comprise of a global network of nodes and members that all work together and create a unison to manage the distribution.&lt;/p&gt;
-&lt;h4&gt;Types of Ethereum Accounts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;External Owned Accounts&lt;/em&gt; - These are owned by people or organizations and controlled by private Keys.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Contract Accounts&lt;/em&gt; - These are autonomous accounts controlled by code.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Ethereum Virtual Machine&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;EVM&lt;/strong&gt; is a blockchain-based software platform. It allows developers to create decentralized applications (Dapps).&lt;/p&gt;
-&lt;p&gt;Contracts written in a smart contract specific language are compiled into &lt;em&gt;byte code&lt;/em&gt; which the &lt;strong&gt;evm&lt;/strong&gt; can read and execute.&lt;/p&gt;
-&lt;h2&gt;Decentralized Applications(DApps)&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;DApps&lt;/strong&gt; are digital applications or programs that exist and run on a blockchain or peer to peer network of computers instead of a single computer, and are not controlled by a single authority.&lt;/p&gt;
-&lt;h4&gt;Features of DApps&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Open Sourced.The code is made open source and operates autonomously without any person or group controlling the majority of the tokens&lt;/li&gt;
-&lt;li&gt;Decentralized&lt;/li&gt;
-&lt;li&gt;Use Consensus Mechanism&lt;/li&gt;
-&lt;li&gt;Generates tokens to provide value to their contributing nodes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Advantages of DApps&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Autonomy&lt;/em&gt; - you make the agreement yourself.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Trust&lt;/em&gt; - your records are encrypted on a shared ledger.&lt;/li&gt;
-&lt;li&gt;Backup - your document are duplicated many times over.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Accuracy&lt;/em&gt; - they’re sometime kinda slower and expensive but avoid errors that arise from tedious computational work.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Best practices for DApps design&lt;/h4&gt;
+&lt;p&gt;Benefits of design sprint:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;You should not take control of your user private keys&lt;/li&gt;
-&lt;li&gt;First define your data model.Decide what to put and what not to put on the blockchain.&lt;/li&gt;
-&lt;li&gt;You should not sign transactions on behalf of your users from a central server&lt;/li&gt;
-&lt;li&gt;You should not put all the critical data and code on the blockchain&lt;/li&gt;
-&lt;li&gt;You should always run security tools on your smart contract&lt;/li&gt;
-&lt;li&gt;You should deploy your app on a public testnet before deploying on the test net&lt;/li&gt;
-&lt;li&gt;You should use ethereum addresses to identify users using &lt;code class=&quot;language-text&quot;&gt;msg.sender&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;You should explain the update mechanism of your smart contract&lt;/li&gt;
-&lt;li&gt;You should explain how the external data is collected&lt;/li&gt;
-&lt;li&gt;You should verify you smart contract on etherscan&lt;/li&gt;
-&lt;li&gt;You should show feedback to users while transactions are underway&lt;/li&gt;
-&lt;li&gt;Have read-only UI mode for users who don’t have wallets&lt;/li&gt;
-&lt;li&gt;Have a fallback web3 provider that connects to infura without connecting to any wallet&lt;/li&gt;
-&lt;li&gt;Support multiple wallets&lt;/li&gt;
-&lt;li&gt;Don’t trigger the metamask dapp popup too early&lt;/li&gt;
-&lt;li&gt;Describe the effect of the transaction clearly and what it’s for&lt;/li&gt;
-&lt;li&gt;Show feedback after the transaction is sent and is being processed&lt;/li&gt;
-&lt;li&gt;Keep the UI updated with the smart contract by using events&lt;/li&gt;
+&lt;li&gt;Save time&lt;/li&gt;
+&lt;li&gt;Create a path to bring a product to market.&lt;/li&gt;
+&lt;li&gt;Prioritize the user.&lt;/li&gt;
+&lt;li&gt;Test product before launch.&lt;/li&gt;
+&lt;li&gt;It’s all about the user&lt;/li&gt;
+&lt;li&gt;Value every person in the room.&lt;/li&gt;
+&lt;li&gt;The best ideas rise to the top.&lt;/li&gt;
+&lt;li&gt;Lower risks&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Decentralized Finance (DeFi)&lt;/h3&gt;
-&lt;p&gt;Applications on the blockchain decentralizing finance, lending and interest earnings&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Yield Farming&lt;/strong&gt; - Earning money on deposit to be given to other people as loans and they payback with interest&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Liquidity mining&lt;/strong&gt; - distributing tokens to users of a protocol for doing some tasks&lt;/p&gt;
-&lt;h4&gt;Advantages of DeFi&lt;/h4&gt;
+&lt;p&gt;When to sprint:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Many potential solutions to challenge?&lt;/li&gt;
+&lt;li&gt;Cross-functional teams needed to weigh in?&lt;/li&gt;
+&lt;li&gt;Challenge a scope wide enough.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Plan design sprints&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;User research.&lt;/li&gt;
+&lt;li&gt;Call in the experts.&lt;/li&gt;
+&lt;li&gt;Find the right space.&lt;/li&gt;
+&lt;li&gt;Gather supplies.&lt;/li&gt;
+&lt;li&gt;Establish rules for the sprint&lt;/li&gt;
+&lt;li&gt;Plan introductions&lt;/li&gt;
+&lt;li&gt;Post-sprint plannign, documentation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Sprint brief&lt;/strong&gt; - A document that you share with all your attendees to help them prepare for the sprint.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sprint challenge&lt;/li&gt;
+&lt;li&gt;Key deliverables&lt;/li&gt;
+&lt;li&gt;Logistics&lt;/li&gt;
+&lt;li&gt;Approvers&lt;/li&gt;
+&lt;li&gt;Resources&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Sprint leader&lt;/em&gt; - is the person who sends out the sprint brief to the team.&lt;/p&gt;
+&lt;h3&gt;Starting research into the design process&lt;/h3&gt;
+&lt;h4&gt;Intergrating research into the design process&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Transparency&lt;/li&gt;
-&lt;li&gt;Decentralized&lt;/li&gt;
-&lt;li&gt;Flexibility&lt;/li&gt;
-&lt;li&gt;Free for all&lt;/li&gt;
+&lt;li&gt;Empathiize with users&lt;/li&gt;
+&lt;li&gt;Build an empathy map&lt;/li&gt;
+&lt;li&gt;Understand user pain points&lt;/li&gt;
+&lt;li&gt;Explore personas&lt;/li&gt;
+&lt;li&gt;Write user stories&lt;/li&gt;
+&lt;li&gt;Identify happy paths and edge cases&lt;/li&gt;
+&lt;li&gt;Discover the benefits of user journey maps.&lt;/li&gt;
+&lt;li&gt;Write problem statements and hypothesis statements.&lt;/li&gt;
+&lt;li&gt;Consider accesibility.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Disadvantages of DeFi&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Still in infancy stage&lt;/li&gt;
-&lt;li&gt;Sometime partially centralized&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tokens&lt;/h2&gt;
-&lt;p&gt;A token is an ethereum smart contract that represents an assert or a service in real world or in the blockchain. eg.cryptokitties.
-Governed by &lt;strong&gt;Ethereum Request for Comments(ERC)&lt;/strong&gt; token standard.&lt;/p&gt;
-&lt;h3&gt;ERC20 tokens&lt;/h3&gt;
-&lt;p&gt;Represents fungible tokens&lt;/p&gt;
-&lt;h3&gt;ERC 165&lt;/h3&gt;
-&lt;p&gt;Allow smart contract to tell other contract what function to implement&lt;/p&gt;
-&lt;h3&gt;ERC 223&lt;/h3&gt;
-&lt;p&gt;Prevents token from being lost in the smart contract&lt;/p&gt;
-&lt;h3&gt;ERC 721 - Non-Fungible Tokens&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;NFTs&lt;/em&gt;  are digital assets that represent a wide range of unique tangible and intangible items. eg songs, tweets&lt;/p&gt;
-&lt;p&gt;Non-fungible tokens are indivisible  and can’t be swapped with the other one.&lt;/p&gt;
-&lt;p&gt;Fungible tokens can be swapped with others of the same kind&lt;/p&gt;
-&lt;h4&gt;characteristics of NFTs&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Indivisible&lt;/li&gt;
-&lt;li&gt;Verifiable&lt;/li&gt;
-&lt;li&gt;Indestructible&lt;/li&gt;
-&lt;li&gt;Unique&lt;/li&gt;
-&lt;li&gt;Provably scarce&lt;/li&gt;
-&lt;li&gt;Transferable easily&lt;/li&gt;
-&lt;li&gt;Guarantee ownership&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;ERC 1410&lt;/h3&gt;
-&lt;p&gt;Token partition&lt;/p&gt;
-&lt;h3&gt;ERC 1155&lt;/h3&gt;
-&lt;p&gt;Fungible and non-fungible tokens&lt;/p&gt;
-&lt;h3&gt;ERC 1594&lt;/h3&gt;
-&lt;p&gt;Core standard&lt;/p&gt;
-&lt;h3&gt;ERC 1643&lt;/h3&gt;
-&lt;p&gt;Attack documents&lt;/p&gt;
-&lt;h3&gt;ERC 1644&lt;/h3&gt;
-&lt;p&gt;Forced token transfer&lt;/p&gt;
-&lt;h3&gt;ERC 1820&lt;/h3&gt;
-&lt;p&gt;Simplify contract interaction
-A contract can delegate execution of a function to another contract.&lt;/p&gt;
-&lt;h4&gt;Initial Coin Offering(ICO)&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt; - allows retaining of control, globalization, no regulation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Initial Public Offering(IPO)&lt;/strong&gt; .&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn all things bitcoin]]></title><description><![CDATA[Bitcoin is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments. It follows the ideas set out…]]></description><link>https://bwakedavis.github.io/bitcoin/</link><guid isPermaLink="false">https://bwakedavis.github.io/bitcoin/</guid><pubDate>Mon, 13 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Bitcoin&lt;/strong&gt; is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UX Research&lt;/strong&gt; - focuses on understanding user behaviour, needs, and motivation through observation and feedback.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Product development lifecycle&lt;/strong&gt; is the process used to take a product from an idea to reality.&lt;/p&gt;
+&lt;p&gt;A UX Researcher has:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Empathy&lt;/em&gt; - ability to understand someone’s else feelings or thought in a situation.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Pragmatism&lt;/em&gt; - focused on reaching goals&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Collaboration&lt;/em&gt; - can work with a range of people personalities and work styles.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Foundational research&lt;/em&gt; - done before you start designing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bias&lt;/strong&gt; - is favouring or having prejudices against something based on limited information.&lt;/p&gt;
+&lt;h4&gt;Kinds of UX Biases&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Confirmation bias&lt;/em&gt; - occurs when you start looking for evidence to prove a hypothesis you have.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;False consensus bias&lt;/em&gt; - overestimate the number of people who will agree with our idea or design.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Primary bias&lt;/em&gt; -remember the first participant most strongly.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Implicit bias&lt;/em&gt; - the collection of attitudes and stereotypes we associate to people without our conscious.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sunk cost fallacy&lt;/em&gt; -the deeper we get into a project, we’re invested in, the harder it is to change course.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Recency bias&lt;/em&gt; - remember the last participant most strongly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Screener survey&lt;/em&gt; - a detailed list of questions that helps researchers determine if potential participants meet requirements of the research study.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Representative sample&lt;/em&gt; - a subset of the target population that seeks to accurately reflect the characteristics of the larger group.&lt;/p&gt;
+&lt;h5&gt;Prepare for user interviews&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Script interview questions.&lt;/li&gt;
+&lt;li&gt;Collect supplies.&lt;/li&gt;
+&lt;li&gt;research the users.&lt;/li&gt;
+&lt;li&gt;Practice.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Conduct user interviews&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Meet the participant - build a good rapport, thank the participant for coming, review legal details, gather base details.&lt;/li&gt;
+&lt;li&gt;Conduct the interview - follow  interview etiquette, ask open ended questions.&lt;/li&gt;
+&lt;li&gt;Take notes.&lt;/li&gt;
+&lt;li&gt;Wrap up the interview.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Empathy map&lt;/strong&gt; - an easily understood chart that explains everything designers have learned about a type of user. What tghe users says, thinks, feels, and does.&lt;/p&gt;
+&lt;p&gt;Aggregated empathy maps represent a visualization of everything designers know about an entire user segment or group of similar users.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Pain points&lt;/em&gt; are any issues that frustrates the user and block the user from getting what they need.&lt;/p&gt;
+&lt;h5&gt;Types of pain points&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Financial&lt;/li&gt;
+&lt;li&gt;Product&lt;/li&gt;
+&lt;li&gt;Process&lt;/li&gt;
+&lt;li&gt;Support&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Personas&lt;/strong&gt; - fictional users whose goals and characteristics represent the needs of a larger group of user personas are built based on research. They help build empathy, tell stories.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User groups&lt;/strong&gt; - a set of people who have similar interests, goals, and concerns.&lt;/p&gt;
+&lt;h4&gt;Creating user stories and user journey maps&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;User story&lt;/strong&gt; - a fictional one-sentence story told from the personas point of view to inspire and inform design decisions.&lt;/p&gt;
+&lt;p&gt;Advantages of user stories:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Prioritize design goals.&lt;/li&gt;
+&lt;li&gt;Inspire empathetic design decisions.&lt;/li&gt;
+&lt;li&gt;Unites the team.&lt;/li&gt;
+&lt;li&gt;Personalize pitches to stakeholders.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Edge case&lt;/strong&gt; - a rare situation or unexpected problem that interrupts a standard user experience.&lt;/p&gt;
+&lt;p&gt;Spotting and resolving edge cases:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create personas and user stories.&lt;/li&gt;
+&lt;li&gt;Thoroughly review the project before launch.&lt;/li&gt;
+&lt;li&gt;User wireframes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;User journey&lt;/strong&gt; - the series of experiences a user has as they achieve a specific goal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User journey map&lt;/strong&gt; - an illustration of what a user goes through to achieve their goals.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn all things bitcoin]]></title><description><![CDATA[Bitcoin is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments. It follows the ideas set out…]]></description><link>https://bwakedavis.github.io/bitcoin/</link><guid isPermaLink="false">https://bwakedavis.github.io/bitcoin/</guid><pubDate>Mon, 13 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Bitcoin&lt;/strong&gt; is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments.&lt;/p&gt;
 &lt;p&gt;It follows the ideas set out in the Bitcoin White authored by &lt;em&gt;Satoshi Nakamoto&lt;/em&gt; whose identity is not yet known, Get the pdf here &lt;a href=&quot;https://bitcoin.org/bitcoin.pdf&quot;&gt;Bitcoin White Paper&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[understand blockchain technology]]></title><description><![CDATA[A Blockchain is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an…]]></description><link>https://bwakedavis.github.io/blockchain/</link><guid isPermaLink="false">https://bwakedavis.github.io/blockchain/</guid><pubDate>Sun, 12 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;A &lt;strong&gt;Blockchain&lt;/strong&gt; is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an unchangeable record of transactions, each time-stamped and linked to the previous one.
 Each digital record or transaction in the electronic ledger is called a &lt;em&gt;block&lt;/em&gt;.
 Transactions are protected by strong cryptographic algorithms.
@@ -9023,7 +9156,99 @@ As a developer believe me you need it more than anything else (’&lt;em&gt;Just
 &lt;li&gt;AWS,Google Cloud, Digital Ocean&lt;/li&gt;
 &lt;li&gt;Heroku&lt;/li&gt;
 &lt;li&gt;Docker and Kurbenetes&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[learn JavaScript]]></title><description><![CDATA[Was created by Brendan Eich in 1996
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[HTML]]></title><description><![CDATA[- world wide web
+ - Uniform Resource Locator
+` - Hypertext Transfer Protocol Tables  - table tag
+ - table rows
+ - table heading
+ - table…]]></description><link>https://bwakedavis.github.io/html_css/</link><guid isPermaLink="false">https://bwakedavis.github.io/html_css/</guid><pubDate>Thu, 27 Dec 2018 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;www&lt;/code&gt; - world wide web
+&lt;code class=&quot;language-text&quot;&gt;URL&lt;/code&gt; - Uniform Resource Locator
+`&lt;code class=&quot;language-text&quot;&gt;HTTP&lt;/code&gt; - Hypertext Transfer Protocol&lt;/p&gt;
+&lt;h2&gt;Tables&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;table&amp;gt;&lt;/code&gt; - table tag
+&lt;code class=&quot;language-text&quot;&gt;tr&lt;/code&gt; - table rows
+&lt;code class=&quot;language-text&quot;&gt;th&lt;/code&gt; - table heading
+&lt;code class=&quot;language-text&quot;&gt;td&lt;/code&gt; - table data
+&lt;code class=&quot;language-text&quot;&gt;&amp;lt;th colspan=&amp;quot;3&amp;gt;&lt;/code&gt; - Spans 3 columns
+&lt;code class=&quot;language-text&quot;&gt;&amp;lt;th rowspan=&amp;quot;3&amp;gt;&lt;/code&gt; - Spans 3 rows
+&lt;code class=&quot;language-text&quot;&gt;caption&lt;/code&gt; - Adds caption inside the table element
+&lt;code class=&quot;language-text&quot;&gt;thead&lt;/code&gt; - groups the header content in a table
+&lt;code class=&quot;language-text&quot;&gt;tbody&lt;/code&gt; - groups the body content in a table
+&lt;code class=&quot;language-text&quot;&gt;tfoot&lt;/code&gt; - groups the footer content in a table&lt;/p&gt;
+&lt;p&gt;common table styling&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;table, th,td&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px solid black&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;border-collapse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; collapse&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;table&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;th&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;th&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;td&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;td&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;table&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;p&gt;Unordered lists&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+        &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ordered lists&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ol&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+        &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ol&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Nested lists - lists inside lists&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Coffee&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;black coffee&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;common list styling&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;1&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Block Elements&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; - &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Inline Elements&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Semantic Elements&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;header&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;nav&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;section&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;article&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;aside&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;footer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;iframe&lt;/code&gt; - is used to display a web page with a web page&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;iframe&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;github.com&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;frameborder&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;0&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;iframe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;iframe&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;demo.html&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;frameborder&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;0&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;iframe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Head&lt;/h2&gt;
+&lt;p&gt;Container for metadata(data about data)
+HTML character encoding helps in displaying the page correctly&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;http-equiv&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;X-UA-Compatible&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;IE=edge&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- defines characterset --&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;viewport&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;width=device-width, initial-scale=1.0&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- defines viewport --&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;base&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;www.youtube.com&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;_blank&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- specifies the base URL and base target url for all relative URL&apos;s in a page --&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Uniform Resource Locators(URL’s&lt;/h2&gt;
+&lt;p&gt;scheme - defines the type of internet service
+prefix - defines a domain (default of http is www)
+domain - defines the internet domain
+path - defines a path at the server
+filename - defines the name of a document/resource
+ftp - downloading or uploading files&lt;/p&gt;
+&lt;h2&gt;Entities&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; greater than &amp;amp;gt &amp;amp;#62&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Forms&lt;/h2&gt;
+&lt;p&gt;Used to collect user inputs&lt;/p&gt;
+&lt;h3&gt;Form Inputs&lt;/h3&gt;
+&lt;h3&gt;Input Attributes&lt;/h3&gt;
+&lt;h2&gt;Canvas&lt;/h2&gt;
+&lt;h2&gt;Media&lt;/h2&gt;
+&lt;h2&gt;Plugins&lt;/h2&gt;
+&lt;h2&gt;API’s&lt;/h2&gt;</content:encoded></item><item><title><![CDATA[learn JavaScript]]></title><description><![CDATA[Was created by Brendan Eich in 1996
 Inbuilt in all the browsers
  is a set of special instructions written to tell a computer what to do
  is…]]></description><link>https://bwakedavis.github.io/javascript/</link><guid isPermaLink="false">https://bwakedavis.github.io/javascript/</guid><pubDate>Thu, 27 Dec 2018 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Was created by Brendan Eich in 1996
@@ -10165,96 +10390,4 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
         xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Cheers go enjoy AJAX 🥳 🥳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTML]]></title><description><![CDATA[- world wide web
- - Uniform Resource Locator
-` - Hypertext Transfer Protocol Tables  - table tag
- - table rows
- - table heading
- - table…]]></description><link>https://bwakedavis.github.io/html_css/</link><guid isPermaLink="false">https://bwakedavis.github.io/html_css/</guid><pubDate>Thu, 27 Dec 2018 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;www&lt;/code&gt; - world wide web
-&lt;code class=&quot;language-text&quot;&gt;URL&lt;/code&gt; - Uniform Resource Locator
-`&lt;code class=&quot;language-text&quot;&gt;HTTP&lt;/code&gt; - Hypertext Transfer Protocol&lt;/p&gt;
-&lt;h2&gt;Tables&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;table&amp;gt;&lt;/code&gt; - table tag
-&lt;code class=&quot;language-text&quot;&gt;tr&lt;/code&gt; - table rows
-&lt;code class=&quot;language-text&quot;&gt;th&lt;/code&gt; - table heading
-&lt;code class=&quot;language-text&quot;&gt;td&lt;/code&gt; - table data
-&lt;code class=&quot;language-text&quot;&gt;&amp;lt;th colspan=&amp;quot;3&amp;gt;&lt;/code&gt; - Spans 3 columns
-&lt;code class=&quot;language-text&quot;&gt;&amp;lt;th rowspan=&amp;quot;3&amp;gt;&lt;/code&gt; - Spans 3 rows
-&lt;code class=&quot;language-text&quot;&gt;caption&lt;/code&gt; - Adds caption inside the table element
-&lt;code class=&quot;language-text&quot;&gt;thead&lt;/code&gt; - groups the header content in a table
-&lt;code class=&quot;language-text&quot;&gt;tbody&lt;/code&gt; - groups the body content in a table
-&lt;code class=&quot;language-text&quot;&gt;tfoot&lt;/code&gt; - groups the footer content in a table&lt;/p&gt;
-&lt;p&gt;common table styling&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;table, th,td&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px solid black&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token property&quot;&gt;border-collapse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; collapse&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;table&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;th&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;th&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;td&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;td&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;table&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Lists&lt;/h2&gt;
-&lt;p&gt;Unordered lists&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-        &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Ordered lists&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ol&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-        &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ol&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Nested lists - lists inside lists&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Coffee&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;black coffee&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;common list styling&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;1&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Block Elements&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; - &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Inline Elements&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Semantic Elements&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;header&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;nav&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;section&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;article&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;aside&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;footer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;iframe&lt;/code&gt; - is used to display a web page with a web page&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;iframe&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;github.com&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;frameborder&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;0&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;iframe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;iframe&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;demo.html&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;frameborder&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;0&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;iframe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Head&lt;/h2&gt;
-&lt;p&gt;Container for metadata(data about data)
-HTML character encoding helps in displaying the page correctly&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;http-equiv&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;X-UA-Compatible&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;IE=edge&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- defines characterset --&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;viewport&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;width=device-width, initial-scale=1.0&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- defines viewport --&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;base&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;www.youtube.com&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;_blank&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- specifies the base URL and base target url for all relative URL&apos;s in a page --&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Uniform Resource Locators(URL’s&lt;/h2&gt;
-&lt;p&gt;scheme - defines the type of internet service
-prefix - defines a domain (default of http is www)
-domain - defines the internet domain
-path - defines a path at the server
-filename - defines the name of a document/resource
-ftp - downloading or uploading files&lt;/p&gt;
-&lt;h2&gt;Entities&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; greater than &amp;amp;gt &amp;amp;#62&lt;/code&gt;&lt;/p&gt;
-&lt;h2&gt;Forms&lt;/h2&gt;
-&lt;p&gt;Used to collect user inputs&lt;/p&gt;
-&lt;h3&gt;Form Inputs&lt;/h3&gt;
-&lt;h3&gt;Input Attributes&lt;/h3&gt;
-&lt;h2&gt;Canvas&lt;/h2&gt;
-&lt;h2&gt;Media&lt;/h2&gt;
-&lt;h2&gt;Plugins&lt;/h2&gt;
-&lt;h2&gt;API’s&lt;/h2&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;Cheers go enjoy AJAX 🥳 🥳&lt;/p&gt;</content:encoded></item></channel></rss>
