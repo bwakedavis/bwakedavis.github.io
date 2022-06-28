@@ -359,3 +359,294 @@ Spotting and resolving edge cases:
 **User journey** - the series of experiences a user has as they achieve a specific goal.
 
 **User journey map** - an illustration of what a user goes through to achieve their goals.
+
+Benefits of user journey maps:
+1. Helps UX designers create obstacle-free paths for users.
+2. Reduces the impact of design bias.
+3. Highlight new pain points.
+4. Identify improvement opportunities.
+*Curb-cut effect* - a phenomenon that describes how products and policies designed for people with disabilities often and up helping everyone.
+
+#### Define problem and hypothesis statements
+
+*Problem statement* is a clear description of the user's need that should be addressed.
+
++ Human centered
++ Broad enough for creative freedom.
++ Narrow enough to be solved by a design.
+
+<Username> is a <user characteristic> who needs <user need> because <insight>
+
+Problem statements helps:
+1. Establish goals
+2. Understand contraints
+3. Define deliverables.
+4. Creates benchmarks for success.
+
+**Hypothesis statement** - our best educated guess on what we think the solution to a design problem might be.
+
+If <action> then <outcome>
+
+**Value proposition** - the reason why a consumer should use a product or a service.
+
+##### Steps in building value proposition
+
+1. Describe your product features and benefits.
+2. Explain the value of the product.
+3. Connect these features and benefits with the needs of your users.
+4. Review your official value proposition.
+
+**The human factor** - describes the range of variables human bring to their product interactions.
++ Impatience, limited memory, needing anologies, limited concetration, changes in need, needing motivation, prejudices, fears, making errors, misjudgement.
+
+**Mental models** -Internal maps that allow humans to predict how something will work.
+
+**Feedback loops** - the outcome a user gets at the end of the process.
+
+**Von resterff effect(Isolation effect)** - when multiple similar object are present, the ones that differs from the rest is most likely to be remembered.
+
+**Call-to-action** - a visual prompt that tells the user to take action.
+
+**Serial position effect** - when people are given a list of items, they are more likely to remember the first few and the last few, while the items in the middle tend to blur.
+
+**Hicks law** - the more options a user has, the longer it takes them to make a decision.
+
+#### Ideating design solutions
+
+*Ideation* is the process of generating a broad set of ideas on a given topic, with no attempt to judge or evaluate them.
+
++ Brainstorm out loud.
++ Document all ideas.
++ Focus on quantity.
++ Do not allow evaluation.
++ Gather a diverse team.
++ Question the obvious.
++ Evaluate the ideas.
+    + *Feasible* - technically possible to build.
+    + *Desireable* - best at solving the user problem
+    + *Viable* - financially beneficial.
+
+##### Prepare for ideation
+
+1. Empathize with your user.
+2. Define a creative environment.
+3. Set a time limit.
+4. Assemeble a diverse team.
+5. Think outside the box.
+
+##### Scope the competition(competition audit)
+
+1. Identifying your key competitors.
+2. Reviewing the product that your competitors offer.
+3. Understanding how your competitors posistion themselves in the market.
+4. Examining what your competition does well and what they could do better.
+5. Considering how competitors talk about themselves.
+
+**Direct competitors** - have offerings that are similar to your product and focus on the same audience.
+
+**Indirect competitors** - have a similar set of offerings but focus on a different audience, or have a different set of offerings and focus on the same audience.
+
+##### Benefits of competitive audit
+
+1. Inform your design process.
+2. Solve usability problems.
+3. Reveal gaps in the market.
+4. Provide reliable evidence.
+5. Save time, money , and energy.
+
+##### Limits of competitive audits
+
+1. Stiffle creativity
+2. Depend on how well you interpret the findings.
+3. Not all designs work in all use cases.
+4. Need to be done regulary.
+
+##### Competitive audit steps
+
+1. Outline the goals.
+2. Create a spreadsheet with a list of your competitors.
+3. Call out the specific aspects you want to compare.
+4. Research each company.
+5. Analyze findings.
+6. Summarize findings in a report.
+
+##### Delivering a strong presentation
+
+1. Get feedback from your team.
+2. Limit the amount of text on your slides.
+3. Stick to the highlights.
+4. Use notes.
+5. Practice ahead of time.
+6. Use relevant graphics.
+7. Keep your biases in check.
+8. Be able to defend your conclusions.
+
+#### Build wireframes and low-fidelity prototypes
+
+**Empathy map** - an easily understood chart that explains everything designers have learned about type of user.
+
+**Product goal statement** - one or two sentences that describe a product and it benefits for the user.
+
+**User flow** - the path taken by a typical user on an app or website, so they can complete a task from start to finish.
+
+**Storyboard** - a series of panels/frames that visually describe and explore a user's experience with a product.
+
+Elements:
++ Character - user
++ Scene - user environment
++ Plot - benefit of the design
++ Narrative - how the design solve the problem
+
+**Big picture storyboards** - focus on user experience
+
+**Close-up storyboard** - focus on the product
+
+**Wireframe** - a basic outline of a digital experience, like an app or website.
+
+Purpose of wireframes:
+1. Establish the basic structure of a page.
+2. Highlight the intended function of the product.
+3. Save time and resources.
+
+*Elements* - building blocks for creating a design. ie. lines, shapes, text
+
+A design solves a real problem that users are experiencing.
+
+Benefits of wireframes:
+1. Inform the elements to include in your design.
+2. Catch problems early.
+3. Get stakeholders to focus on structure.
+4. Save time and effort.
+5. Iterate quickly.
+
+*Fidelity* - how closely a design matches the look and feel of the final product.
+
+Low fidelity:
++ Lower amount of complexity
++ Less refined or polished
++ Called "Lo-fi" for short.
+
+High fidelity:
++ Closely matches the work and feel of the final product.
++ More refined and polished.
++ Called "hi-fi" for short.
+
+#### Creating paper and digital wireframes
+
+**Information architecture(IA)** - orgainizes content to help users understand where they are in a product and where the information they want is.
+
+Importance of Information architecture:
+1. Organizes and defines the overall structure  for the app or site.
+2. Provides a highlevel view of a product.
+3. Helps stakeholders review your design.
+4. Helps engineers understand how to organize the data.
+5. Allows ideas to grow and iterate with the design.
+
+##### Components of Information architecture
+1. Organization - how different pieces of information connect to the product.
+2. Hierachy - tree structure.
+3. Sequence - enables users to move through an app via certain orders or steps.
+
+##### 8 basic principles of Information architecture
+
+1. *Object principle* - content changes and grows over time.
+2. *Choice principle* - fewer choices that are well organized.
+3. *Disclosure principle* -information should not be unexpected and unnecessary.
+4. *Examplar principle* - human put things into categories and group different concepts together.
+5. *Front door principle* - people will usually arrive at a home page from another website.
+6. *Multiple classifications principle* - people have different ways of searching for information.
+7. *Focused navigation principle* -there must be a strategy and lose behind the way navigation menus are designed.
+8. *Growth principle* - amount of content in a design will grow over time.
+
+Paper wireframes are fast, inexpensive, and explore lots of ideas.
+
+##### Steps in creating a wireframe
+
+1. Gather materials.
+2. Write a list of elements you need to include in your wireframe.
+3. Create 5 different versions of how to structure information on the page.
+4. Choose which elements to refine.
+5. Combine elements into a refined wireframes.
+
+**Gestalt principles** - how human group similar elements, recognize patterns, and simplify complex images when we perceive objects.
+
+1. *Similarity* - elements looking similar/have same function.
+2. *Proximity* - elements close together are more related.
+3. *Common region* - elemets within same are grouped together.
+
+**Prototype** - is an early model of a product that demonstrates functionality.
+It shows stakeholders and potential users what your design can do.
+
+The difference between a wireframe and a low fidelity prototype is the ability to click.
+
+##### Benefits of paper prototypes
+
+1. Inexpensive
+2. Rapid iteration
+3. Low commmitment
+4. Encourage honest feedback.
+5. Collaborative activity
+
+**Deceptive patterns** are UX methods that trick users into doing/buying something they wouldn't otherwise have done or bought.
+
+1. *Forced continuity* - charging for membership without warning and reminder.
+2. *Sneak into the basket* - adding extra products without concent.
+3. *Hidden cost* -paying fees you aren't aware.
+4. *Confirm shaming* - makes useer feel bad.
+5. *Urgency* - limited time offer.
+6. *Scarcity* -limited number of items.
+
+### Conduct UX Research and Tesst Early Concepts
+
+#### Elemets of UX research studies
+
+1. Project background
+2. Research goals
+3. Research questions
+4. Key performance indicators
+5. Methodologies
+6. Participants
+7. Script
+
+**Research study** - is a step-by-step examination of a group of users and their needs, which adds realistic context to the design process.
+
+Steps:
+1. Plan - outline the background set research goals, audience
+2. Research - gather
+3. Analyze and sythesize
+4. Share
+
+**Usability study** - a research method that assesses how easy it is for users to complete core tasks in a design.
+
+**Project stakeholders** - people who are involved in the project or who will be impacted by it's results.
+
+Research presentation contains methods, data, conclusion, recommendations.
+
+Communication needs to be equitable, inclusive, honest, neutral and team player.
+
+##### Elements of a UX research plan
+
+1. *Project background* - what let you to conduct research.
+2. *Research goals* - what design problems are you trying to solve.
+3. *Research questions* - what questions is the research trying to answer.
+4. *Key Performance Indicators* - how to measure progress.
+5. *Participants* - who will you survey.
+6. *Script* - discussion guide, specific question, to the research goals.
+
+Importance of Project Background:
+1. Get's the team on the same page at the beginning of the study.
+2. Shows you understand why you are doing the research.
+3. Promotes confidence in the overall quality of your analysis and insights.
+
+How to write the project background:
+1. Identify the signals that indicated research was necessary.
+2. Describe any previous research
+3. List insights the research will generate
+
+**Foundational research goal** - understand why or if you should build the product.
+
+**Design research goal** -understand how to build the product.
+
+**Post launch research goal** - understand if the product worked as expected.
+
+Research questions should provide focus, they should actionable, specific, avoiding leading questions
