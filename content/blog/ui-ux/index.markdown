@@ -759,3 +759,93 @@ Tips
 + Use stories.
 + Allow pauses.
 + Make eye contact.
+
+### Create High-Fidelity Designs and prototype
+
+**Visual design** - how a product or technology appear to users.
+
+**Mockup** - a static high fidelity design that represent your final product.
+
+**Fidelity**- how a product design looks, feels like the final product.
+
+##### Foundation elements of visual design
+
+1. Typography - use of text and fonts, adds hierachy to your designs, make text easy to read, adds visual style.
+2. **Color** - messages that certain colors communicate, how people understand color, how color mix, match or contrast with one another.
+3. **Iconography** - refers to the images or symbols associated with a subject or idea.
+
+**Typographic hierarchy** - a method of ordering typefaces and fonts in a layout to create divisions that show users where to focus and how to find information.
+
+Importance of color:
+1. Add emphasis in your design.
+2. Communicate branding.
+3. Impact the accessibility.
+
+Benefits of images:
+1. Communicate a message without using words.
+2. Create emotional response to users.
+3. Set a product apart from the competitors. ENhance designs, create connection to the product for users, establish a strong brand presence.
+
+Links:
+1. An unclutered page is easier to read.
+2. Meet your expectations.
+3. Not all links look the same.
+4. Use descriptive links.
+
+Buttons:
+1. Make buttons look like buttons.
+2. Be consistent.
+3. Include negative space.
+
+Inputs:
+1. Use visual cues.
+2. Group inputs using sub-categories.
+
+**Layout** - refer to specific placements of text, styles, icons and images.
+
+Grids to guide layouts:
+
+**Basic grids** - intersecting lines divide pages into small squares that allow you to easily lay out elements in a design.
+
+**Layout grids** - a series of columns and alleys that allow you to organize elements in a design.
+
+Reasons to use grids:
+1. Create clarity and consistency.
+2. Quicken the design process.
+3. Make it easier to collaborate on designs.
+
+Use visual barriers to keep designs neat and organized.
+
+*Dividers* - lines that separate sections.
+
+*Borders* - group of lines to break up sections of a page.
+
+*Fill* - assigns colors to borders and shapes.
+
+*Shadow* - create dimension in combination with borders or fill.
+
+**Negative(white*) space** - the gaps between elements in a design, often referred to as negative space(line spacing, margins, padding).
+
+Importance of white space:
+1. Provide emphasis on a focal point within the design.
+2. Group items together, which is also known as proximity.
+3. Gives users a visual break.
+4. Increases readibility.
+
+##### Applying visual design principles to mockups
+
+**Mockups** - something that attracts attention.
+
+**Visual weight** - a measure of the force that an element exerts to attract the eye.
+
+**Contrast** - creation of opposing visual elements to convey emphasis or comparison.
+
+**Texture** - elements within an object that add depth or a pattern to an object.
+
+**Hierachy** - refers to a group of elements that are organized in order of importance.
+
+Emphasis is about making an element stand out from the other elements.
+
+**Scale** - explains the size relationship between a given element and the other elements in the design.
+
+**Proportion** - the balance or harmony between elements that are scaled.
