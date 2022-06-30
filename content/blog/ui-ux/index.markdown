@@ -650,3 +650,112 @@ How to write the project background:
 **Post launch research goal** - understand if the product worked as expected.
 
 Research questions should provide focus, they should actionable, specific, avoiding leading questions
+
+##### Types of KPI's
+
+1. Time on task - measure how long it takes a user to complete a task.
+2. Use of navigation vs search - the number of people who use a website or app navigation compared to number of people who use the search functionality.
+3. Use error rates - indicate the parts of a design that cause users to make errors.
+4. Drop-off rates - how many users abandon the experience.
+5. Conversion rates - measure the percentage of users who complete a desired action.
+6. System usability scale(SUS) - a questionnaire to measure the usability of your design.
+
+Use the same set of questions for each interview, ask open-ended questions, elaboration encouragement, ask same questions in multiple angles, don't mention other users, don't ask leading questions.
+
+**Personally Identifiable Information(PII)** - specific details that could be used to identify a user.
+
+**Sensitive Personally Identifiable Information(SPII)** - data that if lost, compromised, or stolen, could cause your users financial harm, embarrassment or discrimination.
+
+##### Importance of keeping user data privacy
+
+1. It's the right thing to do.
+2. Privacy laws and ethics.
+3. Risk of hacking.
+4. Protecting your company's brand.
+
+##### Privacy and security practices
+
+1. Be transparent about data collection.
+2. Only collect user data that's absolutely necessary.
+3. Get active consent.
+4. Detail how you'll use participants info and protect privacy.
+5. Allow users to withdraw.
+6. Inform users of who will have access to their data.
+7. How you plan to store and delete user data once it has been used.
+
+**Vulenerable population** - groups of people who have limited ability to provide their consent or have special privacy concerns.
+
+**Data recording** - document your study and results in a way that's consistent with UX research standards.
+
+**Data storage** - make sure your data is held in a way that's safe from hacking and physical damage.
+
+**Data retention** -how long you and your company hold on to research data.
+
+**De-identification** - removing any identifying information from a user's data that you collect during a study
+
+#### Conducting research with usability studies
+
+**Usability study** - is a research method that assess how easy it is for participants to complete core tasks in a design.
+
+**Moderated usability study** - a moderator guides participants through the study in real time.
+
+**Unmoderated usability study** -participants test out the prototypes without human guidance.
+
+##### How to begin a moderated usability study
+
+1. Build a rapport with participants.
+2. Thank participants for coming.
+3. Remind participant to be open and honest.
+4. Have participants fill out paperwork like an NDA.
+5. Explain the focus of the study and what participant will give feedback on.
+6. Establish ground rules for this study.
+7. Remind participants that they are not being tested.
+
+Reduce bias by adentifying and admitting own biases, find participants from a representative sample, define interview questions thoughtfully, let participants express themselves fully, be mindfull of your body languages.
+
+#### Analyzing and synthesizing research results
+
+**Synthesize** - combine ideas to draw conclusions.
+
+**Iterate** - revise original designs to create a new and improved version.
+
+**Insight** - an observation about people that helps you understand the user or their needs from a new perspective.
+
+**Affinity** - a feeling of like-mindedness or compatibility towards something or someone.
+
+Observation to insights:
+
++ gather data in one place.
++ organize the data
++ find themes
++ come up with insights.
+
+Qualit of a strong insights:
+
++ Grounded in real data.
++ Answer research questions
++ Easy to understand.
++ Increase empathy for the user experience.
++ Insert direct action.
+
+#### Sharing research insights for better designs
+
+*Presentation* - a group of slides, where each slide has new information.
+
+*Research rapport* - a document with fewer visuals, containing the same information as the presentation.
+
++ Know your audience.
++ Provide an overview.
++ Tell a story
++ Show numbers
++ Less is more when it comes to text.
++ Provide recommendations for next steps.
++ Leave time for questions.
+
+Tips
+
++ Be concise.
++ Keep your tone conversation.
++ Use stories.
++ Allow pauses.
++ Make eye contact.
