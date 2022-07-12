@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Technical Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Jun 2022 19:47:49 GMT</lastBuildDate><item><title><![CDATA[python]]></title><description><![CDATA[Integers Floats Strings Data structures are containers or collections of data that organize and group data types together in different ways…]]></description><link>https://bwakedavis.github.io/python/</link><guid isPermaLink="false">https://bwakedavis.github.io/python/</guid><pubDate>Fri, 27 May 2022 22:25:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[bwake blog]]></title><description><![CDATA[Technical Blogs and Portfolio Projects by Davis Bwake]]></description><link>https://bwakedavis.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Jul 2022 07:55:31 GMT</lastBuildDate><item><title><![CDATA[python]]></title><description><![CDATA[Integers Floats Strings Data structures are containers or collections of data that organize and group data types together in different ways…]]></description><link>https://bwakedavis.github.io/python/</link><guid isPermaLink="false">https://bwakedavis.github.io/python/</guid><pubDate>Fri, 27 May 2022 22:25:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Integers&lt;/p&gt;
 &lt;p&gt;Floats&lt;/p&gt;
 &lt;p&gt;Strings&lt;/p&gt;
@@ -51,7 +51,378 @@ print(cities)&lt;/p&gt;
 &lt;p&gt;for city in cities:
 capitalized_cities.append(city.title())&lt;/p&gt;
 &lt;p&gt;print(capitalized_cities)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Program management]]></title><description><![CDATA[Contents: Foundation of project management. Project Initiation: Starting a successful project. Project Planning: Putting it all together…]]></description><link>https://bwakedavis.github.io/project_management/</link><guid isPermaLink="false">https://bwakedavis.github.io/project_management/</guid><pubDate>Fri, 20 May 2022 14:26:03 GMT</pubDate><content:encoded>&lt;p&gt;Contents:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;## Advanced Python
+
+### Lists
+
+```python
+# Lists: ordered, mutable, allows duplicate elements
+mylist = [&amp;#39;banana&amp;#39;, &amp;#39;apple&amp;#39;, &amp;#39;orange&amp;#39;, &amp;quot;cherry&amp;quot;]
+mylist2 = list()
+mylist2 = [5, False, &amp;quot;Ben&amp;quot;, &amp;quot;Andrew&amp;quot;]
+
+#accessible by index
+print(mylist[0], mylist[-1],mylist2[-2])
+
+#loop
+for i in mylist:
+    print(i)
+
+#check
+if &amp;quot;Cherry&amp;quot; in mylist:
+    print(&amp;quot;yes&amp;quot;)
+else:
+    print(&amp;quot;no&amp;quot;)
+
+#length
+print(len(mylist))
+
+#append to the end
+mylist.append(&amp;quot;avocado&amp;quot;)
+print(mylist)
+
+#insert at the certain position
+mylist.insert(1, &amp;quot;mango&amp;quot;)
+print(mylist)
+
+#remove at the end
+item = mylist.pop()
+print(mylist)
+
+#remove specific
+item = mylist.remove(&amp;#39;orange&amp;#39;)
+print(mylist)
+
+#sort
+#mylist.sort() #changes original list order
+newlist = sorted(mylist)
+print(newlist)
+
+nums = [0] * 5
+print(nums)
+
+nums2 = [2,3,5,6,6]
+
+joinedlist = nums + nums2
+print(joinedlist)
+
+# slice some part
+a = joinedlist[3:8] # the start index is inclusive, stop index is excluded
+print(a)
+
+b = joinedlist[:7]
+print(b)
+
+# step
+c = joinedlist[::2]
+print(c)
+
+# reverse
+d = joinedlist[::-1]
+print(d)
+
+#copy
+## when copy is modified doesn&amp;#39;t modify the original copy
+list_copy = mylist.copy()
+list_copy.append(&amp;quot;grapes&amp;quot;)
+print(list_copy)
+print(mylist)
+
+list_copy2 = mylist.copy()
+list_copy2.append(&amp;quot;guavas&amp;quot;)
+print(list_copy2)
+print(mylist)
+
+## when modified modify also the original list
+list_copy3 = mylist 
+list_copy3.append(&amp;quot;lemon&amp;quot;)
+print(list_copy3)
+print(mylist)
+
+# list comprehension
+list_a = [1,2,3,4,5,6]
+list_b = [n*n for n in list_a]
+print(list_a)
+print(list_b)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Tuples&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Tuples: ordered, immutable, allows duplicate elements&lt;/span&gt;
+
+mytuple &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Davis&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Nairobi&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+mytuple2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Mt. Kenya&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5199&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Kirinyaga&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+single_element_tuple &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Kenya&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mytuple&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;single_element_tuple&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; mytuple2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+item &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; mytuple&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;item&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Loop&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; mytuple2&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#check&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Mombasa&quot;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; mytuple2&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;yes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;no&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#length&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mytuple&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#count&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mytuple&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;count&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Nairobi&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#index&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mytuple2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;index&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Kirinyaga&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# tuple from list&lt;/span&gt;
+a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
+a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# list from tuple&lt;/span&gt;
+a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# slice&lt;/span&gt;
+c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;## upper bound exclusive, lower bound inclusive&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;## step&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#reverse&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#unpacking&lt;/span&gt;
+mytuple3 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Fort Jesus&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1500&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Mombasa&quot;&lt;/span&gt;
+name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; year&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; city &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; mytuple3
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; year&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; city&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# comparison with lists&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sys
+list_a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;good morning&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+tuple_a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;good morning&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getsizeof&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;list_a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;bytes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getsizeof&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tuple_a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;bytes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# smaller and sometime efficient&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; timeit
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;timeit&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;timeit&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stmt&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;[0,1,2,3,4,5]&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; number&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;timeit&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;timeit&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stmt&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;(0,1,2,3,4,5)&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; number&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;#faster to create&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Dictionaries&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Dictionaries: key-value pairs, unordered, mutable&lt;/span&gt;
+
+my_dict &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Davis&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;age&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;city&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Kisumu&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+my_dict&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;course&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Computer Science&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# add item&lt;/span&gt;
+my_dict&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;age&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# remove specified&lt;/span&gt;
+my_dict&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;popitem&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;# remove last inserted item&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; my_dict&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#check&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;name&quot;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; my_dict&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;lastname&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;key not found&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+
+
+my_dict2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Andrew&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; age&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;22&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; city&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Nakuru&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;del&lt;/span&gt; my_dict2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;age&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# delete specified&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; key&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; my_dict&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; key &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; my_dict2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; value &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; my_dict2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;values&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+my_dict3 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Bwake&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;age&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;city&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Kitale&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#copy&lt;/span&gt;
+my_dict3_copy &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; my_dict3&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;copy&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+my_dict3_copy&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;email&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;bwake@email.com&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict3_copy&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict3&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+my_dict3_copy &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict3&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+my_dict3_copy&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;email&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;bwake@email.com&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict3_copy&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict3&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;## modify the original one too&lt;/span&gt;
+my_dict3_copy &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; my_dict3
+my_dict3_copy&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;email&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;bwake@email.com&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict3_copy&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_dict3&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Object oriented&lt;/h3&gt;
+&lt;p&gt;Intro to classes&lt;/p&gt;
+&lt;p&gt;classes and instances&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; last_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pay
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;.&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; last_name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@mail.com&apos;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;full_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{} {}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp_1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; emp_1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+emp_1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Davis&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Bwake&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+emp_2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Test&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;User&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;60000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp_2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp_1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;full_name&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Class and static methods&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+
+    raise_amount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1.04&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; last_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pay
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;.&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; last_name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@mail.com&apos;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;full_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{} {}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp_1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; emp_1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apply_raise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raise_amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token decorator annotation punctuation&quot;&gt;@classmethod&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;set_raise_amount&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cls&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+       cls&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raise_amount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; amount
+    &lt;span class=&quot;token decorator annotation punctuation&quot;&gt;@staticmethod&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;is_workday&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;day&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; day&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;weekday &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;or&lt;/span&gt; day&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;weekday &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
+
+emp_1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Davis&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Bwake&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+emp_2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Test&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;User&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+
+
+Employee&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;set_raise_amount&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1.05&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Employee&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raise_amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp_1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raise_amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp_2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raise_amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; datetime
+my_date &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; datetime&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;207&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Employee&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;is_workday&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;my_date&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Inheritance&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+
+    raise_amount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1.04&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; last_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pay
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;.&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; last_name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@mail.com&apos;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;full_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{} {}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apply_raise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raise_amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Developer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Employee&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; prog_lang&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token builtin&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prog_lang &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prog_lang
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Manager&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Employee&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; employees&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token builtin&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; employees &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;employees &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;employees &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; employees
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add_employee&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; employee&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; employee &lt;span class=&quot;token keyword&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;employees&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;employees&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;employee&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;remove_employee&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; employee&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; employee &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;employees&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;employees&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;remove&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;employee&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;print_employees&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; employee &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;employees&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;employee&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;full_name&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+emp_1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Davis&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Bwake&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+dev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Developer&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Test&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;User&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Python&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+mng_1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Manager&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Sue&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Smith&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;90000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;emp_1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; dev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dev&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mng_1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;print_employees&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;isinstance&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mng_1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Manager&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;isinstance&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mng_1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Developer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;isinstance&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mng_1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Magic Dunder&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+
+    raise_amount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1.04&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; last_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pay
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;.&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; last_name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@mail.com&apos;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;full_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{} {}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apply_raise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raise_amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__repr__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Employee( &apos;{}&apos;, &apos;{}&apos;, &apos;{}&apos; )&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__str__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{} {}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;full_name&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__add__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__len__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;full_name&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+emp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Davis&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Bwake&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+emp_1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;John&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Doe&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__str__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__repr__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__add__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; emp_1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Setter&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+
+    raise_amount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1.04&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pay&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; last_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pay
+    &lt;span class=&quot;token decorator annotation punctuation&quot;&gt;@property&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{}.{}@email.com&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token decorator annotation punctuation&quot;&gt;@property&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;full_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{} {}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token decorator annotation punctuation&quot;&gt;@full_name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setter&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;full_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        first_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;split&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; first_name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;last_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; last_name
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apply_raise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pay &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raise_amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+emp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Davis&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Bwake&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+emp_1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Employee&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;John&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Doe&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+emp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;full_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;John Doe&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;emp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;full_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Program management]]></title><description><![CDATA[Contents: Foundation of project management. Project Initiation: Starting a successful project. Project Planning: Putting it all together…]]></description><link>https://bwakedavis.github.io/project_management/</link><guid isPermaLink="false">https://bwakedavis.github.io/project_management/</guid><pubDate>Fri, 20 May 2022 14:26:03 GMT</pubDate><content:encoded>&lt;p&gt;Contents:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Foundation of project management.&lt;/li&gt;
 &lt;li&gt;Project Initiation: Starting a successful project.&lt;/li&gt;
@@ -8001,171 +8372,7 @@ colored &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span cla
             &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[understand ethereum and it's wide ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
-&lt;h2&gt;Features of Ethereum&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Supports smart contracts&lt;/li&gt;
-&lt;li&gt;Has a cryptocurrency called &lt;em&gt;ether&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Has Smart Property&lt;/li&gt;
-&lt;li&gt;Supports  DEcentralized Autonomous Organizations (DAO)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Pillars of Ethereum&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Ethereum Virtual Machine&lt;/strong&gt; - serves as the heart of ethereum, architecture and provides computer power.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inter-Planetary-File-System&lt;/strong&gt; - &lt;em&gt;IPFS&lt;/em&gt; serves as a distributed storage unit  for large files being stored on the ethereum network.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wallets/Browsers&lt;/strong&gt; - serves as a wallet for storing ether. used to deploy contracts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Ether&lt;/strong&gt; is the value token of ethereum(ETH).
-It’s used to pay for transaction fees and computational services on ethereum network.
-Every time a contract is executed, Ethereum consumes token which is termed as ‘gas’ to run the computations.&lt;/p&gt;
-&lt;h3&gt;Gas&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Gas&lt;/strong&gt; is the unit for the amount of computational work done by the computer for one cycle of the contract.
-A transaction fee is charged as some amount of ether and is taken from the account balance where the transaction originate.
-The more the fee, the higher the chances that the transaction will be picked up faster by the miners for inclusion in the block.
-Providing too little gas leads to failed transactions.
-Miners who add blocks to the blockchain are paid the transaction fees.
-Gas prevents bogus transactions which can spam the network transaction fee is variable
-&lt;strong&gt;Gas price&lt;/strong&gt;
-&lt;code class=&quot;language-text&quot;&gt;gasCost = gasPrice * gasCost(gas)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Gas limit&lt;/strong&gt; is the maximum amount of gas the contract can use for it’s computation.&lt;/p&gt;
-&lt;h4&gt;Gas optimization tis&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Put part of your code in a centralized server&lt;/li&gt;
-&lt;li&gt;Use a library with pre-tested contracts&lt;/li&gt;
-&lt;li&gt;Use ERC1167 if you want to deploy same contract several times&lt;/li&gt;
-&lt;li&gt;Use events because they consume less gas than state variables&lt;/li&gt;
-&lt;li&gt;Use literal values rather than computed ones&lt;/li&gt;
-&lt;li&gt;Avoid copying arrays in memory&lt;/li&gt;
-&lt;li&gt;Avoid using loops over dynamic ranges&lt;/li&gt;
-&lt;li&gt;Optimize the order of variables declaration i.e uint, byte, strings&lt;/li&gt;
-&lt;li&gt;Turn on the optimizer in solidity compiler inside &lt;code class=&quot;language-text&quot;&gt;truffle.config.js&lt;/code&gt;.Though not always reliable.&lt;/li&gt;
-&lt;li&gt;Use &lt;code class=&quot;language-text&quot;&gt;eth-gas-reporter&lt;/code&gt; npm package to show your gas consumption every time you run tests&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Smart Contracts&lt;/h3&gt;
-&lt;p&gt;A &lt;strong&gt;Smart Contract&lt;/strong&gt; is a software program on the distributed ledger, allowing an immutable, verifiable and secure record all contract and transactions.&lt;/p&gt;
-&lt;p&gt;They’re digital representation of real world contracts.&lt;/p&gt;
-&lt;h4&gt;Properties of Smart Contracts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Autonomous&lt;/em&gt; - the creator doesn’t have to participate in the process after deploying the contract.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Auto-sufficient&lt;/em&gt; - contracts are able to collect money, realize transactions, distribute resources, issue and spend funds to allow a large capacity of storage.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Advantages of Smart Contracts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Faster, simpler and hassle free processes.&lt;/li&gt;
-&lt;li&gt;Secure - data in decentralized registry cannot be easily lost or cyber attacked&lt;/li&gt;
-&lt;li&gt;Precision - Mistakes are not easily made due to absence of physical forms&lt;/li&gt;
-&lt;li&gt;Reduces settlement time.&lt;/li&gt;
-&lt;li&gt;Low operational overheads and costs.&lt;/li&gt;
-&lt;li&gt;Reduced administration and services cost owing .to automation and ease of compliance and reports.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Disadvantages of Smart Contracts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Hard to maintain - contracts deployed are immutable so changes in business logic and general bug fixes  become tough.&lt;/li&gt;
-&lt;li&gt;Small community because it’s a new field.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Decentralized Autonomous Organization(DAO)&lt;/strong&gt; are organizations that exist entirely on the blockchain and are governed by the protocols.
-They’re designed to hold onto assets and use a kind of voting to manage their distribution(use peer decision making).
-DAO’s comprise of a global network of nodes and members that all work together and create a unison to manage the distribution.&lt;/p&gt;
-&lt;h4&gt;Types of Ethereum Accounts&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;External Owned Accounts&lt;/em&gt; - These are owned by people or organizations and controlled by private Keys.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Contract Accounts&lt;/em&gt; - These are autonomous accounts controlled by code.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Ethereum Virtual Machine&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;EVM&lt;/strong&gt; is a blockchain-based software platform. It allows developers to create decentralized applications (Dapps).&lt;/p&gt;
-&lt;p&gt;Contracts written in a smart contract specific language are compiled into &lt;em&gt;byte code&lt;/em&gt; which the &lt;strong&gt;evm&lt;/strong&gt; can read and execute.&lt;/p&gt;
-&lt;h2&gt;Decentralized Applications(DApps)&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;DApps&lt;/strong&gt; are digital applications or programs that exist and run on a blockchain or peer to peer network of computers instead of a single computer, and are not controlled by a single authority.&lt;/p&gt;
-&lt;h4&gt;Features of DApps&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Open Sourced.The code is made open source and operates autonomously without any person or group controlling the majority of the tokens&lt;/li&gt;
-&lt;li&gt;Decentralized&lt;/li&gt;
-&lt;li&gt;Use Consensus Mechanism&lt;/li&gt;
-&lt;li&gt;Generates tokens to provide value to their contributing nodes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Advantages of DApps&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Autonomy&lt;/em&gt; - you make the agreement yourself.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Trust&lt;/em&gt; - your records are encrypted on a shared ledger.&lt;/li&gt;
-&lt;li&gt;Backup - your document are duplicated many times over.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Accuracy&lt;/em&gt; - they’re sometime kinda slower and expensive but avoid errors that arise from tedious computational work.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Best practices for DApps design&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;You should not take control of your user private keys&lt;/li&gt;
-&lt;li&gt;First define your data model.Decide what to put and what not to put on the blockchain.&lt;/li&gt;
-&lt;li&gt;You should not sign transactions on behalf of your users from a central server&lt;/li&gt;
-&lt;li&gt;You should not put all the critical data and code on the blockchain&lt;/li&gt;
-&lt;li&gt;You should always run security tools on your smart contract&lt;/li&gt;
-&lt;li&gt;You should deploy your app on a public testnet before deploying on the test net&lt;/li&gt;
-&lt;li&gt;You should use ethereum addresses to identify users using &lt;code class=&quot;language-text&quot;&gt;msg.sender&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;You should explain the update mechanism of your smart contract&lt;/li&gt;
-&lt;li&gt;You should explain how the external data is collected&lt;/li&gt;
-&lt;li&gt;You should verify you smart contract on etherscan&lt;/li&gt;
-&lt;li&gt;You should show feedback to users while transactions are underway&lt;/li&gt;
-&lt;li&gt;Have read-only UI mode for users who don’t have wallets&lt;/li&gt;
-&lt;li&gt;Have a fallback web3 provider that connects to infura without connecting to any wallet&lt;/li&gt;
-&lt;li&gt;Support multiple wallets&lt;/li&gt;
-&lt;li&gt;Don’t trigger the metamask dapp popup too early&lt;/li&gt;
-&lt;li&gt;Describe the effect of the transaction clearly and what it’s for&lt;/li&gt;
-&lt;li&gt;Show feedback after the transaction is sent and is being processed&lt;/li&gt;
-&lt;li&gt;Keep the UI updated with the smart contract by using events&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Decentralized Finance (DeFi)&lt;/h3&gt;
-&lt;p&gt;Applications on the blockchain decentralizing finance, lending and interest earnings&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Yield Farming&lt;/strong&gt; - Earning money on deposit to be given to other people as loans and they payback with interest&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Liquidity mining&lt;/strong&gt; - distributing tokens to users of a protocol for doing some tasks&lt;/p&gt;
-&lt;h4&gt;Advantages of DeFi&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Transparency&lt;/li&gt;
-&lt;li&gt;Decentralized&lt;/li&gt;
-&lt;li&gt;Flexibility&lt;/li&gt;
-&lt;li&gt;Free for all&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Disadvantages of DeFi&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Still in infancy stage&lt;/li&gt;
-&lt;li&gt;Sometime partially centralized&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tokens&lt;/h2&gt;
-&lt;p&gt;A token is an ethereum smart contract that represents an assert or a service in real world or in the blockchain. eg.cryptokitties.
-Governed by &lt;strong&gt;Ethereum Request for Comments(ERC)&lt;/strong&gt; token standard.&lt;/p&gt;
-&lt;h3&gt;ERC20 tokens&lt;/h3&gt;
-&lt;p&gt;Represents fungible tokens&lt;/p&gt;
-&lt;h3&gt;ERC 165&lt;/h3&gt;
-&lt;p&gt;Allow smart contract to tell other contract what function to implement&lt;/p&gt;
-&lt;h3&gt;ERC 223&lt;/h3&gt;
-&lt;p&gt;Prevents token from being lost in the smart contract&lt;/p&gt;
-&lt;h3&gt;ERC 721 - Non-Fungible Tokens&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;NFTs&lt;/em&gt;  are digital assets that represent a wide range of unique tangible and intangible items. eg songs, tweets&lt;/p&gt;
-&lt;p&gt;Non-fungible tokens are indivisible  and can’t be swapped with the other one.&lt;/p&gt;
-&lt;p&gt;Fungible tokens can be swapped with others of the same kind&lt;/p&gt;
-&lt;h4&gt;characteristics of NFTs&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Indivisible&lt;/li&gt;
-&lt;li&gt;Verifiable&lt;/li&gt;
-&lt;li&gt;Indestructible&lt;/li&gt;
-&lt;li&gt;Unique&lt;/li&gt;
-&lt;li&gt;Provably scarce&lt;/li&gt;
-&lt;li&gt;Transferable easily&lt;/li&gt;
-&lt;li&gt;Guarantee ownership&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;ERC 1410&lt;/h3&gt;
-&lt;p&gt;Token partition&lt;/p&gt;
-&lt;h3&gt;ERC 1155&lt;/h3&gt;
-&lt;p&gt;Fungible and non-fungible tokens&lt;/p&gt;
-&lt;h3&gt;ERC 1594&lt;/h3&gt;
-&lt;p&gt;Core standard&lt;/p&gt;
-&lt;h3&gt;ERC 1643&lt;/h3&gt;
-&lt;p&gt;Attack documents&lt;/p&gt;
-&lt;h3&gt;ERC 1644&lt;/h3&gt;
-&lt;p&gt;Forced token transfer&lt;/p&gt;
-&lt;h3&gt;ERC 1820&lt;/h3&gt;
-&lt;p&gt;Simplify contract interaction
-A contract can delegate execution of a function to another contract.&lt;/p&gt;
-&lt;h4&gt;Initial Coin Offering(ICO)&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt; - allows retaining of control, globalization, no regulation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Initial Public Offering(IPO)&lt;/strong&gt; .&lt;/p&gt;</content:encoded></item><item><title><![CDATA[user experience(UX) and user interface design(UI)]]></title><description><![CDATA[UI Design UI design is the designing of visual interface of a software.
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[user experience(UX) and user interface design(UI)]]></title><description><![CDATA[UI Design UI design is the designing of visual interface of a software.
 I the look and feel, the presentation and interactivity of a product…]]></description><link>https://bwakedavis.github.io/ui-ux/</link><guid isPermaLink="false">https://bwakedavis.github.io/ui-ux/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;UI Design&lt;/h2&gt;
 &lt;p&gt;UI design is the designing of visual interface of a software.
 I the look and feel, the presentation and interactivity of a product.
@@ -8487,7 +8694,601 @@ The goal of a design sprint is to solve a problem through designing, prototyping
 &lt;li&gt;User wireframes.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;User journey&lt;/strong&gt; - the series of experiences a user has as they achieve a specific goal.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;User journey map&lt;/strong&gt; - an illustration of what a user goes through to achieve their goals.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn all things bitcoin]]></title><description><![CDATA[Bitcoin is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments. It follows the ideas set out…]]></description><link>https://bwakedavis.github.io/bitcoin/</link><guid isPermaLink="false">https://bwakedavis.github.io/bitcoin/</guid><pubDate>Mon, 13 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Bitcoin&lt;/strong&gt; is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User journey map&lt;/strong&gt; - an illustration of what a user goes through to achieve their goals.&lt;/p&gt;
+&lt;p&gt;Benefits of user journey maps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Helps UX designers create obstacle-free paths for users.&lt;/li&gt;
+&lt;li&gt;Reduces the impact of design bias.&lt;/li&gt;
+&lt;li&gt;Highlight new pain points.&lt;/li&gt;
+&lt;li&gt;Identify improvement opportunities.
+&lt;em&gt;Curb-cut effect&lt;/em&gt; - a phenomenon that describes how products and policies designed for people with disabilities often and up helping everyone.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Define problem and hypothesis statements&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Problem statement&lt;/em&gt; is a clear description of the user’s need that should be addressed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Human centered&lt;/li&gt;
+&lt;li&gt;Broad enough for creative freedom.&lt;/li&gt;
+&lt;li&gt;Narrow enough to be solved by a design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;Username&gt; is a &lt;user characteristic&gt; who needs &lt;user need&gt; because &lt;insight&gt;&lt;/p&gt;
+&lt;p&gt;Problem statements helps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Establish goals&lt;/li&gt;
+&lt;li&gt;Understand contraints&lt;/li&gt;
+&lt;li&gt;Define deliverables.&lt;/li&gt;
+&lt;li&gt;Creates benchmarks for success.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Hypothesis statement&lt;/strong&gt; - our best educated guess on what we think the solution to a design problem might be.&lt;/p&gt;
+&lt;p&gt;If &lt;action&gt; then &lt;outcome&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Value proposition&lt;/strong&gt; - the reason why a consumer should use a product or a service.&lt;/p&gt;
+&lt;h5&gt;Steps in building value proposition&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Describe your product features and benefits.&lt;/li&gt;
+&lt;li&gt;Explain the value of the product.&lt;/li&gt;
+&lt;li&gt;Connect these features and benefits with the needs of your users.&lt;/li&gt;
+&lt;li&gt;Review your official value proposition.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;The human factor&lt;/strong&gt; - describes the range of variables human bring to their product interactions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Impatience, limited memory, needing anologies, limited concetration, changes in need, needing motivation, prejudices, fears, making errors, misjudgement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Mental models&lt;/strong&gt; -Internal maps that allow humans to predict how something will work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feedback loops&lt;/strong&gt; - the outcome a user gets at the end of the process.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Von resterff effect(Isolation effect)&lt;/strong&gt; - when multiple similar object are present, the ones that differs from the rest is most likely to be remembered.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Call-to-action&lt;/strong&gt; - a visual prompt that tells the user to take action.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Serial position effect&lt;/strong&gt; - when people are given a list of items, they are more likely to remember the first few and the last few, while the items in the middle tend to blur.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hicks law&lt;/strong&gt; - the more options a user has, the longer it takes them to make a decision.&lt;/p&gt;
+&lt;h4&gt;Ideating design solutions&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Ideation&lt;/em&gt; is the process of generating a broad set of ideas on a given topic, with no attempt to judge or evaluate them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brainstorm out loud.&lt;/li&gt;
+&lt;li&gt;Document all ideas.&lt;/li&gt;
+&lt;li&gt;Focus on quantity.&lt;/li&gt;
+&lt;li&gt;Do not allow evaluation.&lt;/li&gt;
+&lt;li&gt;Gather a diverse team.&lt;/li&gt;
+&lt;li&gt;Question the obvious.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the ideas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Feasible&lt;/em&gt; - technically possible to build.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Desireable&lt;/em&gt; - best at solving the user problem&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Viable&lt;/em&gt; - financially beneficial.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Prepare for ideation&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Empathize with your user.&lt;/li&gt;
+&lt;li&gt;Define a creative environment.&lt;/li&gt;
+&lt;li&gt;Set a time limit.&lt;/li&gt;
+&lt;li&gt;Assemeble a diverse team.&lt;/li&gt;
+&lt;li&gt;Think outside the box.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Scope the competition(competition audit)&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Identifying your key competitors.&lt;/li&gt;
+&lt;li&gt;Reviewing the product that your competitors offer.&lt;/li&gt;
+&lt;li&gt;Understanding how your competitors posistion themselves in the market.&lt;/li&gt;
+&lt;li&gt;Examining what your competition does well and what they could do better.&lt;/li&gt;
+&lt;li&gt;Considering how competitors talk about themselves.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Direct competitors&lt;/strong&gt; - have offerings that are similar to your product and focus on the same audience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Indirect competitors&lt;/strong&gt; - have a similar set of offerings but focus on a different audience, or have a different set of offerings and focus on the same audience.&lt;/p&gt;
+&lt;h5&gt;Benefits of competitive audit&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Inform your design process.&lt;/li&gt;
+&lt;li&gt;Solve usability problems.&lt;/li&gt;
+&lt;li&gt;Reveal gaps in the market.&lt;/li&gt;
+&lt;li&gt;Provide reliable evidence.&lt;/li&gt;
+&lt;li&gt;Save time, money , and energy.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Limits of competitive audits&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Stiffle creativity&lt;/li&gt;
+&lt;li&gt;Depend on how well you interpret the findings.&lt;/li&gt;
+&lt;li&gt;Not all designs work in all use cases.&lt;/li&gt;
+&lt;li&gt;Need to be done regulary.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Competitive audit steps&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Outline the goals.&lt;/li&gt;
+&lt;li&gt;Create a spreadsheet with a list of your competitors.&lt;/li&gt;
+&lt;li&gt;Call out the specific aspects you want to compare.&lt;/li&gt;
+&lt;li&gt;Research each company.&lt;/li&gt;
+&lt;li&gt;Analyze findings.&lt;/li&gt;
+&lt;li&gt;Summarize findings in a report.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Delivering a strong presentation&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Get feedback from your team.&lt;/li&gt;
+&lt;li&gt;Limit the amount of text on your slides.&lt;/li&gt;
+&lt;li&gt;Stick to the highlights.&lt;/li&gt;
+&lt;li&gt;Use notes.&lt;/li&gt;
+&lt;li&gt;Practice ahead of time.&lt;/li&gt;
+&lt;li&gt;Use relevant graphics.&lt;/li&gt;
+&lt;li&gt;Keep your biases in check.&lt;/li&gt;
+&lt;li&gt;Be able to defend your conclusions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Build wireframes and low-fidelity prototypes&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Empathy map&lt;/strong&gt; - an easily understood chart that explains everything designers have learned about type of user.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Product goal statement&lt;/strong&gt; - one or two sentences that describe a product and it benefits for the user.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User flow&lt;/strong&gt; - the path taken by a typical user on an app or website, so they can complete a task from start to finish.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Storyboard&lt;/strong&gt; - a series of panels/frames that visually describe and explore a user’s experience with a product.&lt;/p&gt;
+&lt;p&gt;Elements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Character - user&lt;/li&gt;
+&lt;li&gt;Scene - user environment&lt;/li&gt;
+&lt;li&gt;Plot - benefit of the design&lt;/li&gt;
+&lt;li&gt;Narrative - how the design solve the problem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Big picture storyboards&lt;/strong&gt; - focus on user experience&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Close-up storyboard&lt;/strong&gt; - focus on the product&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wireframe&lt;/strong&gt; - a basic outline of a digital experience, like an app or website.&lt;/p&gt;
+&lt;p&gt;Purpose of wireframes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Establish the basic structure of a page.&lt;/li&gt;
+&lt;li&gt;Highlight the intended function of the product.&lt;/li&gt;
+&lt;li&gt;Save time and resources.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Elements&lt;/em&gt; - building blocks for creating a design. ie. lines, shapes, text&lt;/p&gt;
+&lt;p&gt;A design solves a real problem that users are experiencing.&lt;/p&gt;
+&lt;p&gt;Benefits of wireframes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Inform the elements to include in your design.&lt;/li&gt;
+&lt;li&gt;Catch problems early.&lt;/li&gt;
+&lt;li&gt;Get stakeholders to focus on structure.&lt;/li&gt;
+&lt;li&gt;Save time and effort.&lt;/li&gt;
+&lt;li&gt;Iterate quickly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Fidelity&lt;/em&gt; - how closely a design matches the look and feel of the final product.&lt;/p&gt;
+&lt;p&gt;Low fidelity:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lower amount of complexity&lt;/li&gt;
+&lt;li&gt;Less refined or polished&lt;/li&gt;
+&lt;li&gt;Called “Lo-fi” for short.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;High fidelity:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Closely matches the work and feel of the final product.&lt;/li&gt;
+&lt;li&gt;More refined and polished.&lt;/li&gt;
+&lt;li&gt;Called “hi-fi” for short.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Creating paper and digital wireframes&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Information architecture(IA)&lt;/strong&gt; - orgainizes content to help users understand where they are in a product and where the information they want is.&lt;/p&gt;
+&lt;p&gt;Importance of Information architecture:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Organizes and defines the overall structure  for the app or site.&lt;/li&gt;
+&lt;li&gt;Provides a highlevel view of a product.&lt;/li&gt;
+&lt;li&gt;Helps stakeholders review your design.&lt;/li&gt;
+&lt;li&gt;Helps engineers understand how to organize the data.&lt;/li&gt;
+&lt;li&gt;Allows ideas to grow and iterate with the design.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Components of Information architecture&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Organization - how different pieces of information connect to the product.&lt;/li&gt;
+&lt;li&gt;Hierachy - tree structure.&lt;/li&gt;
+&lt;li&gt;Sequence - enables users to move through an app via certain orders or steps.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;8 basic principles of Information architecture&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Object principle&lt;/em&gt; - content changes and grows over time.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Choice principle&lt;/em&gt; - fewer choices that are well organized.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Disclosure principle&lt;/em&gt; -information should not be unexpected and unnecessary.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Examplar principle&lt;/em&gt; - human put things into categories and group different concepts together.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Front door principle&lt;/em&gt; - people will usually arrive at a home page from another website.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Multiple classifications principle&lt;/em&gt; - people have different ways of searching for information.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Focused navigation principle&lt;/em&gt; -there must be a strategy and lose behind the way navigation menus are designed.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Growth principle&lt;/em&gt; - amount of content in a design will grow over time.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Paper wireframes are fast, inexpensive, and explore lots of ideas.&lt;/p&gt;
+&lt;h5&gt;Steps in creating a wireframe&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Gather materials.&lt;/li&gt;
+&lt;li&gt;Write a list of elements you need to include in your wireframe.&lt;/li&gt;
+&lt;li&gt;Create 5 different versions of how to structure information on the page.&lt;/li&gt;
+&lt;li&gt;Choose which elements to refine.&lt;/li&gt;
+&lt;li&gt;Combine elements into a refined wireframes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Gestalt principles&lt;/strong&gt; - how human group similar elements, recognize patterns, and simplify complex images when we perceive objects.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Similarity&lt;/em&gt; - elements looking similar/have same function.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Proximity&lt;/em&gt; - elements close together are more related.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Common region&lt;/em&gt; - elemets within same are grouped together.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Prototype&lt;/strong&gt; - is an early model of a product that demonstrates functionality.
+It shows stakeholders and potential users what your design can do.&lt;/p&gt;
+&lt;p&gt;The difference between a wireframe and a low fidelity prototype is the ability to click.&lt;/p&gt;
+&lt;h5&gt;Benefits of paper prototypes&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Inexpensive&lt;/li&gt;
+&lt;li&gt;Rapid iteration&lt;/li&gt;
+&lt;li&gt;Low commmitment&lt;/li&gt;
+&lt;li&gt;Encourage honest feedback.&lt;/li&gt;
+&lt;li&gt;Collaborative activity&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Deceptive patterns&lt;/strong&gt; are UX methods that trick users into doing/buying something they wouldn’t otherwise have done or bought.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Forced continuity&lt;/em&gt; - charging for membership without warning and reminder.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sneak into the basket&lt;/em&gt; - adding extra products without concent.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Hidden cost&lt;/em&gt; -paying fees you aren’t aware.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Confirm shaming&lt;/em&gt; - makes useer feel bad.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Urgency&lt;/em&gt; - limited time offer.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Scarcity&lt;/em&gt; -limited number of items.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Conduct UX Research and Tesst Early Concepts&lt;/h3&gt;
+&lt;h4&gt;Elemets of UX research studies&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Project background&lt;/li&gt;
+&lt;li&gt;Research goals&lt;/li&gt;
+&lt;li&gt;Research questions&lt;/li&gt;
+&lt;li&gt;Key performance indicators&lt;/li&gt;
+&lt;li&gt;Methodologies&lt;/li&gt;
+&lt;li&gt;Participants&lt;/li&gt;
+&lt;li&gt;Script&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Research study&lt;/strong&gt; - is a step-by-step examination of a group of users and their needs, which adds realistic context to the design process.&lt;/p&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Plan - outline the background set research goals, audience&lt;/li&gt;
+&lt;li&gt;Research - gather&lt;/li&gt;
+&lt;li&gt;Analyze and sythesize&lt;/li&gt;
+&lt;li&gt;Share&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Usability study&lt;/strong&gt; - a research method that assesses how easy it is for users to complete core tasks in a design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Project stakeholders&lt;/strong&gt; - people who are involved in the project or who will be impacted by it’s results.&lt;/p&gt;
+&lt;p&gt;Research presentation contains methods, data, conclusion, recommendations.&lt;/p&gt;
+&lt;p&gt;Communication needs to be equitable, inclusive, honest, neutral and team player.&lt;/p&gt;
+&lt;h5&gt;Elements of a UX research plan&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Project background&lt;/em&gt; - what let you to conduct research.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Research goals&lt;/em&gt; - what design problems are you trying to solve.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Research questions&lt;/em&gt; - what questions is the research trying to answer.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Key Performance Indicators&lt;/em&gt; - how to measure progress.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Participants&lt;/em&gt; - who will you survey.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Script&lt;/em&gt; - discussion guide, specific question, to the research goals.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Importance of Project Background:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get’s the team on the same page at the beginning of the study.&lt;/li&gt;
+&lt;li&gt;Shows you understand why you are doing the research.&lt;/li&gt;
+&lt;li&gt;Promotes confidence in the overall quality of your analysis and insights.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;How to write the project background:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Identify the signals that indicated research was necessary.&lt;/li&gt;
+&lt;li&gt;Describe any previous research&lt;/li&gt;
+&lt;li&gt;List insights the research will generate&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Foundational research goal&lt;/strong&gt; - understand why or if you should build the product.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Design research goal&lt;/strong&gt; -understand how to build the product.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Post launch research goal&lt;/strong&gt; - understand if the product worked as expected.&lt;/p&gt;
+&lt;p&gt;Research questions should provide focus, they should actionable, specific, avoiding leading questions&lt;/p&gt;
+&lt;h5&gt;Types of KPI’s&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Time on task - measure how long it takes a user to complete a task.&lt;/li&gt;
+&lt;li&gt;Use of navigation vs search - the number of people who use a website or app navigation compared to number of people who use the search functionality.&lt;/li&gt;
+&lt;li&gt;Use error rates - indicate the parts of a design that cause users to make errors.&lt;/li&gt;
+&lt;li&gt;Drop-off rates - how many users abandon the experience.&lt;/li&gt;
+&lt;li&gt;Conversion rates - measure the percentage of users who complete a desired action.&lt;/li&gt;
+&lt;li&gt;System usability scale(SUS) - a questionnaire to measure the usability of your design.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the same set of questions for each interview, ask open-ended questions, elaboration encouragement, ask same questions in multiple angles, don’t mention other users, don’t ask leading questions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Personally Identifiable Information(PII)&lt;/strong&gt; - specific details that could be used to identify a user.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sensitive Personally Identifiable Information(SPII)&lt;/strong&gt; - data that if lost, compromised, or stolen, could cause your users financial harm, embarrassment or discrimination.&lt;/p&gt;
+&lt;h5&gt;Importance of keeping user data privacy&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;It’s the right thing to do.&lt;/li&gt;
+&lt;li&gt;Privacy laws and ethics.&lt;/li&gt;
+&lt;li&gt;Risk of hacking.&lt;/li&gt;
+&lt;li&gt;Protecting your company’s brand.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Privacy and security practices&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Be transparent about data collection.&lt;/li&gt;
+&lt;li&gt;Only collect user data that’s absolutely necessary.&lt;/li&gt;
+&lt;li&gt;Get active consent.&lt;/li&gt;
+&lt;li&gt;Detail how you’ll use participants info and protect privacy.&lt;/li&gt;
+&lt;li&gt;Allow users to withdraw.&lt;/li&gt;
+&lt;li&gt;Inform users of who will have access to their data.&lt;/li&gt;
+&lt;li&gt;How you plan to store and delete user data once it has been used.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Vulenerable population&lt;/strong&gt; - groups of people who have limited ability to provide their consent or have special privacy concerns.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data recording&lt;/strong&gt; - document your study and results in a way that’s consistent with UX research standards.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data storage&lt;/strong&gt; - make sure your data is held in a way that’s safe from hacking and physical damage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data retention&lt;/strong&gt; -how long you and your company hold on to research data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;De-identification&lt;/strong&gt; - removing any identifying information from a user’s data that you collect during a study&lt;/p&gt;
+&lt;h4&gt;Conducting research with usability studies&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Usability study&lt;/strong&gt; - is a research method that assess how easy it is for participants to complete core tasks in a design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Moderated usability study&lt;/strong&gt; - a moderator guides participants through the study in real time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Unmoderated usability study&lt;/strong&gt; -participants test out the prototypes without human guidance.&lt;/p&gt;
+&lt;h5&gt;How to begin a moderated usability study&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Build a rapport with participants.&lt;/li&gt;
+&lt;li&gt;Thank participants for coming.&lt;/li&gt;
+&lt;li&gt;Remind participant to be open and honest.&lt;/li&gt;
+&lt;li&gt;Have participants fill out paperwork like an NDA.&lt;/li&gt;
+&lt;li&gt;Explain the focus of the study and what participant will give feedback on.&lt;/li&gt;
+&lt;li&gt;Establish ground rules for this study.&lt;/li&gt;
+&lt;li&gt;Remind participants that they are not being tested.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Reduce bias by adentifying and admitting own biases, find participants from a representative sample, define interview questions thoughtfully, let participants express themselves fully, be mindfull of your body languages.&lt;/p&gt;
+&lt;h4&gt;Analyzing and synthesizing research results&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Synthesize&lt;/strong&gt; - combine ideas to draw conclusions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Iterate&lt;/strong&gt; - revise original designs to create a new and improved version.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Insight&lt;/strong&gt; - an observation about people that helps you understand the user or their needs from a new perspective.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Affinity&lt;/strong&gt; - a feeling of like-mindedness or compatibility towards something or someone.&lt;/p&gt;
+&lt;p&gt;Observation to insights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gather data in one place.&lt;/li&gt;
+&lt;li&gt;organize the data&lt;/li&gt;
+&lt;li&gt;find themes&lt;/li&gt;
+&lt;li&gt;come up with insights.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Qualit of a strong insights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grounded in real data.&lt;/li&gt;
+&lt;li&gt;Answer research questions&lt;/li&gt;
+&lt;li&gt;Easy to understand.&lt;/li&gt;
+&lt;li&gt;Increase empathy for the user experience.&lt;/li&gt;
+&lt;li&gt;Insert direct action.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Sharing research insights for better designs&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Presentation&lt;/em&gt; - a group of slides, where each slide has new information.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Research rapport&lt;/em&gt; - a document with fewer visuals, containing the same information as the presentation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Know your audience.&lt;/li&gt;
+&lt;li&gt;Provide an overview.&lt;/li&gt;
+&lt;li&gt;Tell a story&lt;/li&gt;
+&lt;li&gt;Show numbers&lt;/li&gt;
+&lt;li&gt;Less is more when it comes to text.&lt;/li&gt;
+&lt;li&gt;Provide recommendations for next steps.&lt;/li&gt;
+&lt;li&gt;Leave time for questions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Be concise.&lt;/li&gt;
+&lt;li&gt;Keep your tone conversation.&lt;/li&gt;
+&lt;li&gt;Use stories.&lt;/li&gt;
+&lt;li&gt;Allow pauses.&lt;/li&gt;
+&lt;li&gt;Make eye contact.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Create High-Fidelity Designs and prototype&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Visual design&lt;/strong&gt; - how a product or technology appear to users.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mockup&lt;/strong&gt; - a static high fidelity design that represent your final product.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fidelity&lt;/strong&gt;- how a product design looks, feels like the final product.&lt;/p&gt;
+&lt;h5&gt;Foundation elements of visual design&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Typography - use of text and fonts, adds hierachy to your designs, make text easy to read, adds visual style.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Color&lt;/strong&gt; - messages that certain colors communicate, how people understand color, how color mix, match or contrast with one another.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Iconography&lt;/strong&gt; - refers to the images or symbols associated with a subject or idea.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Typographic hierarchy&lt;/strong&gt; - a method of ordering typefaces and fonts in a layout to create divisions that show users where to focus and how to find information.&lt;/p&gt;
+&lt;p&gt;Importance of color:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add emphasis in your design.&lt;/li&gt;
+&lt;li&gt;Communicate branding.&lt;/li&gt;
+&lt;li&gt;Impact the accessibility.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Benefits of images:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Communicate a message without using words.&lt;/li&gt;
+&lt;li&gt;Create emotional response to users.&lt;/li&gt;
+&lt;li&gt;Set a product apart from the competitors. ENhance designs, create connection to the product for users, establish a strong brand presence.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;An unclutered page is easier to read.&lt;/li&gt;
+&lt;li&gt;Meet your expectations.&lt;/li&gt;
+&lt;li&gt;Not all links look the same.&lt;/li&gt;
+&lt;li&gt;Use descriptive links.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Buttons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make buttons look like buttons.&lt;/li&gt;
+&lt;li&gt;Be consistent.&lt;/li&gt;
+&lt;li&gt;Include negative space.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Inputs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use visual cues.&lt;/li&gt;
+&lt;li&gt;Group inputs using sub-categories.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Layout&lt;/strong&gt; - refer to specific placements of text, styles, icons and images.&lt;/p&gt;
+&lt;p&gt;Grids to guide layouts:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Basic grids&lt;/strong&gt; - intersecting lines divide pages into small squares that allow you to easily lay out elements in a design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Layout grids&lt;/strong&gt; - a series of columns and alleys that allow you to organize elements in a design.&lt;/p&gt;
+&lt;p&gt;Reasons to use grids:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create clarity and consistency.&lt;/li&gt;
+&lt;li&gt;Quicken the design process.&lt;/li&gt;
+&lt;li&gt;Make it easier to collaborate on designs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use visual barriers to keep designs neat and organized.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Dividers&lt;/em&gt; - lines that separate sections.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Borders&lt;/em&gt; - group of lines to break up sections of a page.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Fill&lt;/em&gt; - assigns colors to borders and shapes.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Shadow&lt;/em&gt; - create dimension in combination with borders or fill.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Negative(white*) space&lt;/strong&gt; - the gaps between elements in a design, often referred to as negative space(line spacing, margins, padding).&lt;/p&gt;
+&lt;p&gt;Importance of white space:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Provide emphasis on a focal point within the design.&lt;/li&gt;
+&lt;li&gt;Group items together, which is also known as proximity.&lt;/li&gt;
+&lt;li&gt;Gives users a visual break.&lt;/li&gt;
+&lt;li&gt;Increases readibility.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Applying visual design principles to mockups&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;Mockups&lt;/strong&gt; - something that attracts attention.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Visual weight&lt;/strong&gt; - a measure of the force that an element exerts to attract the eye.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contrast&lt;/strong&gt; - creation of opposing visual elements to convey emphasis or comparison.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Texture&lt;/strong&gt; - elements within an object that add depth or a pattern to an object.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hierachy&lt;/strong&gt; - refers to a group of elements that are organized in order of importance.&lt;/p&gt;
+&lt;p&gt;Emphasis is about making an element stand out from the other elements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scale&lt;/strong&gt; - explains the size relationship between a given element and the other elements in the design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proportion&lt;/strong&gt; - the balance or harmony between elements that are scaled.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[understand ethereum and it's wide ecosystem]]></title><description><![CDATA[Ethereum is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow…]]></description><link>https://bwakedavis.github.io/ethereum/</link><guid isPermaLink="false">https://bwakedavis.github.io/ethereum/</guid><pubDate>Sat, 02 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Ethereum&lt;/strong&gt; is an open source, public, blockchain based distributed computing platform featuring smart contract functionality that allow building of decentralized applications on the platform.&lt;/p&gt;
+&lt;h2&gt;Features of Ethereum&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Supports smart contracts&lt;/li&gt;
+&lt;li&gt;Has a cryptocurrency called &lt;em&gt;ether&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Has Smart Property&lt;/li&gt;
+&lt;li&gt;Supports  DEcentralized Autonomous Organizations (DAO)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Pillars of Ethereum&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ethereum Virtual Machine&lt;/strong&gt; - serves as the heart of ethereum, architecture and provides computer power.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inter-Planetary-File-System&lt;/strong&gt; - &lt;em&gt;IPFS&lt;/em&gt; serves as a distributed storage unit  for large files being stored on the ethereum network.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wallets/Browsers&lt;/strong&gt; - serves as a wallet for storing ether. used to deploy contracts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ether&lt;/strong&gt; is the value token of ethereum(ETH).
+It’s used to pay for transaction fees and computational services on ethereum network.
+Every time a contract is executed, Ethereum consumes token which is termed as ‘gas’ to run the computations.&lt;/p&gt;
+&lt;h3&gt;Gas&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Gas&lt;/strong&gt; is the unit for the amount of computational work done by the computer for one cycle of the contract.
+A transaction fee is charged as some amount of ether and is taken from the account balance where the transaction originate.
+The more the fee, the higher the chances that the transaction will be picked up faster by the miners for inclusion in the block.
+Providing too little gas leads to failed transactions.
+Miners who add blocks to the blockchain are paid the transaction fees.
+Gas prevents bogus transactions which can spam the network transaction fee is variable
+&lt;strong&gt;Gas price&lt;/strong&gt;
+&lt;code class=&quot;language-text&quot;&gt;gasCost = gasPrice * gasCost(gas)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gas limit&lt;/strong&gt; is the maximum amount of gas the contract can use for it’s computation.&lt;/p&gt;
+&lt;h4&gt;Gas optimization tis&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Put part of your code in a centralized server&lt;/li&gt;
+&lt;li&gt;Use a library with pre-tested contracts&lt;/li&gt;
+&lt;li&gt;Use ERC1167 if you want to deploy same contract several times&lt;/li&gt;
+&lt;li&gt;Use events because they consume less gas than state variables&lt;/li&gt;
+&lt;li&gt;Use literal values rather than computed ones&lt;/li&gt;
+&lt;li&gt;Avoid copying arrays in memory&lt;/li&gt;
+&lt;li&gt;Avoid using loops over dynamic ranges&lt;/li&gt;
+&lt;li&gt;Optimize the order of variables declaration i.e uint, byte, strings&lt;/li&gt;
+&lt;li&gt;Turn on the optimizer in solidity compiler inside &lt;code class=&quot;language-text&quot;&gt;truffle.config.js&lt;/code&gt;.Though not always reliable.&lt;/li&gt;
+&lt;li&gt;Use &lt;code class=&quot;language-text&quot;&gt;eth-gas-reporter&lt;/code&gt; npm package to show your gas consumption every time you run tests&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Smart Contracts&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;Smart Contract&lt;/strong&gt; is a software program on the distributed ledger, allowing an immutable, verifiable and secure record all contract and transactions.&lt;/p&gt;
+&lt;p&gt;They’re digital representation of real world contracts.&lt;/p&gt;
+&lt;h4&gt;Properties of Smart Contracts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Autonomous&lt;/em&gt; - the creator doesn’t have to participate in the process after deploying the contract.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Auto-sufficient&lt;/em&gt; - contracts are able to collect money, realize transactions, distribute resources, issue and spend funds to allow a large capacity of storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Advantages of Smart Contracts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Faster, simpler and hassle free processes.&lt;/li&gt;
+&lt;li&gt;Secure - data in decentralized registry cannot be easily lost or cyber attacked&lt;/li&gt;
+&lt;li&gt;Precision - Mistakes are not easily made due to absence of physical forms&lt;/li&gt;
+&lt;li&gt;Reduces settlement time.&lt;/li&gt;
+&lt;li&gt;Low operational overheads and costs.&lt;/li&gt;
+&lt;li&gt;Reduced administration and services cost owing .to automation and ease of compliance and reports.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Disadvantages of Smart Contracts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Hard to maintain - contracts deployed are immutable so changes in business logic and general bug fixes  become tough.&lt;/li&gt;
+&lt;li&gt;Small community because it’s a new field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Decentralized Autonomous Organization(DAO)&lt;/strong&gt; are organizations that exist entirely on the blockchain and are governed by the protocols.
+They’re designed to hold onto assets and use a kind of voting to manage their distribution(use peer decision making).
+DAO’s comprise of a global network of nodes and members that all work together and create a unison to manage the distribution.&lt;/p&gt;
+&lt;h4&gt;Types of Ethereum Accounts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;External Owned Accounts&lt;/em&gt; - These are owned by people or organizations and controlled by private Keys.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Contract Accounts&lt;/em&gt; - These are autonomous accounts controlled by code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ethereum Virtual Machine&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;EVM&lt;/strong&gt; is a blockchain-based software platform. It allows developers to create decentralized applications (Dapps).&lt;/p&gt;
+&lt;p&gt;Contracts written in a smart contract specific language are compiled into &lt;em&gt;byte code&lt;/em&gt; which the &lt;strong&gt;evm&lt;/strong&gt; can read and execute.&lt;/p&gt;
+&lt;h2&gt;Decentralized Applications(DApps)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;DApps&lt;/strong&gt; are digital applications or programs that exist and run on a blockchain or peer to peer network of computers instead of a single computer, and are not controlled by a single authority.&lt;/p&gt;
+&lt;h4&gt;Features of DApps&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Open Sourced.The code is made open source and operates autonomously without any person or group controlling the majority of the tokens&lt;/li&gt;
+&lt;li&gt;Decentralized&lt;/li&gt;
+&lt;li&gt;Use Consensus Mechanism&lt;/li&gt;
+&lt;li&gt;Generates tokens to provide value to their contributing nodes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Advantages of DApps&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Autonomy&lt;/em&gt; - you make the agreement yourself.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Trust&lt;/em&gt; - your records are encrypted on a shared ledger.&lt;/li&gt;
+&lt;li&gt;Backup - your document are duplicated many times over.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Accuracy&lt;/em&gt; - they’re sometime kinda slower and expensive but avoid errors that arise from tedious computational work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Best practices for DApps design&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;You should not take control of your user private keys&lt;/li&gt;
+&lt;li&gt;First define your data model.Decide what to put and what not to put on the blockchain.&lt;/li&gt;
+&lt;li&gt;You should not sign transactions on behalf of your users from a central server&lt;/li&gt;
+&lt;li&gt;You should not put all the critical data and code on the blockchain&lt;/li&gt;
+&lt;li&gt;You should always run security tools on your smart contract&lt;/li&gt;
+&lt;li&gt;You should deploy your app on a public testnet before deploying on the test net&lt;/li&gt;
+&lt;li&gt;You should use ethereum addresses to identify users using &lt;code class=&quot;language-text&quot;&gt;msg.sender&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;You should explain the update mechanism of your smart contract&lt;/li&gt;
+&lt;li&gt;You should explain how the external data is collected&lt;/li&gt;
+&lt;li&gt;You should verify you smart contract on etherscan&lt;/li&gt;
+&lt;li&gt;You should show feedback to users while transactions are underway&lt;/li&gt;
+&lt;li&gt;Have read-only UI mode for users who don’t have wallets&lt;/li&gt;
+&lt;li&gt;Have a fallback web3 provider that connects to infura without connecting to any wallet&lt;/li&gt;
+&lt;li&gt;Support multiple wallets&lt;/li&gt;
+&lt;li&gt;Don’t trigger the metamask dapp popup too early&lt;/li&gt;
+&lt;li&gt;Describe the effect of the transaction clearly and what it’s for&lt;/li&gt;
+&lt;li&gt;Show feedback after the transaction is sent and is being processed&lt;/li&gt;
+&lt;li&gt;Keep the UI updated with the smart contract by using events&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Decentralized Finance (DeFi)&lt;/h3&gt;
+&lt;p&gt;Applications on the blockchain decentralizing finance, lending and interest earnings&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Yield Farming&lt;/strong&gt; - Earning money on deposit to be given to other people as loans and they payback with interest&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Liquidity mining&lt;/strong&gt; - distributing tokens to users of a protocol for doing some tasks&lt;/p&gt;
+&lt;h4&gt;Advantages of DeFi&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Transparency&lt;/li&gt;
+&lt;li&gt;Decentralized&lt;/li&gt;
+&lt;li&gt;Flexibility&lt;/li&gt;
+&lt;li&gt;Free for all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Disadvantages of DeFi&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Still in infancy stage&lt;/li&gt;
+&lt;li&gt;Sometime partially centralized&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tokens&lt;/h2&gt;
+&lt;p&gt;A token is an ethereum smart contract that represents an assert or a service in real world or in the blockchain. eg.cryptokitties.
+Governed by &lt;strong&gt;Ethereum Request for Comments(ERC)&lt;/strong&gt; token standard.&lt;/p&gt;
+&lt;h3&gt;ERC20 tokens&lt;/h3&gt;
+&lt;p&gt;Represents fungible tokens&lt;/p&gt;
+&lt;h3&gt;ERC 165&lt;/h3&gt;
+&lt;p&gt;Allow smart contract to tell other contract what function to implement&lt;/p&gt;
+&lt;h3&gt;ERC 223&lt;/h3&gt;
+&lt;p&gt;Prevents token from being lost in the smart contract&lt;/p&gt;
+&lt;h3&gt;ERC 721 - Non-Fungible Tokens&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;NFTs&lt;/em&gt;  are digital assets that represent a wide range of unique tangible and intangible items. eg songs, tweets&lt;/p&gt;
+&lt;p&gt;Non-fungible tokens are indivisible  and can’t be swapped with the other one.&lt;/p&gt;
+&lt;p&gt;Fungible tokens can be swapped with others of the same kind&lt;/p&gt;
+&lt;h4&gt;characteristics of NFTs&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Indivisible&lt;/li&gt;
+&lt;li&gt;Verifiable&lt;/li&gt;
+&lt;li&gt;Indestructible&lt;/li&gt;
+&lt;li&gt;Unique&lt;/li&gt;
+&lt;li&gt;Provably scarce&lt;/li&gt;
+&lt;li&gt;Transferable easily&lt;/li&gt;
+&lt;li&gt;Guarantee ownership&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;ERC 1410&lt;/h3&gt;
+&lt;p&gt;Token partition&lt;/p&gt;
+&lt;h3&gt;ERC 1155&lt;/h3&gt;
+&lt;p&gt;Fungible and non-fungible tokens&lt;/p&gt;
+&lt;h3&gt;ERC 1594&lt;/h3&gt;
+&lt;p&gt;Core standard&lt;/p&gt;
+&lt;h3&gt;ERC 1643&lt;/h3&gt;
+&lt;p&gt;Attack documents&lt;/p&gt;
+&lt;h3&gt;ERC 1644&lt;/h3&gt;
+&lt;p&gt;Forced token transfer&lt;/p&gt;
+&lt;h3&gt;ERC 1820&lt;/h3&gt;
+&lt;p&gt;Simplify contract interaction
+A contract can delegate execution of a function to another contract.&lt;/p&gt;
+&lt;h4&gt;Initial Coin Offering(ICO)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt; - allows retaining of control, globalization, no regulation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Initial Public Offering(IPO)&lt;/strong&gt; .&lt;/p&gt;</content:encoded></item><item><title><![CDATA[learn all things bitcoin]]></title><description><![CDATA[Bitcoin is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments. It follows the ideas set out…]]></description><link>https://bwakedavis.github.io/bitcoin/</link><guid isPermaLink="false">https://bwakedavis.github.io/bitcoin/</guid><pubDate>Mon, 13 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Bitcoin&lt;/strong&gt; is a digital currency created in 2009 that uses peer-to-peer technology to facilitate instant payments.&lt;/p&gt;
 &lt;p&gt;It follows the ideas set out in the Bitcoin White authored by &lt;em&gt;Satoshi Nakamoto&lt;/em&gt; whose identity is not yet known, Get the pdf here &lt;a href=&quot;https://bitcoin.org/bitcoin.pdf&quot;&gt;Bitcoin White Paper&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[understand blockchain technology]]></title><description><![CDATA[A Blockchain is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an…]]></description><link>https://bwakedavis.github.io/blockchain/</link><guid isPermaLink="false">https://bwakedavis.github.io/blockchain/</guid><pubDate>Sun, 12 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;A &lt;strong&gt;Blockchain&lt;/strong&gt; is a public electronic ledger built around a P2P system that can be openly shared among disparate users to create an unchangeable record of transactions, each time-stamped and linked to the previous one.
 Each digital record or transaction in the electronic ledger is called a &lt;em&gt;block&lt;/em&gt;.
 Transactions are protected by strong cryptographic algorithms.
